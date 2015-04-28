@@ -65,6 +65,7 @@ section p {
   padding: 10px;
   width: 320px;
   color: #66c;
+  float: left;
 }
 
 #mc-embedded-subscribe {
@@ -80,18 +81,34 @@ section p {
   padding-bottom: 0;
 }
 
-#logo-open .application {
+.notice .contents {
   padding-top: 10px;
   background: url('/img/logo-top-bg.png') center 5px repeat-x;
 }
 
-#logo-open .card {
+.application {
+  background-color: #fff;
+}
+
+.application .ap-content {
+  padding-top: 25px;
+}
+
+.row.sub-section {
+  margin-right: 0;
+  margin-left: 0;
+  background-color: #f6f6f6;
+  padding: 2em 0;
+}
+
+.sub-section .card {
   background: #fff;
-  padding-top: 20px;
+  padding-top: 5px;
 }
 
 #logo-heading {
-  width: 381px;
+  width: 100%;
+  max-width: 320px;
   background: #fff;
   position: relative;
   padding: 20px;
@@ -100,23 +117,17 @@ section p {
 
 .text {
   width: 80%;
-  margin: 1em auto 3em auto;
+  margin: 0 auto;
+  padding: 2em 0;
 }
 
 .details {
-  background-color: #f6f6f6;
-  /*background-color: #ccc;*/
-  padding: 1em;
-}
-
-.details .box {
-  width: 45%;
-  padding: 1em;
+  padding: 1em 0;
   margin: 1em auto;
   background-color: #fff;
 }
 
-.details .box li {
+.details li {
   list-style: none;
   padding-left: 1.5em;
   font-size: 1.2em;
@@ -129,7 +140,7 @@ section p {
   margin-right: 0.5em;
 }
 
-.details .box li.notes {
+.details li.notes {
   background: none;
   padding-left: 0;
   list-style: disc inside;
@@ -145,7 +156,7 @@ section p {
   margin-top: 40px;
 }
 
-#logo-open .row.logo {
+#logo-open .row.notice {
   padding-bottom: 10px;
   background: url('/img/down-arrow.png') center bottom no-repeat;
 }
@@ -173,4 +184,41 @@ footer p {
   font-size: 1em;
   text-align: left;
   margin-left: 3em;
+}
+
+footer a {
+  word-wrap: break-word;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  #mce-EMAIL {
+    max-width: 220px;
+    float: none;
+    clear: both;
+  }
+  #mc-embedded-subscribe {
+    margin: 0.5em auto;
+    max-width: 100px;
+    float: none;
+    clear: both;
+  }
+  .details ul {
+    padding-left: 10px;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  #mce-EMAIL {
+    max-width: 220px;
+    margin: 0 auto;
+    float: none;
+    clear: both;
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 940px) {
+
 }
