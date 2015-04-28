@@ -1,0 +1,176 @@
+{% include css/bootstrap.min.css %}
+{% include css/main.css %}
+
+header {
+  background: #faf8f5 url(/img/header-bg.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header .container {
+  padding-top: 50px;
+}
+
+header a,
+footer a {
+  color: #66c;
+}
+
+header a:hover,
+footer a:hover {
+  color: #66c;
+  text-decoration: underline;
+}
+
+section h2,
+section h3 {
+	margin: 0.5em 0;
+	line-height: 1.5;
+}
+
+section h3 {
+	font-size: 2.2em;
+	margin-top: 1em;
+}
+
+#mailing-lists {
+  background: #000 url(/img/mailing-bg.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff;
+}
+
+section p {
+  font-size: 1.1em;
+}
+
+.headline {
+  /*width: 70%;*/
+  margin-bottom: 100px;
+}
+
+#mc_embed_signup {
+  max-width: 480px;
+  padding: 5px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+#mce-EMAIL {
+  border: 1px solid #fff;
+  padding: 10px;
+  width: 320px;
+  color: #66c;
+}
+
+#mc-embedded-subscribe {
+  background: #66c;
+  border: 1px solid #66c;
+  padding: 10px;
+  width: 140px;
+}
+
+#logo-open {
+  background: url('/img/logo-bottom-bg.jpg') center bottom no-repeat;
+  /*background-size: 50%;*/
+  padding-bottom: 0;
+}
+
+#logo-open .application {
+  padding-top: 10px;
+  background: url('/img/logo-top-bg.png') center 5px repeat-x;
+}
+
+#logo-open .card {
+  background: #fff;
+  padding-top: 20px;
+}
+
+#logo-heading {
+  width: 381px;
+  background: #fff;
+  position: relative;
+  padding: 20px;
+  margin-top: -65px;
+}
+
+.text {
+  width: 80%;
+  margin: 1em auto 3em auto;
+}
+
+.details {
+  background-color: #f6f6f6;
+  /*background-color: #ccc;*/
+  padding: 1em;
+}
+
+.details .box {
+  width: 45%;
+  padding: 1em;
+  margin: 1em auto;
+  background-color: #fff;
+}
+
+.details .box li {
+  list-style: none;
+  padding-left: 1.5em;
+  font-size: 1.2em;
+  background: url('/img/icon-check.png') center left no-repeat;
+  line-height: 200%;
+}
+
+.title {
+  color: #66c;
+  margin-right: 0.5em;
+}
+
+.details .box li.notes {
+  background: none;
+  padding-left: 0;
+  list-style: disc inside;
+}
+
+.cck {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.arrow {
+  position: absolute;
+  margin-top: 40px;
+}
+
+#logo-open .row.logo {
+  padding-bottom: 10px;
+  background: url('/img/down-arrow.png') center bottom no-repeat;
+}
+
+section h2,
+section strong {
+  color: #fff;
+  font-size: 1.64em;
+  margin: 2em auto;
+}
+
+section strong {
+  display: inline;
+  font-size: 1.2em;
+  background: #339;
+  margin: 2em;
+}
+
+footer {
+  background-color: #2e2e2e;
+  padding: 50px 0;
+}
+
+footer p {
+  font-size: 1em;
+  text-align: left;
+  margin-left: 3em;
+}
