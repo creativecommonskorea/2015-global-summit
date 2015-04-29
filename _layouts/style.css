@@ -206,6 +206,9 @@ footer a {
   .details ul {
     padding-left: 10px;
   }
+  #cc-logo {
+    max-width: 180px;
+  }
 }
 
 /* Landscape phone to portrait tablet */
@@ -221,4 +224,8 @@ footer a {
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 940px) {
 
+}
+
+#misc {
+  padding-bottom: 1em;
 }
