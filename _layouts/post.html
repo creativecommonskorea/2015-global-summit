@@ -1,0 +1,47 @@
+---
+layout: base
+---
+
+<div class="wrap newsboard_wrap">
+    <section>
+        <h1 class="title">뉴스</h1>
+
+        <div class="guide_bar_33"></div>
+        <div class="head_description">
+            이번 2015 CC 글로벌 서밋이 아름답게 개최될 수 있도록 노력하고 있습니다.
+        </div>
+    </section>
+    <article>
+        <div class="latest_article_top">
+            <div class="title">{{ page.title }}</div>
+            <div class="timestamp">{{ page.date | date: "%Y.%m.%d"}}</div>
+            <div class="dot"><img src="/images/other/bullet.png" alt="-"/></div>
+        </div>
+        <div class="latest_article_contents">
+            <div class="thumbnail">
+                <div style="border: 1px solid black;">&nbsp;</div>
+            </div>
+            <div class="content_text">
+                {{ page.content }}
+            </div>
+        </div>
+    </article>
+    <section>
+        <div class="article_list">
+            {% for post in site.posts %}
+            <div class="article_box">
+                <div class="thumbnail">
+                    <div style="width: 180px; height: 120px; border: 1px solid black;">&nbsp;</div>
+                </div>
+                <div class="abstract_contents">
+                    <div class="title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
+                    <div class="timestamp">{{ post.date | date: "%Y.%m.%d"}}</div>
+                    <div class="abstract_text">
+                        {{ post.abstract }}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+</div>

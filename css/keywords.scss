@@ -1,0 +1,86 @@
+.keywords_wrap {
+  text-align: center;
+  background-color: #f7f7f8;
+  section {
+    text-align: center;
+    padding: 3.750em 0 3.750em 0;
+    .keyword_box {
+      background-color: #fff;
+      border: 1px solid #e8e8e8;
+      border-bottom: 3px solid #e8e8e8;
+      font-size: 0.875em;
+      overflow: auto;
+      margin-bottom: 1.250em;
+      position: relative;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .badge {
+        @media screen and (max-width: 1000px){
+          left: 90%;
+        }
+        position: absolute;
+        top: 0;
+        left: 96%;
+        margin: 0;
+        padding: 0;
+        width: 23px;
+        height: 27px;
+        z-index: 10;
+      }
+      .title_wrap {
+        @media screen and (max-width: 1000px){
+          font-size: 1.000em;
+          vertical-align: middle;
+          height: 5.000em;
+        }
+        display: table;
+        height: 5.000em;
+        width: 100%;
+        //vertical-align: middle;
+        font-size: 1.375em;
+        font-weight: bold;
+        border-bottom: 1px solid #e8e8e8;
+        .title {
+          display: table-cell;
+          vertical-align: middle;
+          a {
+            &:hover {
+              text-decoration: underline;
+            }
+            text-decoration: none;
+            color: #333;
+          }
+        }
+      }
+      .thumbnail {
+        @media screen and (max-width: 1000px){
+          float: none;
+        }
+        float: left;
+        padding: 1.875em;
+        img {
+          width: 16.250em;
+          height: 9.375em;
+        }
+      }
+      .keyword_description {
+        @media screen and (max-width: 1000px){
+          width: calc(98% - 20px);
+          padding: 10px;
+        }
+        float: left;
+        text-align: justify;
+        word-break: keep-all;
+        line-height: 25px;
+        width: calc(100% - 360px);
+        padding: 30px 0;
+        overflow: auto;
+        span.relates_session {
+          margin-top: 1.250em;
+          color: #f0513d;
+        }
+      }
+    }
+  }
+}

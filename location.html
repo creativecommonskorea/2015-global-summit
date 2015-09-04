@@ -1,0 +1,99 @@
+---
+layout: base
+---
+
+<script>
+    $(document).ready(function(){
+        $('#main_location_img').attr('src',
+                'https://maps.googleapis.com/maps/api/staticmap?center=37.523838,%20126.980524&zoom=15&size='
+                +$('#main_location').width()+'x'+ $('#main_location').height()
+                +'&markers=37.523838,%20126.980524&key=AIzaSyAym9nfPiZOWo3a8DEThTwd351_4UWukRo');
+
+        $('#sub_location_img').attr('src',
+                'https://maps.googleapis.com/maps/api/staticmap?center=37.521412,126.980959&zoom=15&size='
+                +$('#sub_location').width()+'x'+ $('#sub_location').height()
+                +'&markers=37.521412,126.980959&key=AIzaSyAym9nfPiZOWo3a8DEThTwd351_4UWukRo');
+    });
+</script>
+
+<div class="wrap location_wrap">
+    <section>
+        <h1 class="title">행사장소안내</h1>
+
+        <div class="guide_bar_33"></div>
+        <div class="description">이번 2015 CC 글로벌 서밋이 아름답게 개최될 수 있도록 노력하고 있습니다.</div>
+        <div class="locations">
+            <div class="info">
+                <div class="name"><img src="/images/other/venue_icon.png" alt="|"/>국립중앙박물관</div>
+                <div class="address">
+                    서울특별시 용산구 서빙고로 137 국립중앙박물관<br/>
+                </div>
+                <div class="transport">
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="/images/other/bullet.png" alt="-"/> 지하철
+                            </td>
+                            <td>이촌역 2번출구 방향 '박물관 나들길'↔박물관 서문<br/>
+                                이촌역 2번출구↔박물관 서문
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="/images/other/bullet.png" alt="-"/> 버스</td>
+                            <td>
+                                400번 서빙고동 - 서빙고역1번출구 - 국립중앙박물관, 용산가족공원 -
+                                이촌역 - 용산세무서 - 용산공고<br/>
+                                간선버스 502번 이수교 - 서빙고역 - 국립중앙박물관, 용산가족공원 -
+                                이촌역 - 용산세무서 - 용산공고
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="map" id="main_location">
+                <a href="http://www.museum.go.kr/site/homepage/menu/viewMenu?menuid=001001008001" target="_blank">
+                    <img src="" alt="map" id="main_location_img"/>
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="wrap location_wrap">
+    <section>
+        <div class="locations">
+            <div class="info">
+                <div class="name"><img src="/images/other/venue_icon.png" alt="|"/>국립한글박물관</div>
+                <div class="description">
+                    서울시 용산구 서빙고로 139 국립한글박물관
+                </div>
+                <div class="transport">
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="/images/other/bullet.png" alt="-"/> 지하철
+                            </td>
+                            <td>이촌역 2번 출구 계단 왼쪽 방향 ‘박물관 나들길’ 이용 → 우측 방향으로 400m 직진<br/>
+                                이촌역 2번 출구 → 용산가족공원 방면으로 600m 직진 → 좌측 오솔길 이용
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="/images/other/bullet.png" alt="-"/> 버스</td>
+                            <td>
+                                400번 서빙고동 - 서빙고역1번출구 - 국립중앙박물관, 용산가족공원 -
+                                이촌역 - 용산세무서 - 용산공고<br/>
+                                간선버스 502번 이수교 - 서빙고역 - 국립중앙박물관, 용산가족공원 -
+                                이촌역 - 용산세무서 - 용산공고
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="map" id="sub_location">
+                <a href="http://www.hangeul.go.kr/lang/en/html/visitorInfomation/directions.do" target="_blank">
+                    <img src="" alt="map" id="sub_location_img"/>
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="m60"></div>

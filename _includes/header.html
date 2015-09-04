@@ -1,0 +1,162 @@
+<script>
+    $(document).ready(function () {
+        // define menu action
+        $('.menus > ul > li').hover(
+                function (e) {
+                    e.stopPropagation();
+                    e.preventDefault();
+                    var showTarget = $(this).attr('data-target');
+                    if (showTarget) {
+                        $('.main_sub_menu').hide();
+                        $('#' + showTarget).show();
+                    }
+                }
+        );
+
+        $('#mobile_menu_btn').click(function () {
+            $('#mobile_menu_back').height($(document).height()).show();
+            $.scrollLock();
+        });
+
+        $('#close_mobile_menu').click(function () {
+            $('#mobile_menu_back').hide();
+            $.scrollLock();
+        })
+
+        $(".mobile_b_menu.clickable").click(function () {
+            var _thisId = $(this).attr('id');
+
+            if ( !$(this).hasClass('isOpen') ) {
+                $('.mobile_s_menu').each(function(){ $(this).hide(); });
+                $(".mobile_b_menu.clickable").each(function(){
+                    $(this).removeClass('isOpen');
+                });
+                $('.mobile_b_menu.clickable > .arrow').each(function(){
+                    $(this).css({
+                        '-ms-transform': 'rotate(0deg)', /* IE 9 */
+                        '-webkit-transform': 'rotate(0deg)', /* Chrome, Safari, Opera */
+                        'transform': 'rotate(0deg)'
+                    });
+                });
+
+                $('.' + _thisId + '_sub').show();
+                $('#' + _thisId + ' > .arrow').css({
+                    '-ms-transform': 'rotate(180deg)', /* IE 9 */
+                    '-webkit-transform': 'rotate(180deg)', /* Chrome, Safari, Opera */
+                    'transform': 'rotate(180deg)'
+                });
+
+                $(this).addClass('isOpen');
+            } else {
+                $('.mobile_s_menu').each(function(){ $(this).hide(); });
+                $(".mobile_b_menu.clickable").each(function(){
+                    $(this).removeClass('isOpen');
+                });
+                $(this).find('.arrow').css({
+                    '-ms-transform': 'rotate(0deg)', /* IE 9 */
+                    '-webkit-transform': 'rotate(0deg)', /* Chrome, Safari, Opera */
+                    'transform': 'rotate(0deg)'
+                });
+            }
+
+
+        });
+    });
+</script>
+<div class="wrap topmenu_wrap">
+    <nav class="top_menu">
+        <ul>
+            <li><a href="https://www.facebook.com/events/1455321544773645/"><img src="/images/base/facebook.png"
+                                                                                 alt="페이스북"/></a></li>
+            <li><a href="https://twitter.com/cckorea"><img src="/images/base/twitter.png" alt="트위터"/></a></li>
+            <li><a href="/coming_soon.html">English</a></li>
+            <li><a href="/coming_soon.html">내정보</a></li>
+            <li><a href="/coming_soon.html">로그인</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="mobile_menu_wrap">
+    <div class="mobile_menu_button">
+        <a href="#" id="mobile_menu_btn"><img src="/images/base/mobile_menu.png" alt=""/></a>
+    </div>
+    <div class="mobile_menu_back" id="mobile_menu_back">
+        <div class="mobile_b_menu right">
+            <a href="#" id="close_mobile_menu">
+                <img src="/images/base/close_mobile_menu.png" alt=""/>
+            </a>
+        </div>
+        <div class="mobile_b_menu clickable" id="introduce">
+            행사소개
+            <div class="arrow"><img src="/images/base/arrow_down.png" alt=""/></div>
+        </div>
+        <div class="mobile_s_menu introduce_sub">
+            <a href="/introduce.html">CC 글로벌써밋</a><br/>
+            <a href="/promote.html">주관및주최</a><br/>
+            <a href="/location.html">장소</a>
+        </div>
+        <div class="mobile_b_menu clickable" id="programs">
+            프로그램
+            <div class="arrow"><img src="/images/base/arrow_down.png" alt=""/></div>
+        </div>
+        <div class="mobile_s_menu programs_sub">
+            <a href="#">전체 프로그램</a><br/>
+            <a href="/speakers.html">연사소개</a><br/>
+            <a href="/coming_soon.html">전시</a><br/>
+            <a href="/keywords.html">키워드</a>
+        </div>
+        <div class="mobile_b_menu clickable" id="attend">
+            참가신청
+            <div class="arrow"><img src="/images/base/arrow_down.png" alt=""/></div>
+        </div>
+        <div class="mobile_s_menu attend_sub">
+            <a href="#">참가신청</a><br/>
+            <a href="/coming_soon.html">참가자</a>
+        </div>
+        <div class="mobile_b_menu"><a href="/sponsors.html">후원사</a></div>
+        {% for post in site.posts limit:1 %}
+        <div class="mobile_b_menu"><a href="{{ post.url | prepend: site.baseurl }}">소식</a></div>
+        {% endfor %}
+    </div>
+</div>
+<div class="wrap header_wrap">
+    <div class="main_menu">
+        <div class="main_logo">
+            <a href="/index.html">
+                <img src="/images/base/logo.png" alt="CC 글로벌 써밋 2015 로고"/>
+            </a>
+        </div>
+        <nav class="menus">
+            <ul>
+                <li data-target="submenu_1"><a href="/introduce.html">행사소개</a></li>
+                <li data-target="submenu_2"><a href="/programs.html">프로그램</a></li>
+                <li data-target="submenu_3"><a href="/coming_soon.html">참가신청</a></li>
+                <li><a href="/sponsors.html">후원사</a></li>
+                {% for post in site.posts limit:1 %}
+                <li><a href="{{ post.url | prepend: site.baseurl }}">소식</a></li>
+                {% endfor %}
+                <li><a href="http://campaign.cckorea.org/" target="_blank">CC 캠페인</a></li>
+            </ul>
+        </nav>
+        <div class="sub_menus">
+            <div class="main_sub_menu" id="submenu_1">
+                <div class="arrow_area"><img src="/images/base/arrow_up.png" alt="^"/></div>
+                <a href="/introduce.html">CC 글로벌써밋</a>
+                <a href="/promote.html">주관및주최</a>
+                <a href="/location.html">장소</a>
+            </div>
+            <div class="main_sub_menu" id="submenu_2">
+                <div class="arrow_area"><img src="/images/base/arrow_up.png" alt="^"/></div>
+                <a href="/programs.html">전체 프로그램</a>
+                <a href="/speakers.html">연사소개</a>
+                <!--<a href="exhibitions.html">전시</a>-->
+                <a href="/coming_soon.html">전시</a>
+                <a href="/keywords.html">키워드</a>
+            </div>
+            <div class="main_sub_menu" id="submenu_3">
+                <div class="arrow_area"><img src="/images/base/arrow_up.png" alt="^"/></div>
+                <a href="/attend.html">참가신청</a>
+                <a href="/coming_soon.html">참가자</a>
+            </div>
+        </div>
+    </div>
+</div>

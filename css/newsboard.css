@@ -1,0 +1,69 @@
+.newsboard_wrap {
+  padding: 60px 0;
+  text-align: center;
+  background-color: #f7f7f8;
+  overflow: auto; }
+  .newsboard_wrap article {
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    background-color: #fff;
+    overflow: auto; }
+    .newsboard_wrap article .latest_article_top {
+      text-align: center;
+      margin: 30px 0 15px 0; }
+      .newsboard_wrap article .latest_article_top .title {
+        font-size: 24px;
+        line-height: 40px;
+        font-weight: bold; }
+      .newsboard_wrap article .latest_article_top .timestamp {
+        font-size: 14px;
+        font-style: italic;
+        color: #ef513c;
+        line-height: 25px; }
+    .newsboard_wrap article .latest_article_contents .thumbnail {
+      padding: 0 30px 30px 30px;
+      float: left; }
+    .newsboard_wrap article .latest_article_contents .content_text {
+      width: 97%;
+      font-size: 14px;
+      line-height: 25px;
+      text-align: justify;
+      word-break: keep-all; }
+  .newsboard_wrap .article_list {
+    margin: 60px 0; }
+    .newsboard_wrap .article_list .article_box {
+      background-color: #f7f7f8;
+      border-bottom: 1px solid #dedede;
+      overflow: auto; }
+      .newsboard_wrap .article_list .article_box .thumbnail {
+        width: 180px;
+        height: 120px;
+        padding: 20px;
+        float: left; }
+      .newsboard_wrap .article_list .article_box .abstract_contents {
+        position: relative;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        float: right;
+        text-align: left;
+        width: calc(100% - 240px); }
+        .newsboard_wrap .article_list .article_box .abstract_contents .title {
+          font-size: 18px;
+          font-weight: bold;
+          line-height: 42px; }
+        .newsboard_wrap .article_list .article_box .abstract_contents .timestamp {
+          font-size: 14px;
+          font-style: italic;
+          color: #ef513c;
+          line-height: 25px;
+          position: absolute;
+          top: 34px;
+          left: 88%; }
+        .newsboard_wrap .article_list .article_box .abstract_contents .abstract_text {
+          width: 97%;
+          font-size: 14px;
+          line-height: 25px;
+          text-align: justify;
+          word-break: keep-all; }
+
+/*# sourceMappingURL=newsboard.css.map */
