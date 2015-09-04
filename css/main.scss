@@ -240,10 +240,32 @@ img {
   background-image: $url_0;
   background-repeat: repeat-x;
   background-position: center;
+
+  @media screen and (max-width: 1000px) {
+    background: url('/images/base/mobile_intro_bg.png') no-repeat center;
+    height: auto;
+  }
+
   main {
     padding-top: 140px;
+    @media screen and (max-width: 1000px) {
+      text-align: center;
+    }
+    img {
+      @media screen and (max-width: 1000px) {
+        width: 90%;
+      }
+    }
     div {
       &.message {
+        @media screen and (max-width: 1000px) {
+          margin: 0.750em 0.750em;
+          width: calc(100% - 2.500em);
+          padding: 1.0em 0.5em;
+          line-height: 150%;
+          font-size: 0.9em;
+          height: auto;
+        }
         text-align: justify;
         height: 90px;
         width: 631px;
@@ -255,6 +277,32 @@ img {
         font-size: 1.125em;
       }
       &.location {
+        display: inline-block;
+        @media screen and (max-width: 1000px) {
+          text-align: center;
+          width: 100%;
+          font-size: 1.125em;
+          margin: 0 0 4.0em 0;
+        }
+        .dateinfo {
+          @media screen and (max-width: 1000px) {
+            font: bold 0.850em Verdana;
+            width: 90%;
+            display: inline-block;
+            text-align: left;
+          }
+          font: bold 36px Verdana;
+          color: #575757;
+          letter-spacing: -2px;
+        }
+        .locate {
+          @media screen and (max-width: 1000px) {
+            width: 90%;
+            display: inline-block;
+            margin-top: 0.5em;
+          }
+          text-align: left;
+        }
         margin-top: 20px;
         font-size: 1.500em;
       }
@@ -263,11 +311,21 @@ img {
 }
 
 .program_info_wrap {
+  @media screen and (max-width: 1000px) {
+    height: auto;
+    padding-bottom: 80px;
+  }
   background-image: $url_1;
   background-repeat: repeat;
   background-color: $color_baltic_sea_approx;
   height: 637px;
+
   section {
+    @media screen and (max-width: 1000px) {
+      width: 95%;
+      height: auto;
+      overflow: auto;
+    }
     text-align: center;
     padding-top: 79px;
     color: $white;
@@ -277,6 +335,14 @@ img {
       margin: 0;
     }
     .program_list {
+      @media screen and (max-width: 1000px) {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin: 0 0 0.5em 0;
+        padding: 1em 0;
+        vertical-align: middle;
+      }
       margin: 0 0 0 3px;
       padding: 0;
       border: 0;
@@ -287,17 +353,59 @@ img {
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#60000000, endColorstr=#60000000);
       div {
         position: relative;
+        @media screen and (max-width: 1000px) {
+          position: static;
+          height: 58px;
+          vertical-align: middle;
+        }
       }
       .program_icon {
+        @media screen and (max-width: 600px) {
+          float: left;
+          margin: 0;
+          padding: 0;
+        }
+        @media screen and (max-width: 1000px) and (min-width: 600px) {
+          float: left;
+          margin: 0 0 0 0.5em;
+          padding: 0;
+        }
         margin-top: 21px;
       }
       .program_sub_title {
+        @media screen and (max-width: 600px) {
+          float: left;
+          margin: 0;
+          text-align: left;
+          font-size: 1em;
+        }
+        @media screen and (max-width: 1000px) and (min-width: 600px) {
+          float: left;
+          margin: auto 0.3em;
+          width: 26%;
+          text-align: left;
+          font-size: 1em;
+        }
         color: $color_sunset_orange_approx;
-        font-size: 1.625px;
+        font-size: 1.50em;
         margin-top: 17px;
         font-weight: bold;
       }
       .program_sub_description {
+        @media screen and (max-width: 600px) {
+          float: right;
+          text-align: left;
+          font-size: 0.75em;
+          margin-top: 0;
+          padding: 0;
+        }
+        @media screen and (max-width: 1000px) and (min-width: 600px) {
+          float: left;
+          text-align: left;
+          font-size: 0.75em;
+          margin-top: 0;
+          padding: 0;
+        }
         color: $white;
         font-size: 0.813em;
         margin-top: 22px;
@@ -341,6 +449,9 @@ img {
 }
 
 .main_speakes_wrap {
+  @media screen and (max-width: 1000px) {
+    height: auto;
+  }
   height: 990px;
   section {
     text-align: center;
@@ -360,6 +471,10 @@ img {
       width: 178px;
     }
     .speaker_profile {
+      @media screen and (max-width: 1000px) {
+        float: left;
+        width: calc(100% - 226px);
+      }
       display: inline-block;
       width: 324px;
       text-align: left;
@@ -399,6 +514,11 @@ img {
         margin-bottom: 24px;
       }
       .speaker_description {
+        @media screen and (max-width: 1000px) {
+          padding-right: 1.0em;
+          font-size: 1.0em;
+        }
+        word-break: keep-all;
         text-align: justify;
         font-size: 0.875em;
         padding-right: 33px;
@@ -406,6 +526,11 @@ img {
       }
     }
     .speaker_list .speaker {
+      @media screen and (max-width: 1000px) {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1.5em;
+      }
       margin: 0;
       border: 0;
       width: 550px;
@@ -459,7 +584,7 @@ img {
       }
       .info {
         @media screen and (max-width: 1000px) {
-          left: 47px;
+          left: calc(50% - 128px);
         }
         font-size: 9px;
         width: 300px; 

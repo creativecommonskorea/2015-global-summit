@@ -174,8 +174,18 @@ img {
   background-image: url(/images/base/main_big.png);
   background-repeat: repeat-x;
   background-position: center; }
+  @media screen and (max-width: 1000px) {
+    .main_invite_wrap {
+      background: url("/images/base/mobile_intro_bg.png") no-repeat center;
+      height: auto; } }
   .main_invite_wrap main {
     padding-top: 140px; }
+    @media screen and (max-width: 1000px) {
+      .main_invite_wrap main {
+        text-align: center; } }
+    @media screen and (max-width: 1000px) {
+      .main_invite_wrap main img {
+        width: 90%; } }
     .main_invite_wrap main div.message {
       text-align: justify;
       height: 90px;
@@ -186,20 +196,61 @@ img {
       line-height: 220%;
       padding: 10px 25px 0;
       font-size: 1.125em; }
+      @media screen and (max-width: 1000px) {
+        .main_invite_wrap main div.message {
+          margin: 0.750em 0.750em;
+          width: calc(100% - 2.500em);
+          padding: 1.0em 0.5em;
+          line-height: 150%;
+          font-size: 0.9em;
+          height: auto; } }
     .main_invite_wrap main div.location {
+      display: inline-block;
       margin-top: 20px;
       font-size: 1.500em; }
+      @media screen and (max-width: 1000px) {
+        .main_invite_wrap main div.location {
+          text-align: center;
+          width: 100%;
+          font-size: 1.125em;
+          margin: 0 0 4.0em 0; } }
+      .main_invite_wrap main div.location .dateinfo {
+        font: bold 36px Verdana;
+        color: #575757;
+        letter-spacing: -2px; }
+        @media screen and (max-width: 1000px) {
+          .main_invite_wrap main div.location .dateinfo {
+            font: bold 0.850em Verdana;
+            width: 90%;
+            display: inline-block;
+            text-align: left; } }
+      .main_invite_wrap main div.location .locate {
+        text-align: left; }
+        @media screen and (max-width: 1000px) {
+          .main_invite_wrap main div.location .locate {
+            width: 90%;
+            display: inline-block;
+            margin-top: 0.5em; } }
 
 .program_info_wrap {
   background-image: url(/images/base/pattern_bg.png);
   background-repeat: repeat;
   background-color: #272a32;
   height: 637px; }
+  @media screen and (max-width: 1000px) {
+    .program_info_wrap {
+      height: auto;
+      padding-bottom: 80px; } }
   .program_info_wrap section {
     text-align: center;
     padding-top: 79px;
     color: #fff;
     height: 334px; }
+    @media screen and (max-width: 1000px) {
+      .program_info_wrap section {
+        width: 95%;
+        height: auto;
+        overflow: auto; } }
     .program_info_wrap section h1 {
       font-size: 1.875em;
       margin: 0; }
@@ -212,20 +263,70 @@ img {
       height: 228px;
       background: rgba(255, 255, 255, 0.1);
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#60000000, endColorstr=#60000000); }
+      @media screen and (max-width: 1000px) {
+        .program_info_wrap section .program_list {
+          width: 100%;
+          height: auto;
+          position: relative;
+          margin: 0 0 0.5em 0;
+          padding: 1em 0;
+          vertical-align: middle; } }
       .program_info_wrap section .program_list div {
         position: relative; }
+        @media screen and (max-width: 1000px) {
+          .program_info_wrap section .program_list div {
+            position: static;
+            height: 58px;
+            vertical-align: middle; } }
       .program_info_wrap section .program_list .program_icon {
         margin-top: 21px; }
+        @media screen and (max-width: 600px) {
+          .program_info_wrap section .program_list .program_icon {
+            float: left;
+            margin: 0;
+            padding: 0; } }
+        @media screen and (max-width: 1000px) and (min-width: 600px) {
+          .program_info_wrap section .program_list .program_icon {
+            float: left;
+            margin: 0 0 0 0.5em;
+            padding: 0; } }
       .program_info_wrap section .program_list .program_sub_title {
         color: #ef513c;
-        font-size: 1.625px;
+        font-size: 1.50em;
         margin-top: 17px;
         font-weight: bold; }
+        @media screen and (max-width: 600px) {
+          .program_info_wrap section .program_list .program_sub_title {
+            float: left;
+            margin: 0;
+            text-align: left;
+            font-size: 1em; } }
+        @media screen and (max-width: 1000px) and (min-width: 600px) {
+          .program_info_wrap section .program_list .program_sub_title {
+            float: left;
+            margin: auto 0.3em;
+            width: 26%;
+            text-align: left;
+            font-size: 1em; } }
       .program_info_wrap section .program_list .program_sub_description {
         color: #fff;
         font-size: 0.813em;
         margin-top: 22px;
         padding: 0 17px; }
+        @media screen and (max-width: 600px) {
+          .program_info_wrap section .program_list .program_sub_description {
+            float: right;
+            text-align: left;
+            font-size: 0.75em;
+            margin-top: 0;
+            padding: 0; } }
+        @media screen and (max-width: 1000px) and (min-width: 600px) {
+          .program_info_wrap section .program_list .program_sub_description {
+            float: left;
+            text-align: left;
+            font-size: 0.75em;
+            margin-top: 0;
+            padding: 0; } }
         .program_info_wrap section .program_list .program_sub_description br {
           line-height: 150%; }
   .program_info_wrap .show_all_program {
@@ -256,6 +357,9 @@ img {
 
 .main_speakes_wrap {
   height: 990px; }
+  @media screen and (max-width: 1000px) {
+    .main_speakes_wrap {
+      height: auto; } }
   .main_speakes_wrap section {
     text-align: center;
     padding-top: 79px;
@@ -275,6 +379,10 @@ img {
       width: 324px;
       text-align: left;
       margin: 10px 0 0 48px; }
+      @media screen and (max-width: 1000px) {
+        .main_speakes_wrap section .speaker_profile {
+          float: left;
+          width: calc(100% - 226px); } }
       .main_speakes_wrap section .speaker_profile .name {
         margin-bottom: 13px; }
         .main_speakes_wrap section .speaker_profile .name .kor_name {
@@ -301,16 +409,26 @@ img {
         border-top: 1px solid #c2c2c2;
         margin-bottom: 24px; }
       .main_speakes_wrap section .speaker_profile .speaker_description {
+        word-break: keep-all;
         text-align: justify;
         font-size: 0.875em;
         padding-right: 33px;
         line-height: 24px; }
+        @media screen and (max-width: 1000px) {
+          .main_speakes_wrap section .speaker_profile .speaker_description {
+            padding-right: 1.0em;
+            font-size: 1.0em; } }
     .main_speakes_wrap section .speaker_list .speaker {
       margin: 0;
       border: 0;
       width: 550px;
       float: left;
       height: 249px; }
+      @media screen and (max-width: 1000px) {
+        .main_speakes_wrap section .speaker_list .speaker {
+          width: 100%;
+          height: auto;
+          margin-bottom: 1.5em; } }
   .main_speakes_wrap .see_more_speaker {
     text-align: right;
     font-size: 1.125em; }
@@ -356,7 +474,7 @@ img {
         top: 55px; }
         @media screen and (max-width: 1000px) {
           .partner_wrap .sponsor_logos .logos .info {
-            left: 47px; } }
+            left: calc(50% - 128px); } }
 
 .footer {
   height: 230px;
