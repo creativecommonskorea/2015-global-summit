@@ -692,6 +692,11 @@ section .guide_bar {
     .abstract_description {
       @media screen and (max-width: 1000px) {
         font-size: 1.0em;
+        text-align: justify;
+        
+        br {
+          display: none;
+        }
       }
       font-size: 1.125em;
       margin-bottom: 33px;
@@ -702,8 +707,11 @@ section .guide_bar {
         text-align: center;
         word-break: keep-all;
         height: auto;
+        br {
+          display: none;
+        }
       }
-      margin: 0 auto;
+      margin: 0 auto 33px auto;
       padding-top: 38px;
       line-height: 25px;
       border: 1px solid #dfdfdf;
@@ -711,7 +719,6 @@ section .guide_bar {
       height: 272px;
       background-color: #fff;
       font-size: 0.875em;
-      margin-bottom: 33px;
       img {
         margin: 14px 0 6px 0;
       }
@@ -724,6 +731,7 @@ section .guide_bar {
       }
     }
     .need_more_message {
+      word-break: keep-all;
       .mail_information a {
         font-size: 0.875em;
         font-weight: bold;
@@ -739,6 +747,8 @@ section .guide_bar {
   .story_title {
     @media screen and (max-width: 1000px) {
       font-size: 1.5em;
+      word-break: keep-all;
+
     }
     font-size: 1.875em;
     margin-top: 70px;
@@ -747,6 +757,12 @@ section .guide_bar {
     font-size: 0.875em;
     line-height: 24px;
     margin-bottom: 70px;
+    @media screen and (max-width: 1000px) {
+      text-align: justify;
+      br {
+        display: none;
+      }
+    }
     img {
       @media screen and (max-width: 1000px) {
         width: 98%;
@@ -803,7 +819,6 @@ section .guide_bar {
     }
     .creative_commons {
       background-color: #fff;
-      //height: 260px;
       margin: 33px 0 33px 0;
       &:last-child {
         margin: 33px 0 0 0;
@@ -824,7 +839,6 @@ section .guide_bar {
           width: 98%;
         }
         width: calc(100% - 408px);
-        //height: 260px;
         display: inline-block;
         .description {
           @media screen and (max-width: 1000px) {
@@ -876,12 +890,16 @@ section .guide_bar {
     overflow: auto;
 
     .person {
-      @media screen and (max-width: 1000px) {
+      @media screen and (max-width: 600px) {
+        margin: 0 0.4em 0 0.4em;
+        width: calc(50% - 0.8em);
+      }
+      @media screen and (max-width: 1000px) and (min-width: 600px) {
         margin: 0 0.8em 0 0;
         width: 160px;
       }
       width: 180px;
-      height: 220px;
+      height: 14.375em;
       float: left;
       text-align: center;
       margin: 0 20px 20px;
@@ -889,11 +907,10 @@ section .guide_bar {
         margin-right: 0;
       }
       .photo {
-        width: 180px;
+        width: 100%;
       }
       .photo img {
-        width: 160px;
-        height: 160px;
+        width: inherit;
         border-radius: 80px;
       }
       .name {
@@ -1041,7 +1058,7 @@ h1 {
 }
 
 .font-size-24 {
-  font-size: 1.500em;
+  font-size: 1.300em;
 }
 
 .font-bold {
