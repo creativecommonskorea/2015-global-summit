@@ -1,0 +1,299 @@
+.schedule {
+  text-align: center;
+  padding: 60px 0;
+  height: 100%;
+  background-color: #f7f7f8;
+  .days {
+    height: 60px;
+    .day {
+      float: left;
+      width: 270px;
+      margin-right: 6px;
+      height: 60px;
+      line-height: 60px;
+      vertical-align: middle;
+      font-size: 16px;
+      background-color: #ebebec;
+
+      &.on, &:hover {
+        cursor: pointer;
+        background-color: #ef513c;
+        color: #FFFFFF;
+      }
+    }
+    .day:last-child {
+      margin-right: 0px;
+    }
+  }
+  .day_concept {
+    height: 212px;
+    padding-top: 68px;
+    position: relative;
+    .date {
+      font-size: 22px;
+      color: #ef513c;
+    }
+    .concept_title {
+      margin-top: 29px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .concept_description {
+      font-size: 14px;
+      margin-top: 17px;
+    }
+    .day_location {
+      margin-top: 25px;
+      font-size: 14px;
+    }
+    .balloon {
+      position: absolute;
+      width: 313px;
+      height: 40px;
+      font-size: 12px;
+      padding: 10px 28px;
+      text-align: left;
+      word-break: keep-all;
+      background: url(/images/other/program_speech.png) no-repeat;
+      line-height: 17px;
+      top: 50px;
+      left: 670px;
+    }
+  }
+  .timetable {
+    //display: none;
+    text-align: right;
+    .concept_direction {
+      display: inline-block;
+      text-align: right;
+      font-size: 14px;
+      padding: 12px;
+      margin: 10px;
+      height: 33px;
+      line-height: 33px;
+      vertical-align: middle;
+      border: 1px solid #e3e3e3;
+      img {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 20px;
+      }
+      img:first-child {
+        margin-left: 0;
+      }
+    }
+    table {
+      text-align: center;
+      width: 100%;
+      border-collapse:collapse;
+      background-color: #fff;
+      tr {
+        height: 60px;
+        &.h120 {
+          height: 120px;
+        }
+        &.h240 {
+          height: 240px;
+        }
+        &.border_bottom td {
+          border-bottom: 1px solid #dedede;
+        }
+        td {
+          //padding: 5px;
+          height: 50px;
+          font-size: 13px;
+          &.h120 {
+            height: 110px;
+          }
+          &.h240 {
+            height: 230px;
+          }
+          &:first-child {
+            width: 204px;
+            vertical-align: top;
+            line-height: 56px;
+            font-size: 14px;
+          }
+          .light_bg {
+            height: 100%;
+            width: 100%;
+            vertical-align: middle;
+            border: 1px solid #dedede;
+            border-bottom: 3px solid #dedede;
+          }
+          div.gray_light {
+            @extend .light_bg;
+            background-color: #ececec;
+          }
+          div.whiteblue_light {
+            @extend .light_bg;
+            background-color: #ecf0f5;
+          }
+          div.whiteorange_light {
+            @extend .light_bg;
+            background-color: #ffdbd0;
+          }
+          div.whitegreen_light{
+            @extend .light_bg;
+            background-color: #d9f0ef;
+          }
+          div.whitepurple_light {
+            @extend .light_bg;
+            background-color: #e0dff9;
+          }
+          .corner_left {
+            border-radius: 5px 0 0 5px;
+          }
+          .corner_right {
+            border-radius: 0 5px 5px 0;
+          }
+          .corner_all {
+            border-radius: 5px;
+          }
+          .location {
+            font-size: 13px;
+            position: relative;
+            top: 10px;
+            z-index: 100;
+            left: 0;
+            color: #ef513c;
+            height: 0;
+            width: 90px;
+            float: right;
+            margin-right: 10px;
+            text-align: right;
+          }
+          .oneline_location {
+            @extend .location;
+            top: 4px;
+            margin-right: 3px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.table {
+  width: 100%;
+  height: 100%;
+  display: table;
+  background-color: #fff;
+  border-collapse: separate;
+  border-spacing: 5px;
+
+  .tr {
+    display: table-row;
+    &.h60 {
+      height: 60px;
+    }
+    &.h120 {
+      height: 120px;
+    }
+    &.h180 {
+      height: 180px;
+    }
+    &.h240 {
+      height: 240px;
+    }
+    &.border_top_bottom > .td {
+      border-top: 1px solid #ececec;
+      border-bottom: 1px solid #ececec;
+    }
+    &.border_bottom > .td {
+      border-bottom: 1px solid #ececec;
+    }
+    .td {
+      text-align: center;
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 13px;
+      line-height: 21px;
+      img {
+        vertical-align: middle;
+      }
+      &.gray_light {
+        background-color: #ececec;
+        border: 1px solid #dedede;
+        border-bottom: 3px solid #dedede;
+      }
+      &.whiteblue_light {
+        background-color: #ecf0f5;
+        border: 1px solid #dedede;
+        border-bottom: 3px solid #dedede;
+      }
+      &.whitepurple_light {
+        background-color: #e0dff9;
+        border: 1px solid #dedede;
+        border-bottom: 3px solid #dedede;
+      }
+      &.time {
+        width: 204px;
+      }
+      &.w50p {
+        padding: 19px 25px;
+        width: 50%;
+        margin-right: 5px;
+        .location {
+          font-size: 13px;
+          position: relative;
+          top: -13px;
+          z-index: 100;
+          left: 0;
+          color: #ef513c;
+          height: 0;
+          width: 100px;
+          float: right;
+          margin-right: -16px;
+          text-align: right;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+      &.w33p {
+        @extend .w50p;
+        width: 33%;
+      }
+      .multi_times {
+        line-height: 24px;
+      }
+      &.center {
+        text-align: center;
+        vertical-align: middle;
+      }
+      &.left {
+        text-align: left;
+      }
+    }
+  }
+}
+
+ul {
+  margin: 13px 0 0 0;
+  padding-left: 16px;
+}
+.wide_list {
+  line-height: 40px;
+}
+
+.p5855 {
+  padding: 5px 8px 5px 5px;
+}
+.pl21{
+  padding-left: 21px;
+}
+
+.h2 {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+.program_description {
+  font-size: 13px;
+  margin: 13px 0 0 0;
+}
+
+.day_detail {
+  display: none;
+}

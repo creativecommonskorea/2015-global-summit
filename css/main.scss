@@ -73,9 +73,9 @@ img {
 
     .mobile_b_menu {
       position: relative;
-      font-size: 1.275em;
-      height: 3em;
-      line-height: 3em;
+      font-size: 1em;
+      height: 2.5em;
+      line-height: 2.5em;
       color: #fff;
       width: calc(85% - 4px);
       padding: 0 25px;
@@ -1127,4 +1127,4 @@ a {
   color: inherit;
 }
 
-@import "keywords", "speakers", "newsboard", "attend";
+@import "keywords", "speakers", "newsboard", "attend", "programs";

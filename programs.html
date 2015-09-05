@@ -1,0 +1,44 @@
+---
+layout: base
+---
+
+<script>
+    $(document).ready(function () {
+        // schedule click event define
+        $('.day').click(function () {
+            console.log('.day clicked');
+            $('.day').each(function () {
+                $(this).removeClass('on');
+            });
+            $('.day_detail').hide();
+            $(this).addClass('on');
+
+            var thisId = $(this).attr('id');
+            $('#' + thisId + '_detail').show();
+        });
+
+        $('#day15').click();
+    });
+
+</script>
+<div class="wrap schedule">
+    <section>
+        <h1 class="title">일정</h1>
+
+        <div class="guide_bar_33"></div>
+        <div class="days">
+            <div class="day" id="day14">수요일 (10/14)</div>
+            <div class="day" id="day15">목요일 (10/15)</div>
+            <div class="day" id="day16">금요일 (10/16)</div>
+            <div class="day" id="day17">토요일 (10/17)</div>
+        </div>
+        {% include day14_detail.html %}
+        {% include day15_detail.html %}
+        {% include day16_detail.html %}
+        {% include day17_detail.html %}
+        <div class="apply_summit_wrap">
+            <span style="color:#ef513c; font-size: 12px;">* 서밋 신청은 9월 중 시작될 예정입니다.</span><br/>
+            <button class="apply_summit" type="button">CC Global Summit 2015 신청하기</button>
+        </div>
+    </section>
+</div>
