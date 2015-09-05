@@ -337,11 +337,12 @@ img {
     .program_list {
       @media screen and (max-width: 1000px) {
         width: 100%;
-        height: auto;
         position: relative;
         margin: 0 0 0.5em 0;
         padding: 1em 0;
         vertical-align: middle;
+        display: table;
+        height: 3.625em;
       }
       margin: 0 0 0 3px;
       padding: 0;
@@ -354,9 +355,9 @@ img {
       div {
         position: relative;
         @media screen and (max-width: 1000px) {
-          position: static;
-          height: 58px;
           vertical-align: middle;
+          display: inline-block;
+          height: 3.625em;
         }
       }
       .program_icon {
@@ -375,9 +376,11 @@ img {
       .program_sub_title {
         @media screen and (max-width: 600px) {
           float: left;
-          margin: 0;
           text-align: left;
-          font-size: 1em;
+          font-size: 0.90em;
+          width: 26%;
+          padding-left: 0.5em;
+          line-height: 3.625em;
         }
         @media screen and (max-width: 1000px) and (min-width: 600px) {
           float: left;
@@ -386,29 +389,35 @@ img {
           text-align: left;
           font-size: 1em;
         }
+        @media screen and (min-width: 1000px) {
+          margin-top: 17px;
+        }
         color: $color_sunset_orange_approx;
         font-size: 1.50em;
-        margin-top: 17px;
         font-weight: bold;
       }
       .program_sub_description {
         @media screen and (max-width: 600px) {
-          float: right;
-          text-align: left;
+          width: calc(74% - 6.5em);
+          float: left;
           font-size: 0.75em;
-          margin-top: 0;
-          padding: 0;
+          padding: 0 0.5em 0 0;
         }
         @media screen and (max-width: 1000px) and (min-width: 600px) {
+          width: calc(74% - 90px);
           float: left;
           text-align: left;
           font-size: 0.75em;
           margin-top: 0;
           padding: 0;
         }
+        @media screen and (min-width: 1000px) {
+          margin-top: 22px;
+        }
+        text-align: justify;
+        word-break: keep-all;
         color: $white;
         font-size: 0.813em;
-        margin-top: 22px;
         padding: 0 17px;
         br {
           line-height: 150%;
@@ -436,6 +445,10 @@ img {
     line-height: 20px;
   }
   .apply_summit {
+    @media screen and (max-width: 600px) {
+      width: 80%;
+      word-break: keep-all;
+    }
     width: 344px;
     height: 80px;
     font-size: 1.125em;
@@ -451,13 +464,14 @@ img {
 .main_speakes_wrap {
   @media screen and (max-width: 1000px) {
     height: auto;
+    padding-bottom: 35px;
   }
   height: 990px;
   section {
     text-align: center;
     padding-top: 79px;
     color: $color_baltic_sea_approx;
-    height: 853px;
+    height: auto ;
     h1 {
       margin: 0;
       font-size: 1.875em;
@@ -466,10 +480,46 @@ img {
       }
     }
     .speaker_image {
-      display: inline-block;
+      @media screen and (max-width: 1000px) {
+        margin-right: 0.5em;
+      }
       float: left;
       width: 178px;
+      margin-right: 30px;
     }
+    .kor_name {
+      font-size: 1.375em;
+      text-align: left;
+      vertical-align: bottom;
+      margin-top: 0.725em;
+    }
+    .eng_name {
+      font-size: 1.125em;
+      text-align: left;
+    }
+    .organize {
+      font-style: italic;
+      font-size: 0.875em;
+      color: #ff4f38;
+      text-align: left;
+    }
+    .guide_line {
+      width: 24px;
+      border-top: 1px solid #c2c2c2;
+      margin-bottom: 24px;
+    }
+    .speaker_description {
+      @media screen and (max-width: 1000px) {
+        padding-right: 1.0em;
+        font-size: 1.0em;
+      }
+      word-break: keep-all;
+      text-align: justify;
+      font-size: 0.875em;
+      padding-right: 33px;
+      line-height: 24px;
+    }
+
     .speaker_profile {
       @media screen and (max-width: 1000px) {
         float: left;
@@ -479,75 +529,27 @@ img {
       width: 324px;
       text-align: left;
       margin: 10px 0 0 48px;
-      .name {
-        margin-bottom: 13px;
-        .kor_name {
-          a {
-            &:hover {
-              text-decoration: underline;
-            }
-            text-decoration: none;
-            color: #333;
-          }
-          font-size: 1.500em;
-        }
-        .eng_name {
-          a {
-            &:hover {
-              text-decoration: underline;
-            }
-            text-decoration: none;
-            color: #333;
-          }
-          font-size: 1.125em;
-        }
-      }
-      .organize {
-        margin-bottom: 13px;
-        font-style: italic;
-        font-size: 0.875em;
-        color: #ff4f38;
-      }
-      .guide_line {
-        width: 24px;
-        border-top: 1px solid #c2c2c2;
-        margin-bottom: 24px;
-      }
-      .speaker_description {
-        @media screen and (max-width: 1000px) {
-          padding-right: 1.0em;
-          font-size: 1.0em;
-        }
-        word-break: keep-all;
-        text-align: justify;
-        font-size: 0.875em;
-        padding-right: 33px;
-        line-height: 24px;
-      }
     }
-    .speaker_list .speaker {
-      @media screen and (max-width: 1000px) {
-        width: 100%;
-        height: auto;
-        margin-bottom: 1.5em;
+    .speaker_list {
+      overflow: auto;
+      height: auto;
+      .speaker {
+        @media screen and (max-width: 1000px) {
+          width: 100%;
+          height: auto;
+          margin-bottom: 1.5em;
+        }
+        margin: 0;
+        border: 0;
+        width: 550px;
+        float: left;
+        height: 249px;
       }
-      margin: 0;
-      border: 0;
-      width: 550px;
-      float: left;
-      height: 249px;
     }
   }
   .see_more_speaker {
     text-align: right;
     font-size: 1.125em;
-    div > a {
-      &:hover {
-        text-decoration: underline;
-      }
-      text-decoration: none;
-      color: #333;
-    }
   }
 }
 
@@ -587,7 +589,7 @@ img {
           left: calc(50% - 128px);
         }
         font-size: 9px;
-        width: 300px; 
+        width: 300px;
         position: absolute;
         left: 20px;
         top: 55px;
