@@ -1,0 +1,33 @@
+---
+layout: base
+---
+
+<script>
+    $(document).ready(function(){
+        $('.mobile_day_button').click(function(){
+            $('.mobile_day_button').each(function(){
+                $(this).removeClass('on');
+            });
+            $(this).addClass('on');
+        });
+    });
+</script>
+
+<div class="wrap program_mobile">
+    <section>
+        <h1 class="title">일정</h1>
+        <div class="guide_bar_33"></div>
+        <div class="mobile_day_buttons">
+            <div class="mobile_day_button">수요일 (10/14)</div>
+            <div class="mobile_day_button">목요일 (10/15)</div>
+            <div class="mobile_day_button">금요일 (10/16)</div>
+            <div class="mobile_day_button">토요일 (10/17)</div>
+        </div>
+
+        {% include day14_detail_mobile.html %}
+        {% include day15_detail_mobile.html %}
+        {% include day16_detail_mobile.html %}
+        {% include day17_detail_mobile.html %}
+
+    </section>
+</div>

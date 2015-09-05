@@ -50,6 +50,20 @@ img {
   }
 }
 
+.mobile_logo_wrap {
+  @media screen and (min-width: 1000px) {
+    display: none;
+  }
+  @media screen and (max-width: 1000px) {
+    display: block;
+  }
+
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 1em 0;
+}
+
 .mobile_menu_wrap {
   @media screen and (min-width: 1000px) {
     display: none;

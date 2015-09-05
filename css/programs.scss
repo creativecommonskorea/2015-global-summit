@@ -85,7 +85,7 @@
     table {
       text-align: center;
       width: 100%;
-      border-collapse:collapse;
+      border-collapse: collapse;
       background-color: #fff;
       tr {
         height: 60px;
@@ -133,7 +133,7 @@
             @extend .light_bg;
             background-color: #ffdbd0;
           }
-          div.whitegreen_light{
+          div.whitegreen_light {
             @extend .light_bg;
             background-color: #d9f0ef;
           }
@@ -273,6 +273,7 @@ ul {
   margin: 13px 0 0 0;
   padding-left: 16px;
 }
+
 .wide_list {
   line-height: 40px;
 }
@@ -280,7 +281,8 @@ ul {
 .p5855 {
   padding: 5px 8px 5px 5px;
 }
-.pl21{
+
+.pl21 {
   padding-left: 21px;
 }
 
@@ -289,6 +291,7 @@ ul {
   font-weight: bold;
   margin: 0;
 }
+
 .program_description {
   font-size: 13px;
   margin: 13px 0 0 0;
@@ -296,4 +299,135 @@ ul {
 
 .day_detail {
   display: none;
+}
+
+.program_mobile {
+  text-align: center;
+  padding: 60px 0;
+  overflow: auto;
+  height: auto;
+  section {
+    width: 98%;
+    .mobile_day_buttons {
+      width: 100%;
+      height: auto;
+      overflow: auto;
+      .mobile_day_button {
+        float: left;
+        width: calc(25% - 0.2em);
+        margin: 0 0.1em;
+        background-color: #ebebec;
+        font-weight: normal;
+        padding: 0.5em 0;
+        font-size: 0.8em;
+        &.on {
+          background-color: #ef513c;
+          color: #FFFFFF;
+          font-weight: bold;
+        }
+      }
+    }
+    .mobile_day_detail {
+      .date {
+        color: #ef513c;
+        font-weight: bold;
+        font-size: 0.725em;
+        width: 100%;
+        text-align: center;
+        margin: 2em 0 0.7em 0;
+      }
+      .day_concept_desc {
+        padding: 0.5em 1.325em;
+        font-size: 0.625em;
+        border-radius: 1.325em;
+        border: 1px solid #ebebec;
+        background-color: #fff;
+        word-break: keep-all;
+      }
+      .day_concept {
+        font-weight: bold;
+        font-size: 1.0em;
+      }
+      .day_description {
+        @media screen and (max-width: 600px) {
+          text-align: left;
+        }
+        @media screen and (min-width: 600px) {
+          text-align: center;
+        }
+        font-size: 0.925em;
+        margin: 1em 0 2em 0;
+      }
+      .subject_icons {
+        display: inline-block;
+        text-align: right;
+        font-size: 0.725em;
+        padding: 1em;
+        margin: 0.525em;
+        height: 2.5em;
+        line-height: 2.5em;
+        vertical-align: middle;
+        border: 1px solid #e3e3e3;
+        img {
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 0.4em;
+        }
+        img:first-child {
+          margin-left: 0;
+        }
+      }
+      .time_box {
+        border: 1px solid #e3e3e3;
+        border-bottom: 2px solid #e3e3e3;
+        overflow: auto;
+        padding: 0.5em;
+        margin-top: 0.225em;
+        .time {
+          float: left;
+          font-size: 0.75em;
+          width: 17%;
+          text-align: left;
+        }
+
+        .time_detail {
+          float: left;
+          width: 83%;
+          text-align: left;
+          .sessions {
+            margin-top: 0.2em;
+            &:first-child {
+              margin-top: 0;
+            }
+            &.lightgreen {
+              border-radius: 5px;
+              background-color: lightgreen;
+              border: #ececec 1px solid;
+              padding: 0.3em;
+            }
+            &.lightblue {
+              border-radius: 5px;
+              background-color: lightblue;
+              border: #ececec 1px solid;
+              padding: 0.3em;
+            }
+            .location {
+              font-size: 0.8em;
+              color: #ef513c;
+            }
+            .title {
+              font-size: 1.1em;
+              font-weight: bold;
+              margin: 1.1em 0;
+            }
+            .detail {
+              font-size: 0.725em;
+              font-weight: normal;
+              line-height: 180%;
+            }
+          }
+        }
+      }
+    }
+  }
 }
