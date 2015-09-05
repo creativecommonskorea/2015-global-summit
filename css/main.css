@@ -259,7 +259,7 @@ img {
       padding: 0;
       border: 0;
       float: left;
-      width: 217px;
+      width: calc(20% - 3px);
       height: 228px;
       background: rgba(255, 255, 255, 0.1);
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#60000000, endColorstr=#60000000); }
@@ -369,11 +369,8 @@ img {
         word-break: keep-all; } }
 
 .main_speakes_wrap {
-  height: 990px; }
-  @media screen and (max-width: 1000px) {
-    .main_speakes_wrap {
-      height: auto;
-      padding-bottom: 35px; } }
+  height: auto;
+  padding-bottom: 35px; }
   .main_speakes_wrap section {
     text-align: center;
     padding-top: 79px;
@@ -412,11 +409,10 @@ img {
       word-break: keep-all;
       text-align: justify;
       font-size: 0.875em;
-      padding-right: 33px;
+      padding-right: 1em;
       line-height: 24px; }
       @media screen and (max-width: 1000px) {
         .main_speakes_wrap section .speaker_description {
-          padding-right: 1.0em;
           font-size: 1.0em; } }
     .main_speakes_wrap section .speaker_profile {
       display: inline-block;
@@ -431,9 +427,9 @@ img {
       overflow: auto;
       height: auto; }
       .main_speakes_wrap section .speaker_list .speaker {
-        margin: 0;
+        margin: 0 0 0 10px;
         border: 0;
-        width: 550px;
+        width: calc(50% - 10px);
         float: left;
         height: 249px; }
         @media screen and (max-width: 1000px) {

@@ -348,7 +348,7 @@ img {
       padding: 0;
       border: 0;
       float: left;
-      width: 217px;
+      width: calc(20% - 3px);
       height: 228px;
       background: $white_10;
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#60000000, endColorstr=#60000000);
@@ -462,11 +462,8 @@ img {
 }
 
 .main_speakes_wrap {
-  @media screen and (max-width: 1000px) {
-    height: auto;
-    padding-bottom: 35px;
-  }
-  height: 990px;
+  height: auto;
+  padding-bottom: 35px;
   section {
     text-align: center;
     padding-top: 79px;
@@ -510,13 +507,12 @@ img {
     }
     .speaker_description {
       @media screen and (max-width: 1000px) {
-        padding-right: 1.0em;
         font-size: 1.0em;
       }
       word-break: keep-all;
       text-align: justify;
       font-size: 0.875em;
-      padding-right: 33px;
+      padding-right: 1em;
       line-height: 24px;
     }
 
@@ -539,9 +535,9 @@ img {
           height: auto;
           margin-bottom: 1.5em;
         }
-        margin: 0;
+        margin: 0 0 0 10px;
         border: 0;
-        width: 550px;
+        width: calc(50% - 10px);
         float: left;
         height: 249px;
       }
