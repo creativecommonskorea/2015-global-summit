@@ -1,0 +1,98 @@
+.attend_wrap {
+  padding: 60px 0;
+  text-align: center;
+  background-color: #f7f7f8;
+  overflow: auto; }
+  .attend_wrap .attend_guide {
+    display: inline-block;
+    width: 590px;
+    height: 40px;
+    line-height: 40px;
+    color: #333;
+    border: 1px solid #d7d7d7;
+    border-radius: 15px;
+    font-size: 14px; }
+    .attend_wrap .attend_guide .step {
+      color: #ee4023;
+      font-weight: bold; }
+  .attend_wrap .ticket_info {
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    margin: 35px 0 0 0;
+    width: 978px;
+    height: 284px;
+    background: #fff url("/images/other/ticket_table_bg.png") no-repeat;
+    padding: 0px; }
+    .attend_wrap .ticket_info table {
+      width: 958px;
+      height: 265px;
+      margin: 10px;
+      border-collapse: collapse;
+      border: 0; }
+      .attend_wrap .ticket_info table tr.h40 {
+        height: 40px; }
+      .attend_wrap .ticket_info table tr > th, .attend_wrap .ticket_info table tr > td {
+        border-right: 1px solid #d7d7d7;
+        border-bottom: 1px solid #d7d7d7;
+        text-align: center; }
+        .attend_wrap .ticket_info table tr > th:last-child, .attend_wrap .ticket_info table tr > td:last-child {
+          border-right: 0; }
+      .attend_wrap .ticket_info table tr th:last-child {
+        width: 280px; }
+      .attend_wrap .ticket_info table tr td.price_show {
+        color: #ee4023;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: bold; }
+    .attend_wrap .ticket_info .shadow {
+      position: absolute; }
+
+.launch {
+  background-color: #fff; }
+  .launch .launch_box {
+    display: inline-block;
+    width: 978px;
+    height: 160px;
+    border: 1px solid #d7d7d7;
+    margin-top: 35px; }
+    .launch .launch_box .title {
+      height: 52px;
+      line-height: 52px;
+      font-size: 18px;
+      color: #f0513d;
+      background-color: #f6f6f6;
+      font-weight: bold; }
+    .launch .launch_box .launch_select {
+      height: 108px;
+      line-height: 108px; }
+      .launch .launch_box .launch_select span {
+        margin-right: 50px; }
+        .launch .launch_box .launch_select span:last-child {
+          margin-right: 0; }
+  .launch .pay_or_not {
+    margin-top: 60px; }
+    .launch .pay_or_not button {
+      cursor: pointer;
+      width: 225px;
+      height: 67px;
+      line-height: 67px;
+      color: #fff;
+      font-size: 16px;
+      border: 0; }
+      .launch .pay_or_not button:first-child {
+        margin-right: 30px; }
+      .launch .pay_or_not button#doPay {
+        background-color: #f35b42; }
+      .launch .pay_or_not button#cancel {
+        background-color: #666; }
+
+.move_step_icon {
+  position: absolute;
+  margin: 0 auto;
+  padding: 0;
+  z-index: 100;
+  top: 655px;
+  text-align: center; }
+
+/*# sourceMappingURL=attend.css.map */
