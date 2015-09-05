@@ -623,7 +623,10 @@ section .guide_bar {
     line-height: 24px;
     margin-bottom: 33px; }
   .past_global_summit .past_links img {
-    width: 98%; }
+    width: 49%; }
+    @media screen and (max-width: 1000px) {
+      .past_global_summit .past_links img {
+        width: 98%; } }
 
 .promote_main_wrap {
   padding: 60px 0;

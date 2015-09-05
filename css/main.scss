@@ -769,7 +769,10 @@ section .guide_bar {
   }
   .past_links {
     img {
-      width: 98%;
+      @media screen and (max-width: 1000px) {
+        width: 98%;
+      }
+      width: 49%;
     }
   }
 }
