@@ -5,15 +5,94 @@
       title: "등록"
       detail: "이름표와 슬랙(Slack) 가입 및 등록을 확인하세요."
 
-- time: "10:00 ~10:20"
+- time: "10:00 ~10:10"
   sessions:
-    - location: "국립중앙박물관 대강당"
-      title: "인사말"
+    - title: "개회사"
+      detail: "CC 이사"
+      location: "컨퍼런스 룸"
+
+- time: "10:10 ~10:40"
+  sessions:
+    - title: "키노트"
+      detail: "줄리아 렌다"
+      location: "컨퍼런스 룸"
+
+- time: "10:40 ~10:50"
+  sessions:
+    - title: "휴식"
+
+- time: "10:50 ~12:20"
+  sessions:
+    - title: "저작권개혁"
+      location: "컨퍼런스 룸"
       detail: >
-        서정욱 / CCKOREA 이사장 <br/>
-        미정 / 후원 기관 or 기업 대표
-      box: "lightgreen"
-    - location: "국립중앙박물관 대강당 앞 로비"
-      title: "등록"
-      detail: "이름표와 슬랙(Slack) 가입 및 등록을 확인하세요"
-      box: "lightblue"
+        "Jump-starting commons advocacy and copyright reform", Tim Volmer and affiliates
+      box: lightblue
+    - title: "오픈액세스(데이터)"
+      location: "카카오룸"
+      detail: >
+        "Open Access: Retaining and Regaining Author Publication Rights (possible expansion to address TDM and state)", Diane Peters, Thomas Margoni, Michael Wolfe, Ignasi Labastida (possibly, Julia Reda)<br>
+        Expand session by 20 minutes to allow: #113 (Using Open Data for Advocacy Storytelling: A workshop with the Open Access Button), and Thomas Margoni // Diane on TDM and OA talk
+      box: lightgreen
+    - title: "Organising the Commons"
+      location: "아이디어 빌리지"
+      detail: >
+        "(60 min) #90 Rightsstatements.org: Developing a Standard for Communicating Rights Beyond CC - and the new Public Domain Mark.", Diane Peters, Paul Keller, Maarten Zeinstra <br>
+        Uses of the blockchain for Creative Commons	Primavera De Filippi
+      box: lightpurple
+    - title: "CC 라이선스"
+      location: "오픈 스페이스"
+      detail: >
+        "#39 CC 라이선스와 위키미디어/위키피디아", Stephen LaPorte 위키미디어 법률 고문 <br/>
+        "#14 CC licensing and terms of service", Sarah Pearson
+      box: lightorange
+
+- time: "12:20 ~13:50"
+  sessions:
+    - title: "점심"
+
+- time: "13:50 ~14:50"
+  sessions:
+    - title: "플랫폼과 CC라이선스"
+      location: "컨퍼런스 룸"
+      detail: >
+        "#108 The Vibrant and Social Commons: How Users Engage with the Commons Today (combined with #100)", Jane, Ryan, Eric
+      box: lightblue
+    - title: "커뮤니티"
+      location: "카카오룸"
+      detail: >
+        "#11 CC Affiliates Policies Hand-On", John Weitzmann
+      box: lightgreen
+
+- time: "14:50 ~15:20"
+  sessions:
+    - title: "휴식"
+
+- time: "15:20 ~16:50"
+  sessions:
+    - title: "커뮤니티"
+      location: "컨퍼런스 룸"
+      detail: >
+        "Affiliates 2.0 - CC as a true network organisation - follow up to the miniconf from Day 0", Alek Tarkowski, Paul Keller
+      box: lightblue
+    - title: "OER"
+      location: "카카오룸"
+      detail: >
+        "Edu (30 min): #55 / #81: Let's do open education! Testing a toolkit for schools and educators", Anna Stokowska, Kamil Åšliwowski, Alek Tarkowski <br>
+        "Edu (45 min): #112, #64, #69: OER Showcase", Mostafa Azad Kamal, Bekka Kahn, George Abdelnour <br>
+        "Edu (15 min): #91: School of Open Showcase and Transition", Simeon Oriko
+      box: lightgreen
+    - title: "디자인"
+      location: "아이디어빌리지"
+      detail: >
+        "CC+Design (#15) + #46 (how will CC shape future of design) (similar rights and patent rights and CC+)", Thomas Margoni, Jane Park, Diane (?), McCoy Smith (intel)(?), CERN?
+      box: lightpurple
+
+- time: "16:50 ~17:00"
+  sessions:
+    - title: "휴식"
+
+- time: "17:00 ~17:40"
+  sessions:
+    - title: "키노트"
+      detail: "캐롤리나, 제시카"

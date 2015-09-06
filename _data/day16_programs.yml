@@ -25,7 +25,7 @@
   sessions:
     - title: "오픈글램"
       detail: >
-        "#87 Remixing the museum: Using open practices to engage GLAM communities", Andres Guadamuz
+        "#87 Remixing the museum: Using open practices to engage GLAM communities", Andres Guadamuz <br>
         "(45 min. Panel )  / #25 CC in large institutions", Kat Braybrooke
       location: "대강당"
       box: lightblue
@@ -35,6 +35,7 @@
     - title: "OER"
       detail: >
         "Edu (50 min): #61 /#47: Moving OER into the Mainstream: Global Coordination", Cable Green, Soohyun Pae (+ OER / MOOC speakers: TBD), Delia Browne, Alek Tarkowski, Nicole Allen, TJ Bliss, Meena Hwang
+        <br>
         "Edu (30 min): #36: Education Moonshot: Shifting OER from +10% to 10x", Ryan Merkley, TJ Bliss, Esther Wojcicki, Cable Green
       location: "세미나룸"
       box: lightgreen
@@ -54,7 +55,7 @@
     - title: "저작권"
       location: "세미나룸"
       detail: >
-        Copyright Advocacy: Over the Long Terms: The State of Activism on Too-Long Copyright Terms (And How You Can Join In) COMBINE WITH
+        Copyright Advocacy: Over the Long Terms: The State of Activism on Too-Long Copyright Terms (And How You Can Join In) COMBINE WITH <br>
         Unpacking an Activist Toolbox: EFF's Tools and Tips for Effective Copyright Advocacy
       box: lightgreen
     - title: "CCL 번역"
@@ -82,9 +83,9 @@
     - title: "오픈데이터"
       location: "대강당"
       detail: >
-        "개방을 통한 시민권 운동", Werner Westermann JuÃ¡rez
-        "부르키나파소의 오픈데이터와 CCL", Abdrahamane Ouedraogo
-        "인도네시아와 아프리카의 CCL, 오픈데이터, Civic Hacking", Yuandra, Brian Ssennoga
+        "개방을 통한 시민권 운동", Werner Westermann JuÃ¡rez <br>
+        "부르키나파소의 오픈데이터와 CCL", Abdrahamane Ouedraogo <br>
+        "인도네시아와 아프리카의 CCL, 오픈데이터, Civic Hacking", Yuandra, Brian Ssennoga <br>
         "오픈 라이선스에 의한 항공사진의 혁신적 이용", Heather Leson
       box: lightblue
     - title: "저작위원회 창조자원화 포럼"
@@ -98,7 +99,7 @@
     - title: "CCL 4.0 논의"
       location: "한글박물관 강당"
       detail: >
-        "#39 Free Licensing the Sum of all Knowledge", Stephen LaPorte
+        "#39 Free Licensing the Sum of all Knowledge", Stephen LaPorte <br>
         "#14 CC licensing and terms of service (to include within presentation substance of #3: 4.0 Upgrades for Platforms)", Sarah Pearson
       box: lightorange
     - title: "저작권"

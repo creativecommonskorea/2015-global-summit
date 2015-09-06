@@ -1,10 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+<div class="mobile_day_detail" id="day17">
+    <div class="date">10.17 (토)</div>
+    <div class="day_concept_desc">
+        여우는 죽을 때 구릉을 향(向)해 머리를 두고 초심으로 돌아간다라는 뜻입니다.
+    </div>
+    <div class="day_concept">
+        Future of Sharing: 수구초심(首邱初心)
+    </div>
+    <div class="day_description">
+        It means “one can’t forget one’s roots.”, like when we think of the future of sharing.
+        <br/><br/>
+        <img src="/images/other/bullet.png" alt="-" />
+        <span class="font-bold">장소</span>:
+        국립중앙박물관 대강당/ 소강당/ 세미나실
+    </div>
+    <div class="subject_icons">
+        <img src="/images/other/program_icon_01.png" alt="강연"/> 강연
+        <img src="/images/other/program_icon_02.png" alt="포럼"/> 포럼
+        <img src="/images/other/program_icon_03.png" alt="워크샵"/> 워크샵
+        <img src="/images/other/program_icon_04.png" alt="이벤트"/> 이벤트
+    </div>
 
-</body>
-</html>
+    {% for box in site.data.day16_programs %}
+    <div class="time_box">
+        <div class="time">{{ box.time }}</div>
+        <div class="time_detail">
+            {% for s in box.sessions %}
+            <div class="sessions {{s.box}}">
+                <div class="location" {% if s.location == blank %}style="display:none;"{% endif %}>{{ s.location }}</div>
+                <div class="title">{{ s.title }}</div>
+                <div class="detail">{{ s.detail }}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+
+</div>
