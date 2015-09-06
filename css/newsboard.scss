@@ -44,6 +44,12 @@
         a {
           color: #ef513c;
         }
+
+        .person > img {
+          width: 160px;
+          height: 160px;
+          border-radius: 80px;
+        }
       }
     }
   }
