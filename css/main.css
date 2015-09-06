@@ -1100,6 +1100,8 @@ a {
       word-break: keep-all; }
       .newsboard_wrap article .latest_article_contents .content_text img {
         width: 100%; }
+      .newsboard_wrap article .latest_article_contents .content_text a {
+        color: #ef513c; }
   .newsboard_wrap .article_list {
     margin: 60px 0; }
     .newsboard_wrap .article_list .article_box {

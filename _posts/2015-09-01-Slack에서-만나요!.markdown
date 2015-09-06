@@ -6,7 +6,7 @@ abstract: "서밋 전/후로 주-욱 네트워킹을 이어가요~"
 thumbnail: "http://127.0.0.1:4000/images/news/news2_slack.jpg"
 ---
 
-!['The Slack!'](http://127.0.0.1:4000/images/news/news2_slack.jpg)
+!['The Slack!'](/images/news/news2_slack.jpg)
 
 여러분이 참가하실 올해 CC Global Summit에서는 참가자들이 많은 참가자들과 
 
