@@ -1,4 +1,4 @@
-//@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
 //colors
 $color_tapa_approx: #777;
@@ -70,9 +70,12 @@ img {
   }
   .mobile_menu_button {
     position: absolute;
-    top: 20px;
+    top: 35px;
     left: 20px;
     z-index: 1;
+    img {
+      width: 20px;
+    }
   }
   .mobile_menu_back {
     position: absolute;
@@ -565,23 +568,22 @@ img {
 
 .partner_wrap {
   color: #333;
-  padding: 60px 0;
+  padding: 30px 0;
   text-align: center;
   //background-color: #272a32;
 
   .sponsor_logos {
     @media screen and (max-width: 1000px) {
-      height: 22.1em;
       text-align: center;
     }
+    overflow: auto;
+    height: auto;
     margin: 0;
     padding: 0;
-    overflow: auto;
     vertical-align: middle;
     text-align: center;
     width: 100%;
     position: relative;
-    height: 90px;
     .logos {
       @media screen and (max-width: 1000px) {
         width: 100%;
@@ -1041,6 +1043,13 @@ h1 {
     margin: 0;
     font-weight: normal;
     font-size: 1.875em;
+  }
+}
+h2 {
+  &.normal {
+    margin: 0;
+    font-weight: normal;
+    font-size: 1.5em;
   }
 }
 

@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 body {
   margin: 0;
   padding: 0;
@@ -40,9 +41,11 @@ img {
     display: none; } }
 .mobile_menu_wrap .mobile_menu_button {
   position: absolute;
-  top: 20px;
+  top: 35px;
   left: 20px;
   z-index: 1; }
+  .mobile_menu_wrap .mobile_menu_button img {
+    width: 20px; }
 .mobile_menu_wrap .mobile_menu_back {
   position: absolute;
   top: 0px;
@@ -455,20 +458,19 @@ img {
 
 .partner_wrap {
   color: #333;
-  padding: 60px 0;
+  padding: 30px 0;
   text-align: center; }
   .partner_wrap .sponsor_logos {
+    overflow: auto;
+    height: auto;
     margin: 0;
     padding: 0;
-    overflow: auto;
     vertical-align: middle;
     text-align: center;
     width: 100%;
-    position: relative;
-    height: 90px; }
+    position: relative; }
     @media screen and (max-width: 1000px) {
       .partner_wrap .sponsor_logos {
-        height: 22.1em;
         text-align: center; } }
     .partner_wrap .sponsor_logos .logos {
       vertical-align: middle;
@@ -842,6 +844,11 @@ h1.normal {
   margin: 0;
   font-weight: normal;
   font-size: 1.875em; }
+
+h2.normal {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.5em; }
 
 .guide_bar_33 {
   width: 53px;
