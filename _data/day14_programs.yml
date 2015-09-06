@@ -1,19 +1,12 @@
 ---
-- time: "09:30 ~10:00"
+- time: "10:00 ~15:00"
   sessions:
-    - location: "국립중앙박물관 대강당 앞 로비"
-      title: "등록"
-      detail: "이름표와 슬랙(Slack) 가입 및 등록을 확인하세요."
+    - title: "대륙별 미팅"
 
-- time: "10:00 ~10:20"
+- time: "16:00 ~19:00"
   sessions:
-    - location: "국립중앙박물관 대강당"
-      title: "인사말"
-      detail: >
-        서정욱 / CCKOREA 이사장 <br/>
-        미정 / 후원 기관 or 기업 대표
-      box: "lightgreen"
-    - location: "국립중앙박물관 대강당 앞 로비"
-      title: "등록"
-      detail: "이름표와 슬랙(Slack) 가입 및 등록을 확인하세요"
-      box: "lightblue"
+    - title: "휴식"
+
+- time: "19:00 ~22:00"
+  sessions:
+    - title: "Welcome Party"

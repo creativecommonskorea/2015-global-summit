@@ -1496,87 +1496,99 @@ ul {
           background-color: #ef513c;
           color: #FFFFFF;
           font-weight: bold; }
-    .program_mobile section .mobile_day_detail .date {
-      color: #ef513c;
-      font-weight: bold;
-      font-size: 0.725em;
-      width: 100%;
-      text-align: center;
-      margin: 2em 0 0.7em 0; }
-    .program_mobile section .mobile_day_detail .day_concept_desc {
-      padding: 0.5em 1.325em;
-      font-size: 0.625em;
-      border-radius: 1.325em;
-      border: 1px solid #ebebec;
-      background-color: #fff;
-      word-break: keep-all; }
-    .program_mobile section .mobile_day_detail .day_concept {
-      font-weight: bold;
-      font-size: 1.0em; }
-    .program_mobile section .mobile_day_detail .day_description {
-      font-size: 0.925em;
-      margin: 1em 0 2em 0; }
-      @media screen and (max-width: 600px) {
-        .program_mobile section .mobile_day_detail .day_description {
-          text-align: left; } }
-      @media screen and (min-width: 600px) {
-        .program_mobile section .mobile_day_detail .day_description {
-          text-align: center; } }
-    .program_mobile section .mobile_day_detail .subject_icons {
-      display: inline-block;
-      text-align: right;
-      font-size: 0.725em;
-      padding: 1em;
-      margin: 0.525em;
-      height: 2.5em;
-      line-height: 2.5em;
-      vertical-align: middle;
-      border: 1px solid #e3e3e3; }
-      .program_mobile section .mobile_day_detail .subject_icons img {
+    .program_mobile section .mobile_day_detail {
+      display: none; }
+      .program_mobile section .mobile_day_detail .date {
+        color: #ef513c;
+        font-weight: bold;
+        font-size: 0.725em;
+        width: 100%;
+        text-align: center;
+        margin: 2em 0 0.7em 0; }
+      .program_mobile section .mobile_day_detail .day_concept_desc {
+        padding: 0.5em 1.325em;
+        font-size: 0.625em;
+        border-radius: 1.325em;
+        border: 1px solid #ebebec;
+        background-color: #fff;
+        word-break: keep-all; }
+      .program_mobile section .mobile_day_detail .day_concept {
+        font-weight: bold;
+        font-size: 1.0em; }
+      .program_mobile section .mobile_day_detail .day_description {
+        font-size: 0.925em;
+        margin: 1em 0 2em 0; }
+        @media screen and (max-width: 600px) {
+          .program_mobile section .mobile_day_detail .day_description {
+            text-align: left; } }
+        @media screen and (min-width: 600px) {
+          .program_mobile section .mobile_day_detail .day_description {
+            text-align: center; } }
+      .program_mobile section .mobile_day_detail .subject_icons {
         display: inline-block;
+        text-align: right;
+        font-size: 0.725em;
+        padding: 1em;
+        margin: 0.525em;
+        height: 2.5em;
+        line-height: 2.5em;
         vertical-align: middle;
-        margin-left: 0.4em; }
-      .program_mobile section .mobile_day_detail .subject_icons img:first-child {
-        margin-left: 0; }
-    .program_mobile section .mobile_day_detail .time_box {
-      border: 1px solid #e3e3e3;
-      border-bottom: 2px solid #e3e3e3;
-      overflow: auto;
-      padding: 0.5em;
-      margin-top: 0.225em; }
-      .program_mobile section .mobile_day_detail .time_box .time {
-        float: left;
-        font-size: 0.75em;
-        width: 17%;
-        text-align: left; }
-      .program_mobile section .mobile_day_detail .time_box .time_detail {
-        float: left;
-        width: 83%;
-        text-align: left; }
-        .program_mobile section .mobile_day_detail .time_box .time_detail .sessions {
-          margin-top: 0.2em; }
-          .program_mobile section .mobile_day_detail .time_box .time_detail .sessions:first-child {
-            margin-top: 0; }
-          .program_mobile section .mobile_day_detail .time_box .time_detail .sessions.lightgreen {
-            border-radius: 5px;
-            background-color: lightgreen;
-            border: #ececec 1px solid;
-            padding: 0.3em; }
-          .program_mobile section .mobile_day_detail .time_box .time_detail .sessions.lightblue {
-            border-radius: 5px;
-            background-color: lightblue;
-            border: #ececec 1px solid;
-            padding: 0.3em; }
-          .program_mobile section .mobile_day_detail .time_box .time_detail .sessions .location, .program_mobile section .mobile_day_detail .time_box .time_detail .sessions .schedule .timetable table tr td .oneline_location, .schedule .timetable table tr td .program_mobile section .mobile_day_detail .time_box .time_detail .sessions .oneline_location {
-            font-size: 0.8em;
-            color: #ef513c; }
-          .program_mobile section .mobile_day_detail .time_box .time_detail .sessions .title {
-            font-size: 1.1em;
-            font-weight: bold;
-            margin: 1.1em 0; }
-          .program_mobile section .mobile_day_detail .time_box .time_detail .sessions .detail {
-            font-size: 0.725em;
-            font-weight: normal;
-            line-height: 180%; }
+        border: 1px solid #e3e3e3; }
+        .program_mobile section .mobile_day_detail .subject_icons img {
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 0.4em; }
+        .program_mobile section .mobile_day_detail .subject_icons img:first-child {
+          margin-left: 0; }
+      .program_mobile section .mobile_day_detail .time_box {
+        border: 1px solid #e3e3e3;
+        border-bottom: 2px solid #e3e3e3;
+        overflow: auto;
+        padding: 0.5em;
+        margin-top: 0.225em; }
+        .program_mobile section .mobile_day_detail .time_box .time {
+          float: left;
+          font-size: 0.75em;
+          width: 17%;
+          text-align: left; }
+        .program_mobile section .mobile_day_detail .time_box .time_detail {
+          float: left;
+          width: 83%;
+          text-align: left; }
+          .program_mobile section .mobile_day_detail .time_box .time_detail .sessions {
+            margin-top: 0.2em; }
+            .program_mobile section .mobile_day_detail .time_box .time_detail .sessions:first-child {
+              margin-top: 0; }
+            .program_mobile section .mobile_day_detail .time_box .time_detail .sessions.lightgreen {
+              border-radius: 5px;
+              background-color: lightgreen;
+              border: #ececec 1px solid;
+              padding: 0.3em; }
+            .program_mobile section .mobile_day_detail .time_box .time_detail .sessions.lightblue {
+              border-radius: 5px;
+              background-color: #ecf0f5;
+              border: 1px solid #dedede;
+              padding: 0.3em; }
+            .program_mobile section .mobile_day_detail .time_box .time_detail .sessions.lightpurple {
+              border-radius: 5px;
+              background-color: #e0dff9;
+              border: 1px solid #dedede;
+              padding: 0.3em; }
+            .program_mobile section .mobile_day_detail .time_box .time_detail .sessions.lightorange {
+              background-color: #ffdbd0;
+              border: 1px solid #dedede;
+              padding: 0.3em;
+              border-radius: 5px; }
+            .program_mobile section .mobile_day_detail .time_box .time_detail .sessions .location, .program_mobile section .mobile_day_detail .time_box .time_detail .sessions .schedule .timetable table tr td .oneline_location, .schedule .timetable table tr td .program_mobile section .mobile_day_detail .time_box .time_detail .sessions .oneline_location {
+              font-size: 0.8em;
+              color: #ef513c; }
+            .program_mobile section .mobile_day_detail .time_box .time_detail .sessions .title {
+              font-size: 1.1em;
+              font-weight: bold;
+              margin: 1.1em 0; }
+            .program_mobile section .mobile_day_detail .time_box .time_detail .sessions .detail {
+              font-size: 0.725em;
+              font-weight: normal;
+              line-height: 180%; }
 
 /*# sourceMappingURL=main.css.map */

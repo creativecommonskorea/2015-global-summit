@@ -9,7 +9,13 @@ layout: base
                 $(this).removeClass('on');
             });
             $(this).addClass('on');
+
+            var targetId = $(this).attr('data-target');
+            $('.mobile_day_detail').hide();
+            $('#'+ targetId).show();
         });
+
+        $('#init_target').trigger('click');
     });
 </script>
 
@@ -18,10 +24,10 @@ layout: base
         <h1 class="title">일정</h1>
         <div class="guide_bar_33"></div>
         <div class="mobile_day_buttons">
-            <div class="mobile_day_button">수요일 (10/14)</div>
-            <div class="mobile_day_button">목요일 (10/15)</div>
-            <div class="mobile_day_button">금요일 (10/16)</div>
-            <div class="mobile_day_button">토요일 (10/17)</div>
+            <div class="mobile_day_button" data-target="day14">수요일 (10/14)</div>
+            <div class="mobile_day_button" data-target="day15" id="init_target">목요일 (10/15)</div>
+            <div class="mobile_day_button" data-target="day16">금요일 (10/16)</div>
+            <div class="mobile_day_button" data-target="day17">토요일 (10/17)</div>
         </div>
 
         {% include day14_detail_mobile.html %}
