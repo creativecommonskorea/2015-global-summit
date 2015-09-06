@@ -3,10 +3,10 @@ layout: post
 title:  "여러분도 서밋 발룬티어가 될 수 있습니다."
 date:   "2015-09-02 13:00:28"
 abstract: "너! 내 동료가 돼라!" 
-thumbnail: "http://127.0.0.1:4000/images/news/news3_volunteer.png"
+thumbnail: "/images/news/news3_volunteer.png"
 ---
 
-!['잡아와'](http://127.0.0.1:4000/images/news/news3_volunteer.png)
+!['잡아와'](/images/news/news3_volunteer.png)
 
 2년에 한번 열리는 글로벌 써밋이 열리는 CC글로벌 써밋에는 약 200여명의 외국인이 서울을 방문할 예정입니다. 
 CC활동가분들 뿐만 아니라 위키미디어, OKFN, 아티스트, OER, 오픈액세스 등 다양한 분야의 전세계 공유 전도사들이 한자리에 모이는 축제에서 참여하는 사람들이 새로운 영감도 얻고 함께 즐길 수 있도록 여러분의 관심과 열정이 필요해요!

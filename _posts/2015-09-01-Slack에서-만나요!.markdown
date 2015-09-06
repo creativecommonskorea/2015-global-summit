@@ -3,7 +3,7 @@ layout: post
 title:  "Slack에서 만나요!"
 date:   "2015-09-01 15:00:01"
 abstract: "서밋 전/후로 주-욱 네트워킹을 이어가요~"
-thumbnail: "http://127.0.0.1:4000/images/news/news2_slack.jpg"
+thumbnail: "/images/news/news2_slack.jpg"
 ---
 
 !['The Slack!'](/images/news/news2_slack.jpg)

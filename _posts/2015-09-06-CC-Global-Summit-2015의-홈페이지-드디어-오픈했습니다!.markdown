@@ -3,7 +3,7 @@ layout: post
 title:  "CC Global Summit 2015의 홈페이지!! 드디어 오픈했습니다 :D"
 date:   "2015-09-06 12:00:00"
 abstract: "열려라! 참깨 참깨!! 했더니 홈페이지가 뙇!"
-thumbnail: "http://127.0.0.1:4000/images/news/news1_cck.jpg"
+thumbnail: "/images/news/news1_cck.jpg"
 ---
 
 안녕하세요, 2년마다 개최되는 CC 글로벌 서밋은 올해 CC Korea의 주관으로 준비되고 있습니다. 함께 애써주시는 많은 분들께 감사드리며, 저희들의 역할을 소개합니다~
