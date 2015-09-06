@@ -121,6 +121,7 @@
             border: 1px solid #dedede;
             border-bottom: 3px solid #dedede;
             padding: 15px;
+            position: relative;
             img {
               vertical-align: middle;
             }
@@ -166,7 +167,6 @@
             left: 20px;
             color: #ef513c;
             height: 0;
-            width: 170px;
             float: right;
             margin-right: 10px;
             text-align: right;

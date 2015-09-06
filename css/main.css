@@ -1351,7 +1351,8 @@ a {
             vertical-align: middle;
             border: 1px solid #dedede;
             border-bottom: 3px solid #dedede;
-            padding: 15px; }
+            padding: 15px;
+            position: relative; }
             .schedule .timetable table tr td .light_bg img, .schedule .timetable table tr td div.gray_light img, .schedule .timetable table tr td div.whiteblue_light img, .schedule .timetable table tr td div.whiteorange_light img, .schedule .timetable table tr td div.whitegreen_light img, .schedule .timetable table tr td div.whitepurple_light img {
               vertical-align: middle; }
           .schedule .timetable table tr td div.gray_light {
@@ -1381,7 +1382,6 @@ a {
             left: 20px;
             color: #ef513c;
             height: 0;
-            width: 170px;
             float: right;
             margin-right: 10px;
             text-align: right; }
