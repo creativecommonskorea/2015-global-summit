@@ -25,8 +25,8 @@
   sessions:
     - title: "오픈글램"
       detail: >
-        "#87 Remixing the museum: Using open practices to engage GLAM communities", Andres Guadamuz <br>
-        "(45 min. Panel )  / #25 CC in large institutions", Kat Braybrooke
+        "Remixing the museum: Using open practices to engage GLAM communities", Andres Guadamuz <br>
+        "(45 min. Panel ) / CC in large institutions", Kat Braybrooke
       location: "대강당"
       box: lightblue
     - title: "공유도시"
@@ -34,9 +34,9 @@
       box: lightpurple
     - title: "OER"
       detail: >
-        "Edu (50 min): #61 /#47: Moving OER into the Mainstream: Global Coordination", Cable Green, Soohyun Pae (+ OER / MOOC speakers: TBD), Delia Browne, Alek Tarkowski, Nicole Allen, TJ Bliss, Meena Hwang
+        "Edu (50 min): Moving OER into the Mainstream: Global Coordination", Cable Green, Soohyun Pae (+ OER / MOOC speakers: TBD), Delia Browne, Alek Tarkowski, Nicole Allen, TJ Bliss, Meena Hwang
         <br>
-        "Edu (30 min): #36: Education Moonshot: Shifting OER from +10% to 10x", Ryan Merkley, TJ Bliss, Esther Wojcicki, Cable Green
+        "Edu (30 min): Education Moonshot: Shifting OER from +10% to 10x", Ryan Merkley, TJ Bliss, Esther Wojcicki, Cable Green
       location: "세미나룸"
       box: lightgreen
 
@@ -61,17 +61,17 @@
     - title: "CCL 번역"
       location: "한글박물관 강당"
       detail: >
-        "#54 Legal CodeTranslations 1 Year In: Success, Challenges & Learnings", Diane Peters, RCs and Translation Leads
+        "Legal CodeTranslations 1 Year In: Success, Challenges & Learnings", Diane Peters, RCs and Translation Leads
       box: lightorange
     - title: "GLAM"
       location: "한글박물관 강의실"
       detail: >
-        "#58 GLAM 오픈 정책 워크샵", Klaudia Grabowska
+        "GLAM 오픈 정책 워크샵", Klaudia Grabowska
       box: lightyellow
     - title: "테크"
       location: "한글박물관 강의실2"
       detail: >
-        "#18 동영상 커먼즈 활성화 워크샵", 모질라, 라이언, GLAM기관들
+        "동영상 커먼즈 활성화 워크샵", 모질라, 라이언, GLAM기관들
       box: lightred
 
 - time: "14:50 ~15:20"
@@ -99,18 +99,18 @@
     - title: "CCL 4.0 논의"
       location: "한글박물관 강당"
       detail: >
-        "#39 Free Licensing the Sum of all Knowledge", Stephen LaPorte <br>
-        "#14 CC licensing and terms of service (to include within presentation substance of #3: 4.0 Upgrades for Platforms)", Sarah Pearson
+        "Free Licensing the Sum of all Knowledge", Stephen LaPorte <br>
+        "CC licensing and terms of service (to include within presentation substance: 4.0 Upgrades for Platforms)", Sarah Pearson
       box: lightorange
     - title: "저작권"
       location: "한글박물관 강의실"
       detail: >
-        "#110 EFF와 CC의 저작권 개혁 운동 협업 논의", Maira and Parker/EFF
+        "EFF와 CC의 저작권 개혁 운동 협업 논의", Maira and Parker/EFF
       box: lightyellow
     - title: "오픈 커뮤니티"
       location: "한글박물관 강의실2"
       detail: >
-        "#114+ #34'오픈' 의 정의, 기관에서의 '오픈' 협업 방식의 적용", Bekka Khan from Open Coalition
+        "'오픈' 의 정의, 기관에서의 '오픈' 협업 방식의 적용", Bekka Khan from Open Coalition
       box: lightred
 
 - time: "16:40 ~17:00"

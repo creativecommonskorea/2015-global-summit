@@ -32,19 +32,19 @@
       location: "카카오룸"
       detail: >
         "Open Access: Retaining and Regaining Author Publication Rights (possible expansion to address TDM and state)", Diane Peters, Thomas Margoni, Michael Wolfe, Ignasi Labastida (possibly, Julia Reda)<br>
-        Expand session by 20 minutes to allow: #113 (Using Open Data for Advocacy Storytelling: A workshop with the Open Access Button), and Thomas Margoni // Diane on TDM and OA talk
+        Expand session by 20 minutes to allow: (Using Open Data for Advocacy Storytelling: A workshop with the Open Access Button), and Thomas Margoni // Diane on TDM and OA talk
       box: lightgreen
     - title: "Organising the Commons"
       location: "아이디어 빌리지"
       detail: >
-        "(60 min) #90 Rightsstatements.org: Developing a Standard for Communicating Rights Beyond CC - and the new Public Domain Mark.", Diane Peters, Paul Keller, Maarten Zeinstra <br>
+        "(60 min) Rightsstatements.org: Developing a Standard for Communicating Rights Beyond CC - and the new Public Domain Mark.", Diane Peters, Paul Keller, Maarten Zeinstra <br>
         Uses of the blockchain for Creative Commons	Primavera De Filippi
       box: lightpurple
     - title: "CC 라이선스"
       location: "오픈 스페이스"
       detail: >
-        "#39 CC 라이선스와 위키미디어/위키피디아", Stephen LaPorte 위키미디어 법률 고문 <br/>
-        "#14 CC licensing and terms of service", Sarah Pearson
+        "CC 라이선스와 위키미디어/위키피디아", Stephen LaPorte 위키미디어 법률 고문 <br/>
+        "CC licensing and terms of service", Sarah Pearson
       box: lightorange
 
 - time: "12:20 ~13:50"
@@ -56,12 +56,12 @@
     - title: "플랫폼과 CC라이선스"
       location: "컨퍼런스 룸"
       detail: >
-        "#108 The Vibrant and Social Commons: How Users Engage with the Commons Today (combined with #100)", Jane, Ryan, Eric
+        "The Vibrant and Social Commons: How Users Engage with the Commons Today", Jane, Ryan, Eric
       box: lightblue
     - title: "커뮤니티"
       location: "카카오룸"
       detail: >
-        "#11 CC Affiliates Policies Hand-On", John Weitzmann
+        "CC Affiliates Policies Hand-On", John Weitzmann
       box: lightgreen
 
 - time: "14:50 ~15:20"
@@ -78,14 +78,14 @@
     - title: "OER"
       location: "카카오룸"
       detail: >
-        "Edu (30 min): #55 / #81: Let's do open education! Testing a toolkit for schools and educators", Anna Stokowska, Kamil Åšliwowski, Alek Tarkowski <br>
-        "Edu (45 min): #112, #64, #69: OER Showcase", Mostafa Azad Kamal, Bekka Kahn, George Abdelnour <br>
-        "Edu (15 min): #91: School of Open Showcase and Transition", Simeon Oriko
+        "Edu (30 min): Let's do open education! Testing a toolkit for schools and educators", Anna Stokowska, Kamil Åšliwowski, Alek Tarkowski <br>
+        "Edu (45 min): OER Showcase", Mostafa Azad Kamal, Bekka Kahn, George Abdelnour <br>
+        "Edu (15 min): School of Open Showcase and Transition", Simeon Oriko
       box: lightgreen
     - title: "디자인"
       location: "아이디어빌리지"
       detail: >
-        "CC+Design (#15) + #46 (how will CC shape future of design) (similar rights and patent rights and CC+)", Thomas Margoni, Jane Park, Diane (?), McCoy Smith (intel)(?), CERN?
+        "CC+Design (how will CC shape future of design) (similar rights and patent rights and CC+)", Thomas Margoni, Jane Park, Diane (?), McCoy Smith (intel)(?), CERN?
       box: lightpurple
 
 - time: "16:50 ~17:00"
