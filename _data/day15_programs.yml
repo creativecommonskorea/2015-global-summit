@@ -3,14 +3,14 @@
   sessions:
     - title: "등록"
       detail: "이름표와 슬랙(Slack) 가입 및 등록을 확인하세요."
-      location: "국립중앙박물관 대강당"
+      location: "대강당"
 
 - time: "10:00 ~10:20"
   sessions:
     - title: "개회사"
       detail: >
         서정욱 / CCKOREA 이사장
-      location: "국립중앙박물관 대강당"
+      location: "대강당"
     - title: "축사"
       detail: "미정 / 후원기관 or 대표"
 
@@ -21,7 +21,7 @@
         "Creative Commons 재정의", 윤종주(CC KOREA 한국대표) <br/>
         "네트워크 정보 경제", Yochai Benkler(하버드대학교 로스쿨 교수) <br/>
         "디지털 시대의 창조적 공유 자원의 중요성", Merkley, Benkler, 윤종수
-      location: "국립중앙박물관 대강당"
+      location: "대강당"
       box: lightblue
 
 - time: "12:10 ~13:20"
@@ -35,7 +35,7 @@
        "유럽의 문화 예술을 디지털로 스캔하다", Paul Keller_유로피아나 <br/>
        "공유저작물 창조자원화 전략", 윤태용실장_문화체육관광부 콘텐츠산업실 <br/>
        사회: 강현숙
-      location: "국립중앙박물관 대강당"
+      location: "대강당"
       box: lightblue
     - title: "트랙, 오픈데이터"
       detail: >
@@ -43,7 +43,7 @@
         "데이터 긱이 세상을 바꾼다", 박은정_팀포퐁 <br/>
         "IOT와 오픈데이터", Naeema_CC레바논 <br/>
         사회: 오원석
-      location: "국립중앙박물관 세미나실"
+      location: "세미나실"
       box: lightpurple
 
 - time: "14:00 ~14:40"
@@ -62,14 +62,14 @@
         "500px", Andy Yang <br>
         "#66 Open Business Models - the Economic Benefits of CC - 500px", Sarah Pearson, Paul Stacey <br>
         "CC-licensed music business platform", 원트리뮤직
-      location: "국립중앙박물관 대강당"
+      location: "대강당"
       box: lightblue
     - title: "트랙. DIY"
       detail: >
         "3D 프린터 기술의 진화", Michael Weinberg_Shapeways <br/>
         "소프트웨어야 놀자", 김지현_ 네이버 이사 <br/>
         사회: 최형욱
-      location: "국립중앙박물관 세미나실"
+      location: "세미나실"
       box: lightpurple
     - title: "크리에이티브 워크샵"
       detail: >
@@ -86,14 +86,14 @@
     - title: "경계를 허무는 나비의 실험"
       detail: >
         노소영_나비아트센터 관장
-      location: "국립중앙박물관 대강당"
+      location: "대강당"
 
 - time: "17:25 ~17:50"
   sessions:
     - title: "위키백과의  ‘리-챌린지'"
       detail: >
         Lila Tretikov_ Wikimedia 사무국장
-      location: "국립중앙박물관 대강당"
+      location: "대강당"
 
 - time: "18:00 ~18:30"
   sessions:

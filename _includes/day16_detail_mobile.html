@@ -1,10 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+<div class="mobile_day_detail" id="day16">
+    <div class="date">10.16 (금)</div>
+    <div class="day_concept_desc">
+        지극히 착한 것은 마치 물과 같다는 뜻으로, 물을 이 세상에서 으뜸가는 선의 표본으로 여기어 이르던 말입니다.
+    </div>
+    <div class="day_concept">
+        Work of Sharing: 상선 약수(上善若水)
+    </div>
+    <div class="day_description">
+        여러가지 형태로 존재하고 사물에 생명을 불어넣으며 모이고 모여 바다로 흘러나가는 특징이 우리가 추구해온 공유, 개방의 가치와 상통합니다.
+        <br/><br/>
+        <img src="/images/other/bullet.png" alt="-" />
+        <span class="font-bold">장소</span>:
+        국립중앙박물관 대강당/ 소강당/ 세미나실, 한글박물관 강당/ 강의실1/ 강의실2
+    </div>
+    <div class="subject_icons">
+        <img src="/images/other/program_icon_01.png" alt="강연"/> 강연
+        <img src="/images/other/program_icon_02.png" alt="포럼"/> 포럼
+        <img src="/images/other/program_icon_03.png" alt="워크샵"/> 워크샵
+        <img src="/images/other/program_icon_04.png" alt="이벤트"/> 이벤트
+    </div>
 
-</body>
-</html>
+    {% for box in site.data.day16_programs %}
+    <div class="time_box">
+        <div class="time">{{ box.time }}</div>
+        <div class="time_detail">
+            {% for s in box.sessions %}
+            <div class="sessions {{s.box}}">
+                <div class="location">{{ s.location }}</div>
+                <div class="title">{{ s.title }}</div>
+                <div class="detail">{{ s.detail }}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+
+</div>
