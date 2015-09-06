@@ -486,9 +486,9 @@ img {
       .partner_wrap .sponsor_logos .logos .info {
         font-size: 9px;
         width: 300px;
-        position: absolute;
-        left: 20px;
-        top: 55px; }
+        position: relative;
+        left: 22px;
+        top: 0; }
         @media screen and (max-width: 1000px) {
           .partner_wrap .sponsor_logos .logos .info {
             left: calc(50% - 128px); } }
