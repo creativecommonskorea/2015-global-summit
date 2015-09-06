@@ -1333,6 +1333,7 @@ a {
         .schedule .timetable table tr.border_bottom td {
           border-bottom: 1px solid #dedede; }
         .schedule .timetable table tr td {
+          padding: 5px;
           height: 50px;
           font-size: 13px; }
           .schedule .timetable table tr td.h120 {
@@ -1340,16 +1341,19 @@ a {
           .schedule .timetable table tr td.h240 {
             height: 230px; }
           .schedule .timetable table tr td:first-child {
-            width: 204px;
+            width: 16%;
             vertical-align: top;
             line-height: 56px;
             font-size: 14px; }
           .schedule .timetable table tr td .light_bg, .schedule .timetable table tr td div.gray_light, .schedule .timetable table tr td div.whiteblue_light, .schedule .timetable table tr td div.whiteorange_light, .schedule .timetable table tr td div.whitegreen_light, .schedule .timetable table tr td div.whitepurple_light {
             height: 100%;
-            width: 100%;
+            width: calc(100% - 30px);
             vertical-align: middle;
             border: 1px solid #dedede;
-            border-bottom: 3px solid #dedede; }
+            border-bottom: 3px solid #dedede;
+            padding: 15px; }
+            .schedule .timetable table tr td .light_bg img, .schedule .timetable table tr td div.gray_light img, .schedule .timetable table tr td div.whiteblue_light img, .schedule .timetable table tr td div.whiteorange_light img, .schedule .timetable table tr td div.whitegreen_light img, .schedule .timetable table tr td div.whitepurple_light img {
+              vertical-align: middle; }
           .schedule .timetable table tr td div.gray_light {
             background-color: #ececec; }
           .schedule .timetable table tr td div.whiteblue_light {
@@ -1359,7 +1363,10 @@ a {
           .schedule .timetable table tr td div.whitegreen_light {
             background-color: #d9f0ef; }
           .schedule .timetable table tr td div.whitepurple_light {
-            background-color: #e0dff9; }
+            background-color: #e3d9f9; }
+          .schedule .timetable table tr td div.pl21 {
+            padding-left: 21px;
+            width: calc(100% - 21px); }
           .schedule .timetable table tr td .corner_left {
             border-radius: 5px 0 0 5px; }
           .schedule .timetable table tr td .corner_right {
@@ -1369,18 +1376,21 @@ a {
           .schedule .timetable table tr td .location, .schedule .timetable table tr td .oneline_location {
             font-size: 13px;
             position: relative;
-            top: 10px;
+            top: -10px;
             z-index: 100;
-            left: 0;
+            left: 20px;
             color: #ef513c;
             height: 0;
-            width: 90px;
+            width: 170px;
             float: right;
             margin-right: 10px;
             text-align: right; }
+          .schedule .timetable table tr td .left {
+            text-align: left;
+            vertical-align: top; }
           .schedule .timetable table tr td .oneline_location {
-            top: 4px;
-            margin-right: 3px; }
+            top: 7px;
+            margin-right: 17px; }
 
 .table {
   width: 100%;
@@ -1412,18 +1422,6 @@ a {
       line-height: 21px; }
       .table .tr .td img {
         vertical-align: middle; }
-      .table .tr .td.gray_light {
-        background-color: #ececec;
-        border: 1px solid #dedede;
-        border-bottom: 3px solid #dedede; }
-      .table .tr .td.whiteblue_light {
-        background-color: #ecf0f5;
-        border: 1px solid #dedede;
-        border-bottom: 3px solid #dedede; }
-      .table .tr .td.whitepurple_light {
-        background-color: #e0dff9;
-        border: 1px solid #dedede;
-        border-bottom: 3px solid #dedede; }
       .table .tr .td.time {
         width: 204px; }
       .table .tr .td.w50p, .table .tr .td.w33p {
@@ -1452,7 +1450,8 @@ a {
         text-align: center;
         vertical-align: middle; }
       .table .tr .td.left {
-        text-align: left; }
+        text-align: left;
+        vertical-align: top; }
 
 ul {
   margin: 13px 0 0 0;

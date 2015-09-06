@@ -99,7 +99,7 @@
           border-bottom: 1px solid #dedede;
         }
         td {
-          //padding: 5px;
+          padding: 5px;
           height: 50px;
           font-size: 13px;
           &.h120 {
@@ -109,17 +109,21 @@
             height: 230px;
           }
           &:first-child {
-            width: 204px;
+            width: 16% ;
             vertical-align: top;
             line-height: 56px;
             font-size: 14px;
           }
           .light_bg {
             height: 100%;
-            width: 100%;
+            width: calc(100% - 30px);
             vertical-align: middle;
             border: 1px solid #dedede;
             border-bottom: 3px solid #dedede;
+            padding: 15px;
+            img {
+              vertical-align: middle;
+            }
           }
           div.gray_light {
             @extend .light_bg;
@@ -139,7 +143,11 @@
           }
           div.whitepurple_light {
             @extend .light_bg;
-            background-color: #e0dff9;
+            background-color: #e3d9f9;
+          }
+          div.pl21 {
+            padding-left: 21px;
+            width: calc(100% - 21px);
           }
           .corner_left {
             border-radius: 5px 0 0 5px;
@@ -153,20 +161,24 @@
           .location {
             font-size: 13px;
             position: relative;
-            top: 10px;
+            top: -10px;
             z-index: 100;
-            left: 0;
+            left: 20px;
             color: #ef513c;
             height: 0;
-            width: 90px;
+            width: 170px;
             float: right;
             margin-right: 10px;
             text-align: right;
           }
+          .left {
+            text-align: left;
+            vertical-align: top;
+          }
           .oneline_location {
             @extend .location;
-            top: 4px;
-            margin-right: 3px;
+            top: 7px;
+            margin-right: 17px;
           }
         }
       }
@@ -212,21 +224,6 @@
       img {
         vertical-align: middle;
       }
-      &.gray_light {
-        background-color: #ececec;
-        border: 1px solid #dedede;
-        border-bottom: 3px solid #dedede;
-      }
-      &.whiteblue_light {
-        background-color: #ecf0f5;
-        border: 1px solid #dedede;
-        border-bottom: 3px solid #dedede;
-      }
-      &.whitepurple_light {
-        background-color: #e0dff9;
-        border: 1px solid #dedede;
-        border-bottom: 3px solid #dedede;
-      }
       &.time {
         width: 204px;
       }
@@ -264,6 +261,7 @@
       }
       &.left {
         text-align: left;
+        vertical-align: top;
       }
     }
   }
