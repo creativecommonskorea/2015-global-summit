@@ -1086,11 +1086,13 @@ a {
           padding: 0;
           float: none; } }
     .newsboard_wrap article .latest_article_contents .content_text {
-      width: 97%;
-      font-size: 14px;
-      line-height: 25px;
+      width: 100%;
+      font-size: 0.8em;
+      line-height: 160%;
       text-align: justify;
       word-break: keep-all; }
+      .newsboard_wrap article .latest_article_contents .content_text img {
+        width: 100%; }
   .newsboard_wrap .article_list {
     margin: 60px 0; }
     .newsboard_wrap .article_list .article_box {

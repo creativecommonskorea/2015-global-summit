@@ -33,11 +33,14 @@
         float: left;
       }
       .content_text {
-        width: 97%;
-        font-size: 14px;
-        line-height: 25px;
+        width: 100%;
+        font-size: 0.8em;
+        line-height: 160%;
         text-align: justify;
         word-break: keep-all;
+        img {
+          width: 100%;
+        }
       }
     }
   }

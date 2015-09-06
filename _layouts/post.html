@@ -18,11 +18,8 @@ layout: base
             <div class="dot"><img src="/images/other/bullet.png" alt="-"/></div>
         </div>
         <div class="latest_article_contents">
-            <div class="thumbnail">
-                <div style="border: 1px solid black;">&nbsp;</div>
-            </div>
             <div class="content_text">
-                {{ page.content }}
+                {{ content }}
             </div>
         </div>
     </article>
@@ -31,7 +28,7 @@ layout: base
             {% for post in site.posts %}
             <div class="article_box">
                 <div class="thumbnail">
-                    <div style="width: 180px; height: 120px; border: 1px solid black;">&nbsp;</div>
+                    <img src="{{ post.thumbnail }}" style="width: 180px; height: 120px;" />
                 </div>
                 <div class="abstract_contents">
                     <div class="title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>

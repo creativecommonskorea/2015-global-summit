@@ -1,10 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+<div class="mobile_day_detail" id="day15">
+    <div class="date">10.15 (목)</div>
+    <div class="day_concept_desc">
+        우공이 산을 옮긴다는 뜻으로, 어떤 일이든 끊임없이 노력하면
+        반드시 이루어짐을 이르는 말입니다.
+    </div>
+    <div class="day_concept">
+        Celebration of Sharing: 우공이산(愚公移山)
+    </div>
+    <div class="day_description">
+        공유, 개방의 의미와 가치를 토대로 이루어낸
+        크고 작은 변화들을 나누는 자리입니다.
+        <br/><br/>
+        <img src="/images/other/bullet.png" alt="-" />
+        <span class="font-bold">장소</span>:
+        국립중앙박물관 대강당/ 세미나실
+    </div>
+    <div class="subject_icons">
+        <img src="/images/other/program_icon_01.png" alt="강연"/> 강연
+        <img src="/images/other/program_icon_02.png" alt="포럼"/> 포럼
+        <img src="/images/other/program_icon_03.png" alt="워크샵"/> 워크샵
+        <img src="/images/other/program_icon_04.png" alt="이벤트"/> 이벤트
+    </div>
 
-</body>
-</html>
+    {% for box in site.data.day14_programs %}
+    <div class="time_box">
+        <div class="time">{{ box.time }}</div>
+        <div class="time_detail">
+            {% for s in box.sessions %}
+            <div class="sessions {{s.box}}">
+                <div class="location">{{ s.location }}</div>
+                <div class="title">{{ s.title }}</div>
+                <div class="detail">{{ s.detail }}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+
+</div>
