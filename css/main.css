@@ -463,11 +463,11 @@ img {
         display: table-row; }
         .partner_wrap section .sponsor_wrap .t_row:last-child {
           height: 140px; }
+        .partner_wrap section .sponsor_wrap .t_row:first-child {
+          height: 96px; }
       .partner_wrap section .sponsor_wrap .title {
-        height: 80px;
         vertical-align: middle;
-        font-size: 22px;
-        line-height: 80px;
+        font-size: 19.25px;
         font-weight: bold;
         display: table-cell; }
       .partner_wrap section .sponsor_wrap .sponsor_logos {
@@ -794,9 +794,8 @@ img {
   height: 700px; }
 
 .location_wrap {
-  padding-top: 60px;
+  padding-top: 50px;
   text-align: center;
-  height: 610px;
   background-color: #f7f7f8; }
   @media screen and (max-width: 1000px) {
     .location_wrap {

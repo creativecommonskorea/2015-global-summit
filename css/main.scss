@@ -581,12 +581,14 @@ img {
         &:last-child {
           height: 140px;
         }
+        &:first-child {
+          height: 96px;
+        }
       }
       .title {
-        height: 80px;
+        //height: 5.0em;
         vertical-align: middle;
-        font-size: 22px;
-        line-height: 80px;
+        font-size: 19.25px;
         font-weight: bold;
         display: table-cell;
       }
@@ -1000,9 +1002,8 @@ img {
   @media screen and (max-width: 1000px) {
     height: auto;
   }
-  padding-top: 60px;
+  padding-top: 50px;
   text-align: center;
-  height: 610px;
   background-color: #f7f7f8;
   .locations {
     width: 100%;
