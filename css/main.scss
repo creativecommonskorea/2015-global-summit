@@ -1033,20 +1033,21 @@ img {
       font-size: 0.875em;
 
       .name {
-        font-size: 20px;
+        font-size: 21px;
+        font-weight: bold;
         line-height: 28px;
         vertical-align: middle;
         img {
           margin-right: 7px;
           vertical-align: middle;
-          width: 25px;
-          height: 25px;
+          width: 24px;
+          height: 24px;
 
         }
       }
       .address {
         margin-top: 25px;
-        margin-left: 37px;
+        margin-left: 33px;
         line-height: 27px;
       }
       .transport {
@@ -1054,7 +1055,7 @@ img {
           padding: 0;
           margin: 20px 0;
         }
-        padding-left: 31px;
+        padding-left: 28px;
         padding-right: 50px;
         margin-top: 70px;
         table tr td:first-child {

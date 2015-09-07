@@ -823,20 +823,21 @@ img {
         .location_wrap .locations .info {
           width: 100%; } }
       .location_wrap .locations .info .name {
-        font-size: 20px;
+        font-size: 21px;
+        font-weight: bold;
         line-height: 28px;
         vertical-align: middle; }
         .location_wrap .locations .info .name img {
           margin-right: 7px;
           vertical-align: middle;
-          width: 25px;
-          height: 25px; }
+          width: 24px;
+          height: 24px; }
       .location_wrap .locations .info .address {
         margin-top: 25px;
-        margin-left: 37px;
+        margin-left: 33px;
         line-height: 27px; }
       .location_wrap .locations .info .transport {
-        padding-left: px;
+        padding-left: 28px;
         padding-right: 50px;
         margin-top: 70px; }
         @media screen and (max-width: 1000px) {
