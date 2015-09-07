@@ -564,9 +564,25 @@ img {
 
 .partner_wrap {
   color: #333;
-  padding: 30px 0;
+  padding: 15px 0;
   text-align: center;
-  //background-color: #272a32;
+  background-color: #f7f7f8;
+
+  &.first {
+    padding-top: 60px;
+  }
+
+  section {
+    .title {
+      height: 80px;
+      vertical-align: middle;
+      font-size: 22px;
+      line-height: 80px;
+      font-weight: bold;
+    }
+    background-color: #fff;
+    border: 1px solid #dfdfdf;
+  }
 
   .sponsor_logos {
     @media screen and (max-width: 1000px) {
@@ -592,12 +608,16 @@ img {
       &:last-child {
         margin-right: 0;
       }
+      img {
+        width: 200px;
+      }
       .info {
         @media screen and (max-width: 1000px) {
           left: calc(50% - 128px);
         }
-        font-size: 9px;
-        width: 300px;
+        font-weight: bold;
+        font-size: 11px;
+        width: 330px;
         position: relative;
         left: 22px;
         top: 0;

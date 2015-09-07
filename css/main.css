@@ -450,8 +450,20 @@ img {
 
 .partner_wrap {
   color: #333;
-  padding: 30px 0;
-  text-align: center; }
+  padding: 15px 0;
+  text-align: center;
+  background-color: #f7f7f8; }
+  .partner_wrap.first {
+    padding-top: 60px; }
+  .partner_wrap section {
+    background-color: #fff;
+    border: 1px solid #dfdfdf; }
+    .partner_wrap section .title {
+      height: 80px;
+      vertical-align: middle;
+      font-size: 22px;
+      line-height: 80px;
+      font-weight: bold; }
   .partner_wrap .sponsor_logos {
     overflow: auto;
     height: auto;
@@ -475,9 +487,12 @@ img {
           margin: 0 0 2em 0; } }
       .partner_wrap .sponsor_logos .logos:last-child {
         margin-right: 0; }
+      .partner_wrap .sponsor_logos .logos img {
+        width: 200px; }
       .partner_wrap .sponsor_logos .logos .info {
-        font-size: 9px;
-        width: 300px;
+        font-weight: bold;
+        font-size: 11px;
+        width: 330px;
         position: relative;
         left: 22px;
         top: 0; }

@@ -5,5 +5,13 @@
   overflow: auto; }
   .speaker_wrap .sponsor {
     background-color: #f7f7f8; }
+    .speaker_wrap .sponsor .sponsor_logos {
+      height: 90px;
+      position: relative;
+      width: 100%; }
+      .speaker_wrap .sponsor .sponsor_logos .logos {
+        width: 150px;
+        float: left;
+        position: relative; }
 
 /*# sourceMappingURL=sponsors.css.map */
