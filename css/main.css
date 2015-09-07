@@ -584,6 +584,7 @@ img {
       .introduce_main section img.title_image {
         width: 98%; } }
     .introduce_main section .abstract_description {
+      line-height: 160%;
       font-size: 1.125em;
       margin-bottom: 33px; }
       @media screen and (max-width: 1000px) {
@@ -615,7 +616,8 @@ img {
         line-height: 36px; }
       .introduce_main section .detail_description .split_dot {
         width: 100%;
-        text-align: center; }
+        text-align: center;
+        margin: 13px 0; }
     .introduce_main section .need_more_message {
       word-break: keep-all; }
       .introduce_main section .need_more_message .mail_information a {
