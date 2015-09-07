@@ -2,11 +2,13 @@
 title: CC Global Summit 2015
 email: ccgs2015.dev@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-    Creative Commons Global Summit is a global festival 
-    which is organized and programmed not only from each summit´s host country 
+    Creative Commons Global Summit is a global festival
+    which is organized and programmed not only from each summit´s host country
     but from many global CC affiliates over the world.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "https://summit.cckorea.org" # the base hostname & protocol for your site
+locale: ko_KR
+default_banner: '/images/base/title.png'
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
