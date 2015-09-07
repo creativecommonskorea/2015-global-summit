@@ -1170,6 +1170,13 @@ a {
     .attend_wrap .attend_guide .step {
       color: #ee4023;
       font-weight: bold; }
+    @media screen and (max-width: 1000px) {
+      .attend_wrap .attend_guide {
+        width: 90%;
+        height: auto;
+        line-height: 150%;
+        padding: 1em;
+        word-break: keep-all; } }
   .attend_wrap .ticket_info {
     position: relative;
     z-index: 10;
@@ -1179,6 +1186,9 @@ a {
     height: 284px;
     background: #fff url("/images/other/ticket_table_bg.png") no-repeat;
     padding: 0px; }
+    @media screen and (max-width: 1000px) {
+      .attend_wrap .ticket_info {
+        background: #FFFFFF; } }
     .attend_wrap .ticket_info table {
       width: 958px;
       height: 265px;
