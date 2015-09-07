@@ -1380,7 +1380,7 @@ a {
           .schedule .timetable table tr td .corner_all {
             border-radius: 5px; }
           .schedule .timetable table tr td .location, .schedule .timetable table tr td .oneline_location {
-            font-size: 13px;
+            font-size: 11px;
             position: relative;
             top: -10px;
             z-index: 100;
