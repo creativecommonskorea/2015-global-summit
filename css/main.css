@@ -329,17 +329,19 @@ img {
           .program_info_wrap section .program_list .program_sub_title {
             margin-top: 17px; } }
       .program_info_wrap section .program_list .program_sub_description {
-        text-align: justify;
+        text-align: center;
         word-break: keep-all;
         color: #fff;
         font-size: 0.813em;
-        padding: 0 17px; }
+        padding: 0 17px;
+        line-height: 1.5em; }
         @media screen and (max-width: 600px) {
           .program_info_wrap section .program_list .program_sub_description {
             width: calc(74% - 6.5em);
             float: left;
             font-size: 0.75em;
-            padding: 0 0.5em 0 0; } }
+            padding: 0 0.5em 0 0;
+            text-align: justify; } }
         @media screen and (max-width: 1000px) and (min-width: 600px) {
           .program_info_wrap section .program_list .program_sub_description {
             width: calc(74% - 90px);
@@ -409,26 +411,27 @@ img {
       vertical-align: bottom;
       margin-top: 0.725em; }
     .main_speakes_wrap section .eng_name {
-      font-size: 1.125em;
+      font-size: 1.0em;
       text-align: left; }
     .main_speakes_wrap section .organize {
-      font-style: italic;
       font-size: 0.875em;
       color: #ff4f38;
-      text-align: left; }
+      text-align: left;
+      margin-top: 6px; }
     .main_speakes_wrap section .guide_line {
       width: 24px;
       border-top: 1px solid #c2c2c2;
       margin-bottom: 24px; }
     .main_speakes_wrap section .speaker_description {
       word-break: keep-all;
-      text-align: justify;
+      text-align: left;
       font-size: 0.875em;
       padding-right: 1em;
       line-height: 24px; }
       @media screen and (max-width: 1000px) {
         .main_speakes_wrap section .speaker_description {
-          font-size: 1.0em; } }
+          font-size: 1.0em;
+          text-align: justify; } }
     .main_speakes_wrap section .speaker_profile {
       display: inline-block;
       width: 324px;
@@ -558,7 +561,13 @@ img {
       .footer_black .ccl_info a:hover {
         text-decoration: underline; }
 
-section .guide_bar {
+.guide_bar {
+  width: 53px;
+  height: 16px;
+  border-bottom: 1px solid #ef513c;
+  margin: 0 auto 54px; }
+
+.guide_bar_33 {
   width: 53px;
   height: 16px;
   border-bottom: 1px solid #ef513c;
@@ -849,12 +858,6 @@ h2.normal {
   margin: 0;
   font-weight: normal;
   font-size: 1.5em; }
-
-.guide_bar_33 {
-  width: 53px;
-  height: 33px;
-  border-bottom: 1px solid #ef513c;
-  margin: 0 auto 33px; }
 
 .head_description {
   margin-bottom: 60px; }

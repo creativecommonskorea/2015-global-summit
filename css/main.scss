@@ -419,6 +419,7 @@ img {
           float: left;
           font-size: 0.75em;
           padding: 0 0.5em 0 0;
+          text-align: justify;
         }
         @media screen and (max-width: 1000px) and (min-width: 600px) {
           width: calc(74% - 90px);
@@ -431,11 +432,12 @@ img {
         @media screen and (min-width: 1000px) {
           margin-top: 22px;
         }
-        text-align: justify;
+        text-align: center;
         word-break: keep-all;
         color: $white;
         font-size: 0.813em;
         padding: 0 17px;
+        line-height: 1.5em;
         br {
           line-height: 150%;
         }
@@ -508,14 +510,14 @@ img {
       margin-top: 0.725em;
     }
     .eng_name {
-      font-size: 1.125em;
+      font-size: 1.0em;
       text-align: left;
     }
     .organize {
-      font-style: italic;
       font-size: 0.875em;
       color: #ff4f38;
       text-align: left;
+      margin-top: 6px;
     }
     .guide_line {
       width: 24px;
@@ -525,9 +527,10 @@ img {
     .speaker_description {
       @media screen and (max-width: 1000px) {
         font-size: 1.0em;
+        text-align: justify;
       }
       word-break: keep-all;
-      text-align: justify;
+      text-align: left;
       font-size: 0.875em;
       padding-right: 1em;
       line-height: 24px;
@@ -686,11 +689,20 @@ img {
   }
 }
 
-section .guide_bar {
+.guide_bar {
   width: 53px;
   height: 16px;
   border-bottom: 1px solid $color_sunset_orange_approx;
   margin: 0 auto 54px;
+}
+
+.guide_bar_33 {
+  width: 53px;
+  height: 16px;
+  border-bottom: 1px solid $color_sunset_orange_approx;
+  margin: 0 auto 54px;
+  //height: 33px;
+  //margin: 0 auto 33px;
 }
 
 .introduce_main {
@@ -1051,13 +1063,6 @@ h2 {
     font-weight: normal;
     font-size: 1.5em;
   }
-}
-
-.guide_bar_33 {
-  width: 53px;
-  height: 33px;
-  border-bottom: 1px solid $color_sunset_orange_approx;
-  margin: 0 auto 33px;
 }
 
 .head_description {
