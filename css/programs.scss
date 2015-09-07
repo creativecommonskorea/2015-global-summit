@@ -110,7 +110,7 @@
           }
           &:first-child {
             width: 16% ;
-            vertical-align: top;
+            vertical-align: middle;
             line-height: 56px;
             font-size: 14px;
           }
@@ -170,6 +170,7 @@
             float: right;
             margin-right: 10px;
             text-align: right;
+            font-weight: bold;
           }
           .left {
             text-align: left;

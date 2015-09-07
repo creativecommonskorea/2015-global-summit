@@ -1367,7 +1367,7 @@ a {
             height: 230px; }
           .schedule .timetable table tr td:first-child {
             width: 16%;
-            vertical-align: top;
+            vertical-align: middle;
             line-height: 56px;
             font-size: 14px; }
           .schedule .timetable table tr td .light_bg, .schedule .timetable table tr td div.gray_light, .schedule .timetable table tr td div.whiteblue_light, .schedule .timetable table tr td div.whiteorange_light, .schedule .timetable table tr td div.whitegreen_light, .schedule .timetable table tr td div.whitepurple_light {
@@ -1409,7 +1409,8 @@ a {
             height: 0;
             float: right;
             margin-right: 10px;
-            text-align: right; }
+            text-align: right;
+            font-weight: bold; }
           .schedule .timetable table tr td .left {
             text-align: left;
             vertical-align: top; }
