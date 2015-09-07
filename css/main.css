@@ -1052,7 +1052,8 @@ a {
         font-size: 18px; }
       .speaker_wrap .speaker_box .person_profile .organize {
         font-size: 14px;
-        color: #ff4f38; }
+        color: #ff4f38;
+        margin-top: 20px; }
       .speaker_wrap .speaker_box .person_profile .describe {
         width: 97%;
         text-align: justify;
