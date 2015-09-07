@@ -2,7 +2,7 @@
 layout: post
 title:  "Slack에서 만나요!"
 date:   "2015-09-01 15:00:01"
-abstract: "서밋 전/후로 주-욱 네트워킹을 이어가요~"
+abstract: "써밋 전/후로 주-욱 네트워킹을 이어가요~"
 thumbnail: "/images/news/news2_slack.jpg"
 ---
 
@@ -16,6 +16,6 @@ thumbnail: "/images/news/news2_slack.jpg"
  
 사람들과 생각을 나눌 수 있는 기회를 만들고자,
  
-이번 서밋에서는 [Slack 그룹](https://ccglobalsummit2015.herokuapp.com/)을 열어 참가자 간의 교류를 유도하고 있습니다.
+이번 써밋에서는 [Slack 그룹](https://ccglobalsummit2015.herokuapp.com/)을 열어 참가자 간의 교류를 유도하고 있습니다.
  
-[Slack의 자세한 이용 방법](http://blog.hivearena.com/archives/3396)을 살펴보시고, 서밋 행사가 지난 후에도 이어질 수 있는 네트워킹에 참여하세요! 
+[Slack의 자세한 이용 방법](http://blog.hivearena.com/archives/3396)을 살펴보시고, 써밋 행사가 지난 후에도 이어질 수 있는 네트워킹에 참여하세요! 

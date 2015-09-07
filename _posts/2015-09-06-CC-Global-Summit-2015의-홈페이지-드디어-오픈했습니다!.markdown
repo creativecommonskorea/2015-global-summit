@@ -6,7 +6,7 @@ abstract: "열려라! 참깨 참깨!! 했더니 홈페이지가 뙇!"
 thumbnail: "/images/news/news1_cck.jpg"
 ---
 
-안녕하세요, 2년마다 개최되는 CC 글로벌 서밋은 올해 CC Korea의 주관으로 준비되고 있습니다. 함께 애써주시는 많은 분들께 감사드리며, 저희들의 역할을 소개합니다~
+안녕하세요, 2년마다 개최되는 CC 글로벌 써밋은 올해 CC Korea의 주관으로 준비되고 있습니다. 함께 애써주시는 많은 분들께 감사드리며, 저희들의 역할을 소개합니다~
 
 {:.person}
 ![Jennifer Kang](/images/people/1_02_Jennifer Kang.jpg)
@@ -22,7 +22,7 @@ thumbnail: "/images/news/news1_cck.jpg"
 
 배수현/ Soohyun Pae 
 CC HQ, 세계 활동가 커뮤니케이션
-서밋 프로그램 및 부대행사
+써밋 프로그램 및 부대행사
 세션/연사 코디네이션
 
 "엄청나게 쌓여 있는 메일로 다크써클이 깊어지고 있습니다" 
