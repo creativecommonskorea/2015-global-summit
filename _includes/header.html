@@ -4,10 +4,10 @@
         $('.menus > ul > li').each(function(){
             if( $(this).attr('data-target') ) {
                 var _target = $(this).attr('data-target');
-                console.log( $(this).position().left, ($(this).width() / 2),  $('#' + _target).width() / 2);
-                console.log($(this).position().left + ($(this).width() / 2) - ($('#' + _target).width() / 2));
-                var _left =  $(this).position().left + ($(this).width / 2);
-                $('#' + _target).css('left',  _left + 'px');
+
+                console.log($(this), $('#' + _target));
+
+                $('#' + _target).css('left',  $(this).position().left + 'px');
             }
         });
 
@@ -78,7 +78,7 @@
         <ul>
             <li><a href="https://www.facebook.com/events/1455321544773645/"><img src="/images/base/facebook.png" alt="페이스북"/></a></li>
             <li><a href="https://twitter.com/cckorea"><img src="/images/base/twitter.png" alt="트위터"/></a></li>
-            <li><a href="/coming_soon.html">English</a></li>
+            <li><a href="https://summit.creativecommons.org/" target="_blank">English</a></li>
         </ul>
     </nav>
 </div>
@@ -115,12 +115,7 @@
             <a href="/keywords.html">키워드</a>
         </div>
         <div class="mobile_b_menu clickable" id="attend">
-            참가신청
-            <div class="arrow"><img src="/images/base/arrow_down.png" alt=""/></div>
-        </div>
-        <div class="mobile_s_menu attend_sub">
-            <a href="/coming_soon.html">참가신청</a><br/>
-            <a href="/coming_soon.html">참가자</a>
+            <a href="javascript:alert('멋진 글로벌 써밋을 위해 준비중입니다.\n:) 조금만 기다려주세요!');">참가신청</a>
         </div>
         <div class="mobile_b_menu"><a href="/sponsors.html">후원사</a></div>
         {% for post in site.posts limit:1 %}
@@ -138,8 +133,10 @@
         <nav class="menus">
             <ul>
                 <li data-target="submenu_1"><a href="/introduce.html">행사소개</a></li>
-                <li data-target="submenu_2"><a href="/programs.html">프로그램</a></li>
-                <li><a href="/attend.html">참가신청</a></li>
+                <li data-target="submenu_2">
+                    <a href="/programs.html">프로그램</a>
+                </li>
+                <li><a href="javascript:alert('멋진 글로벌 써밋을 위해 준비중입니다.\n:) 조금만 기다려주세요!');">참가신청</a></li>
                 <li><a href="/sponsors.html">후원사</a></li>
                 {% for post in site.posts limit:1 %}
                 <li><a href="{{ post.url | prepend: site.baseurl }}">소식</a></li>

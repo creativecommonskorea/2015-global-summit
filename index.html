@@ -17,7 +17,7 @@ description: 공유와 개방의 가치를 믿고, 긍정적인 변화를 만들
         -->
 
         <div class="location">
-            <div class="dateinfo">2015.10.14(WED) ~ 17(SAT)</div>
+            <div class="dateinfo">2015.10.14(수) ~ 17(토)</div>
             <div class="locate">국립중앙박물관, 나비아트센터 외</div>
         </div>
     </main>
@@ -78,7 +78,7 @@ description: 공유와 개방의 가치를 믿고, 긍정적인 변화를 만들
     </div>
     <div class="apply_summit_wrap">
         <span style="color:#ef513c; font-size: 12px;">* 서밋 신청은 9월 중 시작될 예정입니다.</span><br/>
-        <button class="apply_summit" type="button" id="apply_summit_btn" onclick="location.href='attend.html';">CC Global Summit 2015 신청하기</button>
+        <button class="apply_summit" type="button" id="apply_summit_btn" onclick="alert('멋진 글로벌 써밋을 위해 준비중입니다.\n:) 조금만 기다려주세요!');">CC Global Summit 2015 신청하기</button>
     </div>
 </div>
 <div class="wrap main_speakes_wrap end_bar">
@@ -90,8 +90,8 @@ description: 공유와 개방의 가치를 믿고, 긍정적인 변화를 만들
             {% for s in site.data.mainspeakers %}
             <div class="speaker ">
                 <div class="speaker_image"><img src="{{ s.main_img }}" alt="{{ s.kor_name }},{{ s.eng_name }}"/></div>
-                <div class="kor_name"><a href="speakers.html?jumpTo=yochai_benkler">{{ s.kor_name }}</a></div>
-                <div class="eng_name"><a href="speakers.html?jumpTo=yochai_benkler">{{ s.main_eng }}</a></div>
+                <div class="kor_name"><a href="speakers.html?jumpTo={{ s.id }}">{{ s.kor_name }}</a></div>
+                <div class="eng_name"><a href="speakers.html?jumpTo={{ s.id }}">{{ s.main_eng }}</a></div>
                 <div class="organize">{{ s.main_org }}</div>
                 <div class="guide_line"></div>
                 <div class="speaker_description">{{ s.main_abs }}</div>

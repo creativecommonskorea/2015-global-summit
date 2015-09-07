@@ -227,15 +227,7 @@ img {
         text-align: center;
       }
       top: -10px;
-      &#submenu_1 {
-        left: 372px;
-      }
-      &#submenu_2 {
-        left: 457px;
-      }
-      &#submenu_3 {
-        left: 653px;
-      }
+
       a {
         font-size: 0.875em;
         text-decoration: none;
@@ -311,6 +303,7 @@ img {
           font: bold 36px Verdana;
           color: #575757;
           letter-spacing: -2px;
+          margin-bottom: 10px;
         }
         .locate {
           @media screen and (max-width: 1000px) {

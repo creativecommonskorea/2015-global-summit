@@ -162,12 +162,6 @@ img {
         line-height: 8px;
         background-color: #FFFFFF;
         text-align: center; }
-      .main_menu .sub_menus .main_sub_menu#submenu_1 {
-        left: 372px; }
-      .main_menu .sub_menus .main_sub_menu#submenu_2 {
-        left: 457px; }
-      .main_menu .sub_menus .main_sub_menu#submenu_3 {
-        left: 653px; }
       .main_menu .sub_menus .main_sub_menu a {
         font-size: 0.875em;
         text-decoration: none;
@@ -226,7 +220,8 @@ img {
       .main_invite_wrap main div.location .dateinfo, .main_invite_wrap main .schedule .timetable table tr td div.oneline_location .dateinfo, .schedule .timetable table tr td .main_invite_wrap main div.oneline_location .dateinfo {
         font: bold 36px Verdana;
         color: #575757;
-        letter-spacing: -2px; }
+        letter-spacing: -2px;
+        margin-bottom: 10px; }
         @media screen and (max-width: 1000px) {
           .main_invite_wrap main div.location .dateinfo, .main_invite_wrap main .schedule .timetable table tr td div.oneline_location .dateinfo, .schedule .timetable table tr td .main_invite_wrap main div.oneline_location .dateinfo {
             font: bold 0.850em Verdana;
