@@ -120,11 +120,19 @@
             vertical-align: middle;
             border: 1px solid #dedede;
             border-bottom: 3px solid #dedede;
-            padding: 15px;
+            padding: 43px 15px 0 15px;
             position: relative;
             img {
               vertical-align: middle;
             }
+            li {
+              margin-bottom: 10px;
+              line-height: 130%;
+            }
+            &.oneline {
+            padding: 16px 0 0 46px;
+            width: calc(100% - 46px);
+          }
           }
           div.gray_light {
             @extend .light_bg;
@@ -132,19 +140,19 @@
           }
           div.whiteblue_light {
             @extend .light_bg;
-            background-color: #ecf0f5;
+            background: #ecf0f5 url(/images/other/program_icon_01.png) no-repeat 10px 10px;
           }
           div.whiteorange_light {
             @extend .light_bg;
-            background-color: #ffdbd0;
+            background: #ffdbd0 url(/images/other/program_icon_02.png) no-repeat 10px 10px;
           }
           div.whitegreen_light {
             @extend .light_bg;
-            background-color: #d9f0ef;
+            background: #cef2ec url(/images/other/program_icon_04.png) no-repeat 10px 10px;
           }
           div.whitepurple_light {
             @extend .light_bg;
-            background-color: #e3d9f9;
+            background: #dbd9ed url(/images/other/program_icon_03.png) no-repeat 10px 10px;
           }
           div.pl21 {
             padding-left: 21px;
@@ -162,7 +170,7 @@
           .location {
             font-size: 11px;
             position: relative;
-            top: -10px;
+            top: -36px;
             z-index: 100;
             left: 20px;
             color: #ef513c;
@@ -178,8 +186,8 @@
           }
           .oneline_location {
             @extend .location;
-            top: 7px;
-            margin-right: 17px;
+            top: 5px;
+            margin-right: 26px;
           }
         }
       }
