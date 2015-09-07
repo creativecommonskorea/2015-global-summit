@@ -1052,8 +1052,7 @@ a {
         font-size: 18px; }
       .speaker_wrap .speaker_box .person_profile .organize {
         font-size: 14px;
-        color: #ff4f38;
-        font-style: italic; }
+        color: #ff4f38; }
       .speaker_wrap .speaker_box .person_profile .describe {
         width: 97%;
         text-align: justify;
@@ -1062,9 +1061,9 @@ a {
         line-height: 24px; }
       .speaker_wrap .speaker_box .person_profile .programs {
         display: inline-block;
-        text-align: center;
+        text-align: left;
         font-size: 14px;
-        line-height: 40px;
+        line-height: 30px;
         font-weight: bold;
         margin-top: 20px;
         padding: 0 15px;
@@ -1073,8 +1072,8 @@ a {
         background-color: #f5f5f5; }
 
 .guide_bar_90p {
-  height: 15px;
-  width: 90%;
+  height: 10px;
+  width: 100%;
   border-bottom: 1px solid #e6e6e6;
   margin-bottom: 15px; }
 
