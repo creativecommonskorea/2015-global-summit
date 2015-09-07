@@ -24,8 +24,8 @@
   sessions:
     - title: "발제 및 토론"
       detail: >
-        "Creative Commons 재정의", 윤종주(CC KOREA 한국대표) <br/>
-        "네트워크 정보 경제", Yochai Benkler(하버드대학교 로스쿨 교수) <br/>
+        "Creative Commons 재정의", 윤종주(CC Korea 한국대표) <br/>
+        "네트워크 정보 경제", Yochai Benkler(하버드 로스쿨 교수) <br/>
         "디지털 시대의 창조적 공유 자원의 중요성", Merkley, Benkler, 윤종수
       location: "대강당"
       box: lightblue
@@ -91,7 +91,7 @@
   sessions:
     - title: "위키백과의 ‘리-챌린지'"
       detail: >
-        Lila Tretikov_위키미디아 재단 사무국장
+        라일라 트레티코브_위키미디아 재단 사무국장
       location: "대강당"
 
 - time: "18:00 ~21:00"
