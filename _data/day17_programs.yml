@@ -1,14 +1,7 @@
 ---
-- time: "09:30 ~10:00"
-  sessions:
-    - location: "국립중앙박물관 대강당 앞 로비"
-      title: "등록"
-      detail: "이름표와 슬랙(Slack) 가입 및 등록을 확인하세요."
-
 - time: "10:00 ~10:10"
   sessions:
     - title: "개회사"
-      detail: "CC 이사"
       location: "컨퍼런스 룸"
 
 - time: "10:10 ~10:40"
@@ -23,46 +16,49 @@
 
 - time: "10:50 ~12:20"
   sessions:
-    - title: "저작권개혁"
+    - title: "저작권 개선"
       location: "컨퍼런스 룸"
       detail: >
-        "Jump-starting commons advocacy and copyright reform", Tim Volmer and affiliates
-      box: lightblue
+        Jump-starting commons advocacy and copyright reform / Tim Volmer and affiliates
+      box: lightorange
+
     - title: "오픈액세스(데이터)"
       location: "카카오룸"
       detail: >
-        "Open Access: Retaining and Regaining Author Publication Rights (possible expansion to address TDM and state)", Diane Peters, Thomas Margoni, Michael Wolfe, Ignasi Labastida (possibly, Julia Reda)<br>
-        Expand session by 20 minutes to allow: (Using Open Data for Advocacy Storytelling: A workshop with the Open Access Button), and Thomas Margoni // Diane on TDM and OA talk
-      box: lightgreen
-    - title: "Organising the Commons"
+        Open Access: Retaining and Regaining Author Publication Rights (possible expansion to address TDM and state) / Diane Peters, Thomas Margoni, Michael Wolfe, Ignasi Labastida (possibly, Julia Reda) <br>
+        Expand session by 20 minutes to allow: (Using Open Data for Advocacy Storytelling: A workshop with the Open Access Button), and Thomas Margoni / Diane on TDM and OA talk
+      box: lightorange
+
+    - title: "CCL"
       location: "아이디어 빌리지"
       detail: >
-        "(60 min) Rightsstatements.org: Developing a Standard for Communicating Rights Beyond CC - and the new Public Domain Mark.", Diane Peters, Paul Keller, Maarten Zeinstra <br>
-        Uses of the blockchain for Creative Commons	Primavera De Filippi
-      box: lightpurple
-    - title: "CC 라이선스"
+        Rightsstatements.org: Developing a Standard for Communicating Rights Beyond CC - and the new Public Domain Mark. / Diane Peters, Paul Keller, Maarten Zeinstra <br>
+        Uses of the blockchain for Creative Commons Primavera De Filippi
+      box: lightorange
+
+    - title: "CCL"
       location: "오픈 스페이스"
       detail: >
         "CC 라이선스와 위키미디어/위키피디아", Stephen LaPorte 위키미디어 법률 고문 <br/>
         "CC licensing and terms of service", Sarah Pearson
       box: lightorange
 
-- time: "12:20 ~13:50"
+- time: "12:20 ~13:20"
   sessions:
     - title: "점심"
 
 - time: "13:50 ~14:50"
   sessions:
-    - title: "플랫폼과 CC라이선스"
+    - title: "플랫폼과 CCL"
       location: "컨퍼런스 룸"
       detail: >
         "The Vibrant and Social Commons: How Users Engage with the Commons Today", Jane, Ryan, Eric
-      box: lightblue
+      box: lightorange
     - title: "커뮤니티"
       location: "카카오룸"
       detail: >
         "CC Affiliates Policies Hand-On", John Weitzmann
-      box: lightgreen
+      box: lightorange
 
 - time: "14:50 ~15:20"
   sessions:
@@ -74,23 +70,19 @@
       location: "컨퍼런스 룸"
       detail: >
         "Affiliates 2.0 - CC as a true network organisation - follow up to the miniconf from Day 0", Alek Tarkowski, Paul Keller
-      box: lightblue
+      box: lightorange
     - title: "OER"
       location: "카카오룸"
       detail: >
         "Edu (30 min): Let's do open education! Testing a toolkit for schools and educators", Anna Stokowska, Kamil Åšliwowski, Alek Tarkowski <br>
         "Edu (45 min): OER Showcase", Mostafa Azad Kamal, Bekka Kahn, George Abdelnour <br>
         "Edu (15 min): School of Open Showcase and Transition", Simeon Oriko
-      box: lightgreen
-    - title: "디자인"
+      box: lightorange
+    - title: "디자인과 CCL"
       location: "아이디어빌리지"
       detail: >
         "CC+Design (how will CC shape future of design) (similar rights and patent rights and CC+)", Thomas Margoni, Jane Park, Diane (?), McCoy Smith (intel)(?), CERN?
-      box: lightpurple
-
-- time: "16:50 ~17:00"
-  sessions:
-    - title: "휴식"
+      box: lightorange
 
 - time: "17:00 ~17:40"
   sessions:

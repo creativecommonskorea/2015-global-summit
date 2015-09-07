@@ -26,9 +26,13 @@
         <div class="time_detail">
             {% for s in box.sessions %}
             <div class="sessions {{s.box}}">
-                <div class="location" {% if s.location == blank %}style="display:none;"{% endif %}>{{ s.location }}</div>
+                {% if s.location %}
+                <div class="location">{{ s.location }}</div>
+                {% endif %}
                 <div class="title">{{ s.title }}</div>
+                {% if s.detail %}
                 <div class="detail">{{ s.detail }}</div>
+                {% endif %}
             </div>
             {% endfor %}
         </div>
