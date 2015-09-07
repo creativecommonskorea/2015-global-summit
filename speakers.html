@@ -39,12 +39,15 @@ layout: base
                 <div class="name_social">
                     <span class="kor_name">{{ s.kor_name }}</span>
                     <span class="eng_name">{{ s.eng_name }}</span>
+
+                    <div style="float: right;margin-right: 25px;">
                     <span class="social">
-                        <a href="{{ s.fb }}"
-                           class="social_fb"><img src="/images/other/speaker_fb.png" alt="facebook"/></a>
-                        <a href="{{ s.tw }}" class="social_fb"><img
-                                src="/images/other/speaker_tw.png" alt="facebook"/></a>
+                        <a href="{{ s.fb }}" class="social_fb" target="_blank"><img src="/images/other/speaker_fb.png"
+                                                                                    alt="facebook"/></a>
+                        <a href="{{ s.tw }}" class="social_fb" target="_blank"><img src="/images/other/speaker_tw.png"
+                                                                                    alt="facebook"/></a>
                     </span>
+                    </div>
                 </div>
                 <div class="organize">{{ s.organize }}</div>
                 <div class="guide_bar_90p"></div>
