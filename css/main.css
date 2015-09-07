@@ -171,6 +171,10 @@ img {
         margin: 0 25px 0 25px; }
       .main_menu .sub_menus .main_sub_menu a:hover {
         text-decoration: underline; }
+      .main_menu .sub_menus .main_sub_menu#submenu_1 {
+        right: 309px; }
+      .main_menu .sub_menus .main_sub_menu#submenu_2 {
+        right: 173px; }
 
 .main_invite_wrap {
   height: 855px;
@@ -450,7 +454,7 @@ img {
 
 .partner_wrap {
   color: #333;
-  padding: 4px 0;
+  padding: 9px 0;
   text-align: center;
   background-color: #f7f7f8; }
   .partner_wrap section {

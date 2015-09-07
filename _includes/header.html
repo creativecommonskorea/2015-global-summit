@@ -1,16 +1,8 @@
 <script>
     $(document).ready(function () {
+        console.log( $('#submenu_1').position() );
+
         // define menu action
-        $('.menus > ul > li').each(function(){
-            if( $(this).attr('data-target') ) {
-                var _target = $(this).attr('data-target');
-
-                console.log($(this), $('#' + _target));
-
-                $('#' + _target).css('left',  $(this).position().left + 'px');
-            }
-        });
-
         $('.menus > ul > li').hover(
                 function (e) {
                     e.stopPropagation();
@@ -132,8 +124,8 @@
         </div>
         <nav class="menus">
             <ul>
-                <li data-target="submenu_1"><a href="/introduce.html">행사소개</a></li>
-                <li data-target="submenu_2">
+                <li data-target="submenu_1" id="menu_1"><a href="/introduce.html">행사소개</a></li>
+                <li data-target="submenu_2" id="menu_2">
                     <a href="/programs.html">프로그램</a>
                 </li>
                 <li><a href="javascript:alert('멋진 글로벌 써밋을 위해 준비중입니다 :)\n조금만 기다려주세요!');">참가신청</a></li>
