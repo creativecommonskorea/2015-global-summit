@@ -1033,15 +1033,20 @@ img {
       font-size: 0.875em;
 
       .name {
-        font-size: 1.750em;
+        font-size: 20px;
         line-height: 28px;
         vertical-align: middle;
         img {
-          margin-right: 13px;
+          margin-right: 7px;
+          vertical-align: middle;
+          width: 25px;
+          height: 25px;
+
         }
       }
       .address {
         margin-top: 25px;
+        margin-left: 37px;
         line-height: 27px;
       }
       .transport {
@@ -1049,7 +1054,7 @@ img {
           padding: 0;
           margin: 20px 0;
         }
-        padding-left: 25px;
+        padding-left: 31px;
         padding-right: 50px;
         margin-top: 70px;
         table tr td:first-child {
@@ -1057,6 +1062,8 @@ img {
         }
         table tr td {
           vertical-align: top;
+          line-height: 150%;
+
         }
         table tr {
           height: 75px;
@@ -1071,6 +1078,7 @@ img {
       display: inline-block;
       width: calc(50% - 2px);
       height: 395px;
+      padding-top: 50px;
     }
   }
 }
@@ -1136,7 +1144,7 @@ h2 {
 }
 
 .m60 {
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .apply_summit_wrap {

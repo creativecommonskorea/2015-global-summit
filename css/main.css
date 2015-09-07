@@ -823,16 +823,20 @@ img {
         .location_wrap .locations .info {
           width: 100%; } }
       .location_wrap .locations .info .name {
-        font-size: 1.750em;
+        font-size: 20px;
         line-height: 28px;
         vertical-align: middle; }
         .location_wrap .locations .info .name img {
-          margin-right: 13px; }
+          margin-right: 7px;
+          vertical-align: middle;
+          width: 25px;
+          height: 25px; }
       .location_wrap .locations .info .address {
         margin-top: 25px;
+        margin-left: 37px;
         line-height: 27px; }
       .location_wrap .locations .info .transport {
-        padding-left: 25px;
+        padding-left: px;
         padding-right: 50px;
         margin-top: 70px; }
         @media screen and (max-width: 1000px) {
@@ -842,13 +846,15 @@ img {
         .location_wrap .locations .info .transport table tr td:first-child {
           width: 75px; }
         .location_wrap .locations .info .transport table tr td {
-          vertical-align: top; }
+          vertical-align: top;
+          line-height: 150%; }
         .location_wrap .locations .info .transport table tr {
           height: 75px; }
     .location_wrap .locations .map {
       display: inline-block;
       width: calc(50% - 2px);
-      height: 395px; }
+      height: 395px;
+      padding-top: 50px; }
       @media screen and (max-width: 1000px) {
         .location_wrap .locations .map {
           width: 100%;
@@ -899,7 +905,7 @@ h2.normal {
   border-bottom: 1px solid #dfdfdf; }
 
 .m60 {
-  margin-bottom: 60px; }
+  padding-bottom: 60px; }
 
 .apply_summit_wrap {
   margin: 50px auto 0;
