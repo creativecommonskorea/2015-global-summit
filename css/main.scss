@@ -480,7 +480,7 @@ img {
     text-align: center;
     padding-top: 79px;
     color: $color_baltic_sea_approx;
-    height: auto ;
+    height: auto;
     h1 {
       margin: 0;
       font-size: 1.875em;
@@ -564,7 +564,7 @@ img {
 
 .partner_wrap {
   color: #333;
-  padding: 15px 0;
+  padding: 4px 0;
   text-align: center;
   background-color: #f7f7f8;
 
@@ -573,12 +573,26 @@ img {
   }
 
   section {
-    .title {
-      height: 80px;
-      vertical-align: middle;
-      font-size: 22px;
-      line-height: 80px;
-      font-weight: bold;
+    .sponsor_wrap {
+      display: table;
+      width: 100%;
+      .t_row {
+        display: table-row;
+        &:last-child {
+          height: 140px;
+        }
+      }
+      .title {
+        height: 80px;
+        vertical-align: middle;
+        font-size: 22px;
+        line-height: 80px;
+        font-weight: bold;
+        display: table-cell;
+      }
+      .sponsor_logos {
+        display: table-cell;
+      }
     }
     background-color: #fff;
     border: 1px solid #dfdfdf;
@@ -1074,6 +1088,7 @@ h1 {
     font-size: 1.875em;
   }
 }
+
 h2 {
   &.normal {
     margin: 0;
