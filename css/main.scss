@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
 //colors
 $color_tapa_approx: #777;
@@ -709,7 +709,7 @@ section .guide_bar {
       @media screen and (max-width: 1000px) {
         font-size: 1.0em;
         text-align: justify;
-        
+
         br {
           display: none;
         }
