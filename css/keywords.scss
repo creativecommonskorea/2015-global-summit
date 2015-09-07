@@ -44,6 +44,8 @@
         .title {
           display: table-cell;
           vertical-align: middle;
+          text-align: left;
+          padding-left: 280px;
           a {
             &:hover {
               text-decoration: underline;

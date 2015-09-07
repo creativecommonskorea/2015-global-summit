@@ -982,7 +982,9 @@ a {
             height: 5.000em; } }
         .keywords_wrap section .keyword_box .title_wrap .title {
           display: table-cell;
-          vertical-align: middle; }
+          vertical-align: middle;
+          text-align: left;
+          padding-left: 280px; }
           .keywords_wrap section .keyword_box .title_wrap .title a {
             text-decoration: none;
             color: #333; }
