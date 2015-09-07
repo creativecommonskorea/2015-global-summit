@@ -137,12 +137,6 @@ img {
         margin: 0;
         padding: 0;
         display: inline-block; }
-        .main_menu .menus ul li:last-child {
-          border: 4px solid #888; }
-          .main_menu .menus ul li:last-child:hover {
-            border: 4px solid #f0513d; }
-            .main_menu .menus ul li:last-child:hover a {
-              color: #ef513c; }
         .main_menu .menus ul li a {
           margin: 0 25px;
           color: #888;
@@ -411,13 +405,13 @@ img {
       vertical-align: bottom;
       margin-top: 0.725em; }
     .main_speakes_wrap section .eng_name {
-      font-size: 1.0em;
-      text-align: left; }
+      font-size: 0.875em;
+      text-align: left;
+      margin-top: 5px; }
     .main_speakes_wrap section .organize {
       font-size: 0.875em;
       color: #ff4f38;
-      text-align: left;
-      margin-top: 6px; }
+      text-align: left; }
     .main_speakes_wrap section .guide_line {
       width: 24px;
       border-top: 1px solid #c2c2c2;
@@ -675,7 +669,7 @@ img {
   .promote_main_wrap section {
     text-align: center; }
     .promote_main_wrap section .promote_description {
-      font-size: 0.875em;
+      font-size: 1em;
       line-height: 140%; }
       @media screen and (max-width: 1000px) {
         .promote_main_wrap section .promote_description {

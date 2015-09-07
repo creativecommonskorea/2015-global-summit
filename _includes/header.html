@@ -1,6 +1,16 @@
 <script>
     $(document).ready(function () {
         // define menu action
+        $('.menus > ul > li').each(function(){
+            if( $(this).attr('data-target') ) {
+                var _target = $(this).attr('data-target');
+                console.log( $(this).position().left, ($(this).width() / 2),  $('#' + _target).width() / 2);
+                console.log($(this).position().left + ($(this).width() / 2) - ($('#' + _target).width() / 2));
+                var _left =  $(this).position().left + ($(this).width / 2);
+                $('#' + _target).css('left',  _left + 'px');
+            }
+        });
+
         $('.menus > ul > li').hover(
                 function (e) {
                     e.stopPropagation();
@@ -134,7 +144,9 @@
                 {% for post in site.posts limit:1 %}
                 <li><a href="{{ post.url | prepend: site.baseurl }}">소식</a></li>
                 {% endfor %}
+                <!--
                 <li><a href="http://campaign.cckorea.org/" target="_blank">CC 캠페인</a></li>
+                -->
             </ul>
         </nav>
         <div class="sub_menus">
