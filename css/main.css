@@ -488,7 +488,7 @@ img {
       vertical-align: middle;
       display: inline-block;
       position: relative;
-      margin-right: 70px; }
+      margin-right: 50px; }
       @media screen and (max-width: 1000px) {
         .partner_wrap .sponsor_logos .logos {
           width: 100%;
@@ -500,10 +500,7 @@ img {
       .partner_wrap .sponsor_logos .logos .info {
         font-weight: bold;
         font-size: 11px;
-        width: 330px;
-        position: relative;
-        left: 22px;
-        top: 0; }
+        width: 170px; }
         @media screen and (max-width: 1000px) {
           .partner_wrap .sponsor_logos .logos .info {
             left: calc(50% - 128px); } }
