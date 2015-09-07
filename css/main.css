@@ -665,7 +665,7 @@ img {
     text-align: center; }
     .promote_main_wrap section .promote_description {
       font-size: 1em;
-      line-height: 140%; }
+      line-height: 160%; }
       @media screen and (max-width: 1000px) {
         .promote_main_wrap section .promote_description {
           text-align: left; } }
