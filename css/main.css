@@ -835,7 +835,8 @@ img {
       .location_wrap .locations .info .address {
         margin-top: 25px;
         margin-left: 33px;
-        line-height: 27px; }
+        line-height: 27px;
+        font-size: 15px; }
       .location_wrap .locations .info .transport {
         padding-left: 28px;
         padding-right: 50px;
