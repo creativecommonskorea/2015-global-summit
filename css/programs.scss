@@ -109,7 +109,7 @@
             height: 230px;
           }
           &:first-child {
-            width: 16% ;
+            width: 16%;
             vertical-align: middle;
             line-height: 56px;
             font-size: 14px;
@@ -130,9 +130,9 @@
               line-height: 130%;
             }
             &.oneline {
-            padding: 16px 0 0 46px;
-            width: calc(100% - 46px);
-          }
+              padding: 16px 0 0 46px;
+              width: calc(100% - 46px);
+            }
           }
           div.gray_light {
             @extend .light_bg;
@@ -146,13 +146,13 @@
             @extend .light_bg;
             background: #ffdbd0 url(/images/other/program_icon_02.png) no-repeat 10px 10px;
           }
-          div.whitegreen_light {
-            @extend .light_bg;
-            background: #cef2ec url(/images/other/program_icon_04.png) no-repeat 10px 10px;
-          }
           div.whitepurple_light {
             @extend .light_bg;
             background: #dbd9ed url(/images/other/program_icon_03.png) no-repeat 10px 10px;
+          }
+          div.whitegreen_light {
+            @extend .light_bg;
+            background: #cef2ec url(/images/other/program_icon_04.png) no-repeat 10px 10px;
           }
           div.pl21 {
             padding-left: 21px;

@@ -1370,7 +1370,7 @@ a {
             vertical-align: middle;
             line-height: 56px;
             font-size: 14px; }
-          .schedule .timetable table tr td .light_bg, .schedule .timetable table tr td div.gray_light, .schedule .timetable table tr td div.whiteblue_light, .schedule .timetable table tr td div.whiteorange_light, .schedule .timetable table tr td div.whitegreen_light, .schedule .timetable table tr td div.whitepurple_light {
+          .schedule .timetable table tr td .light_bg, .schedule .timetable table tr td div.gray_light, .schedule .timetable table tr td div.whiteblue_light, .schedule .timetable table tr td div.whiteorange_light, .schedule .timetable table tr td div.whitepurple_light, .schedule .timetable table tr td div.whitegreen_light {
             height: 100%;
             width: calc(100% - 30px);
             vertical-align: middle;
@@ -1378,12 +1378,12 @@ a {
             border-bottom: 3px solid #dedede;
             padding: 43px 15px 0 15px;
             position: relative; }
-            .schedule .timetable table tr td .light_bg img, .schedule .timetable table tr td div.gray_light img, .schedule .timetable table tr td div.whiteblue_light img, .schedule .timetable table tr td div.whiteorange_light img, .schedule .timetable table tr td div.whitegreen_light img, .schedule .timetable table tr td div.whitepurple_light img {
+            .schedule .timetable table tr td .light_bg img, .schedule .timetable table tr td div.gray_light img, .schedule .timetable table tr td div.whiteblue_light img, .schedule .timetable table tr td div.whiteorange_light img, .schedule .timetable table tr td div.whitepurple_light img, .schedule .timetable table tr td div.whitegreen_light img {
               vertical-align: middle; }
-            .schedule .timetable table tr td .light_bg li, .schedule .timetable table tr td div.gray_light li, .schedule .timetable table tr td div.whiteblue_light li, .schedule .timetable table tr td div.whiteorange_light li, .schedule .timetable table tr td div.whitegreen_light li, .schedule .timetable table tr td div.whitepurple_light li {
+            .schedule .timetable table tr td .light_bg li, .schedule .timetable table tr td div.gray_light li, .schedule .timetable table tr td div.whiteblue_light li, .schedule .timetable table tr td div.whiteorange_light li, .schedule .timetable table tr td div.whitepurple_light li, .schedule .timetable table tr td div.whitegreen_light li {
               margin-bottom: 10px;
               line-height: 130%; }
-            .schedule .timetable table tr td .light_bg.oneline, .schedule .timetable table tr td div.oneline.gray_light, .schedule .timetable table tr td div.oneline.whiteblue_light, .schedule .timetable table tr td div.oneline.whiteorange_light, .schedule .timetable table tr td div.oneline.whitegreen_light, .schedule .timetable table tr td div.oneline.whitepurple_light {
+            .schedule .timetable table tr td .light_bg.oneline, .schedule .timetable table tr td div.oneline.gray_light, .schedule .timetable table tr td div.oneline.whiteblue_light, .schedule .timetable table tr td div.oneline.whiteorange_light, .schedule .timetable table tr td div.oneline.whitepurple_light, .schedule .timetable table tr td div.oneline.whitegreen_light {
               padding: 16px 0 0 46px;
               width: calc(100% - 46px); }
           .schedule .timetable table tr td div.gray_light {
@@ -1392,10 +1392,10 @@ a {
             background: #ecf0f5 url(/images/other/program_icon_01.png) no-repeat 10px 10px; }
           .schedule .timetable table tr td div.whiteorange_light {
             background: #ffdbd0 url(/images/other/program_icon_02.png) no-repeat 10px 10px; }
-          .schedule .timetable table tr td div.whitegreen_light {
-            background: #cef2ec url(/images/other/program_icon_04.png) no-repeat 10px 10px; }
           .schedule .timetable table tr td div.whitepurple_light {
             background: #dbd9ed url(/images/other/program_icon_03.png) no-repeat 10px 10px; }
+          .schedule .timetable table tr td div.whitegreen_light {
+            background: #cef2ec url(/images/other/program_icon_04.png) no-repeat 10px 10px; }
           .schedule .timetable table tr td div.pl21 {
             padding-left: 21px;
             width: calc(100% - 21px); }
