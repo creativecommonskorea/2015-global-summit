@@ -675,7 +675,8 @@ img {
   .promote_main_wrap section {
     text-align: center; }
     .promote_main_wrap section .promote_description {
-      font-size: 0.875em; }
+      font-size: 0.875em;
+      line-height: 140%; }
       @media screen and (max-width: 1000px) {
         .promote_main_wrap section .promote_description {
           text-align: left; } }
@@ -761,13 +762,14 @@ img {
         width: 100%; }
       .preparing_people .people_list .person .photo img {
         width: inherit;
-        border-radius: 80px; }
+        border-radius: 90px; }
       .preparing_people .people_list .person .name {
         width: 100%;
         font-weight: bold;
-        font-size: 0.875em; }
+        font-size: 0.875em;
+        margin-top: 5px; }
       .preparing_people .people_list .person .organize {
-        font-size: 0.688px;
+        font-size: 7px;
         margin-top: 5px; }
   .preparing_people .show_more {
     width: 100%;

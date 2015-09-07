@@ -839,6 +839,7 @@ img {
         text-align: left;
       }
       font-size: 0.875em;
+      line-height: 140%;
       &.long_desc {
         line-height: 24px;
       }
@@ -941,15 +942,16 @@ img {
       }
       .photo img {
         width: inherit;
-        border-radius: 80px;
+        border-radius: 90px;
       }
       .name {
         width: 100%;
         font-weight: bold;
         font-size: 0.875em;
+        margin-top: 5px;
       }
       .organize {
-        font-size: 0.688px;
+        font-size: 7px;
         margin-top: 5px;
       }
     }

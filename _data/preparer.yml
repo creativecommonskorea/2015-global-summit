@@ -25,31 +25,31 @@
 
 - name: "Paul Stacey"
   image: "/images/people/1_07_paul-stacey.png"
-  organize: "CC Staff (Associate Director of Global Learning) and GS2015 Program Coordinator"
+  organize: "CC Staff"
 
 - name: "Diane Peters"
   image: "/images/people/1_08_s_diane%20peters.jpg"
-  organize: "CC Staff (General Counsel/Corporate Secretary)"
+  organize: "CC Staff"
             
 - name: "Mari Moreshead"
   image: "/images/people/1_09_mari-moreshead.png"
-  organize: "CC Staff (Senior Administrator)"
+  organize: "CC Staff"
 
 - name: "Matt Lee"
   image: "/images/people/1_10_matt%20lee.jpg"
-  organize: "CC Staff (Technical Lead)"
+  organize: "CC Staff"
 
 - name: "Schott Seethaler"
   image: "/images/people/1_11_s_schott%20seethaler.jpg"
-  organize: "CC Staff (Director of Finance and Operations)"
+  organize: "CC Staff"
 
 - name: "Timothy Vollmer"
   image: "/images/people/1_12_timothy-vollmer.png"
-  organize: "CC Staff (Manager, Public Policy)"
+  organize: "CC Staff"
             
 - name: "Rebecca Lendl"
   image: "/images/people/1_13_s_rebecca%20lendl.jpg"
-  organize: "CC Staff (Director of Development)"
+  organize: "CC Staff"
 
 - name: "Ryan Merkley"
   image: "/images/people/1_14_ryan-merkley.png"
@@ -57,5 +57,5 @@
 
 - name: "Jessica Coates"
   image: "/images/people/1_15_s_jessica%20coates.jpg"
-  organize: "CC Australia and Regional Coordinator for the Asia-Pacific"
+  organize: "CC Staff"
             
