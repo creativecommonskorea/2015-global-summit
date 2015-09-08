@@ -1670,12 +1670,13 @@ ul {
             word-break: keep-all;
             width: 80%;
             margin: 0 auto;
-            font-size: 0.825em; } }
+            font-size: 0.825em;
+            line-height: 140%; } }
         @media screen and (min-width: 600px) {
           .program_mobile section .mobile_day_detail .day_description {
             text-align: center; } }
       .program_mobile section .mobile_day_detail .day_location {
-        font-size: 0.825em;
+        font-size: 0.6em;
         margin: 29px 0; }
       .program_mobile section .mobile_day_detail .subject_icons {
         display: inline-block;
