@@ -26,7 +26,6 @@
     }
   }
   .day_concept {
-    height: 212px;
     padding-top: 68px;
     position: relative;
     .date {
@@ -40,10 +39,10 @@
     }
     .concept_description {
       font-size: 14px;
-      margin-top: 17px;
+      margin: 25px 0;
     }
     .day_location {
-      margin-top: 25px;
+      margin: 25px 0;
       font-size: 14px;
     }
     .balloon {

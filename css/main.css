@@ -1328,7 +1328,6 @@ a {
     .schedule .days .day:last-child {
       margin-right: 0px; }
   .schedule .day_concept {
-    height: 212px;
     padding-top: 68px;
     position: relative; }
     .schedule .day_concept .date {
@@ -1340,9 +1339,9 @@ a {
       font-weight: bold; }
     .schedule .day_concept .concept_description {
       font-size: 14px;
-      margin-top: 17px; }
+      margin: 25px 0; }
     .schedule .day_concept .day_location {
-      margin-top: 25px;
+      margin: 25px 0;
       font-size: 14px; }
     .schedule .day_concept .balloon {
       position: absolute;
