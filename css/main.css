@@ -547,15 +547,15 @@ img {
       margin-right: 50px; }
       @media screen and (max-width: 1000px) {
         .partner_wrap .sponsor_logos .logos {
-          width: 100%;
-          margin: 0 0 2em 0; } }
+          width: 25%;
+          margin: 0 0 32px 0; } }
       .partner_wrap .sponsor_logos .logos:last-child {
         margin-right: 0; }
       .partner_wrap .sponsor_logos .logos img {
         width: 200px; }
         @media screen and (max-width: 640px) {
           .partner_wrap .sponsor_logos .logos img {
-            width: 30%; } }
+            width: 100%; } }
       .partner_wrap .sponsor_logos .logos .info {
         font-weight: bold;
         font-size: 11px;

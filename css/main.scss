@@ -676,8 +676,8 @@ img {
     position: relative;
     .logos {
       @media screen and (max-width: 1000px) {
-        width: 100%;
-        margin: 0 0 2em 0;
+        width: 25%;
+        margin: 0 0 32px 0;
       }
       vertical-align: middle;
       display: inline-block;
@@ -688,7 +688,7 @@ img {
       }
       img {
         @media screen and (max-width: 640px) {
-          width: 30%;
+          width: 100%;
         }
         width: 200px;
       }
