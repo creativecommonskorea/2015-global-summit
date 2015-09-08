@@ -12,7 +12,8 @@
 
       (이미지: CC-BY @Greg G)
   relates:
-    - item: "10월 15일 목요일 13:20 - 14:00 Open Knowledge @대강당!!"
+    - item: "10월 16일 금요일 11:00 - 12:30 OER @국립중앙박물관 세미나룸"
+    - item: "10월 17일 토요일 15:20 - 16:50 OER @컨텐츠코리아랩 카카오룸"
 
 - title: "오픈글램 / Open GLAM(Open-Gallery/Library/Archive/Museum)"
   definition_link: "http://openglam.org/"
@@ -24,7 +25,8 @@
 
     (이미지: CC-BY @SarahStierch)
   relates:
-    - item: "10월 15일 (목) 13:20 - 14:00 Open Knowledge @대강당"
+    - item: "10월 16일 금요일 11:00 - 12:30 오픈글램 @국립중앙박물관 대강당"
+    - item: "10월 16일 금요일 14:00 - 15:00 오픈글램 워크샵 @국립한글박물관 강의실1"
 
 - title: "오픈데이터 / Open Data"
   definition_link: "https://en.wikipedia.org/wiki/Open_data"
@@ -34,7 +36,9 @@
 
     (이미지: CC0)
   relates:
-    - item: "10월 15일 목요일 13:20 - 14:00 Open Data / Open Government @세미나실"
+    - item: "10월 15일 목요일 15:30 - 16:50 오픈데이터 @국립중앙박물관 대강당"
+    - item: "10월 16일 금요일 11:00 - 12:30 공유도시 @국립중앙박물관 소강당"
+    - item: "10월 16일 금요일 15:30 - 16:50 오픈데이터 @국립중앙박물관 대강당"
 
 - title: "열린정부 / Open Government"
   definition_link: "https://en.wikipedia.org/wiki/Open_government"
@@ -45,7 +49,8 @@
 
     (이미지: CC-BY @Ton Zijlstra)
   relates:
-    - item: "10. 16(금) 14:00 - 17:00 오픈엑세스 현황과 미래 @국립중앙박물관 세미나실"
+    - item: "10월 16일 금요일 11:00 - 12:30 공유도시 @국립중앙박물관 소강당"
+    - item: "10월 16일 금요일 15:30 - 16:50 오픈 커뮤니티 워크샵 @국립한글박물관 강의실2"
 
 - title: "오픈소스 하드웨어 / OSH(Open-source Hardware)"
   definition_link: "https://ko.wikipedia.org/wiki/%EC%98%A4%ED%94%88_%EC%86%8C%EC%8A%A4_%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4"
@@ -55,7 +60,7 @@
 
     (이미지: CC-SA)
   relates:
-    - item: "10. 16(금) 14:00 - 17:00 오픈엑세스 현황과 미래 / 국립중앙박물관 세미나실"
+    - item: "10월 15일 목요일 15:30 - 16:50 DIY @국립중앙박물관 세미나룸"
 
 - title: "오픈액세스 / Open Access"
   definition_link: "https://ko.wikipedia.org/wiki/%EC%98%A4%ED%94%88_%EC%95%A1%EC%84%B8%EC%8A%A4"
@@ -65,7 +70,9 @@
 
     (이미지: CC-BY-NC-SA @Research & Graduate College Graduate Studies Office)
   relates:
-    - item: "10. 16(금) 14:00 - 17:00 오픈엑세스 현황과 미래 / 국립중앙박물관 세미나실"
+    - item: "10월 16일 금요일 15:30 - 16:50 저작권 개선 워크샵 @국립한글박물관 강의실1"
+    - item: "10월 17일 토요일 10:50 - 12:20 오픈액세스@컨텐츠코리아랩 카카오룸"
+    - item: "10월 17일 토요일 10:50 - 12:20 저작권 개선 @컨텐츠코리아랩 컨퍼런스룸"
 
 - title: "오픈 비즈니스 / Open Business"
   definition_link: "https://en.wikipedia.org/wiki/Open_business"
@@ -75,7 +82,7 @@
 
     (이미지: CC-BY-NC @Virtualiseren in het onderwijs)
   relates:
-    - item: "10. 16(금) 14:00 - 17:00 오픈엑세스 현황과 미래 / 국립중앙박물관 세미나실"
+    - item: "10월 15일 목요일 13:30 - 14:50 오픈비즈니스 @국립중앙박물관 세미나룸"
 
 - title: "오픈 콘텐츠 / Open Contents"
   definition_link: "https://ko.wikipedia.org/wiki/%EC%98%A4%ED%94%88_%EC%BD%98%ED%85%90%EC%B8%A0"
@@ -85,4 +92,8 @@
 
     (이미지: CC-BY-NC @Virtualiseren in het onderwijs)
   relates:
-    - item: "10. 16(금) 14:00 - 17:00 오픈엑세스 현황과 미래 / 국립중앙박물관 세미나실"
+    - item: "10월 15일 목요일 13:30 - 14:50 오픈지식 @국립중앙박물관 대강당"
+    - item: "10월 16일 금요일 11:00 - 12:30 공유도시 @국립한글박물관 강의실2"
+    - item: "10월 16일 금요일 14:00 - 15:00 디지털 기술과 공유 워크샵 @국립한글박물관 강의실2"
+    - item: "10월 16일 금요일 15:30 - 16:50 오픈디자인 @국립중앙박물관 세미나룸"
+    - item: "10월 17일 토요일 15:20 - 16:50 디자인과 CCL @컨텐츠코리아랩 아이디어빌리지"
