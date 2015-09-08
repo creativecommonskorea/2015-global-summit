@@ -4,11 +4,11 @@
   main_img: "images/base/speaker_01.png"
   kor_name: "요하이 벤클러"
   eng_name: "Yochai Benkler"
-  main_eng: "&nbsp;Yochai Benkler"
+  main_eng: "Yochai Benkler"
   fb: "https://www.facebook.com/pages/Yochai-Benkler/105527849480793?fref=ts"
   tw: "https://twitter.com/YochaiBenkler"
   organize: "하버드 로스쿨 교수"
-  main_org: "&nbsp;하버드 로스쿨 교수"
+  main_org: "하버드 로스쿨 교수"
   main_abs: >
     네트워크된 환경에서 공동의 접근 방식에 초점을 맞춰 오픈소스 소프트웨어와 위키 백과 등 공유를 기반으로 한 공동생산의 개념을 만들었다.<br>(주요저서 : <a href="http://book.naver.com/bookdb/book_detail.nhn?bid=8922944" target="_blank">네트워크의 부</a>, <a href="http://book.naver.com/bookdb/book_detail.nhn?bid=7324924" target="_blank">펭귄과 리바이던</a>)
   describe: >
@@ -25,11 +25,11 @@
   main_img: "images/base/speaker_02.png"
   kor_name: "전길남"
   eng_name: "Kilnam Chon"
-  main_eng: "&nbsp;Kilnam Chon"
+  main_eng: "Kilnam Chon"
   fb: "https://www.facebook.com/chonkn?fref=ts"
   tw: "https://twitter.com/chonkn"
   organize: "한국과학기술원(KAIST) 명예교수"
-  main_org: "&nbsp;한국과학기술원(KAIST) 명예교수"
+  main_org: "한국과학기술원(KAIST) 명예교수"
   main_abs: "아시아 최초의 인터넷 프로토콜 네트워크 SDN을 개발하고 1990년 국내 최초 전용선 인터넷 연결을 주도하여 본격 인터넷 시대를 열었다."
   describe: >
     '한국 인터넷의 아버지'로 불리는 전길남 박사는 인터넷의 형성과 보급에 기여한 공을 인정받아 ISOC(인터넷 소사이어티)로부터 인터넷 ‘명예의 전당’에 헌액되기도 했다. 미국 록웰
@@ -45,11 +45,11 @@
   main_img: "images/base/speaker_03.png"
   kor_name: "노소영"
   eng_name: "Sohyeong Noh"
-  main_eng: "&nbsp;Sohyeong Noh"
+  main_eng: "Sohyeong Noh"
   fb: "https://www.facebook.com/pages/Sk-%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0-%EB%82%98%EB%B9%84/287394241290825"
   tw: "https://twitter.com/artcenternabi"
   organize: "아트센터 나비 관장, CC Korea 이사"
-  main_org: "&nbsp;아트센터 나비 관장, CC Korea 이사"
+  main_org: "아트센터 나비 관장, CC Korea 이사"
   main_abs: "<디지털 아트 우리시대의 예술>의 저자로, 2000년 국내 최초의 디지털 아트 전문기관인 ‘아트센터 나비’를 개관하여 현재까지 재임 중이다."
   describe: >
     &lt;디지털 아트 우리시대의 예술&gt;의 저자로, 1991년 대전세계엑스포 조직위원회 아트&테크놀로지 기획팀장을 맡으면서 컴한터 예술 분야에 입문, 2000년 국내 최초의
@@ -64,11 +64,11 @@
   main_img: "images/base/speaker_04.png"
   kor_name: "율리아 레다"
   eng_name: "Julia Reda"
-  main_eng: "&nbsp;Julia Reda"
+  main_eng: "Julia Reda"
   fb: "https://www.facebook.com/Senficon"
   tw: "https://twitter.com/Senficon"
   organize: "유럽의회 회원, 2001년 유럽연합(EU) 저작권 지침의외 검토보고관, 유럽 청년 해적당(Young Pirates of Europe) 대표"
-  main_org: "&nbsp;유럽 청년 해적당(Young Pirates of Europe) 대표"
+  main_org: "유럽 청년 해적당(Young Pirates of Europe) 대표"
   main_abs: "유럽 통합, 온라인을 통한 청년의 정치와 민주주의 참여 등이 주요 관심사로, 7월에 있을 유럽연합(EU)의 저작권법 개정에 잠재적 영향을 미칠 보고서를 발표한 바 있다."
   describe: >
     독일의 정치인이자 활동가인 줄리아 레다는 2014년부터 독일을 대표하는 유럽의회 의원이자 유럽의 청년해적당 대표이다. 저작권법 개혁에 관한 그녀의 소견을 선언한 이후 2014년
@@ -82,11 +82,11 @@
   main_img: "images/base/speaker_05.png"
   kor_name: "라일라 트레티코브"
   eng_name: "Lila Tretikov"
-  main_eng: "&nbsp;Lila Tretikov"
+  main_eng: "Lila Tretikov"
   fb: "https://www.facebook.com/pages/Lila-Tretikov/575556509208770?fref=ts"
   tw: "https://twitter.com/lilatretikov"
   organize: "위키미디어 재단 사무총장"
-  main_org: "&nbsp;위키미디어 재단 사무총장"
+  main_org: "위키미디어 재단 사무총장"
   main_abs: "라일라 트레티코브는 위키피디아를 운영하는 비영리 단체인 위키미디어 재단의 사무총장이다. 위키 백과는 매월 전 세계 인구의 절반에 가까운 1억 여 명에게 290개의 언어로 무료제공되고 있다."
   describe: >
     오픈소스, 클라우드 기반의 소프트웨어 공급업체 SugarCRM의 책임자를 역임하며 제품전략, 엔지니어링, IT 등의 분야에서 활동해왔으며 특허된 지능형 데이터 매핑 및 다이나믹
@@ -100,11 +100,11 @@
   main_img: "images/base/speaker_06.png"
   kor_name: "라이언 머클리"
   eng_name: "Ryan Merkley"
-  main_eng: "&nbsp;Ryan Merkley"
+  main_eng: "Ryan Merkley"
   fb: "https://www.facebook.com/ryanmerkley?fref=ts"
   tw: "https://twitter.com/ryanmerkley"
   organize: "CC CEO, 전 모질라재단 COO"
-  main_org: "&nbsp;Creative Commons CEO, 전 모질라재단 COO"
+  main_org: "Creative Commons CEO, 전 모질라재단 COO"
   main_abs: "모질라재단에서 오픈소스 프로젝트를 주도적으로 진행하였으며, 2014년부터 CC CEO로 합류하였다. 열린정부, 오픈소스 등 오픈 운동을 활발하게 펼쳐왔다."
   describe: >
     라이언 머클리는 캐나다의 공공 정책, 열린 정부, 디지털 통신 분야 선두 주자이다. 그는 자신이 오픈데이터 프로젝트를 시작하기도 했던 토론토에서 2010년 밴쿠버 동계 올림픽의
@@ -114,4 +114,3 @@
     - item: 10월 16일 금요일 10:05 - 10:30 키노트 발표@국립중앙박물관 대강당
     - item: 10월 16일 금요일 14:00 - 15:00 동영상 공유저작물의 활성화 워크샵 @국립한글박물관 강의실2
     - item: 10월 17일 토요일 13:50 - 14:50 플랫폼과 CCL @컨텐츠코리아랩 컨퍼런스룸
-

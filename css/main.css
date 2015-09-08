@@ -180,9 +180,14 @@ img {
   background-image: url(/images/base/main_big.png);
   background-repeat: repeat-x;
   background-position: center; }
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 640px) {
     .main_invite_wrap {
       background: url("/images/base/mobile_intro_bg.png") no-repeat top;
+      height: auto; } }
+  @media screen and (max-width: 1000px) and (min-width: 640px) {
+    .main_invite_wrap {
+      background-position: top center;
+      background-size: auto;
       height: auto; } }
   .main_invite_wrap main {
     padding-top: 140px; }
@@ -265,10 +270,14 @@ img {
       .program_info_wrap section {
         width: 95%;
         height: auto;
-        overflow: auto; } }
+        overflow: auto;
+        padding-top: 60px; } }
     .program_info_wrap section h1 {
-      font-size: 1.875em;
+      font-size: 30px;
       margin: 0; }
+      @media screen and (max-width: 1000px) {
+        .program_info_wrap section h1 {
+          font-size: 25px; } }
     .program_info_wrap section .program_list {
       margin: 0 0 0 3px;
       padding: 0;
@@ -278,15 +287,16 @@ img {
       height: 228px;
       background: rgba(255, 255, 255, 0.1);
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#60000000, endColorstr=#60000000); }
-      @media screen and (max-width: 1000px) {
+      @media screen and (max-width: 1024px) {
         .program_info_wrap section .program_list {
           width: 100%;
           position: relative;
           margin: 0 0 0.5em 0;
-          padding: 1em 0;
+          padding: 16px 0;
           vertical-align: middle;
           display: table;
-          height: 3.625em; } }
+          height: auto;
+          overflow: auto; } }
       .program_info_wrap section .program_list div {
         position: relative; }
         @media screen and (max-width: 1000px) {
@@ -310,22 +320,23 @@ img {
         color: #ef513c;
         font-size: 1.50em;
         font-weight: bold; }
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 640px) {
           .program_info_wrap section .program_list .program_sub_title {
             float: left;
-            text-align: left;
-            font-size: 0.90em;
+            text-align: center;
+            font-size: 14px;
             width: 26%;
-            padding-left: 0.5em;
-            line-height: 3.625em; } }
-        @media screen and (max-width: 1000px) and (min-width: 600px) {
+            padding-left: 7px;
+            line-height: 52px; } }
+        @media screen and (max-width: 1024px) and (min-width: 640px) {
           .program_info_wrap section .program_list .program_sub_title {
             float: left;
             margin: auto 0.3em;
             width: 26%;
-            text-align: left;
-            font-size: 1em; } }
-        @media screen and (min-width: 1000px) {
+            text-align: center;
+            font-size: 14px;
+            line-height: 52px; } }
+        @media screen and (min-width: 1024px) {
           .program_info_wrap section .program_list .program_sub_title {
             margin-top: 17px; } }
       .program_info_wrap section .program_list .program_sub_description {
@@ -342,7 +353,9 @@ img {
             font-size: 0.75em;
             padding: 0 0.5em 0 0;
             text-align: left;
-            word-break: keep-all; } }
+            word-break: keep-all;
+            overflow: auto;
+            height: auto; } }
         @media screen and (max-width: 1000px) and (min-width: 600px) {
           .program_info_wrap section .program_list .program_sub_description {
             width: calc(74% - 90px);
@@ -366,6 +379,9 @@ img {
       font-size: 1.125em;
       text-decoration: none;
       color: #fff; }
+      @media screen and (max-width: 1024px) {
+        .program_info_wrap .show_all_program a {
+          font-size: 16px; } }
       .program_info_wrap .show_all_program a:hover {
         text-decoration: underline; }
   .program_info_wrap .apply_summit_wrap {
@@ -398,6 +414,9 @@ img {
     .main_speakes_wrap section h1 {
       margin: 0;
       font-size: 1.875em; }
+      @media screen and (max-width: 1000px) {
+        .main_speakes_wrap section h1 {
+          font-size: 25px; } }
       .main_speakes_wrap section h1.normal {
         font-weight: normal; }
     .main_speakes_wrap section .speaker_image {
@@ -408,32 +427,49 @@ img {
         .main_speakes_wrap section .speaker_image {
           margin-right: 0.5em; } }
     .main_speakes_wrap section .kor_name {
-      font-size: 1.375em;
+      font-size: 22px;
       text-align: left;
       vertical-align: bottom;
       margin-top: 0.725em; }
+      @media screen and (max-width: 640px) {
+        .main_speakes_wrap section .kor_name {
+          font-size: 18px;
+          margin-top: 80px; } }
     .main_speakes_wrap section .eng_name {
-      font-size: 0.875em;
+      font-size: 14px;
       text-align: left;
       margin-top: 5px; }
+      @media screen and (max-width: 640px) {
+        .main_speakes_wrap section .eng_name {
+          margin-top: 15px; } }
     .main_speakes_wrap section .organize {
-      font-size: 0.875em;
+      font-size: 14px;
       color: #ff4f38;
       text-align: left; }
     .main_speakes_wrap section .guide_line {
       width: 24px;
       border-top: 1px solid #c2c2c2;
       margin-bottom: 24px; }
+      @media screen and (max-width: 640px) {
+        .main_speakes_wrap section .guide_line {
+          display: none; } }
     .main_speakes_wrap section .speaker_description {
       word-break: keep-all;
       text-align: left;
       font-size: 0.875em;
       padding-right: 1em;
       line-height: 24px; }
+      @media screen and (max-width: 640px) {
+        .main_speakes_wrap section .speaker_description {
+          font-size: 13px;
+          text-align: left;
+          padding-left: 20px;
+          float: left; } }
       @media screen and (max-width: 1000px) {
         .main_speakes_wrap section .speaker_description {
-          font-size: 1.0em;
-          text-align: justify; } }
+          font-size: 13px;
+          text-align: left;
+          padding-left: 20px; } }
     .main_speakes_wrap section .speaker_profile {
       display: inline-block;
       width: 324px;

@@ -257,8 +257,13 @@ img {
   background-repeat: repeat-x;
   background-position: center;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 640px) {
     background: url('/images/base/mobile_intro_bg.png') no-repeat top;
+    height: auto;
+  }
+  @media screen and (max-width: 1000px) and (min-width: 640px) {
+    background-position: top center;
+    background-size: auto;
     height: auto;
   }
 
@@ -350,24 +355,29 @@ img {
       width: 95%;
       height: auto;
       overflow: auto;
+      padding-top: 60px;
     }
     text-align: center;
     padding-top: 79px;
     color: $white;
     height: 334px;
     h1 {
-      font-size: 1.875em;
+      @media screen and (max-width: 1000px) {
+        font-size: 25px;
+      }
+      font-size: 30px;
       margin: 0;
     }
     .program_list {
-      @media screen and (max-width: 1000px) {
+      @media screen and (max-width: 1024px) {
         width: 100%;
         position: relative;
         margin: 0 0 0.5em 0;
-        padding: 1em 0;
+        padding: 16px 0;
         vertical-align: middle;
         display: table;
-        height: 3.625em;
+        height: auto;
+        overflow: auto;
       }
       margin: 0 0 0 3px;
       padding: 0;
@@ -399,22 +409,23 @@ img {
         margin-top: 21px;
       }
       .program_sub_title {
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 640px) {
           float: left;
-          text-align: left;
-          font-size: 0.90em;
+          text-align: center;
+          font-size: 14px;
           width: 26%;
-          padding-left: 0.5em;
-          line-height: 3.625em;
+          padding-left: 7px;
+          line-height: 52px;
         }
-        @media screen and (max-width: 1000px) and (min-width: 600px) {
+        @media screen and (max-width: 1024px) and (min-width: 640px) {
           float: left;
           margin: auto 0.3em;
           width: 26%;
-          text-align: left;
-          font-size: 1em;
+          text-align: center;
+          font-size: 14px;
+          line-height: 52px;
         }
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 1024px) {
           margin-top: 17px;
         }
         color: $color_sunset_orange_approx;
@@ -429,6 +440,8 @@ img {
           padding: 0 0.5em 0 0;
           text-align: left;
           word-break: keep-all;
+          overflow: auto;
+          height: auto;
         }
         @media screen and (max-width: 1000px) and (min-width: 600px) {
           width: calc(74% - 90px);
@@ -460,6 +473,10 @@ img {
     font-size: 1.125em;
     color: $white;
     a {
+      @media screen and (max-width: 1024px) {
+        font-size: 16px;
+      }
+
       &:hover {
         text-decoration: underline;
       }
@@ -499,6 +516,9 @@ img {
     color: $color_baltic_sea_approx;
     height: auto;
     h1 {
+      @media screen and (max-width: 1000px) {
+        font-size: 25px;
+      }
       margin: 0;
       font-size: 1.875em;
       &.normal {
@@ -514,30 +534,47 @@ img {
       margin-right: 30px;
     }
     .kor_name {
-      font-size: 1.375em;
+      @media screen and (max-width: 640px) {
+        font-size: 18px;
+        margin-top: 80px;
+      }
+      font-size: 22px;
       text-align: left;
       vertical-align: bottom;
       margin-top: 0.725em;
     }
     .eng_name {
-      font-size: 0.875em;
+      @media screen and (max-width: 640px) {
+        margin-top: 15px;
+      }
+      font-size: 14px;
       text-align: left;
       margin-top: 5px;
     }
     .organize {
-      font-size: 0.875em;
+      font-size: 14px;
       color: #ff4f38;
       text-align: left;
     }
     .guide_line {
+      @media screen and (max-width: 640px) {
+        display: none;
+      }
       width: 24px;
       border-top: 1px solid #c2c2c2;
       margin-bottom: 24px;
     }
     .speaker_description {
+      @media screen and (max-width: 640px) {
+        font-size: 13px;
+        text-align: left;
+        padding-left: 20px;
+        float: left;
+      }
       @media screen and (max-width: 1000px) {
-        font-size: 1.0em;
-        text-align: justify;
+        font-size: 13px;
+        text-align: left;
+        padding-left: 20px;
       }
       word-break: keep-all;
       text-align: left;
