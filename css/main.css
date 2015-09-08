@@ -1740,15 +1740,15 @@ ul {
               padding: 0.3em;
               border-radius: 5px; }
             .program_mobile section .mobile_day_detail .time_box .time_detail .sessions .location, .program_mobile section .mobile_day_detail .time_box .time_detail .sessions .schedule .timetable table tr td .oneline_location, .schedule .timetable table tr td .program_mobile section .mobile_day_detail .time_box .time_detail .sessions .oneline_location {
-              font-size: 0.8em;
+              font-size: 0.725em;
               color: #ef513c; }
             .program_mobile section .mobile_day_detail .time_box .time_detail .sessions .title {
-              font-size: 1.1em;
+              font-size: 1.0em;
               font-weight: bold;
               margin: 1.1em 0; }
             .program_mobile section .mobile_day_detail .time_box .time_detail .sessions .detail {
               font-size: 0.725em;
               font-weight: normal;
-              line-height: 180%; }
+              line-height: 150%; }
 
 /*# sourceMappingURL=main.css.map */
