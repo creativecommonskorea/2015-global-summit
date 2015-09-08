@@ -351,12 +351,13 @@ ul {
         border: 1px solid #ebebec;
         background-color: #fff;
         word-break: keep-all;
-        margin: 20px 10px
+        margin: 10px auto 20px;
+        width: 85%;
       }
       .day_concept {
         font-weight: bold;
         font-size: 1.2em;
-        margin-top: 28px;
+        margin-top: 32px;
       }
       .day_description {
         @media screen and (max-width: 600px) {
@@ -374,7 +375,7 @@ ul {
       }
       .day_location {
         font-size: 0.825em;
-        margin-top: 20px;
+        margin: 20px 0 29px;
       }
       .subject_icons {
         display: inline-block;
@@ -386,6 +387,7 @@ ul {
         line-height: 2.5em;
         vertical-align: middle;
         border: 1px solid #e3e3e3;
+        width: 85%;
         img {
           display: inline-block;
           vertical-align: middle;
