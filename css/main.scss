@@ -571,9 +571,8 @@ img {
 
 .partner_wrap {
   color: #333;
-  padding: 9px 0;
+  //padding: 9px 0;
   text-align: center;
-  background-color: #f7f7f8;
 
   //&.first {
   //  padding-top: 60px;
@@ -583,20 +582,25 @@ img {
     .sponsor_wrap {
       display: table;
       width: 100%;
+      padding-top: 30px;
       .t_row {
         display: table-row;
+        &:first-child {
+          height: 50px;
+        }
         &:last-child {
           height: 140px;
         }
-        &:first-child {
-          height: 96px;
-        }
+      }
+      .guide_bar {
+        width: 53px;
+        height: 10px;
+        border-bottom: 1px solid #ef513c;
+        margin: 0 auto;
       }
       .title {
-        //height: 5.0em;
         vertical-align: middle;
         font-size: 19.25px;
-        font-weight: bold;
         display: table-cell;
       }
       .sponsor_logos {
@@ -604,7 +608,6 @@ img {
       }
     }
     background-color: #fff;
-    border: 1px solid #dfdfdf;
   }
 
   .sponsor_logos {

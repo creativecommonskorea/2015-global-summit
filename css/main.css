@@ -454,25 +454,27 @@ img {
 
 .partner_wrap {
   color: #333;
-  padding: 9px 0;
-  text-align: center;
-  background-color: #f7f7f8; }
+  text-align: center; }
   .partner_wrap section {
-    background-color: #fff;
-    border: 1px solid #dfdfdf; }
+    background-color: #fff; }
     .partner_wrap section .sponsor_wrap {
       display: table;
-      width: 100%; }
+      width: 100%;
+      padding-top: 30px; }
       .partner_wrap section .sponsor_wrap .t_row {
         display: table-row; }
+        .partner_wrap section .sponsor_wrap .t_row:first-child {
+          height: 50px; }
         .partner_wrap section .sponsor_wrap .t_row:last-child {
           height: 140px; }
-        .partner_wrap section .sponsor_wrap .t_row:first-child {
-          height: 96px; }
+      .partner_wrap section .sponsor_wrap .guide_bar {
+        width: 53px;
+        height: 10px;
+        border-bottom: 1px solid #ef513c;
+        margin: 0 auto; }
       .partner_wrap section .sponsor_wrap .title {
         vertical-align: middle;
         font-size: 19.25px;
-        font-weight: bold;
         display: table-cell; }
       .partner_wrap section .sponsor_wrap .sponsor_logos {
         display: table-cell; }
