@@ -1,7 +1,7 @@
 ---
 - time: "09:30 ~10:00"
   sessions:
-    - location: "대강당 앞 로비"
+    - location: "중앙.대강당 앞 로비"
       title: "등록"
       detail: "이름표와 슬랙(Slack) 가입 및 등록을 확인하세요."
 
