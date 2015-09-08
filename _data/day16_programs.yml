@@ -8,22 +8,26 @@
 - time: "10:00 ~10:05"
   sessions:
     - title: "인사말"
-      location: "대강당"
-      box: lightgreen
+      detail:>
+        미정
+      location: "중앙.대강당"
+      box: lightblue
 
 - time: "10:05 ~10:30"
   sessions:
     - title: "키노트"
-      detail: "Ryan Merkley_CC CEO"
-      location: "대강당"
-      box: lightgreen
+      detail: >
+        Ryan Merkley_CC CEO
+      location: "중앙.대강당"
+      box: lightblue
 
 - time: "10:30 ~10:50"
   sessions:
     - title: "키노트"
-      detail: "미정"
-      location: "대강당"
-      box: lightgreen
+      detail:>
+        미정
+      location: "중앙.대강당"
+      box: lightblue
 
 - time: "11:00 ~12:30"
   sessions:
@@ -31,16 +35,16 @@
       detail: >
         박물관과 도서관의 개방 정책과 열린 조직문화 / Andres Guadamuz <br>
         오픈글램과 CC / Kat Braybrooke
-      location: "대강당"
+      location: "중앙.대강당"
       box: lightorange
     - title: "공유도시"
-      location: "소강당"
-      box: lightpurple
+      location: "중앙.소강당"
+      box: lightorange
     - title: "OER"
       detail: >
         글로벌 OER 현황 및 활성화 전략 / Cable Green_CC 글로벌 OER 디렉터 <br>
         OER 운동의 미래 / TJ Bliss_휴렛 재단
-      location: "세미나룸"
+      location: "중앙.세미나룸"
       box: lightorange
 
 - time: "12:30 ~13:30"
@@ -50,35 +54,35 @@
 - time: "14:00 ~15:00"
   sessions:
     - title: "쇼케이스"
-      location: "대강당"
-      box: lightblue
+      location: "중앙.대강당"
+      box: lightpurple
 
     - title: "저작위원회 창조자원화 포럼"
-      location: "소강당"
+      location: "중앙.소강당"
       box: lightorange
 
     - title: "저작권개선"
-      location: "세미나룸"
+      location: "중앙.세미나룸"
       detail: >
         효과적인 저작권 개혁을 위한 방안 / Maira Sutton_전자프론티어재단(EFF)
       box: lightorange
 
     - title: "CCL 번역"
-      location: "한글박물관 강당"
+      location: "한글.강당"
       detail: >
-        [워크샵] CC 라이선스 번역, 지난 1년의 성과와 이슈 / Diane Peters_CC 법률 고문
+        CC 라이선스 번역, 지난 1년의 성과와 이슈 / Diane Peters_CC 법률 고문
       box: lightpurple
 
     - title: "오픈글램"
-      location: "한글박물관 강의실"
+      location: "한글.강의실1"
       detail: >
-        [워크샵] 기관의 효과적인 오픈라이선스 정책 도입을 위한 워크샵 / Klaudia Grabowska
+        기관의 효과적인 오픈라이선스 정책 도입을 위한 워크샵 / Klaudia Grabowska
       box: lightpurple
 
     - title: "디지털 기술과 공유"
-      location: "한글박물관 강의실2"
+      location: "한글.강의실2"
       detail: >
-        [워크샵] 동영상 공유저작물의 활성화 / 모질라, Ryan Merkley
+        동영상 공유저작물의 활성화 / 모질라, Ryan Merkley
       box: lightpurple
 
 - time: "15:00 ~15:30"
@@ -88,7 +92,7 @@
 - time: "15:30 ~16:50"
   sessions:
     - title: "오픈데이터"
-      location: "대강당"
+      location: "중앙.대강당"
       detail: >
         개방을 통한 시민권 운동 / Werner Westermann JuÃ¡rez <br>
         부르키나파소의 오픈데이터와 CCL / Abdrahamane Ouedraogo <br>
@@ -97,52 +101,52 @@
       box: lightblue
 
     - title: "저작위원회 창조자원화 포럼"
-      location: "소강당"
+      location: "중앙.소강당"
       box: lightorange
 
     - title: "오픈디자인"
-      location: "세미나룸"
+      location: "중앙.세미나룸"
       detail: >
         디자인과 저작권
       box: lightblue
 
     - title: "CCL과 오픈라이선스"
-      location: "세미나룸"
+      location: "중앙.세미나룸"
       detail: >
         공동의 지식 자산을 위한 오픈 라이선스 / Stephen LaPorte <br>
         CC 라이선스와 플랫폼 / Sarah Pearson
       box: lightblue
 
     - title: "저작권 개선"
-      location: "한글박물관 강의실"
+      location: "한글.강의실1"
       detail: >
-        [워크샵] EFF와 CC의 저작권 개혁 운동 협업 방안의 모색 / Maira and Parker/EFF
+        EFF와 CC의 저작권 개혁 운동 협업 방안의 모색 / Maira and Parker/EFF
       box: lightpurple
 
     - title: "오픈커뮤니티"
-      location: "한글박물관 강의실2"
+      location: "한글.강의실2"
       detail: >
-        [워크샵] 정부와 기관을 위한 '열린' 협업 활성화 방안 연구 / Bekka Khan from Open Coalition
+        정부와 기관을 위한 '열린' 협업 활성화 방안 연구 / Bekka Khan from Open Coalition
       box: lightpurple
 
 - time: "17:00 ~17:20"
   sessions:
     - title: "지속가능한 생태계를 위한 인터넷"
-      location: "대강당"
-      detail: >
-        전길남
+      location: "중앙.대강당"
+      detail: 청전길남
       box: lightblue
 
 - time: "17:20 ~18:00"
   sessions:
     - title: "대담: 자유로운 인터넷"
-      location: "대강당"
+      location: "중앙.대강당"
       detail: >
-        전길남, 요하이 벤클러
+        전길남, Yochai Benkler
       box: lightorange
 
 - time: "20:00 ~22:00"
   sessions:
     - title: "CC 파티"
-      detail: "초대자에 한함"
+      detail: >
+        (신청자에 한함)
       box: lightgreen
