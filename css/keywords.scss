@@ -4,6 +4,11 @@
   section {
     text-align: center;
     padding: 3.750em 0 3.750em 0;
+    .head_description {
+      br.nobr {
+        display: none;
+      }
+    }
     .keyword_box {
       background-color: #fff;
       border: 1px solid #e8e8e8;
@@ -42,6 +47,9 @@
         font-weight: bold;
         border-bottom: 1px solid #e8e8e8;
         .title {
+          @media screen and (max-width: 1000px) {
+            padding-left: 20px;
+          }
           display: table-cell;
           vertical-align: middle;
           text-align: left;
@@ -68,8 +76,9 @@
       }
       .keyword_description {
         @media screen and (max-width: 1000px){
-          width: calc(98% - 20px);
-          padding: 10px;
+          width: calc(100% - 40px);
+          padding: 20px;
+          word-break: break-all;
         }
         float: left;
         text-align: justify;
@@ -81,6 +90,12 @@
         span.relates_session {
           margin-top: 1.250em;
           color: #f0513d;
+        }
+        .item {
+          @media screen and (max-width: 1000px) {
+            font-size: 12px;
+            line-height: 20px;
+          }
         }
       }
     }

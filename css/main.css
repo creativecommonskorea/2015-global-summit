@@ -1078,6 +1078,8 @@ a {
   .keywords_wrap section {
     text-align: center;
     padding: 3.750em 0 3.750em 0; }
+    .keywords_wrap section .head_description br.nobr {
+      display: none; }
     .keywords_wrap section .keyword_box {
       background-color: #fff;
       border: 1px solid #e8e8e8;
@@ -1117,6 +1119,9 @@ a {
           vertical-align: middle;
           text-align: left;
           padding-left: 280px; }
+          @media screen and (max-width: 1000px) {
+            .keywords_wrap section .keyword_box .title_wrap .title {
+              padding-left: 20px; } }
           .keywords_wrap section .keyword_box .title_wrap .title a {
             text-decoration: none;
             color: #333; }
@@ -1141,11 +1146,16 @@ a {
         overflow: auto; }
         @media screen and (max-width: 1000px) {
           .keywords_wrap section .keyword_box .keyword_description {
-            width: calc(98% - 20px);
-            padding: 10px; } }
+            width: calc(100% - 40px);
+            padding: 20px;
+            word-break: break-all; } }
         .keywords_wrap section .keyword_box .keyword_description span.relates_session {
           margin-top: 1.250em;
           color: #f0513d; }
+        @media screen and (max-width: 1000px) {
+          .keywords_wrap section .keyword_box .keyword_description .item {
+            font-size: 12px;
+            line-height: 20px; } }
 
 .speaker_wrap, .sponsor_whole_wrap {
   padding: 60px 0;
