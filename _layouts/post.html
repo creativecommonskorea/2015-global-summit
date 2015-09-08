@@ -33,11 +33,11 @@ layout: base
                 </div>
                 <div class="abstract_contents">
                     <div class="title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
-                    <div class="timestamp">{{ post.date | date: "%Y.%m.%d"}}</div>
                     <div class="abstract_text">
                         {{ post.abstract }}
                     </div>
                 </div>
+                <div class="timestamp">{{ post.date | date: "%Y.%m.%d"}}</div>
             </div>
             {% endfor %}
         </div>

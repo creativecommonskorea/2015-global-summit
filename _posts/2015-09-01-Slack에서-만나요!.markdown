@@ -6,6 +6,7 @@ abstract: "써밋 전/후로 주-욱 네트워킹을 이어가요~"
 thumbnail: "/images/news/news2_slack.jpg"
 ---
 
+{:.img_center}
 !['The Slack!'](/images/news/news2_slack.jpg)
 
 여러분이 참가하실 올해 CC Global Summit에서는 참가자들이 많은 참가자들과 
