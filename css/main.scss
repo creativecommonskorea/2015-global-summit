@@ -1299,6 +1299,9 @@ h2 {
       display: none;
     }
   }
+  .head_description {
+    word-break: keep-all;
+  }
 }
 
 a {

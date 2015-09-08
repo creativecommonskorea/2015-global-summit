@@ -1034,6 +1034,8 @@ h2.normal {
 @media screen and (max-width: 640px) {
   .sponsor_whole_wrap br {
     display: none; } }
+.sponsor_whole_wrap .head_description {
+  word-break: keep-all; }
 
 a {
   text-decoration: none;
