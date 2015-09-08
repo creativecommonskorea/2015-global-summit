@@ -951,6 +951,9 @@ h1.title {
   font-size: 1.875em;
   margin: 0;
   font-weight: normal; }
+  @media screen and (max-width: 1024px) {
+    h1.title {
+      font-size: 25px; } }
 h1.normal {
   margin: 0;
   font-weight: normal;
@@ -1638,6 +1641,7 @@ ul {
     .program_mobile section .mobile_day_detail {
       display: none; }
       .program_mobile section .mobile_day_detail .date {
+        display: none;
         color: #ef513c;
         font-weight: bold;
         font-size: 0.725em;
@@ -1650,19 +1654,28 @@ ul {
         border-radius: 1.325em;
         border: 1px solid #ebebec;
         background-color: #fff;
-        word-break: keep-all; }
+        word-break: keep-all;
+        margin: 20px 10px; }
       .program_mobile section .mobile_day_detail .day_concept {
         font-weight: bold;
-        font-size: 1.0em; }
+        font-size: 1.2em;
+        margin-top: 28px; }
       .program_mobile section .mobile_day_detail .day_description {
         font-size: 0.925em;
         margin: 1em 0 2em 0; }
         @media screen and (max-width: 600px) {
           .program_mobile section .mobile_day_detail .day_description {
-            text-align: left; } }
+            text-align: center;
+            word-break: keep-all;
+            width: 80%;
+            margin: 0 auto;
+            font-size: 0.825em; } }
         @media screen and (min-width: 600px) {
           .program_mobile section .mobile_day_detail .day_description {
             text-align: center; } }
+      .program_mobile section .mobile_day_detail .day_location {
+        font-size: 0.825em;
+        margin-top: 20px; }
       .program_mobile section .mobile_day_detail .subject_icons {
         display: inline-block;
         text-align: right;

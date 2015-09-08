@@ -1184,6 +1184,9 @@ img {
 
 h1 {
   &.title {
+    @media screen and (max-width: 1024px){
+      font-size: 25px;
+    }
     font-size: 1.875em;
     margin: 0;
     font-weight: normal;
