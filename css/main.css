@@ -223,7 +223,7 @@ img {
           width: 100%;
           font-size: 1.125em;
           margin: 0;
-          height: 90px;
+          height: 95px;
           padding-top: 40px; } }
       .main_invite_wrap main div.location .dateinfo, .main_invite_wrap main .schedule .timetable table tr td div.oneline_location .dateinfo, .schedule .timetable table tr td .main_invite_wrap main div.oneline_location .dateinfo {
         font: bold 36px Verdana;
@@ -232,16 +232,17 @@ img {
         margin-bottom: 10px; }
         @media screen and (max-width: 1000px) {
           .main_invite_wrap main div.location .dateinfo, .main_invite_wrap main .schedule .timetable table tr td div.oneline_location .dateinfo, .schedule .timetable table tr td .main_invite_wrap main div.oneline_location .dateinfo {
-            font: bold 0.850em Verdana;
+            font-size: 15px;
+            font-weight: bold;
             width: 90%;
             display: inline-block;
             text-align: center;
-            margin-bottom: 2px; } }
+            margin-bottom: 4px; } }
       .main_invite_wrap main div.location .locate, .main_invite_wrap main .schedule .timetable table tr td div.oneline_location .locate, .schedule .timetable table tr td .main_invite_wrap main div.oneline_location .locate {
         text-align: left; }
         @media screen and (max-width: 1000px) {
           .main_invite_wrap main div.location .locate, .main_invite_wrap main .schedule .timetable table tr td div.oneline_location .locate, .schedule .timetable table tr td .main_invite_wrap main div.oneline_location .locate {
-            font-size: 0.850em;
+            font-size: 15px;
             width: 90%;
             display: inline-block;
             text-align: center; } }
