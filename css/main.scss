@@ -687,8 +687,8 @@ img {
         margin-right: 0;
       }
       img {
-        @media screen and (max-width: 1000px) {
-          width: 70%;
+        @media screen and (max-width: 640px) {
+          width: 50%;
         }
         width: 200px;
       }

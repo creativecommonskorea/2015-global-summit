@@ -553,9 +553,9 @@ img {
         margin-right: 0; }
       .partner_wrap .sponsor_logos .logos img {
         width: 200px; }
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 640px) {
           .partner_wrap .sponsor_logos .logos img {
-            width: 70%; } }
+            width: 50%; } }
       .partner_wrap .sponsor_logos .logos .info {
         font-weight: bold;
         font-size: 11px;
