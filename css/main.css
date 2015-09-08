@@ -1516,7 +1516,8 @@ a {
 
 ul {
   margin: 13px 0 0 0;
-  padding-left: 16px; }
+  padding-left: 0;
+  list-style: none; }
 
 .wide_list {
   line-height: 40px; }
