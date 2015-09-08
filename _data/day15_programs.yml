@@ -31,7 +31,7 @@
 
 - time: "11:00 ~11:30"
   sessions:
-    - title: "네트워크 정보 경제"
+    - title: "커먼즈 개념과 자본주의의 미래"
       detail: >
         Yochai Benkler_하버드 로스쿨 교수
       location: "중앙.대강당"
@@ -90,6 +90,7 @@
         '3D 프린터 기술의 진화' / Michael Weinberg_Shapeways 법률고문 <br>
         '소프트웨어야 놀자' / 김지현_네이버 이사
       location: "중앙.세미나실"
+      box: lightblue
 
     - title: "크리에이티브 워크샵"
       detail: >
