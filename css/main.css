@@ -793,7 +793,9 @@ img {
       line-height: 160%; }
       @media screen and (max-width: 1000px) {
         .promote_main_wrap section .promote_description {
-          text-align: left; } }
+          text-align: center; }
+          .promote_main_wrap section .promote_description br.nobr {
+            display: none; } }
       .promote_main_wrap section .promote_description.long_desc {
         line-height: 24px; }
       .promote_main_wrap section .promote_description img {
@@ -830,9 +832,10 @@ img {
           @media screen and (max-width: 1000px) {
             .promote_main_wrap section .creative_commons .description_wrap .description {
               float: none;
-              width: 98%;
-              padding: 0;
-              line-height: 1.625em; } }
+              width: calc(100% - 40px);
+              padding: 20px;
+              line-height: 1.625em;
+              text-align: justify; } }
           .promote_main_wrap section .creative_commons .description_wrap .description a {
             text-decoration: none;
             color: inherit; }
@@ -851,8 +854,14 @@ img {
 .preparing_people {
   padding: 60px 0;
   text-align: center; }
+  @media screen and (max-width: 1000px) {
+    .preparing_people {
+      padding: 120px 0 60px 0; } }
   .preparing_people .description {
     margin-bottom: 60px; }
+    @media screen and (max-width: 1000px) {
+      .preparing_people .description {
+        line-height: 160%; } }
   .preparing_people .people_list {
     text-align: left;
     overflow: auto; }

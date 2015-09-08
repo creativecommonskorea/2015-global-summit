@@ -985,7 +985,10 @@ img {
     text-align: center;
     .promote_description {
       @media screen and (max-width: 1000px) {
-        text-align: left;
+        text-align: center;
+        br.nobr {
+          display: none;
+        }
       }
       font-size: 1em;
       line-height: 160%;
@@ -1023,9 +1026,10 @@ img {
         .description {
           @media screen and (max-width: 1000px) {
             float: none;
-            width: 98%;
-            padding: 0;
+            width: calc(100% - 40px);
+            padding: 20px;
             line-height: 1.625em;
+            text-align: justify;
           }
           vertical-align: middle;
           padding: 40px;
@@ -1060,9 +1064,15 @@ img {
 }
 
 .preparing_people {
+  @media screen and (max-width: 1000px) {
+    padding: 120px 0 60px 0;
+  }
   padding: 60px 0;
   text-align: center;
   .description {
+    @media screen and (max-width: 1000px) {
+      line-height: 160%;
+    }
     margin-bottom: 60px;
   }
   .people_list {
