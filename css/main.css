@@ -1251,6 +1251,12 @@ a {
         font-size: 14px;
         color: #ef513c;
         line-height: 25px; }
+        @media screen and (max-width: 1000px) {
+          .newsboard_wrap article .latest_article_top .timestamp {
+            margin-top: 10px; } }
+      @media screen and (max-width: 1000px) {
+        .newsboard_wrap article .latest_article_top .dot {
+          margin-bottom: 30px; } }
     .newsboard_wrap article .latest_article_contents .thumbnail {
       padding: 0 30px 30px 30px;
       float: left; }
@@ -1315,7 +1321,9 @@ a {
           right: 7px; }
           @media screen and (max-width: 1000px) {
             .newsboard_wrap section .article_list .article_box .timestamp {
-              position: static; } }
+              position: static;
+              text-align: right;
+              font-style: normal; } }
         .newsboard_wrap section .article_list .article_box .abstract_contents {
           position: relative;
           padding-bottom: 25px;
@@ -1331,11 +1339,15 @@ a {
             font-weight: bold;
             line-height: 27px; }
           .newsboard_wrap section .article_list .article_box .abstract_contents .abstract_text {
-            width: 97%;
+            width: 100%;
             font-size: 14px;
             line-height: 25px;
             text-align: justify;
             word-break: keep-all; }
+            @media screen and (max-width: 1000px) {
+              .newsboard_wrap section .article_list .article_box .abstract_contents .abstract_text {
+                margin-top: 15px;
+                font-size: 12px; } }
 
 .attend_wrap {
   padding: 60px 0;

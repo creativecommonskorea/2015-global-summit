@@ -26,10 +26,17 @@
         font-weight: bold;
       }
       .timestamp {
+        @media screen and (max-width: 1000px) {
+          margin-top: 10px;
+        }
         font-size: 14px;
-        //font-style: italic;
         color: #ef513c;
         line-height: 25px;
+      }
+      .dot {
+        @media screen and (max-width: 1000px) {
+          margin-bottom: 30px;
+        }
       }
     }
     .latest_article_contents {
@@ -101,7 +108,8 @@
         .timestamp {
           @media screen and (max-width: 1000px) {
             position: static;
-
+            text-align: right;
+            font-style: normal;
           }
           font-size: 14px;
           font-style: italic;
@@ -127,7 +135,11 @@
             line-height: 27px;
           }
           .abstract_text {
-            width: 97%;
+            @media screen and (max-width: 1000px) {
+              margin-top: 15px;
+              font-size: 12px;
+            }
+            width: 100%;
             font-size: 14px;
             line-height: 25px;
             text-align: justify;
