@@ -536,7 +536,7 @@ img {
     .kor_name {
       @media screen and (max-width: 640px) {
         font-size: 18px;
-        margin-top: 80px;
+        margin-top: 22px;
       }
       font-size: 22px;
       text-align: left;
@@ -570,6 +570,7 @@ img {
         text-align: left;
         padding-left: 20px;
         float: left;
+        line-height: 150%;
       }
       @media screen and (max-width: 1000px) {
         font-size: 13px;
@@ -601,6 +602,7 @@ img {
           width: 100%;
           height: auto;
           margin-bottom: 1.5em;
+          margin-left: 0;
         }
         margin: 0 0 0 10px;
         border: 0;

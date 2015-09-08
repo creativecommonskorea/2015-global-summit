@@ -434,7 +434,7 @@ img {
       @media screen and (max-width: 640px) {
         .main_speakes_wrap section .kor_name {
           font-size: 18px;
-          margin-top: 80px; } }
+          margin-top: 22px; } }
     .main_speakes_wrap section .eng_name {
       font-size: 14px;
       text-align: left;
@@ -464,7 +464,8 @@ img {
           font-size: 13px;
           text-align: left;
           padding-left: 20px;
-          float: left; } }
+          float: left;
+          line-height: 150%; } }
       @media screen and (max-width: 1000px) {
         .main_speakes_wrap section .speaker_description {
           font-size: 13px;
@@ -492,7 +493,8 @@ img {
           .main_speakes_wrap section .speaker_list .speaker {
             width: 100%;
             height: auto;
-            margin-bottom: 1.5em; } }
+            margin-bottom: 1.5em;
+            margin-left: 0; } }
   .main_speakes_wrap .see_more_speaker {
     text-align: right;
     font-size: 1.125em; }
