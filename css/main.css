@@ -280,7 +280,7 @@ img {
       margin: 0; }
       @media screen and (max-width: 1000px) {
         .program_info_wrap section h1 {
-          font-size: 25px; } }
+          font-size: 24px; } }
     .program_info_wrap section .program_list {
       margin: 0 0 0 3px;
       padding: 0;
@@ -419,7 +419,7 @@ img {
       font-size: 1.875em; }
       @media screen and (max-width: 1000px) {
         .main_speakes_wrap section h1 {
-          font-size: 25px; } }
+          font-size: 24px; } }
       .main_speakes_wrap section h1.normal {
         font-weight: normal; }
     .main_speakes_wrap section .speaker_image {
@@ -621,7 +621,7 @@ img {
       height: auto;
       width: 100%;
       overflow: auto;
-      padding: 20px 0; } }
+      padding: 24px 0; } }
   .footer_black .ccl {
     padding-top: 100px;
     display: inline-block;
@@ -648,9 +648,11 @@ img {
         padding-top: 20px;
         width: 100%;
         height: auto;
-        font-size: 0.750em; }
+        font-size: 0.750em;
+        text-align: center; }
         .footer_black .ccl_info img {
-          margin-bottom: 10px; } }
+          margin-bottom: 10px;
+          height: 25px; } }
     .footer_black .ccl_info a {
       color: #fff;
       text-decoration: none; }
@@ -671,11 +673,13 @@ img {
 
 .introduce_main {
   background: #f7f7f8 url(/images/other/about_bg_01.png) center no-repeat;
-  height: 845px; }
+  height: auto;
+  overflow: auto; }
   .introduce_main section {
-    height: 725px;
+    height: auto;
+    overflow: auto;
     text-align: center;
-    padding-top: 120px; }
+    padding: 60px 0; }
     @media screen and (max-width: 1000px) {
       .introduce_main section img.title_image {
         width: 98%; } }
@@ -686,7 +690,8 @@ img {
       @media screen and (max-width: 1000px) {
         .introduce_main section .abstract_description {
           font-size: 1.0em;
-          text-align: justify; }
+          text-align: center;
+          word-break: keep-all; }
           .introduce_main section .abstract_description br {
             display: none; } }
     .introduce_main section .detail_description {
@@ -700,10 +705,12 @@ img {
       font-size: 0.875em; }
       @media screen and (max-width: 1000px) {
         .introduce_main section .detail_description {
-          width: 98%;
-          text-align: center;
+          width: calc(100% - 40px);
+          text-align: left;
           word-break: keep-all;
-          height: auto; }
+          height: auto;
+          overflow: auto;
+          padding: 20px 20px; }
           .introduce_main section .detail_description br {
             display: none; } }
       .introduce_main section .detail_description img {
@@ -956,7 +963,7 @@ h1.title {
   font-weight: normal; }
   @media screen and (max-width: 1024px) {
     h1.title {
-      font-size: 25px; } }
+      font-size: 24px; } }
 h1.normal {
   margin: 0;
   font-weight: normal;

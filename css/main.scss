@@ -366,7 +366,7 @@ img {
     height: 334px;
     h1 {
       @media screen and (max-width: 1000px) {
-        font-size: 25px;
+        font-size: 24px;
       }
       font-size: 30px;
       margin: 0;
@@ -520,7 +520,7 @@ img {
     height: auto;
     h1 {
       @media screen and (max-width: 1000px) {
-        font-size: 25px;
+        font-size: 24px;
       }
       margin: 0;
       font-size: 1.875em;
@@ -769,7 +769,7 @@ img {
     height: auto;
     width: 100%;
     overflow: auto;
-    padding: 20px 0;
+    padding: 24px 0;
   }
   height: 230px;
   font-size: 0.875em;
@@ -796,8 +796,10 @@ img {
       width: 100%;
       height: auto;
       font-size: 0.750em;
+      text-align: center;
       img {
         margin-bottom: 10px;
+        height: 25px;
       }
     }
     padding-top: 56px;
@@ -834,11 +836,13 @@ img {
 
 .introduce_main {
   background: #f7f7f8 url(/images/other/about_bg_01.png) center no-repeat;
-  height: 845px;
+  height: auto;
+  overflow: auto;
   section {
-    height: 725px;
+    height: auto;
+    overflow: auto;
     text-align: center;
-    padding-top: 120px;
+    padding: 60px 0;
     @media screen and (max-width: 1000px) {
       img.title_image {
         width: 98%;
@@ -847,7 +851,8 @@ img {
     .abstract_description {
       @media screen and (max-width: 1000px) {
         font-size: 1.0em;
-        text-align: justify;
+        text-align: center;
+        word-break: keep-all;
 
         br {
           display: none;
@@ -859,10 +864,12 @@ img {
     }
     .detail_description {
       @media screen and (max-width: 1000px) {
-        width: 98%;
-        text-align: center;
+        width: calc(100% - 40px);
+        text-align: left;
         word-break: keep-all;
         height: auto;
+        overflow: auto;
+        padding: 20px 20px;
         br {
           display: none;
         }
@@ -1188,7 +1195,7 @@ img {
 h1 {
   &.title {
     @media screen and (max-width: 1024px){
-      font-size: 25px;
+      font-size: 24px;
     }
     font-size: 1.875em;
     margin: 0;
