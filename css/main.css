@@ -1676,11 +1676,12 @@ ul {
           .program_mobile section .mobile_day_detail .day_description {
             text-align: center; } }
       .program_mobile section .mobile_day_detail .day_location {
-        font-size: 0.6em;
-        margin: 29px 0; }
+        font-size: 0.825em;
+        margin: 29px 0;
+        line-height: 140%; }
       .program_mobile section .mobile_day_detail .subject_icons {
         display: inline-block;
-        text-align: right;
+        text-align: center;
         font-size: 0.725em;
         padding: 1em;
         margin: 0.525em;
