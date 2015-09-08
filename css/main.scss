@@ -643,8 +643,18 @@ img {
         &:last-child {
           height: 140px;
         }
+        &.othersize {
+          @media screen and (max-width: 640px) {
+            height: auto;
+          }
+          height: 180px;
+        }
       }
       .guide_bar {
+        @media screen and (max-width: 1024px) {
+          margin-bottom: 30px;
+        }
+
         width: 53px;
         height: 10px;
         border-bottom: 1px solid #ef513c;
@@ -676,7 +686,10 @@ img {
     position: relative;
     .logos {
       @media screen and (max-width: 1000px) {
-        width: 49%;
+        &.othersize {
+          width: 70%;
+        }
+        width: 40%;
         margin: 0 0 32px 0;
       }
       vertical-align: middle;
@@ -689,6 +702,20 @@ img {
       img {
         @media screen and (max-width: 640px) {
           width: 100%;
+        }
+        &.othersize {
+          &.w240 {
+            @media screen and (max-width: 640px) {
+              width: 100%;
+            }
+            width: 240px;
+          }
+          &.w320 {
+            @media screen and (max-width: 640px) {
+              width: 100%;
+            }
+            width: 320px;
+          }
         }
         width: 200px;
       }
