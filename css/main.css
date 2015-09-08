@@ -835,7 +835,7 @@ img {
               width: calc(100% - 40px);
               padding: 20px;
               line-height: 1.625em;
-              text-align: justify; } }
+              text-align: left; } }
           .promote_main_wrap section .creative_commons .description_wrap .description a {
             text-decoration: none;
             color: inherit; }
