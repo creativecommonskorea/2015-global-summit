@@ -57,7 +57,12 @@ layout: base
                     {{ s.describe }}
                 </div>
                 <div class="programs">
-                    {{ s.programs }}
+                    <img src="images/other/bullet.png" alt="*"/> 관련세션 <br/>
+                    <div class="items">
+                    {% for p in s.programs %}
+                        {{ p.item }} <br/>
+                    {% endfor %}
+                    </div>
                 </div>
             </div>
         </div>

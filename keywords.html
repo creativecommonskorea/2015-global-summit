@@ -23,7 +23,10 @@ layout: base
             <div class="keyword_description">
                 {{ k.description }}
                 <br/><br/>
-                <img src="images/other/bullet.png" alt="-"/> <span class="relates_session">{{ k.relates }}</span>
+                <span class="relates_session"><img src="images/other/bullet.png" alt="-"/> 관련세션 <br/></span>
+                {% for r in k.relates %}
+                    {{ r.item }} <br>
+                {% endfor %}
             </div>
         </div>
         {% endfor %}

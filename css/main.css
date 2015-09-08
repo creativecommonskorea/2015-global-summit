@@ -1078,12 +1078,11 @@ a {
         text-align: left;
         font-size: 14px;
         line-height: 30px;
-        font-weight: bold;
         margin-top: 20px;
-        padding: 0 15px;
-        border: 1px solid #e2e2e2;
-        border-radius: 3px;
-        background-color: #f5f5f5; }
+        color: #f0513d; }
+        .speaker_wrap .speaker_box .person_profile .programs .items {
+          line-height: 20px;
+          color: #333; }
 
 .guide_bar_90p {
   height: 10px;

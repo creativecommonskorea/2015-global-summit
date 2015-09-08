@@ -13,6 +13,11 @@ layout: base
                 'https://maps.googleapis.com/maps/api/staticmap?center=37.521412,126.980959&zoom=15&size='
                 +$('#sub_location').width()+'x'+ $('#sub_location').height()
                 +'&markers=37.521412,126.980959&key=AIzaSyAym9nfPiZOWo3a8DEThTwd351_4UWukRo');
+
+        $('#sub_location_img2').attr('src',
+                'https://maps.googleapis.com/maps/api/staticmap?center=37.576450,127.001550&zoom=15&size='
+                +$('#sub_location2').width()+'x'+ $('#sub_location2').height()
+                +'&markers=37.576450,127.001550&key=AIzaSyAym9nfPiZOWo3a8DEThTwd351_4UWukRo');
     });
 </script>
 
@@ -23,7 +28,12 @@ layout: base
         <div class="guide_bar_33" style="margin-bottom: 64px;"></div>
         <div class="locations">
             <div class="info">
-                <div class="name"><img src="/images/base/locate.png" alt="|"/>국립중앙박물관</div>
+                <div class="name">
+                    <a href="http://www.museum.go.kr/site/homepage/menu/viewMenu?menuid=001001008001"
+                       target="_blank">
+                    <img src="/images/base/locate.png" alt="|"/>국립중앙박물관
+                    </a>
+                </div>
                 <div class="address">
                     서울특별시 용산구 서빙고로 137 국립중앙박물관<br/>
                     <br> 국립중앙박물관: 대강당 / 소강당 / 세미나실 </ br>
@@ -31,6 +41,14 @@ layout: base
                 </div>
                 <div class="transport">
                     <table>
+                        <tr>
+                            <td class="font-bold">
+                                <img src="/images/other/bullet.png" alt="-"/> 세부장소
+                            </td>
+                            <td>
+                                대강당 / 소강당 / 세미나실
+                            </td>
+                        </tr>
                         <tr>
                             <td class="font-bold">
                                 <img src="/images/other/bullet.png" alt="-"/> 지하철
@@ -43,7 +61,7 @@ layout: base
                         <tr>
                             <td class="font-bold"><img src="/images/other/bullet.png" alt="-"/> 버스</td>
                             <td>
-                                간선버스 400번, 502번 '국립중앙박물관, 용산가족공원'에서 하차
+                                간선버스 400, 502번 '국립중앙박물관, 용산가족공원'에서 하차
                             </td>
                         </tr>
                     </table>
@@ -57,16 +75,29 @@ layout: base
         </div>
     </section>
 </div>
+
 <div class="wrap location_wrap">
     <section>
         <div class="locations">
             <div class="info">
-                <div class="name"><img src="/images/base/locate.png" alt="|"/>국립한글박물관</div>
+                <div class="name">
+                    <a href="http://www.hangeul.go.kr/html/use/locationGuide.do?curr_menu_cd=0101040000" target="_blank">
+                    <img src="/images/base/locate.png" alt="|"/>국립한글박물관
+                    </a>
+                </div>
                 <div class="address">
                     서울시 용산구 서빙고로 139 국립한글박물관
                 </div>
                 <div class="transport">
                     <table>
+                        <tr>
+                            <td class="font-bold">
+                                <img src="/images/other/bullet.png" alt="-"/> 세부장소
+                            </td>
+                            <td>
+                                강당 / 강의실1 / 강의실2
+                            </td>
+                        </tr>
                         <tr>
                             <td class="font-bold">
                                 <img src="/images/other/bullet.png" alt="-"/> 지하철
@@ -78,18 +109,71 @@ layout: base
                         <tr>
                             <td class="font-bold"><img src="/images/other/bullet.png" alt="-"/> 버스</td>
                             <td>
-                                간선버스 400번, 502번 '국립중앙박물관, 용산가족공원'에서 하차
+                                간선버스 400, 502번 '국립중앙박물관, 용산가족공원'에서 하차
                             </td>
                         </tr>
                     </table>
                 </div>
             </div>
             <div class="map" id="sub_location">
-                <a href="http://www.hangeul.go.kr/lang/en/html/visitorInfomation/directions.do" target="_blank">
+                <a href="http://www.hangeul.go.kr/html/use/locationGuide.do?curr_menu_cd=0101040000" target="_blank">
                     <img src="" alt="map" id="sub_location_img"/>
                 </a>
             </div>
         </div>
     </section>
 </div>
+
+<div class="wrap location_wrap">
+    <section>
+        <div class="locations">
+            <div class="info">
+                <div class="name">
+                    <a href="https://www.ckl.or.kr:446/views/cms/www/in/sn/facilitiesintro03.jsp" target="_blank">
+                        <img src="/images/base/locate.png" alt="|"/>콘텐츠코리아랩
+                        </a>
+                </div>
+                <div class="address">
+                    서울시 종로구 연건동 대학로 57 홍익대 아트센터 교육동 건물 10F
+                </div>
+                <div class="transport">
+                    <table>
+                        <tr>
+                            <td class="font-bold">
+                                <img src="/images/other/bullet.png" alt="-"/> 세부장소
+                            </td>
+                            <td>
+                                컨퍼런스룸 / 카카오룸 / 아이디어 빌리지 / 오픈 스페이스
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">
+                                <img src="/images/other/bullet.png" alt="-"/> 지하철
+                            </td>
+                            <td>
+                                1호선 종로5가역 2번 출구 > 이화사거리 방면으로 약 800m 직전 (도보 7분) <br>
+                                4호선 혜화역 3번 출구 > 이화사거리 방면으로 약 800m 직진 (도보 7분)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold"><img src="/images/other/bullet.png" alt="-"/> 버스</td>
+                            <td>
+                                이화사거리 하차 : 종로 05번 마을버스 <br/>
+                                이화장 하차 : 109, 273, 601, 2112, 7025 <br/>
+                                통신대 하차 : 104, 106, 107, 140, 143, 150, 160, 273, 710, 2112 <br/>
+                                현대그룹빌딩 하차 : 102, 107, 108, 109, 162, 301, 7025 <br/>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="map" id="sub_location2">
+                <a href="https://www.ckl.or.kr:446/views/cms/www/in/sn/facilitiesintro03.jsp" target="_blank">
+                    <img src="" alt="map" id="sub_location_img2"/>
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
+
 <div class="m60" style="background-color: #f7f7f8;"></div>
