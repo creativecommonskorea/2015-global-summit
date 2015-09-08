@@ -13,6 +13,9 @@ img {
     max-width: 1100px;
     width: 98%;
     margin: 0 auto; }
+    @media screen and (max-width: 640px) {
+      .wrap > nav, .wrap > div, .wrap > main, .wrap > section, .wrap > article {
+        width: 90%; } }
 
 .header_wrap {
   -webkit-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.3);
@@ -1028,6 +1031,10 @@ h2.normal {
         .coming_soon section .desktop {
           display: block; } }
 
+@media screen and (max-width: 640px) {
+  .sponsor_whole_wrap br {
+    display: none; } }
+
 a {
   text-decoration: none;
   color: inherit; }
@@ -1109,61 +1116,61 @@ a {
           margin-top: 1.250em;
           color: #f0513d; }
 
-.speaker_wrap {
+.speaker_wrap, .sponsor_whole_wrap {
   padding: 60px 0;
   text-align: center;
   background-color: #f7f7f8;
   overflow: auto; }
-  .speaker_wrap .speaker_box {
+  .speaker_wrap .speaker_box, .sponsor_whole_wrap .speaker_box {
     background-color: #fff;
     border: 1px solid #e8e8e8;
     border-bottom: 3px solid #e8e8e8;
     margin-bottom: 20px;
     overflow: auto; }
-    .speaker_wrap .speaker_box .person_image {
+    .speaker_wrap .speaker_box .person_image, .sponsor_whole_wrap .speaker_box .person_image {
       float: left;
       padding: 25px; }
       @media screen and (max-width: 1000px) {
-        .speaker_wrap .speaker_box .person_image {
+        .speaker_wrap .speaker_box .person_image, .sponsor_whole_wrap .speaker_box .person_image {
           padding: 0.350em;
           width: 100%;
           text-align: center; }
-          .speaker_wrap .speaker_box .person_image .image {
+          .speaker_wrap .speaker_box .person_image .image, .sponsor_whole_wrap .speaker_box .person_image .image {
             height: auto; } }
-      .speaker_wrap .speaker_box .person_image .image {
+      .speaker_wrap .speaker_box .person_image .image, .sponsor_whole_wrap .speaker_box .person_image .image {
         width: 160px;
         height: 160px; }
-    .speaker_wrap .speaker_box .person_profile {
+    .speaker_wrap .speaker_box .person_profile, .sponsor_whole_wrap .speaker_box .person_profile {
       float: right;
       text-align: left;
       padding: 25px 0;
       width: calc(100% - 220px); }
       @media screen and (max-width: 1000px) {
-        .speaker_wrap .speaker_box .person_profile {
+        .speaker_wrap .speaker_box .person_profile, .sponsor_whole_wrap .speaker_box .person_profile {
           float: none;
           width: 100%; } }
-      .speaker_wrap .speaker_box .person_profile .name_social .kor_name {
+      .speaker_wrap .speaker_box .person_profile .name_social .kor_name, .sponsor_whole_wrap .speaker_box .person_profile .name_social .kor_name {
         font-size: 24px; }
-      .speaker_wrap .speaker_box .person_profile .name_social .eng_name {
+      .speaker_wrap .speaker_box .person_profile .name_social .eng_name, .sponsor_whole_wrap .speaker_box .person_profile .name_social .eng_name {
         font-size: 18px; }
-      .speaker_wrap .speaker_box .person_profile .organize {
+      .speaker_wrap .speaker_box .person_profile .organize, .sponsor_whole_wrap .speaker_box .person_profile .organize {
         font-size: 14px;
         color: #ff4f38;
         margin-top: 20px; }
-      .speaker_wrap .speaker_box .person_profile .describe {
+      .speaker_wrap .speaker_box .person_profile .describe, .sponsor_whole_wrap .speaker_box .person_profile .describe {
         width: 97%;
         text-align: justify;
         word-break: keep-all;
         font-size: 14px;
         line-height: 24px; }
-      .speaker_wrap .speaker_box .person_profile .programs {
+      .speaker_wrap .speaker_box .person_profile .programs, .sponsor_whole_wrap .speaker_box .person_profile .programs {
         display: inline-block;
         text-align: left;
         font-size: 14px;
         line-height: 30px;
         margin-top: 20px;
         color: #f0513d; }
-        .speaker_wrap .speaker_box .person_profile .programs .items {
+        .speaker_wrap .speaker_box .person_profile .programs .items, .sponsor_whole_wrap .speaker_box .person_profile .programs .items {
           line-height: 20px;
           color: #333; }
 

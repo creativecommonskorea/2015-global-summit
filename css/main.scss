@@ -33,6 +33,9 @@ img {
   width: 100%;
   > {
     nav, div, main, section, article {
+      @media screen and (max-width: 640px){
+        width: 90%;
+      }
       max-width: 1100px;
       width: 98%;
       margin: 0 auto;
@@ -1286,6 +1289,15 @@ h2 {
       }
     }
     text-align: center;
+  }
+}
+
+.sponsor_whole_wrap {
+  @extend .speaker_wrap;
+  @media screen and (max-width: 640px){
+    br {
+      display: none;
+    }
   }
 }
 
