@@ -1717,18 +1717,18 @@ ul {
               margin-top: 0; }
             .program_mobile section .mobile_day_detail .time_box .time_detail .sessions.lightgreen {
               border-radius: 5px;
-              background-color: #C7FFBC;
+              background: #cef2ec url(/images/other/program_icon_04.png) no-repeat 96% 8px;
               padding: 0.3em; }
             .program_mobile section .mobile_day_detail .time_box .time_detail .sessions.lightblue {
               border-radius: 5px;
-              background-color: #ecf0f5;
+              background: #ecf0f5 url(/images/other/program_icon_01.png) no-repeat 96% 8px;
               padding: 0.3em; }
             .program_mobile section .mobile_day_detail .time_box .time_detail .sessions.lightpurple {
               border-radius: 5px;
-              background-color: #e0dff9;
+              background: #dbd9ed url(/images/other/program_icon_03.png) no-repeat 96% 8px;
               padding: 0.3em; }
             .program_mobile section .mobile_day_detail .time_box .time_detail .sessions.lightorange {
-              background-color: #ffdbd0;
+              background: #ffdbd0 url(/images/other/program_icon_02.png) no-repeat 96% 8px;
               padding: 0.3em;
               border-radius: 5px; }
             .program_mobile section .mobile_day_detail .time_box .time_detail .sessions.lightyellow {
@@ -1741,9 +1741,10 @@ ul {
               border-radius: 5px; }
             .program_mobile section .mobile_day_detail .time_box .time_detail .sessions .location, .program_mobile section .mobile_day_detail .time_box .time_detail .sessions .schedule .timetable table tr td .oneline_location, .schedule .timetable table tr td .program_mobile section .mobile_day_detail .time_box .time_detail .sessions .oneline_location {
               font-size: 0.725em;
-              color: #ef513c; }
+              color: #ef513c;
+              margin-top: 3px; }
             .program_mobile section .mobile_day_detail .time_box .time_detail .sessions .title {
-              font-size: 1.0em;
+              font-size: 0.8em;
               font-weight: bold;
               margin: 1.1em 0; }
             .program_mobile section .mobile_day_detail .time_box .time_detail .sessions .detail {

@@ -423,21 +423,21 @@ ul {
             }
             &.lightgreen {
               border-radius: 5px;
-              background-color: #C7FFBC;
+              background: #cef2ec url(/images/other/program_icon_04.png) no-repeat 96% 8px;
               padding: 0.3em;
             }
             &.lightblue {
               border-radius: 5px;
-              background-color: #ecf0f5;
+              background: #ecf0f5 url(/images/other/program_icon_01.png) no-repeat 96% 8px;
               padding: 0.3em;
             }
             &.lightpurple {
               border-radius: 5px;
-              background-color: #e0dff9;
+              background: #dbd9ed url(/images/other/program_icon_03.png) no-repeat 96% 8px;
               padding: 0.3em;
             }
             &.lightorange {
-              background-color: #ffdbd0;
+              background: #ffdbd0 url(/images/other/program_icon_02.png) no-repeat 96% 8px;
               padding: 0.3em;
               border-radius: 5px;
             }
@@ -454,9 +454,10 @@ ul {
             .location {
               font-size: 0.725em;
               color: #ef513c;
+              margin-top: 3px;
             }
             .title {
-              font-size: 1.0em;
+              font-size: 0.8em;
               font-weight: bold;
               margin: 1.1em 0;
             }
