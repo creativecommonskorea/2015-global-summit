@@ -321,6 +321,7 @@ img {
             display: inline-block;
             text-align: center;
             margin-bottom: 4px;
+            letter-spacing: 0;
           }
           font: bold 36px Verdana;
           color: #575757;
@@ -790,12 +791,9 @@ img {
     vertical-align: middle;
     text-align: center;
   }
-  .ccl_info {
+  .ccl_logo {
     @media screen and (max-width: 1000px) {
       padding-top: 20px;
-      width: 100%;
-      height: auto;
-      font-size: 0.750em;
       text-align: center;
       img {
         margin-bottom: 10px;
@@ -803,6 +801,16 @@ img {
       }
     }
     padding-top: 56px;
+  }
+  .ccl_info {
+    @media screen and (max-width: 1000px) {
+      padding-top: 0;
+      width: 100%;
+      height: auto;
+      font-size: 0.750em;
+      text-align: left;
+    }
+
     display: inline-block;
     width: 800px;
     height: 135px;
@@ -917,7 +925,7 @@ img {
   text-align: center;
   .story_title {
     @media screen and (max-width: 1000px) {
-      font-size: 1.5em;
+      font-size: 24px;
       word-break: keep-all;
 
     }
@@ -929,8 +937,8 @@ img {
     line-height: 24px;
     margin-bottom: 70px;
     @media screen and (max-width: 1000px) {
-      text-align: justify;
-      br {
+      text-align: center;
+      br.nobr {
         display: none;
       }
     }

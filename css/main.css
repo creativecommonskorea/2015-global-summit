@@ -245,7 +245,8 @@ img {
             width: 90%;
             display: inline-block;
             text-align: center;
-            margin-bottom: 4px; } }
+            margin-bottom: 4px;
+            letter-spacing: 0; } }
       .main_invite_wrap main div.location .locate, .main_invite_wrap main .schedule .timetable table tr td div.oneline_location .locate, .schedule .timetable table tr td .main_invite_wrap main div.oneline_location .locate {
         text-align: left; }
         @media screen and (max-width: 1000px) {
@@ -636,8 +637,16 @@ img {
         width: 100%;
         height: auto;
         padding: 0; } }
+  .footer_black .ccl_logo {
+    padding-top: 56px; }
+    @media screen and (max-width: 1000px) {
+      .footer_black .ccl_logo {
+        padding-top: 20px;
+        text-align: center; }
+        .footer_black .ccl_logo img {
+          margin-bottom: 10px;
+          height: 25px; } }
   .footer_black .ccl_info {
-    padding-top: 56px;
     display: inline-block;
     width: 800px;
     height: 135px;
@@ -645,14 +654,11 @@ img {
     float: left; }
     @media screen and (max-width: 1000px) {
       .footer_black .ccl_info {
-        padding-top: 20px;
+        padding-top: 0;
         width: 100%;
         height: auto;
         font-size: 0.750em;
-        text-align: center; }
-        .footer_black .ccl_info img {
-          margin-bottom: 10px;
-          height: 25px; } }
+        text-align: left; } }
     .footer_black .ccl_info a {
       color: #fff;
       text-decoration: none; }
@@ -739,7 +745,7 @@ img {
     margin-top: 70px; }
     @media screen and (max-width: 1000px) {
       .logo_story .story_title {
-        font-size: 1.5em;
+        font-size: 24px;
         word-break: keep-all; } }
   .logo_story .story_description {
     font-size: 0.875em;
@@ -747,8 +753,8 @@ img {
     margin-bottom: 70px; }
     @media screen and (max-width: 1000px) {
       .logo_story .story_description {
-        text-align: justify; }
-        .logo_story .story_description br {
+        text-align: center; }
+        .logo_story .story_description br.nobr {
           display: none; } }
     .logo_story .story_description img {
       margin: 55px 0; }
