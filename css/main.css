@@ -1420,15 +1420,14 @@ a {
           .schedule .timetable table tr td .location, .schedule .timetable table tr td .oneline_location {
             font-size: 11px;
             position: relative;
-            top: -36px;
+            top: -25px;
             z-index: 100;
             left: 20px;
             color: #ef513c;
             height: 0;
             float: right;
             margin-right: 10px;
-            text-align: right;
-            font-weight: bold; }
+            text-align: right; }
           .schedule .timetable table tr td .left {
             text-align: left;
             vertical-align: top; }
