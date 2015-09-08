@@ -725,6 +725,9 @@ img {
         margin: 13px 0; }
     .introduce_main section .need_more_message {
       word-break: keep-all; }
+      @media screen and (max-width: 640px) {
+        .introduce_main section .need_more_message {
+          font-size: 0.725em; } }
       .introduce_main section .need_more_message .mail_information a {
         font-size: 0.875em;
         color: #000; }

@@ -899,6 +899,9 @@ img {
       }
     }
     .need_more_message {
+      @media screen and (max-width: 640px) {
+        font-size: 0.725em;
+      }
       word-break: keep-all;
       .mail_information a {
         font-size: 0.875em;
