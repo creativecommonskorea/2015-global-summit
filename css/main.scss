@@ -1211,6 +1211,13 @@ img {
           }
           height: 75px;
         }
+
+        table.add_padding {
+          margin-bottom: 30px;
+        }
+        table.add_padding tr td{
+            padding: 5px 0;
+        }
       }
     }
     .map {
