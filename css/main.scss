@@ -290,8 +290,8 @@ img {
           line-height: 150%;
           font-size: 13px;
           height: auto;
-          text-align: left;
-          word-break: keep-all;
+          text-align: justify;
+          word-break: break-all;
         }
         text-align: justify;
         height: 90px;
@@ -574,7 +574,8 @@ img {
     .speaker_description {
       @media screen and (max-width: 640px) {
         font-size: 13px;
-        text-align: left;
+        text-align: justify;
+        word-break: break-all;
         padding-left: 20px;
         float: left;
         line-height: 150%;
@@ -1029,7 +1030,8 @@ img {
             width: calc(100% - 40px);
             padding: 20px;
             line-height: 1.625em;
-            text-align: left;
+            text-align: justify;
+            word-break: break-all;
           }
           vertical-align: middle;
           padding: 40px;

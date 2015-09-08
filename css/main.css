@@ -219,8 +219,8 @@ img {
           line-height: 150%;
           font-size: 13px;
           height: auto;
-          text-align: left;
-          word-break: keep-all; } }
+          text-align: justify;
+          word-break: break-all; } }
     .main_invite_wrap main div.location, .main_invite_wrap main .schedule .timetable table tr td div.oneline_location, .schedule .timetable table tr td .main_invite_wrap main div.oneline_location {
       display: inline-block;
       margin-top: 20px;
@@ -469,7 +469,8 @@ img {
       @media screen and (max-width: 640px) {
         .main_speakes_wrap section .speaker_description {
           font-size: 13px;
-          text-align: left;
+          text-align: justify;
+          word-break: break-all;
           padding-left: 20px;
           float: left;
           line-height: 150%; } }
@@ -835,7 +836,8 @@ img {
               width: calc(100% - 40px);
               padding: 20px;
               line-height: 1.625em;
-              text-align: left; } }
+              text-align: justify;
+              word-break: break-all; } }
           .promote_main_wrap section .creative_commons .description_wrap .description a {
             text-decoration: none;
             color: inherit; }
@@ -1177,7 +1179,8 @@ a {
       @media screen and (max-width: 1000px) {
         .speaker_wrap .speaker_box .person_profile, .sponsor_whole_wrap .speaker_box .person_profile {
           float: none;
-          width: 100%; } }
+          width: calc(100% - 40px);
+          padding: 20px; } }
       .speaker_wrap .speaker_box .person_profile .name_social .kor_name, .sponsor_whole_wrap .speaker_box .person_profile .name_social .kor_name {
         font-size: 24px; }
       .speaker_wrap .speaker_box .person_profile .name_social .eng_name, .sponsor_whole_wrap .speaker_box .person_profile .name_social .eng_name {
@@ -1189,7 +1192,7 @@ a {
       .speaker_wrap .speaker_box .person_profile .describe, .sponsor_whole_wrap .speaker_box .person_profile .describe {
         width: 97%;
         text-align: justify;
-        word-break: keep-all;
+        word-break: break-all;
         font-size: 14px;
         line-height: 24px; }
       .speaker_wrap .speaker_box .person_profile .programs, .sponsor_whole_wrap .speaker_box .person_profile .programs {
@@ -1201,7 +1204,8 @@ a {
         color: #f0513d; }
         .speaker_wrap .speaker_box .person_profile .programs .items, .sponsor_whole_wrap .speaker_box .person_profile .programs .items {
           line-height: 20px;
-          color: #333; }
+          color: #333;
+          font-size: 12px; }
 
 .guide_bar_90p {
   height: 10px;

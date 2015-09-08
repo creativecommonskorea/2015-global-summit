@@ -28,7 +28,8 @@
     .person_profile {
       @media screen and (max-width: 1000px) {
         float: none;
-        width: 100%;
+        width: calc(100% - 40px);
+        padding: 20px;
       }
       float: right;
       text-align: left;
@@ -50,7 +51,7 @@
       .describe {
         width: 97%;
         text-align: justify;
-        word-break: keep-all;
+        word-break: break-all;
         font-size: 14px;
         line-height: 24px;
       }
@@ -64,6 +65,7 @@
         .items {
           line-height: 20px;
           color: #333;
+          font-size: 12px;
         }
       }
     }
