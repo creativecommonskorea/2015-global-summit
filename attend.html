@@ -2,7 +2,7 @@
 layout: base
 ---
 <script type="text/javascript" src="https://service.iamport.kr/js/iamport.payment.subscribe.js"></script>
-
+<script src="/js/pay.process.js"></script>
 <div class="wrap attend_wrap">
     <section>
         <h1 class="title">티켓선택</h1>
@@ -31,16 +31,16 @@ layout: base
                 </tr>
                 <tr>
                     <th>일반</th>
-                    <td class="price_show">&#8361; 70,000<br><input type="radio" name="ticket_type" value="ordinary_15" disabled/></td>
-                    <td class="price_show">&#8361; 70,000<br><input type="radio" name="ticket_type" value="ordinary_16" disabled/></td>
-                    <td class="price_show">&#8361; 100,000<br><input type="radio" name="ticket_type" value="ordinary_1516" disabled/></td>
-                    <td class="price_show">&#8361; 0<br><input type="radio" name="ticket_type" value="ordinary_sponsor" disabled/></td>
+                    <td class="price_show">&#8361; 70,000<br><input type="radio" name="ticket_type" value="ordinary_15"/></td>
+                    <td class="price_show">&#8361; 70,000<br><input type="radio" name="ticket_type" value="ordinary_16"/></td>
+                    <td class="price_show">&#8361; 100,000<br><input type="radio" name="ticket_type" value="ordinary_1516"/></td>
+                    <td class="price_show">&#8361; 0<br><input type="radio" name="ticket_type" value="iam_sponsor"/></td>
                 </tr>
                 <tr>
                     <th>학생</th>
-                    <td class="price_show">&#8361; 30,000<br><input type="radio" name="ticket_type" value="student_15" disabled/></td>
-                    <td class="price_show">&#8361; 30,000<br><input type="radio" name="ticket_type" value="student_16" disabled/></td>
-                    <td class="price_show">&#8361; 50,000<br><input type="radio" name="ticket_type" value="student_1516" disabled/></td>
+                    <td class="price_show">&#8361; 30,000<br><input type="radio" name="ticket_type" value="student_15"/></td>
+                    <td class="price_show">&#8361; 30,000<br><input type="radio" name="ticket_type" value="student_16"/></td>
+                    <td class="price_show">&#8361; 50,000<br><input type="radio" name="ticket_type" value="student_1516"/></td>
                     <td>&nbsp;</td>
                 </tr>
                 </tbody>
@@ -53,12 +53,11 @@ layout: base
 </div>
 <div class="wrap attend_wrap launch">
     <section>
-        <div style="background-image: url('/images/base/comming_bg.png'); width: 1100px; height: 764px; position: relative;">
-            <div style="position: absolute; top: calc(50% - 101px); left: calc(50% - 233px);">
-                <img src="/images/base/comming_01.png" alt=""/>
-            </div>
-        </div>
-        <!--
+        <!--<div style="background-image: url('/images/base/comming_bg.png'); width: 1100px; height: 764px; position: relative;">-->
+            <!--<div style="position: absolute; top: calc(50% - 101px); left: calc(50% - 233px);">-->
+                <!--<img src="/images/base/comming_01.png" alt=""/>-->
+            <!--</div>-->
+        <!--</div>-->
         <h1 class="title">점심식사 선택</h1>
         <div class="guide_bar_33"></div>
         <div class="attend_guide">
@@ -86,9 +85,8 @@ layout: base
             </div>
         </div>
         <div class="pay_or_not">
-            <button type="button" id="doPay">결제하기</button>
+            <button type="button" id="doPay" onclick="paymentProcess();">결제하기</button>
             <button type="button" id="cancel">취소</button>
         </div>
-        -->
     </section>
 </div>
