@@ -4,6 +4,10 @@
   background-color: #f7f7f8;
   overflow:auto;
   .speaker_box {
+    @media screen and (max-width: 1000px) {
+      padding: 20px;
+      width: calc(100% - 40px);
+    }
     background-color: #fff;
     border: 1px solid #e8e8e8;
     border-bottom: 3px solid #e8e8e8;
@@ -11,7 +15,7 @@
     overflow:auto;
     .person_image {
       @media screen and (max-width: 1000px) {
-        padding: 0.350em;
+        padding: 0;
         width: 100%;
         text-align: center;
         .image {
@@ -28,8 +32,7 @@
     .person_profile {
       @media screen and (max-width: 1000px) {
         float: none;
-        width: calc(100% - 40px);
-        padding: 20px;
+        width: 100%;
       }
       float: right;
       text-align: left;
@@ -37,14 +40,38 @@
       width: calc(100% - 220px);
       .name_social {
         .kor_name {
+          @media screen and (max-width: 1000px) {
+            font-size: 18px;
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+          }
           font-size: 24px;
+          float: left;
+          vertical-align: middle;
+          line-height: 24px;
         }
         .eng_name {
+          @media screen and (max-width: 1000px) {
+            font-size: 12px;
+            width: 100%;
+            text-align: center;
+          }
           font-size: 18px;
+          line-height: 24px;
+        }
+        .social_wrap {
+          @media screen and (max-width: 1000px) {
+            margin-right: 8px;
+            margin-top: -220px;
+            width: 26px;
+          }
+          float: right;
+          margin-right: 25px;
         }
       }
       .organize {
-        font-size: 14px;
+        font-size: 12px;
         color: #ff4f38;
         margin-top: 20px;
       }
