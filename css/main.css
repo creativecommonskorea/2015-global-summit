@@ -1718,31 +1718,25 @@ ul {
             .program_mobile section .mobile_day_detail .time_box .time_detail .sessions.lightgreen {
               border-radius: 5px;
               background-color: #C7FFBC;
-              border: #ececec 1px solid;
               padding: 0.3em; }
             .program_mobile section .mobile_day_detail .time_box .time_detail .sessions.lightblue {
               border-radius: 5px;
               background-color: #ecf0f5;
-              border: 1px solid #dedede;
               padding: 0.3em; }
             .program_mobile section .mobile_day_detail .time_box .time_detail .sessions.lightpurple {
               border-radius: 5px;
               background-color: #e0dff9;
-              border: 1px solid #dedede;
               padding: 0.3em; }
             .program_mobile section .mobile_day_detail .time_box .time_detail .sessions.lightorange {
               background-color: #ffdbd0;
-              border: 1px solid #dedede;
               padding: 0.3em;
               border-radius: 5px; }
             .program_mobile section .mobile_day_detail .time_box .time_detail .sessions.lightyellow {
               background-color: #FFFDC7;
-              border: 1px solid #dedede;
               padding: 0.3em;
               border-radius: 5px; }
             .program_mobile section .mobile_day_detail .time_box .time_detail .sessions.lightred {
               background-color: #ffd9eb;
-              border: 1px solid #dedede;
               padding: 0.3em;
               border-radius: 5px; }
             .program_mobile section .mobile_day_detail .time_box .time_detail .sessions .location, .program_mobile section .mobile_day_detail .time_box .time_detail .sessions .schedule .timetable table tr td .oneline_location, .schedule .timetable table tr td .program_mobile section .mobile_day_detail .time_box .time_detail .sessions .oneline_location {
