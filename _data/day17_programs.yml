@@ -2,14 +2,16 @@
 - time: "10:00 ~10:10"
   sessions:
     - title: "개회사"
-      location: "컨퍼런스 룸"
+      location: "컨퍼런스룸"
 
 - time: "10:10 ~10:40"
   sessions:
     - title: "키노트"
-      detail: "줄리아 렌다"
-      location: "컨퍼런스 룸"
-
+      location: "컨퍼런스룸"
+      detail: >
+        Julia Reda
+      box: lightblue
+      
 - time: "10:40 ~10:50"
   sessions:
     - title: "휴식"
@@ -17,7 +19,7 @@
 - time: "10:50 ~12:20"
   sessions:
     - title: "저작권 개선"
-      location: "컨퍼런스 룸"
+      location: "컨퍼런스룸"
       detail: >
         Jump-starting commons advocacy and copyright reform / Tim Volmer and affiliates
       box: lightorange
@@ -25,22 +27,22 @@
     - title: "오픈액세스(데이터)"
       location: "카카오룸"
       detail: >
-        Open Access: Retaining and Regaining Author Publication Rights (possible expansion to address TDM and state) / Diane Peters, Thomas Margoni, Michael Wolfe, Ignasi Labastida (possibly, Julia Reda) <br>
-        Expand session by 20 minutes to allow: (Using Open Data for Advocacy Storytelling: A workshop with the Open Access Button), and Thomas Margoni / Diane on TDM and OA talk
+        Retaining and Regaining Author Publication Rights / Diane Peters, Thomas Margoni, Michael Wolfe, Ignasi Labastida<br>
+        Using Open Data for Advocacy Storytelling: A workshop with the Open Access Button / Thomas Margoni, Diane on TDM and OA talk
       box: lightorange
 
     - title: "CCL"
       location: "아이디어 빌리지"
       detail: >
         Rightsstatements.org: Developing a Standard for Communicating Rights Beyond CC - and the new Public Domain Mark. / Diane Peters, Paul Keller, Maarten Zeinstra <br>
-        Uses of the blockchain for Creative Commons Primavera De Filippi
+        Uses of the blockchain for Creative Commons / Primavera De Filippi
       box: lightorange
 
     - title: "CCL"
       location: "오픈 스페이스"
       detail: >
-        "CC 라이선스와 위키미디어/위키피디아", Stephen LaPorte 위키미디어 법률 고문 <br/>
-        "CC licensing and terms of service", Sarah Pearson
+        CC 라이선스와 위키미디어/위키피디아 / Stephen LaPorte 위키미디어 법률 고문 <br/>
+        CC licensing and terms of service / Sarah Pearson
       box: lightorange
 
 - time: "12:20 ~13:20"
@@ -50,14 +52,14 @@
 - time: "13:50 ~14:50"
   sessions:
     - title: "플랫폼과 CCL"
-      location: "컨퍼런스 룸"
+      location: "컨퍼런스룸"
       detail: >
-        "The Vibrant and Social Commons: How Users Engage with the Commons Today", Jane, Ryan, Eric
+        The Vibrant and Social Commons: How Users Engage with the Commons Today / Jane, Ryan, Eric
       box: lightorange
     - title: "커뮤니티"
       location: "카카오룸"
       detail: >
-        "CC Affiliates Policies Hand-On", John Weitzmann
+        CC Affiliates Policies Hand-On / John Weitzmann
       box: lightorange
 
 - time: "14:50 ~15:20"
@@ -67,24 +69,26 @@
 - time: "15:20 ~16:50"
   sessions:
     - title: "커뮤니티"
-      location: "컨퍼런스 룸"
+      location: "컨퍼런스룸"
       detail: >
-        "Affiliates 2.0 - CC as a true network organisation - follow up to the miniconf from Day 0", Alek Tarkowski, Paul Keller
+        Affiliates 2.0 - CC as a true network organisation - follow up to the miniconf from Day 0 / Alek Tarkowski, Paul Keller
       box: lightorange
     - title: "OER"
       location: "카카오룸"
       detail: >
-        "Edu (30 min): Let's do open education! Testing a toolkit for schools and educators", Anna Stokowska, Kamil Åšliwowski, Alek Tarkowski <br>
-        "Edu (45 min): OER Showcase", Mostafa Azad Kamal, Bekka Kahn, George Abdelnour <br>
-        "Edu (15 min): School of Open Showcase and Transition", Simeon Oriko
+        Let's do open education! Testing a toolkit for schools and educators / Anna Stokowska, Kamil Åšliwowski, Alek Tarkowski <br>
+        OER Showcase / Mostafa Azad Kamal, Bekka Kahn, George Abdelnour <br>
+        School of Open Showcase and Transition / Simeon Oriko
       box: lightorange
     - title: "디자인과 CCL"
       location: "아이디어빌리지"
       detail: >
-        "CC+Design (how will CC shape future of design) (similar rights and patent rights and CC+)", Thomas Margoni, Jane Park, Diane (?), McCoy Smith (intel)(?), CERN?
+        How will CC shape future of design / Similar rights and patent rights and CC+ / Thomas Margoni, Jane Park, Diane (?), McCoy Smith (intel)(?), CERN?
       box: lightorange
 
 - time: "17:00 ~17:40"
   sessions:
     - title: "키노트"
-      detail: "캐롤리나, 제시카"
+      detail: >
+        Carolina, Jessica
+      box: lightblue
