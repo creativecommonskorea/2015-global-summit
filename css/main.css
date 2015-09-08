@@ -712,7 +712,9 @@ img {
           overflow: auto;
           padding: 20px 20px; }
           .introduce_main section .detail_description br {
-            display: none; } }
+            display: none; }
+          .introduce_main section .detail_description .font-size-24 {
+            text-align: center; } }
       .introduce_main section .detail_description img {
         margin: 14px 0 6px 0; }
       .introduce_main section .detail_description span {
@@ -991,7 +993,7 @@ h2.normal {
   font-size: 0.875em; }
 
 .font-size-24 {
-  font-size: 1.300em; }
+  font-size: 1.125em; }
 
 .font-bold {
   font-weight: bold; }
