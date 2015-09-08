@@ -1,4 +1,4 @@
-@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+//@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
 //colors
 $color_tapa_approx: #777;
@@ -258,7 +258,7 @@ img {
   background-position: center;
 
   @media screen and (max-width: 1000px) {
-    background: url('/images/base/mobile_intro_bg.png') no-repeat center;
+    background: url('/images/base/mobile_intro_bg.png') no-repeat top;
     height: auto;
   }
 
@@ -266,6 +266,7 @@ img {
     padding-top: 140px;
     @media screen and (max-width: 1000px) {
       text-align: center;
+      padding-top: 51px;
     }
     img {
       @media screen and (max-width: 1000px) {
@@ -275,12 +276,14 @@ img {
     div {
       &.message {
         @media screen and (max-width: 1000px) {
-          margin: 0.750em 0.750em;
+          margin: 17px 0.750em 0 0.750em ;
           width: calc(100% - 2.500em);
           padding: 1.0em 0.5em;
           line-height: 150%;
-          font-size: 0.9em;
+          font-size: 13px;
           height: auto;
+          text-align: left;
+          word-break: keep-all;
         }
         text-align: justify;
         height: 90px;
@@ -298,14 +301,17 @@ img {
           text-align: center;
           width: 100%;
           font-size: 1.125em;
-          margin: 0 0 4.0em 0;
+          margin: 0;
+          height: 90px;
+          padding-top: 40px;
         }
         .dateinfo {
           @media screen and (max-width: 1000px) {
             font: bold 0.850em Verdana;
             width: 90%;
             display: inline-block;
-            text-align: left;
+            text-align: center;
+            margin-bottom: 2px;
           }
           font: bold 36px Verdana;
           color: #575757;
@@ -314,9 +320,10 @@ img {
         }
         .locate {
           @media screen and (max-width: 1000px) {
+            font-size: 0.850em;
             width: 90%;
             display: inline-block;
-            margin-top: 0.5em;
+            text-align: center;
           }
           text-align: left;
         }
@@ -419,7 +426,8 @@ img {
           float: left;
           font-size: 0.75em;
           padding: 0 0.5em 0 0;
-          text-align: justify;
+          text-align: left;
+          word-break: keep-all;
         }
         @media screen and (max-width: 1000px) and (min-width: 600px) {
           width: calc(74% - 90px);
@@ -428,6 +436,7 @@ img {
           font-size: 0.75em;
           margin-top: 0;
           padding: 0;
+          word-break: keep-all;
         }
         @media screen and (min-width: 1000px) {
           margin-top: 22px;

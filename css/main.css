@@ -1,4 +1,3 @@
-@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
 body {
   margin: 0;
   padding: 0;
@@ -183,13 +182,14 @@ img {
   background-position: center; }
   @media screen and (max-width: 1000px) {
     .main_invite_wrap {
-      background: url("/images/base/mobile_intro_bg.png") no-repeat center;
+      background: url("/images/base/mobile_intro_bg.png") no-repeat top;
       height: auto; } }
   .main_invite_wrap main {
     padding-top: 140px; }
     @media screen and (max-width: 1000px) {
       .main_invite_wrap main {
-        text-align: center; } }
+        text-align: center;
+        padding-top: 51px; } }
     @media screen and (max-width: 1000px) {
       .main_invite_wrap main img {
         width: 90%; } }
@@ -205,12 +205,14 @@ img {
       font-size: 1.125em; }
       @media screen and (max-width: 1000px) {
         .main_invite_wrap main div.message {
-          margin: 0.750em 0.750em;
+          margin: 17px 0.75em 0 0.75em;
           width: calc(100% - 2.500em);
           padding: 1.0em 0.5em;
           line-height: 150%;
-          font-size: 0.9em;
-          height: auto; } }
+          font-size: 13px;
+          height: auto;
+          text-align: left;
+          word-break: keep-all; } }
     .main_invite_wrap main div.location, .main_invite_wrap main .schedule .timetable table tr td div.oneline_location, .schedule .timetable table tr td .main_invite_wrap main div.oneline_location {
       display: inline-block;
       margin-top: 20px;
@@ -220,7 +222,9 @@ img {
           text-align: center;
           width: 100%;
           font-size: 1.125em;
-          margin: 0 0 4.0em 0; } }
+          margin: 0;
+          height: 90px;
+          padding-top: 40px; } }
       .main_invite_wrap main div.location .dateinfo, .main_invite_wrap main .schedule .timetable table tr td div.oneline_location .dateinfo, .schedule .timetable table tr td .main_invite_wrap main div.oneline_location .dateinfo {
         font: bold 36px Verdana;
         color: #575757;
@@ -231,14 +235,16 @@ img {
             font: bold 0.850em Verdana;
             width: 90%;
             display: inline-block;
-            text-align: left; } }
+            text-align: center;
+            margin-bottom: 2px; } }
       .main_invite_wrap main div.location .locate, .main_invite_wrap main .schedule .timetable table tr td div.oneline_location .locate, .schedule .timetable table tr td .main_invite_wrap main div.oneline_location .locate {
         text-align: left; }
         @media screen and (max-width: 1000px) {
           .main_invite_wrap main div.location .locate, .main_invite_wrap main .schedule .timetable table tr td div.oneline_location .locate, .schedule .timetable table tr td .main_invite_wrap main div.oneline_location .locate {
+            font-size: 0.850em;
             width: 90%;
             display: inline-block;
-            margin-top: 0.5em; } }
+            text-align: center; } }
 
 .program_info_wrap {
   background-image: url(/images/base/pattern_bg.png);
@@ -334,7 +340,8 @@ img {
             float: left;
             font-size: 0.75em;
             padding: 0 0.5em 0 0;
-            text-align: justify; } }
+            text-align: left;
+            word-break: keep-all; } }
         @media screen and (max-width: 1000px) and (min-width: 600px) {
           .program_info_wrap section .program_list .program_sub_description {
             width: calc(74% - 90px);
@@ -342,7 +349,8 @@ img {
             text-align: left;
             font-size: 0.75em;
             margin-top: 0;
-            padding: 0; } }
+            padding: 0;
+            word-break: keep-all; } }
         @media screen and (min-width: 1000px) {
           .program_info_wrap section .program_list .program_sub_description {
             margin-top: 22px; } }
