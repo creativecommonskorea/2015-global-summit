@@ -4,6 +4,9 @@
   background-color: #f7f7f8;
   overflow: auto;
   article {
+    @media screen and (max-width: 1000px) {
+      width: 90%;
+    }
     border-top: 1px solid #dedede;
     border-bottom: 1px solid #dedede;
     width: 70%;
@@ -13,6 +16,11 @@
       text-align: center;
       margin: 30px 0 15px 0;
       .title {
+        @media screen and (max-width: 1000px) {
+          font-size: 1.125em;
+          line-height: 30px;
+
+        }
         font-size: 24px;
         line-height: 40px;
         font-weight: bold;
@@ -49,22 +57,29 @@
           text-align: center;
         }
         .person {
+          text-align: center;
           &> img {
             width: 160px;
             height: 160px;
             border-radius: 80px;
-            float: left;
             vertical-align: middle;
-            margin-right: 10px;
+            margin-right: calc(50% + 80px);
+            display: inline-block;
+            margin-left: calc(50% - 80px);
           }
-          float: left;
-          width: calc(50% - 30px);
+          width: 100%;
           margin-right: 30px;
         }
       }
     }
   }
   section {
+    @media screen and (max-width: 1000px) {
+      width: 90%;
+      br.nobr {
+        display: none;
+      }
+    }
     width: 70%;
     .article_list {
       margin: 60px 0;
@@ -109,7 +124,7 @@
           .title {
             font-size: 18px;
             font-weight: bold;
-            line-height: 42px;
+            line-height: 27px;
           }
           .abstract_text {
             width: 97%;

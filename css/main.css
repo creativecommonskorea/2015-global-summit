@@ -1233,6 +1233,9 @@ a {
     border-bottom: 1px solid #dedede;
     width: 70%;
     overflow: auto; }
+    @media screen and (max-width: 1000px) {
+      .newsboard_wrap article {
+        width: 90%; } }
     .newsboard_wrap article .latest_article_top {
       text-align: center;
       margin: 30px 0 15px 0; }
@@ -1240,6 +1243,10 @@ a {
         font-size: 24px;
         line-height: 40px;
         font-weight: bold; }
+        @media screen and (max-width: 1000px) {
+          .newsboard_wrap article .latest_article_top .title {
+            font-size: 1.125em;
+            line-height: 30px; } }
       .newsboard_wrap article .latest_article_top .timestamp {
         font-size: 14px;
         color: #ef513c;
@@ -1264,18 +1271,24 @@ a {
       .newsboard_wrap article .latest_article_contents .content_text .img_center {
         text-align: center; }
       .newsboard_wrap article .latest_article_contents .content_text .person {
-        float: left;
-        width: calc(50% - 30px);
+        text-align: center;
+        width: 100%;
         margin-right: 30px; }
         .newsboard_wrap article .latest_article_contents .content_text .person > img {
           width: 160px;
           height: 160px;
           border-radius: 80px;
-          float: left;
           vertical-align: middle;
-          margin-right: 10px; }
+          margin-right: calc(50% + 80px);
+          display: inline-block;
+          margin-left: calc(50% - 80px); }
   .newsboard_wrap section {
     width: 70%; }
+    @media screen and (max-width: 1000px) {
+      .newsboard_wrap section {
+        width: 90%; }
+        .newsboard_wrap section br.nobr {
+          display: none; } }
     .newsboard_wrap section .article_list {
       margin: 60px 0; }
       .newsboard_wrap section .article_list .article_box {
@@ -1316,7 +1329,7 @@ a {
           .newsboard_wrap section .article_list .article_box .abstract_contents .title {
             font-size: 18px;
             font-weight: bold;
-            line-height: 42px; }
+            line-height: 27px; }
           .newsboard_wrap section .article_list .article_box .abstract_contents .abstract_text {
             width: 97%;
             font-size: 14px;
