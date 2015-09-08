@@ -1032,7 +1032,7 @@ h2.normal {
           display: block; } }
 
 @media screen and (max-width: 640px) {
-  .sponsor_whole_wrap br {
+  .sponsor_whole_wrap.nobr br {
     display: none; } }
 .sponsor_whole_wrap .head_description {
   word-break: keep-all; }

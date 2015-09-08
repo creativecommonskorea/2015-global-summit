@@ -1295,8 +1295,10 @@ h2 {
 .sponsor_whole_wrap {
   @extend .speaker_wrap;
   @media screen and (max-width: 640px){
-    br {
-      display: none;
+    &.nobr {
+      br {
+        display: none;
+      }
     }
   }
   .head_description {
