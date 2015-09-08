@@ -8,7 +8,7 @@
 - time: "10:00 ~10:05"
   sessions:
     - title: "인사말"
-      detail:>
+      detail: >
         미정
       location: "중앙.대강당"
       box: lightblue
@@ -22,9 +22,9 @@
       box: lightblue
 
 - time: "10:30 ~10:50"
-  sessions:
+  sessions: 
     - title: "키노트"
-      detail:>
+      detail: >
         미정
       location: "중앙.대강당"
       box: lightblue

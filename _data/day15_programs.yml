@@ -25,11 +25,11 @@
     - title: "크리에이티브 커먼즈를 재정의하다"
       detail: >
         윤종수_CCKorea 프로젝트 리드
-        "디지털 시대의 창조적 공유 자원의 중요성", Merkley, Benkler, 윤종수
+        '디지털 시대의 창조적 공유 자원의 중요성', Merkley, Benkler, 윤종수
       location: "중앙.대강당"
       box: lightblue
 
-  - time: "11:00 ~11:30"
+- time: "11:00 ~11:30"
   sessions:
     - title: "네트워크 정보 경제"
       detail: >
@@ -77,7 +77,7 @@
 
 - time: "15:30 ~16:50"
   sessions:
-   - title: "트랙3. 오픈데이터"
+    - title: "트랙3. 오픈데이터"
       detail: >
         한국 공공데이터 개방 정책과 현황 / 송석현 부장_한국정보화진흥원 <br>
         과학, 의학 데이터의 공유와 가져온 변화 / 이상호_한국과학기술정보연구원 <br>
@@ -87,8 +87,8 @@
       box: lightblue
     - title: "트랙4. DIY"
       detail: >
-        “3D 프린터 기술의 진화” / Michael Weinberg_Shapeways 법률고문 <br>
-        “소프트웨어야 놀자” / 김지현_네이버 이사
+        '3D 프린터 기술의 진화' / Michael Weinberg_Shapeways 법률고문 <br>
+        '소프트웨어야 놀자' / 김지현_네이버 이사
       location: "중앙.세미나실"
 
     - title: "크리에이티브 워크샵"
