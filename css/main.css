@@ -558,7 +558,9 @@ img {
           width: 40%;
           margin: 0 0 32px 0; }
           .partner_wrap .sponsor_logos .logos.othersize {
-            width: 70%; } }
+            width: 70%; }
+            .partner_wrap .sponsor_logos .logos.othersize.w60p {
+              width: 60%; } }
       .partner_wrap .sponsor_logos .logos:last-child {
         margin-right: 0; }
       .partner_wrap .sponsor_logos .logos img {
@@ -579,11 +581,9 @@ img {
       .partner_wrap .sponsor_logos .logos .info {
         font-weight: bold;
         font-size: 11px;
-        width: 210px;
-        height: 50px;
         border: 1px solid #F5F5F5;
         padding: 20px;
-        line-height: 25px;
+        line-height: 17px;
         border-radius: 10px; }
         @media screen and (max-width: 1000px) {
           .partner_wrap .sponsor_logos .logos .info {

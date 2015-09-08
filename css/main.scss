@@ -688,6 +688,9 @@ img {
       @media screen and (max-width: 1000px) {
         &.othersize {
           width: 70%;
+          &.w60p {
+            width: 60%;
+          }
         }
         width: 40%;
         margin: 0 0 32px 0;
@@ -725,11 +728,9 @@ img {
         }
         font-weight: bold;
         font-size: 11px;
-        width: 210px;
-        height: 50px;
         border: 1px solid #F5F5F5;
         padding: 20px;
-        line-height: 25px;
+        line-height: 17px;
         border-radius: 10px;
       }
     }
