@@ -433,19 +433,22 @@ img {
       margin-top: 0.725em; }
       @media screen and (max-width: 640px) {
         .main_speakes_wrap section .kor_name {
-          font-size: 18px;
-          margin-top: 22px; } }
+          font-size: 16px;
+          margin-top: 28px; } }
     .main_speakes_wrap section .eng_name {
       font-size: 14px;
       text-align: left;
       margin-top: 5px; }
       @media screen and (max-width: 640px) {
         .main_speakes_wrap section .eng_name {
-          margin-top: 15px; } }
+          margin-top: 0px; } }
     .main_speakes_wrap section .organize {
-      font-size: 14px;
+      font-size: 13px;
       color: #ff4f38;
       text-align: left; }
+      @media screen and (max-width: 640px) {
+        .main_speakes_wrap section .organize {
+          margin-top: 10px; } }
     .main_speakes_wrap section .guide_line {
       width: 24px;
       border-top: 1px solid #c2c2c2;
@@ -550,6 +553,9 @@ img {
         margin-right: 0; }
       .partner_wrap .sponsor_logos .logos img {
         width: 200px; }
+        @media screen and (max-width: 1000px) {
+          .partner_wrap .sponsor_logos .logos img {
+            width: 70%; } }
       .partner_wrap .sponsor_logos .logos .info {
         font-weight: bold;
         font-size: 11px;

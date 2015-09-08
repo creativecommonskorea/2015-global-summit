@@ -535,8 +535,8 @@ img {
     }
     .kor_name {
       @media screen and (max-width: 640px) {
-        font-size: 18px;
-        margin-top: 22px;
+        font-size: 16px;
+        margin-top: 28px;
       }
       font-size: 22px;
       text-align: left;
@@ -545,14 +545,17 @@ img {
     }
     .eng_name {
       @media screen and (max-width: 640px) {
-        margin-top: 15px;
+        margin-top: 0px;
       }
       font-size: 14px;
       text-align: left;
       margin-top: 5px;
     }
     .organize {
-      font-size: 14px;
+      @media screen and (max-width: 640px) {
+        margin-top: 10px;
+      }
+      font-size: 13px;
       color: #ff4f38;
       text-align: left;
     }
@@ -684,6 +687,9 @@ img {
         margin-right: 0;
       }
       img {
+        @media screen and (max-width: 1000px) {
+          width: 70%;
+        }
         width: 200px;
       }
       .info {
