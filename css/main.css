@@ -767,7 +767,7 @@ img {
   margin: 70px 0;
   text-align: center; }
   .past_global_summit .past_title {
-    font-size: 1.875em; }
+    font-size: 24px; }
   .past_global_summit .past_description {
     font-size: 0.875em;
     line-height: 24px;
@@ -1094,8 +1094,9 @@ a {
   .keywords_wrap section {
     text-align: center;
     padding: 3.750em 0 3.750em 0; }
-    .keywords_wrap section .head_description br.nobr {
-      display: none; }
+    @media screen and (max-width: 1000px) {
+      .keywords_wrap section .head_description br.nobr {
+        display: none; } }
     .keywords_wrap section .keyword_box {
       background-color: #fff;
       border: 1px solid #e8e8e8;
@@ -1214,7 +1215,8 @@ a {
         font-size: 24px;
         float: left;
         vertical-align: middle;
-        line-height: 24px; }
+        line-height: 24px;
+        margin-right: 7px; }
         @media screen and (max-width: 1000px) {
           .speaker_wrap .speaker_box .person_profile .name_social .kor_name, .sponsor_whole_wrap .speaker_box .person_profile .name_social .kor_name {
             font-size: 18px;

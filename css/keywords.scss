@@ -6,7 +6,9 @@
     padding: 3.750em 0 3.750em 0;
     .head_description {
       br.nobr {
-        display: none;
+        @media screen and (max-width: 1000px) {
+          display: none;
+        }
       }
     }
     .keyword_box {
