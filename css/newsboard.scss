@@ -157,7 +157,6 @@
           }
           .abstract_text {
             @media screen and (max-width: 1000px) {
-              margin-top: 15px;
               font-size: 12px;
             }
             width: 100%;
@@ -165,6 +164,7 @@
             line-height: 25px;
             text-align: justify;
             word-break: keep-all;
+            margin-top: 15px;
           }
         }
       }

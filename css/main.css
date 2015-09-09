@@ -1405,10 +1405,10 @@ a {
             font-size: 14px;
             line-height: 25px;
             text-align: justify;
-            word-break: keep-all; }
+            word-break: keep-all;
+            margin-top: 15px; }
             @media screen and (max-width: 1000px) {
               .newsboard_wrap section .article_list .article_box .abstract_contents .abstract_text {
-                margin-top: 15px;
                 font-size: 12px; } }
 
 .attend_wrap {

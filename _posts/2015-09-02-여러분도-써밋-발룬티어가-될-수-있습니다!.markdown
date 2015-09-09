@@ -6,6 +6,7 @@ abstract: "다양한 분야의 전세계 공유 전도사들이 한자리에 모
 thumbnail: "/images/news/news3_volunteer.png"
 ---
 
+{:.img_center}
 !['잡아와'](/images/news/news3_volunteer.png)
 
 2년에 한번 열리는 글로벌 써밋이 열리는 CC글로벌 써밋에는 약 200여명의 외국인이 서울을 방문할 예정입니다. 
