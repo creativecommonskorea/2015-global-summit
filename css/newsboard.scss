@@ -50,6 +50,8 @@
       }
       .content_text {
         width: 100%;
+        height: auto;
+        overflow: auto;
         font-size: 0.8em;
         line-height: 160%;
         text-align: justify;
@@ -64,18 +66,38 @@
           text-align: center;
         }
         .person {
-          text-align: center;
-          &> img {
-            width: 160px;
-            height: 160px;
-            border-radius: 80px;
-            vertical-align: middle;
-            margin-right: calc(50% + 80px);
-            display: inline-block;
-            margin-left: calc(50% - 80px);
+          .person_image {
+            @media screen and (max-width: 1000px) {
+              width: 100%;
+              text-align: center;
+              margin: 0;
+            }
+            & > img {
+              vertical-align: top;
+              width: 160px;
+              height: 160px;
+              border-radius: 80px;
+            }
+
+            margin: 0 10px 0;
+            float: left;
+            padding: 0;
           }
-          width: 100%;
-          margin-right: 30px;
+          .person_info {
+            @media screen and (max-width: 1000px) {
+              text-align: center;
+              width: 100%;
+            }
+            width: calc(100% - 180px);
+            word-break: normal;
+            text-align: left;
+            float: right;
+          }
+          @media screen and (max-width: 1000px) {
+            width: 100%;
+          }
+          width: 50%;
+          float: left;
         }
       }
     }
@@ -109,10 +131,8 @@
           @media screen and (max-width: 1000px) {
             position: static;
             text-align: right;
-            font-style: normal;
           }
           font-size: 14px;
-          font-style: italic;
           color: #ef513c;
           line-height: 25px;
           position: absolute;
@@ -133,6 +153,7 @@
             font-size: 18px;
             font-weight: bold;
             line-height: 27px;
+            width: 90%;
           }
           .abstract_text {
             @media screen and (max-width: 1000px) {

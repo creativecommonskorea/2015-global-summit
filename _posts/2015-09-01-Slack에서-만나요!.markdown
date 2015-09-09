@@ -2,7 +2,9 @@
 layout: post
 title:  "Slack에서 만나요!"
 date:   "2015-09-01 15:00:01"
-abstract: "써밋 전/후로 주-욱 네트워킹을 이어가요~"
+abstract: >
+    80여 개국의 다양한 참가자들 중 여러분과 공통의 관심사를 가지고 있는 사람들과 생각을 나눌 수 있는 기회를 만들고자,
+    이번 써밋에서는 을 열어 참가자 간의 교류를 유도하고 있습니다.
 thumbnail: "/images/news/news2_slack.jpg"
 ---
 

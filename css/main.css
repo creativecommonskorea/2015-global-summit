@@ -1310,6 +1310,8 @@ a {
           float: none; } }
     .newsboard_wrap article .latest_article_contents .content_text {
       width: 100%;
+      height: auto;
+      overflow: auto;
       font-size: 0.8em;
       line-height: 160%;
       text-align: justify;
@@ -1321,17 +1323,34 @@ a {
       .newsboard_wrap article .latest_article_contents .content_text .img_center {
         text-align: center; }
       .newsboard_wrap article .latest_article_contents .content_text .person {
-        text-align: center;
-        width: 100%;
-        margin-right: 30px; }
-        .newsboard_wrap article .latest_article_contents .content_text .person > img {
-          width: 160px;
-          height: 160px;
-          border-radius: 80px;
-          vertical-align: middle;
-          margin-right: calc(50% + 80px);
-          display: inline-block;
-          margin-left: calc(50% - 80px); }
+        width: 50%;
+        float: left; }
+        .newsboard_wrap article .latest_article_contents .content_text .person .person_image {
+          margin: 0 10px 0;
+          float: left;
+          padding: 0; }
+          @media screen and (max-width: 1000px) {
+            .newsboard_wrap article .latest_article_contents .content_text .person .person_image {
+              width: 100%;
+              text-align: center;
+              margin: 0; } }
+          .newsboard_wrap article .latest_article_contents .content_text .person .person_image > img {
+            vertical-align: top;
+            width: 160px;
+            height: 160px;
+            border-radius: 80px; }
+        .newsboard_wrap article .latest_article_contents .content_text .person .person_info {
+          width: calc(100% - 180px);
+          word-break: normal;
+          text-align: left;
+          float: right; }
+          @media screen and (max-width: 1000px) {
+            .newsboard_wrap article .latest_article_contents .content_text .person .person_info {
+              text-align: center;
+              width: 100%; } }
+        @media screen and (max-width: 1000px) {
+          .newsboard_wrap article .latest_article_contents .content_text .person {
+            width: 100%; } }
   .newsboard_wrap section {
     width: 70%; }
     @media screen and (max-width: 1000px) {
@@ -1357,7 +1376,6 @@ a {
               display: none; } }
         .newsboard_wrap section .article_list .article_box .timestamp {
           font-size: 14px;
-          font-style: italic;
           color: #ef513c;
           line-height: 25px;
           position: absolute;
@@ -1366,8 +1384,7 @@ a {
           @media screen and (max-width: 1000px) {
             .newsboard_wrap section .article_list .article_box .timestamp {
               position: static;
-              text-align: right;
-              font-style: normal; } }
+              text-align: right; } }
         .newsboard_wrap section .article_list .article_box .abstract_contents {
           position: relative;
           padding-bottom: 25px;
@@ -1381,7 +1398,8 @@ a {
           .newsboard_wrap section .article_list .article_box .abstract_contents .title {
             font-size: 18px;
             font-weight: bold;
-            line-height: 27px; }
+            line-height: 27px;
+            width: 90%; }
           .newsboard_wrap section .article_list .article_box .abstract_contents .abstract_text {
             width: 100%;
             font-size: 14px;
