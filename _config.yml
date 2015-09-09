@@ -15,3 +15,4 @@ default_banner: '/images/base/title.png'
 # Build settings
 markdown: kramdown
 encoding: UTF-8
+exclude: ['*.bak', '*.scss']
