@@ -8,7 +8,11 @@
     {% include opengraph.html %}
     <link href="/images/base/favicon.ico" title="Icon" type="image/x-icon" rel="icon">
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanumgothic.css">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
     <!--<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />-->
     <script type="text/javascript">
 //        $(document).ready(function(){
