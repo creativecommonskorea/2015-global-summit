@@ -6,3 +6,61 @@
   width: 540px;
 }
 
+#main_location_img,
+#sub_location_img,
+#sub_location_img2 {
+  width: 548px;
+  height: 395px;
+}
+
+.speaker_wrap .speaker_box .person_profile,
+.sponsor_whole_wrap .speaker_box .person_profile {
+  width: 878px;
+}
+
+.keywords_wrap section .keyword_box .keyword_description {
+  width: 738px;
+}
+
+#day15_timetable .track1,
+#day15_timetable .track2,
+#day15_timetable .track3,
+#day15_timetable .track4,
+#day15_timetable .creative-workshop {
+  height: 229px;
+}
+
+#day15_timetable .art-showcase {
+  height: 109px;
+}
+
+#day16_timetable .first-sessions .corner_all {
+  height: 181px;
+}
+
+#day16_timetable .second-sessions .corner_all {
+  height: 146px;
+}
+
+#day16_timetable .second-sessions .corner_all.angel {
+  height: 600px;
+}
+
+#day16_timetable .third-sessions .corner_all {
+  height: 327px;
+}
+
+#day17_timetable .first-sessions .corner_all {
+  height: 235px;
+}
+
+#day17_timetable .second-sessions .corner_all {
+  height: 142px;
+}
+
+#day17_timetable .third-sessions .corner_all {
+  height: 246px;
+}
+
+
+
