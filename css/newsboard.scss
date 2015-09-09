@@ -56,12 +56,7 @@
         line-height: 160%;
         text-align: justify;
         word-break: keep-all;
-        img {
-          width: 370px;
-        }
-        a {
-          color: #ef513c;
-        }
+
         .img_center {
           text-align: center;
         }
@@ -99,6 +94,12 @@
           margin-bottom: 30px;
           width: 50%;
           float: left;
+        } 
+        img {
+          width: 370px;
+        }
+        a {
+          color: #ef513c;
         }
       }
     }

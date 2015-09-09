@@ -1325,10 +1325,6 @@ a {
       line-height: 160%;
       text-align: justify;
       word-break: keep-all; }
-      .newsboard_wrap article .latest_article_contents .content_text img {
-        width: 370px; }
-      .newsboard_wrap article .latest_article_contents .content_text a {
-        color: #ef513c; }
       .newsboard_wrap article .latest_article_contents .content_text .img_center {
         text-align: center; }
       .newsboard_wrap article .latest_article_contents .content_text .person {
@@ -1362,6 +1358,10 @@ a {
           .newsboard_wrap article .latest_article_contents .content_text .person {
             width: 100%;
             margin-bottom: 0; } }
+      .newsboard_wrap article .latest_article_contents .content_text img {
+        width: 370px; }
+      .newsboard_wrap article .latest_article_contents .content_text a {
+        color: #ef513c; }
   .newsboard_wrap section {
     width: 70%; }
     @media screen and (max-width: 1000px) {
