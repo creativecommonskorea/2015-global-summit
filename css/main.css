@@ -383,9 +383,18 @@ img {
       font-size: 1.125em;
       text-decoration: none;
       color: #fff; }
+      @media screen and (min-width: 1024px) {
+        .program_info_wrap .show_all_program a.web {
+          display: block; }
+        .program_info_wrap .show_all_program a.mobile {
+          display: none; } }
       @media screen and (max-width: 1024px) {
         .program_info_wrap .show_all_program a {
-          font-size: 16px; } }
+          font-size: 16px; }
+          .program_info_wrap .show_all_program a.web {
+            display: none; }
+          .program_info_wrap .show_all_program a.mobile {
+            display: block; } }
       .program_info_wrap .show_all_program a:hover {
         text-decoration: underline; }
   .program_info_wrap .apply_summit_wrap {

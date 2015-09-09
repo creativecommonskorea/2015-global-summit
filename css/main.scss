@@ -475,7 +475,21 @@ img {
     font-size: 1.125em;
     color: $white;
     a {
+      @media screen and (min-width: 1024px) {
+        &.web {
+          display: block;
+        }
+        &.mobile {
+          display: none;
+        }
+      }
       @media screen and (max-width: 1024px) {
+        &.web {
+          display: none;
+        }
+        &.mobile {
+          display: block;
+        }
         font-size: 16px;
       }
 
