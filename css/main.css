@@ -1344,7 +1344,7 @@ a {
               width: 100%;
               text-align: center;
               margin: 0; } }
-          .newsboard_wrap article .latest_article_contents .content_text .person .person_image > img {
+          .newsboard_wrap article .latest_article_contents .content_text .person .person_image img {
             vertical-align: top;
             width: 160px;
             height: 160px;
