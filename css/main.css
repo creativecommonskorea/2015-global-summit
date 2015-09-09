@@ -1332,6 +1332,7 @@ a {
       .newsboard_wrap article .latest_article_contents .content_text .img_center {
         text-align: center; }
       .newsboard_wrap article .latest_article_contents .content_text .person {
+        margin-bottom: 30px;
         width: 50%;
         float: left; }
         .newsboard_wrap article .latest_article_contents .content_text .person .person_image {
@@ -1359,7 +1360,8 @@ a {
               width: 100%; } }
         @media screen and (max-width: 1000px) {
           .newsboard_wrap article .latest_article_contents .content_text .person {
-            width: 100%; } }
+            width: 100%;
+            margin-bottom: 0; } }
   .newsboard_wrap section {
     width: 70%; }
     @media screen and (max-width: 1000px) {
