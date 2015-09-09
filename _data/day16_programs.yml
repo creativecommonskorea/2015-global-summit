@@ -38,6 +38,8 @@
       location: "중앙.대강당"
       box: lightorange
     - title: "공유도시"
+      detail: >
+        도시, 공유의 가치를 재발견하다 / 미정
       location: "중앙.소강당"
       box: lightorange
     - title: "OER"
@@ -94,7 +96,7 @@
     - title: "오픈데이터"
       location: "중앙.대강당"
       detail: >
-        개방을 통한 시민권 운동 / Werner Westermann JuÃ¡rez <br>
+        개방을 통한 시민권 운동 / Werner Westermann Ju&#xE1¡rez <br>
         부르키나파소의 오픈데이터와 CCL / Abdrahamane Ouedraogo <br>
         인도네시아와 아프리카의 CCL, 오픈데이터, Civic Hacking / Yuandra, Brian Ssennoga <br>
         오픈 라이선스에 의한 항공사진의 혁신적 이용 / Heather Leson
@@ -133,7 +135,7 @@
   sessions:
     - title: "지속가능한 생태계를 위한 인터넷"
       location: "중앙.대강당"
-      detail: 청전길남
+      detail: 전길남
       box: lightblue
 
 - time: "17:20 ~18:00"
