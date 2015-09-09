@@ -45,8 +45,8 @@
     - title: "공유문화"
       location: "컨퍼런스룸"
       detail: >
-        문화콘텐츠 공유와 공동체 문화의 지속가능한 발전 / Jane PArk, Ryan Merkley, Eric Steur
-      box: lightorange스
+        문화콘텐츠 공유와 공동체 문화의 지속가능한 발전 / Jane Park, Ryan Merkley, Eric Steur
+      box: lightorange
 
     - title: "오픈액세스"
       location: "아이디어빌리지"
@@ -89,4 +89,7 @@
 - time: "17:00 ~17:40"
   sessions:
     - title: "키노트"
+      location: "컨퍼런스룸"
+      detail: >
+        미정
       box: lightblue
