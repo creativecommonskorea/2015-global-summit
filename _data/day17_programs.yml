@@ -1,28 +1,31 @@
 ---
-- time: "10:00 ~10:10"
+- time: "10:00 ~10:20"
   sessions:
     - title: "개회사"
       location: "컨퍼런스룸"
 
-- time: "10:10 ~10:40"
+- time: "10:20 ~11:00"
   sessions:
     - title: "키노트"
       location: "컨퍼런스룸"
       detail: >
         Julia Reda
       box: lightblue
-      
-- time: "10:40 ~10:50"
-  sessions:
-    - title: "휴식"
 
-- time: "10:50 ~12:20"
+- time: "11:00 ~12:30"
   sessions:
     - title: "저작권 개선"
       location: "컨퍼런스룸"
       detail: >
-        저작권 개혁을 위한 실천적 전략 / Timothy Volmer
+        저작권 개혁을 위한 실천적 전략 / Timothy Volmer, Paul Keller
       box: lightpurple
+
+    - title: "오픈디자인"
+      location: "카카오존"
+      detail: >
+        디자인의 미래와 CC / Jane Park
+        3D 프린팅과 저작권 / Mahmoud Abu-Wardeh, Michael Weinberg
+      box: lightorange
 
     - title: "커뮤니티"
       location: "아이디어빌리지"
@@ -30,43 +33,36 @@
         Affiliates 정책을 재정비하다 / John Weitzmann
       box: lightorange
 
-    - title: "커뮤니티"
-      location: "오픈스페이스"
-      detail: >
-        교육기관의 OER 정책 도입 촉진을 위한 전략 / Meredith Jacobs
-      box: lightpurple
-
-- time: "12:20 ~13:20"
+- time: "12:30 ~13:30"
   sessions:
     - title: "점심"
 
-- time: "13:50 ~14:50"
+- time: "13:30 ~15:00"
   sessions:
     - title: "공유문화"
       location: "컨퍼런스룸"
       detail: >
-        문화콘텐츠 공유와 공동체 문화의 지속가능한 발전 / Jane Park, Ryan Merkley, Eric Steur
+        콘텐츠 공유와 공동체 문화의 지속가능한 발전 / Jane Park, Ryan Merkley, Eric Steur
       box: lightorange
 
-    - title: "오픈액세스"
-      location: "아이디어빌리지"
+    - title: "커뮤니티"
+      location: "카카오존"
       detail: >
-        학술논문 저작자와 출판권 / Diane Peters, Thomas Margoni, Michael Wolfe, Ignasi Labastida <br/>
-        오픈 액세스 버튼 프로젝트
+        교육기관의 OER 정책 도입 촉진을 위한 전략 / Meredith Jacobs <br/>
       box: lightpurple
 
     - title: "CCL"
-      location: "오픈 스페이스"
+      location: "아이디어빌리지"
       detail: >
         블록체인 기술을 활용한 공유저작물의 활성화 / Primavera De Filippi <br/>
         Rightsstatements.org: 유로피아나와 CC의 호환가능한 저작권 라이선스 표준 정립 / Diane Peters, Paul Keller, Maarten Zeinstra
       box: lightpurple
 
-- time: "14:50 ~15:20"
+- time: "15:00 ~15:30"
   sessions:
     - title: "휴식"
 
-- time: "15:20 ~16:50"
+- time: "15:30 ~17:00"
   sessions:
     - title: "커뮤니티"
       location: "컨퍼런스룸"
@@ -74,14 +70,14 @@
         Affiliates 2.0: CC Affiliate 네트워크의 미래 / Alek Tarkowski, Paul Keller
       box: lightorange
     - title: "OER"
-      location: "아이디어빌리지"
+      location: "카카오존"
       detail: >
         교사를 위한 OER 툴킷 개발 / Anna Stokowska, Kamil Åšliwowski, Alek Tarkowski <br>
         OER 사례발표 / Mostafa Azad Kamal, Bekka Kahn, George Abdelnour <br>
         스쿨오브오픈 프로젝트, 제1막을 마무리하며 / Simeon Oriko
       box: lightblue
     - title: "디자인과 CCL"
-      location: "오픈 스페이스"
+      location: "아이디어빌리지"
       detail: >
         디자인의 미래와 오픈 하드웨어 라이선스 / Thomas Margoni, McCoy Smith,  Diane Peters
       box: lightorange
@@ -90,6 +86,4 @@
   sessions:
     - title: "키노트"
       location: "컨퍼런스룸"
-      detail: >
-        미정
       box: lightblue
