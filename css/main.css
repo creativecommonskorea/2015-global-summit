@@ -1450,11 +1450,11 @@ a {
     position: relative;
     z-index: 10;
     display: inline-block;
-    margin: 35px 0 0 0;
+    margin: 0;
     width: 978px;
     height: 284px;
     background: #fff url("/images/other/ticket_table_bg.png") no-repeat;
-    padding: 0px; }
+    padding: 0; }
     @media screen and (max-width: 1000px) {
       .attend_wrap .ticket_info {
         background: #FFFFFF; } }
@@ -1482,52 +1482,74 @@ a {
     .attend_wrap .ticket_info .shadow {
       position: absolute; }
 
-.launch {
+.application {
   background-color: #fff; }
-  .launch .launch_box {
-    display: inline-block;
-    width: 978px;
-    height: 160px;
-    border: 1px solid #d7d7d7;
-    margin-top: 35px; }
-    .launch .launch_box .title {
-      height: 52px;
-      line-height: 52px;
-      font-size: 18px;
-      color: #f0513d;
-      background-color: #f6f6f6;
-      font-weight: bold; }
-    .launch .launch_box .launch_select {
-      height: 108px;
-      line-height: 108px; }
-      .launch .launch_box .launch_select span {
-        margin-right: 50px; }
-        .launch .launch_box .launch_select span:last-child {
-          margin-right: 0; }
-  .launch .pay_or_not {
-    margin-top: 60px; }
-    .launch .pay_or_not button {
-      cursor: pointer;
-      width: 225px;
-      height: 67px;
-      line-height: 67px;
-      color: #fff;
-      font-size: 16px;
-      border: 0; }
-      .launch .pay_or_not button:first-child {
-        margin-right: 30px; }
-      .launch .pay_or_not button#doPay {
-        background-color: #f35b42; }
-      .launch .pay_or_not button#cancel {
-        background-color: #666; }
+  .application section {
+    width: 60%; }
+    .application section .application_box {
+      width: 100%; }
+      .application section .application_box table {
+        width: 100%;
+        border-right: 1px solid #d7d7d7;
+        border-bottom: 1px solid #d7d7d7; }
+        .application section .application_box table tr th, .application section .application_box table tr td {
+          border-top: 1px solid #d7d7d7;
+          border-left: 1px solid #d7d7d7;
+          padding: 10px;
+          line-height: 180%; }
+        .application section .application_box table tr th {
+          font-size: 16px;
+          vertical-align: top; }
+        .application section .application_box table tr td {
+          font-size: 14px;
+          text-align: left; }
+    .application section .pay_or_not {
+      margin-top: 60px; }
+      .application section .pay_or_not button {
+        cursor: pointer;
+        width: 225px;
+        height: 67px;
+        line-height: 67px;
+        color: #fff;
+        font-size: 16px;
+        border: 0; }
+        .application section .pay_or_not button:first-child {
+          margin-right: 30px; }
+        .application section .pay_or_not button#doPay {
+          background-color: #f35b42; }
+        .application section .pay_or_not button#cancel {
+          background-color: #666; }
 
 .move_step_icon {
   position: absolute;
   margin: 0 auto;
   padding: 0;
   z-index: 100;
-  top: 655px;
+  top: 598px;
   text-align: center; }
+
+#buyer_name,
+#buyer_email,
+#buyer_tel,
+#buyer_addr,
+#amount,
+#buyer_email {
+  width: 200px;
+  height: 20px;
+  font-size: 16px;
+  font-weight: normal;
+  margin-right: 15px; }
+
+#amount {
+  width: 185px;
+  text-align: right;
+  padding-right: 15px; }
+
+#joinform label.error {
+  color: #ee4023; }
+
+.launch_box {
+  display: none; }
 
 .schedule {
   text-align: center;

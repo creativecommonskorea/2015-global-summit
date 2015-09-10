@@ -2,15 +2,19 @@
 layout: base
 ---
 <script type="text/javascript" src="https://service.iamport.kr/js/iamport.payment.subscribe.js"></script>
+<script src="/js/jquery.validate.min.js"></script>
+<script src="/js/additional-methods.min.js"></script>
+<script src="/js/messages_ko.js"></script>
 <script src="/js/pay.process.js"></script>
+<script src="//www.parsecdn.com/js/parse-1.6.0.min.js"></script>
 <div class="wrap attend_wrap">
     <section>
-        <h1 class="title">티켓선택</h1>
+        <h1 class="title">참가신청</h1>
         <div class="guide_bar_33"></div>
-        <div class="attend_guide">
-            <span class="step"><img src="/images/other/bullet.png" alt="-"/> STEP 1</span>
-            CC Global Summit에 참가하고자 하는 날을 선택해 주세요.
-        </div>
+        <!--<div class="attend_guide">-->
+            <!--<span class="step"><img src="/images/other/bullet.png" alt="-"/> STEP 1</span>-->
+            <!--CC Global Summit에 참가하고자 하는 날을 선택해 주세요.-->
+        <!--</div>-->
         <div class="ticket_info">
             <table border="0">
                 <thead>
@@ -31,16 +35,16 @@ layout: base
                 </tr>
                 <tr>
                     <th>일반</th>
-                    <td class="price_show">&#8361; 70,000<br><input type="radio" name="ticket_type" value="ordinary_15"/></td>
-                    <td class="price_show">&#8361; 70,000<br><input type="radio" name="ticket_type" value="ordinary_16"/></td>
-                    <td class="price_show">&#8361; 100,000<br><input type="radio" name="ticket_type" value="ordinary_1516"/></td>
-                    <td class="price_show">&#8361; 0<br><input type="radio" name="ticket_type" value="iam_sponsor"/></td>
+                    <td class="price_show">&#8361; 70,000</td>
+                    <td class="price_show">&#8361; 70,000</td>
+                    <td class="price_show">&#8361; 100,000</td>
+                    <td class="price_show">&#8361; 0</td>
                 </tr>
                 <tr>
                     <th>학생</th>
-                    <td class="price_show">&#8361; 30,000<br><input type="radio" name="ticket_type" value="student_15"/></td>
-                    <td class="price_show">&#8361; 30,000<br><input type="radio" name="ticket_type" value="student_16"/></td>
-                    <td class="price_show">&#8361; 50,000<br><input type="radio" name="ticket_type" value="student_1516"/></td>
+                    <td class="price_show">&#8361; 30,000</td>
+                    <td class="price_show">&#8361; 30,000</td>
+                    <td class="price_show">&#8361; 50,000</td>
                     <td>&nbsp;</td>
                 </tr>
                 </tbody>
@@ -48,44 +52,121 @@ layout: base
         </div>
     </section>
 </div>
-<div class="wrap move_step_icon" style="top: 671px;">
+<div class="wrap move_step_icon">
     <img src="images/other/ticket_step.png" alt=""/>
 </div>
-<div class="wrap attend_wrap launch">
+<div class="wrap attend_wrap application">
     <section>
         <!--<div style="background-image: url('/images/base/comming_bg.png'); width: 1100px; height: 764px; position: relative;">-->
             <!--<div style="position: absolute; top: calc(50% - 101px); left: calc(50% - 233px);">-->
                 <!--<img src="/images/base/comming_01.png" alt=""/>-->
             <!--</div>-->
         <!--</div>-->
-        <h1 class="title">점심식사 선택</h1>
+        <h1 class="title">신청서 작성</h1>
         <div class="guide_bar_33"></div>
-        <div class="attend_guide">
-            <span class="step"><img src="/images/other/bullet.png" alt="-"/> STEP 2</span>
-            참가 일의 점심식사 메뉴를 선택해 주세요. 별도의 식사 비용은 추가되지 않습니다.
-        </div>
-        <div class="launch_box">
-            <div class="title">10월 15일(목)</div>
-            <div class="launch_select">
-                <span>메뉴 1 <input type="radio" name="day15_launch" value="menu1"/></span>
-                <span>메뉴 2 <input type="radio" name="day15_launch" value="menu2"/></span>
-                <span>메뉴 3 <input type="radio" name="day15_launch" value="menu3"/></span>
-                <span>메뉴 4 (for vegetarian)<input type="radio" name="day15_launch" value="menu4"/></span>
-                <span>식사안함 <input type="radio" name="day15_launch" value="menu5"/></span>
-            </div>
-        </div>
-        <div class="launch_box">
-            <div class="title">10월 16일(금)</div>
-            <div class="launch_select">
-                <span>메뉴 1 <input type="radio" name="day16_launch" value="menu1"/></span>
-                <span>메뉴 2 <input type="radio" name="day16_launch" value="menu2"/></span>
-                <span>메뉴 3 <input type="radio" name="day16_launch" value="menu3"/></span>
-                <span>메뉴 4 (for vegetarian)<input type="radio" name="day16_launch" value="menu4"/></span>
-                <span>식사안함 <input type="radio" name="day16_launch" value="menu5"/></span>
-            </div>
+        <div class="application_box">
+            <form id="joinform">
+                <table cellpadding="0" cellspacing="0">
+                    <tr>
+                        <th width="25%">참가 희망 날짜</th>
+                        <td>
+                            <input type="radio" name="joinDate" value="15" id="joinDate15"/> <label for="joinDate15">1일권 (10/15, 목)</label><br/>
+                            <input type="radio" name="joinDate" value="16" id="joinDate16"/> <label for="joinDate16">1일권 (10/16, 금)</label><br/>
+                            <input type="radio" name="joinDate" value="1516" id="joinDate1516"/> <label for="joinDate1516">2일권
+                            (10/15-16, 목-금)</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>참가 유형</th>
+                        <td>
+                            <input type="radio" name="joinType" value="ordinary" id="joinTypeOrdinary"/>
+                            <label for="joinTypeOrdinary">일반 참가자</label><br/>
+                            <input type="radio" name="joinType" value="student" id="joinTypeStudent"/>
+                            <label for="joinTypeStudent">학생 참가자</label><br/>
+                            <input type="radio" name="joinType" value="sponsor" id="joinTypeSponsor"/>
+                            <label for="joinTypeSponsor">CC 후원 회원</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>총 티켓 금액</th>
+                        <td>
+                            <input type="text" name="amount" id="amount" align="right" readonly/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>이름</th>
+                        <td>
+                            <input type="text" name="buyer_name" id="buyer_name"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>이메일</th>
+                        <td>
+                            <input type="email" name="buyer_email" id="buyer_email"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>휴대폰</th>
+                        <td>
+                            <input type="text" name="buyer_tel" id="buyer_tel"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>소속</th>
+                        <td>
+                            <input type="text" name="buyer_addr" id="buyer_addr"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>점심식사 선택</th>
+                        <td>
+                            <div class="launch_box_info">
+                                참가 희망 날짜를 선택해주세요.
+                            </div>
+                            <div class="launch_box" id="launch_box_15">
+                                <b>15일 점심을 선택해주세요.</b> <br/>
+                                <input type="radio" name="day15_launch" value="151" id="launch_151"/>
+                                <label for="launch_151">비빔밥 / Bibimbap (with beef)</label>
+                                [<a href="https://en.wikipedia.org/wiki/Bibimbap">?</a>]
+                                <br/>
+
+                                <input type="radio" name="day15_launch" value="152" id="launch_152"/>
+                                <label for="launch_152">우거지탕 / Ugeoji-tang (with beef)</label>
+                                [<a href="https://www.facebook.com/thetasteofkorea/posts/796348037071192">?</a>]
+                                <br/>
+
+                                <input type="radio" name="day15_launch" value="153" id="launch_153"/>
+                                <label for="launch_153">채식 / Vegetarian (served as lunchbox)</label>
+                                <br/>
+                                <input type="radio" name="day15_launch" value="154" id="launch_154"/>
+                                <label for="launch_154">식사 안함 / None</label>
+                            </div>
+                            <div class="launch_box" id="launch_box_16">
+                                <b>16일 점심을 선택해주세요.</b> <br/>
+                                <input type="radio" name="day16_launch" value="161" id="launch_161"/>
+                                <label for="launch_161">비빔밥 / Bibimbap (with beef)</label>
+                                [<a href="https://en.wikipedia.org/wiki/Bibimbap">?</a>]
+                                <br/>
+
+                                <input type="radio" name="day16_launch" value="162" id="launch_162"/>
+                                <label for="launch_162">우거지탕 / Ugeoji-tang (with beef)</label>
+                                [<a href="https://www.facebook.com/thetasteofkorea/posts/796348037071192">?</a>]
+                                <br/>
+
+                                <input type="radio" name="day16_launch" value="163" id="launch_163"/>
+                                <label for="launch_163">채식 / Vegetarian (served as lunchbox)</label>
+                                <br/>
+                                <input type="radio" name="day16_launch" value="164" id="launch_164"/>
+                                <label for="launch_164">식사 안함 / None</label>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <input type="hidden" name="buyer_postcode" id="buyer_postcode"/>
+            </form>
         </div>
         <div class="pay_or_not">
-            <button type="button" id="doPay" onclick="paymentProcess();">결제하기</button>
+            <button type="button" id="doPay" onclick="validation();">결제하기</button>
             <button type="button" id="cancel">취소</button>
         </div>
     </section>
