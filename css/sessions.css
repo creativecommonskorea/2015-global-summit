@@ -1,0 +1,55 @@
+.session_detail_wrap {
+  text-align: center;
+  background-color: #f7f7f8; }
+  .session_detail_wrap section {
+    text-align: center;
+    padding: 3.750em 0 3.750em 0; }
+    .session_detail_wrap section .session_detail_box {
+      background-color: #fff;
+      border: 1px solid #e8e8e8;
+      border-bottom: 3px solid #e8e8e8;
+      font-size: 0.875em;
+      overflow: auto;
+      margin-bottom: 1.250em;
+      position: relative; }
+      .session_detail_wrap section .session_detail_box:last-child {
+        margin-bottom: 0; }
+      .session_detail_wrap section .session_detail_box .badge {
+        position: absolute;
+        top: 0;
+        left: 96%;
+        margin: 0;
+        padding: 0;
+        width: 23px;
+        height: 27px;
+        z-index: 10; }
+        @media screen and (max-width: 1000px) {
+          .session_detail_wrap section .session_detail_box .badge {
+            left: 90%; } }
+      .session_detail_wrap section .session_detail_box .title_wrap {
+        display: table;
+        height: 5.000em;
+        width: 100%;
+        font-size: 1.375em;
+        font-weight: bold;
+        border-bottom: 1px solid #e8e8e8; }
+        @media screen and (max-width: 1000px) {
+          .session_detail_wrap section .session_detail_box .title_wrap {
+            font-size: 1.000em;
+            vertical-align: middle;
+            height: 5.000em; } }
+        .session_detail_wrap section .session_detail_box .title_wrap .title {
+          display: table-cell;
+          vertical-align: middle;
+          text-align: left;
+          padding-left: 280px; }
+          @media screen and (max-width: 1000px) {
+            .session_detail_wrap section .session_detail_box .title_wrap .title {
+              padding-left: 20px; } }
+          .session_detail_wrap section .session_detail_box .title_wrap .title a {
+            text-decoration: none;
+            color: #333; }
+            .session_detail_wrap section .session_detail_box .title_wrap .title a:hover {
+              text-decoration: underline; }
+
+/*# sourceMappingURL=sessions.css.map */

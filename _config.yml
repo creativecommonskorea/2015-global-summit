@@ -16,3 +16,16 @@ default_banner: '/images/base/title.png'
 markdown: kramdown
 encoding: UTF-8
 exclude: ['*.bak', '*.scss']
+
+# collections
+collections:
+  sessions:
+    output: true
+    permalink: /session/:name.html
+
+defaults:
+  - scope:
+      path: "session"
+      type: "sessions"
+    values:
+      layout: "session"
