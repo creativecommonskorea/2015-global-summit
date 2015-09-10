@@ -8,8 +8,6 @@
 - time: "10:00 ~10:05"
   sessions:
     - title: "인사말"
-      detail: >
-        미정
       location: "중앙.대강당"
       box: lightblue
 
@@ -24,8 +22,6 @@
 - time: "10:30 ~10:50"
   sessions: 
     - title: "키노트"
-      detail: >
-        미정
       location: "중앙.대강당"
       box: lightblue
 
@@ -39,7 +35,7 @@
       box: lightorange
     - title: "공유도시"
       detail: >
-        도시, 공유의 가치를 재발견하다 / 미정
+        도시, 공유의 가치를 재발견하다
       location: "중앙.소강당"
       box: lightorange
     - title: "OER"

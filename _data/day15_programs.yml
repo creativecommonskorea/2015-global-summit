@@ -2,7 +2,6 @@
 - time: "09:30 ~10:00"
   sessions:
     - title: "등록"
-      detail: "이름표와 슬랙(Slack) 가입 및 등록을 확인하세요."
       location: "중앙.대강당 앞 로비"
 
 - time: "10:00 ~10:10"
@@ -16,7 +15,6 @@
 - time: "10:10 ~10:30"
   sessions:
     - title: "축사"
-      detail: "미정"
       location: "중앙.대강당"
       box: lightblue
 
@@ -40,7 +38,7 @@
   sessions:
     - title: "디지털 시대의 창조적 공유 자원의 중요성"
       detail: >
-        윤종수, Yochai Benkler
+        윤종수, Yochai Benkler, Ryan Merkley
       location: "중앙.대강당"
       box: lightorange
 
@@ -53,7 +51,7 @@
     - title: "트랙1. 오픈지식"
       detail: >
         유럽의 문화 예술을 디지털로 스캔하다 / Paul Keller_유로피아나<br>
-        공유저작물 창조자원화 전략 / 윤태용실장_문화체육관광부 콘텐츠산업실
+        공유저작물 창조자원화 전략
       location: "중앙.대강당"
       box: lightblue
     - title: "트랙2. 오픈비즈니스"
@@ -78,7 +76,7 @@
   sessions:
     - title: "트랙3. 오픈데이터"
       detail: >
-        한국 공공데이터 개방 정책과 현황 / 송석현 부장_한국정보화진흥원 <br>
+        한국 공공데이터 개방 정책과 현황<br>
         과학, 의학 데이터의 공유와 가져온 변화 / 이상호_한국과학기술정보연구원 <br>
         데이터 긱이 세상을 바꾼다 / 박은정_팀포퐁 <br>
         IoT와 오픈데이터 / Naeema Zarif_CC 아랍 지역 코디네이터
