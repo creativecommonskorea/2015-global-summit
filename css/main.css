@@ -192,16 +192,16 @@ img {
       background-position: top center;
       background-size: auto;
       height: auto; } }
-  .main_invite_wrap main {
+  .main_invite_wrap section {
     padding-top: 140px; }
     @media screen and (max-width: 1000px) {
-      .main_invite_wrap main {
+      .main_invite_wrap section {
         text-align: center;
         padding-top: 51px; } }
     @media screen and (max-width: 1000px) {
-      .main_invite_wrap main img {
+      .main_invite_wrap section img {
         width: 90%; } }
-    .main_invite_wrap main div.message {
+    .main_invite_wrap section div.message {
       text-align: justify;
       height: 90px;
       width: 631px;
@@ -212,7 +212,7 @@ img {
       padding: 10px 25px 0;
       font-size: 1.125em; }
       @media screen and (max-width: 1000px) {
-        .main_invite_wrap main div.message {
+        .main_invite_wrap section div.message {
           margin: 17px 0.75em 0 0.75em;
           width: calc(100% - 2.500em);
           padding: 1.0em 0.5em;
@@ -221,25 +221,25 @@ img {
           height: auto;
           text-align: justify;
           word-break: break-all; } }
-    .main_invite_wrap main div.location, .main_invite_wrap main .schedule .timetable table tr td div.oneline_location, .schedule .timetable table tr td .main_invite_wrap main div.oneline_location {
+    .main_invite_wrap section div.location, .main_invite_wrap section .schedule .timetable table tr td div.oneline_location, .schedule .timetable table tr td .main_invite_wrap section div.oneline_location {
       display: inline-block;
       margin-top: 20px;
       font-size: 1.500em; }
       @media screen and (max-width: 1000px) {
-        .main_invite_wrap main div.location, .main_invite_wrap main .schedule .timetable table tr td div.oneline_location, .schedule .timetable table tr td .main_invite_wrap main div.oneline_location {
+        .main_invite_wrap section div.location, .main_invite_wrap section .schedule .timetable table tr td div.oneline_location, .schedule .timetable table tr td .main_invite_wrap section div.oneline_location {
           text-align: center;
           width: 100%;
           font-size: 1.125em;
           margin: 0;
           height: 95px;
           padding-top: 40px; } }
-      .main_invite_wrap main div.location .dateinfo, .main_invite_wrap main .schedule .timetable table tr td div.oneline_location .dateinfo, .schedule .timetable table tr td .main_invite_wrap main div.oneline_location .dateinfo {
+      .main_invite_wrap section div.location .dateinfo, .main_invite_wrap section .schedule .timetable table tr td div.oneline_location .dateinfo, .schedule .timetable table tr td .main_invite_wrap section div.oneline_location .dateinfo {
         font: bold 36px Verdana;
         color: #575757;
         letter-spacing: -2px;
         margin-bottom: 10px; }
         @media screen and (max-width: 1000px) {
-          .main_invite_wrap main div.location .dateinfo, .main_invite_wrap main .schedule .timetable table tr td div.oneline_location .dateinfo, .schedule .timetable table tr td .main_invite_wrap main div.oneline_location .dateinfo {
+          .main_invite_wrap section div.location .dateinfo, .main_invite_wrap section .schedule .timetable table tr td div.oneline_location .dateinfo, .schedule .timetable table tr td .main_invite_wrap section div.oneline_location .dateinfo {
             font-size: 15px;
             font-weight: bold;
             width: 90%;
@@ -247,10 +247,10 @@ img {
             text-align: center;
             margin-bottom: 4px;
             letter-spacing: 0; } }
-      .main_invite_wrap main div.location .locate, .main_invite_wrap main .schedule .timetable table tr td div.oneline_location .locate, .schedule .timetable table tr td .main_invite_wrap main div.oneline_location .locate {
+      .main_invite_wrap section div.location .locate, .main_invite_wrap section .schedule .timetable table tr td div.oneline_location .locate, .schedule .timetable table tr td .main_invite_wrap section div.oneline_location .locate {
         text-align: left; }
         @media screen and (max-width: 1000px) {
-          .main_invite_wrap main div.location .locate, .main_invite_wrap main .schedule .timetable table tr td div.oneline_location .locate, .schedule .timetable table tr td .main_invite_wrap main div.oneline_location .locate {
+          .main_invite_wrap section div.location .locate, .main_invite_wrap section .schedule .timetable table tr td div.oneline_location .locate, .schedule .timetable table tr td .main_invite_wrap section div.oneline_location .locate {
             font-size: 15px;
             width: 90%;
             display: inline-block;
@@ -1920,7 +1920,7 @@ ul {
  for ie 10
 */
 .ie10 #kcc_session {
-  height: 50px; }
+  height: 600px; }
 
 .ie10 #kcc_session .angel {
   height: 600px; }
