@@ -2,7 +2,6 @@
 - time: "09:30 ~10:00"
   sessions:
     - title: "등록"
-      detail: "이름표와 슬랙(Slack) 가입 및 등록을 확인하세요."
       location: "중앙.대강당 앞 로비"
 
 - time: "10:00 ~10:10"
@@ -16,7 +15,6 @@
 - time: "10:10 ~10:30"
   sessions:
     - title: "축사"
-      detail: "미정"
       location: "중앙.대강당"
       box: lightblue
 
