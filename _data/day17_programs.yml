@@ -87,4 +87,6 @@
   sessions:
     - title: "키노트"
       location: "컨퍼런스룸"
+      detail: >
+        Carolina Botero, Jessica Coates
       box: lightblue
