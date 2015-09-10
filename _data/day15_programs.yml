@@ -2,36 +2,38 @@
 - time: "09:30 ~10:00"
   sessions:
     - title: "등록"
-      location: "중앙.대강당 앞 로비"
+      location: "중앙박물관 대강당 앞 로비"
 
 - time: "10:00 ~10:10"
   sessions:
     - title: "인사말"
       detail: >
-        서정욱_CCKorea 이사장
-      location: "중앙.대강당"
+        서정욱_CC Korea 이사장
+      location: "중앙박물관 대강당"
       box: lightblue
 
 - time: "10:10 ~10:30"
   sessions:
     - title: "축사"
-      location: "중앙.대강당"
+      detail: >
+        Private Internet Access
+      location: "중앙박물관 대강당"
       box: lightblue
 
 - time: "10:30 ~11:00"
   sessions:
     - title: "크리에이티브 커먼즈를 재정의하다"
       detail: >
-        윤종수_CCKorea 프로젝트 리드
-      location: "중앙.대강당"
+        윤종수_CC Korea 프로젝트 리드
+      location: "중앙박물관 대강당"
       box: lightblue
 
 - time: "11:00 ~11:30"
   sessions:
-    - title: "커먼즈 개념과 자본주의의 미래"
+    - title: "공유와 자본주의의 미래"
       detail: >
         Yochai Benkler_하버드 로스쿨 교수
-      location: "중앙.대강당"
+      location: "중앙박물관 대강당"
       box: lightblue
 
 - time: "11:30 ~12:00"
@@ -39,7 +41,7 @@
     - title: "디지털 시대의 창조적 공유 자원의 중요성"
       detail: >
         윤종수, Yochai Benkler, Ryan Merkley
-      location: "중앙.대강당"
+      location: "중앙박물관 대강당"
       box: lightorange
 
 - time: "12:00 ~13:30"
@@ -52,8 +54,8 @@
       detail: >
         전세계 OER 운동의 현황 / Cable Green_CC 글로벌 러닝 디렉터
         유럽의 문화 예술을 디지털로 스캔하다 / Paul Keller_유로피아나<br>
-        공유저작물 창조자원화 전략
-      location: "중앙.대강당"
+        공유저작물 창조자원화 전략 / 문화체육관광부
+      location: "중앙박물관 대강당"
       box: lightblue
     - title: "트랙2. 오픈비즈니스"
       detail: >
@@ -66,7 +68,7 @@
 - time: "14:10 ~14:50"
   sessions:
     - title: "CC 아트 쇼케이스"
-      location: "한글.강당"
+      location: "한글박물관 강당"
       box: lightpurple
 
 - time: "15:00 ~15:30"
@@ -77,23 +79,23 @@
   sessions:
     - title: "트랙3. 오픈데이터"
       detail: >
-        한국 공공데이터 개방 정책과 현황<br>
-        과학, 의학 데이터의 공유와 가져온 변화 / 이상호_한국과학기술정보연구원 <br>
+        한국 공공데이터 개방 정책과 현황 / 한국정보화진흥원<br>
+        학술 데이터의 공유 플랫폼: Datanest / 한국과학기술정보연구원 <br>
         데이터 긱이 세상을 바꾼다 / 박은정_팀포퐁 <br>
         IoT와 오픈데이터 / Naeema Zarif_CC 아랍 지역 코디네이터
-      location: "중앙.대강당"
+      location: "중앙박물관 대강당"
       box: lightblue
     - title: "트랙4. DIY"
       detail: >
-        '3D 프린터 기술의 진화' / Michael Weinberg_Shapeways 법률고문 <br>
-        '소프트웨어야 놀자' / 김지현_네이버 이사
-      location: "중앙.세미나실"
+        3D 프린터 기술의 진화 / Michael Weinberg_Shapeways 법률고문 <br>
+        소프트웨어야 놀자 / 김지현_네이버 이사
+      location: "중앙박물관 세미나실"
       box: lightblue
 
     - title: "크리에이티브 워크샵"
       detail: >
-        Dance with ZeMarmot: Aryeom Han & Jehan Pagas
-      location: "한글.강당"
+        Dance with ZeMarmot: Aryeom Han & Jehan Pages
+      location: "한글박물관 강당"
       box: lightpurple
 
 - time: "17:00 ~17:30"
@@ -101,7 +103,7 @@
     - title: "경계를 허무는 나비의 실험"
       detail: >
         노소영_나비아트센터 관장
-      location: "중앙.대강당"
+      location: "중앙박물관 대강당"
       box: lightblue
 
 - time: "17:30 ~18:00"
@@ -109,5 +111,5 @@
     - title: "위키백과의 ‘리-챌린지(re-challenge)'"
       detail: >
         Lila Tretikov_위키미디아 재단 사무국장
-      location: "중앙.대강당"
+      location: "중앙박물관 대강당"
       box: lightblue
