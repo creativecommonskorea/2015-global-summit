@@ -1604,15 +1604,23 @@ a {
       background-color: #fff; }
       .schedule .timetable table tr {
         height: 60px; }
+        .schedule .timetable table tr.h60 {
+          height: 60px; }
         .schedule .timetable table tr.h120 {
           height: 120px; }
+        .schedule .timetable table tr.h180 {
+          height: 180px; }
         .schedule .timetable table tr.h240 {
           height: 240px; }
+        .schedule .timetable table tr.h300 {
+          height: 300px; }
+        .schedule .timetable table tr.h350 {
+          height: 350px; }
         .schedule .timetable table tr.border_bottom td {
           border-bottom: 1px solid #dedede; }
         .schedule .timetable table tr td {
           padding: 5px;
-          height: 50px;
+          height: inherit;
           font-size: 11px; }
           .schedule .timetable table tr td.h120 {
             height: 110px; }
@@ -1638,7 +1646,8 @@ a {
               line-height: 130%; }
             .schedule .timetable table tr td .light_bg.oneline, .schedule .timetable table tr td div.oneline.gray_light, .schedule .timetable table tr td div.oneline.whiteblue_light, .schedule .timetable table tr td div.oneline.whiteorange_light, .schedule .timetable table tr td div.oneline.whitepurple_light, .schedule .timetable table tr td div.oneline.whitegreen_light {
               padding: 16px 0 0 46px;
-              width: calc(100% - 46px); }
+              width: calc(100% - 46px);
+              height: 40px; }
           .schedule .timetable table tr td div.gray_light {
             background-color: #ececec; }
           .schedule .timetable table tr td div.whiteblue_light {
@@ -1899,5 +1908,51 @@ ul {
               font-size: 0.725em;
               font-weight: normal;
               line-height: 150%; }
+
+#day15_timetable .track1,
+#day15_timetable .track2,
+#day15_timetable .track3,
+#day15_timetable .track4,
+#day15_timetable .creative-workshop {
+  height: 190px; }
+
+/**
+ for ie 10
+*/
+.ie10 #kcc_session {
+  height: 50px; }
+
+.ie10 #kcc_session .angel {
+  height: 600px; }
+
+/**
+for IE 11
+*/
+*::-ms-backdrop, #day16_timetable .h120 div.box {
+  height: 120px; }
+
+*::-ms-backdrop, #day16_timetable .h180 div.box {
+  height: 180px; }
+
+*::-ms-backdrop, #day16_timetable .h240 div.box {
+  height: 240px; }
+
+*::-ms-backdrop, #day16_timetable .h300 div.box {
+  height: 300px; }
+
+*::-ms-backdrop, #day16_timetable .h350 div.box {
+  height: 350px; }
+
+*::-ms-backdrop, #day16_timetable .h120 div.angel {
+  height: 600px; }
+
+*::-ms-backdrop, #day17_timetable .h120 div.box {
+  height: 120px; }
+
+*::-ms-backdrop, #day17_timetable .h180 div.box {
+  height: 180px; }
+
+*::-ms-backdrop, #day17_timetable .h240 div.box {
+  height: 240px; }
 
 /*# sourceMappingURL=main.css.map */
