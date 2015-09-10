@@ -3,6 +3,7 @@
   sessions:
     - title: "개회사"
       location: "컨퍼런스룸"
+      box: lightblue
 
 - time: "10:20 ~11:00"
   sessions:
