@@ -112,7 +112,7 @@ function validation() {
 
 function paymentProcess(frm) {
     var params = {
-        merchant_uid: performance.now(),
+        merchant_uid: performance.now().toString(),
     };
 
     // validated values
