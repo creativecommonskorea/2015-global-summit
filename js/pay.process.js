@@ -117,12 +117,10 @@ function paymentProcess(frm) {
 
     // validated values
     $(frm).find('input.valid').each(function () {
-        if ($(this).attr('id') == 'amount')
-            params[$(this).attr('id')] = parseInt($(this).val().replace(',','').replace(' 원',''));
-        else
-            params[$(this).attr('id')] = $(this).val();
+        params[$(this).attr('id')] = $(this).val();
     });
 
+    params['amount'] = $('#amount').val();
     params['name'] = $("input[name='joinType']:checked").val() + "_" + $("input[name='joinDate']:checked").val();
     params['buyer_postcode'] = $("input[name='day15_launch']:checked").val()? $("input[name='day15_launch']:checked").val():'150' +
             $("input[name='day16_launch']:checked").val()? $("input[name='day16_launch']:checked").val():'160';
