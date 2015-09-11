@@ -32,9 +32,9 @@ layout: base
         <div class="guide_bar_33"></div>
 
         {% for s in site.data.mainspeakers %}
-        <div class="speaker_box" id="{{ s.id }}">
+        <div class="special_speaker_box" id="{{ s.id }}">
             <div class="person_image">
-                <img src="{{ s.image }}" alt="" class="image"/>
+                <img src="{{ s.image }}" alt="{{ s.kor_name }},{{ s.eng_name }}" class="image"/>
             </div>
             <div class="person_profile">
                 <div class="name_social">
@@ -73,7 +73,37 @@ layout: base
 </div>
 <div class="wrap speaker_wrap">
     <section>
-        <h1 class="title">주요연사</h1>
+        <h1 class="title">연사</h1>
+
         <div class="guide_bar_33"></div>
+
+        {% for s in site.data.speakers %}
+        <div class="speaker_box">
+            <div class="person_image">
+                <img src="{{ s.image }}" alt="{{ s.name }}, {{ s.eng_name }}" class="image"/>
+            </div>
+            <div class="person_profile">
+                <div class="name_social">
+                    <div class="kor_name">{{ s.name }}</div>
+                </div>
+                <div class="organize">{{ s.organize }}</div>
+                <div class="guide_bar_90p"></div>
+                <div class="describe">
+                    {{ s.describe }}
+                </div>
+                {% if s.programs %}
+                <div class="programs">
+                    <img src="images/other/bullet.png" alt="*"/> 관련세션 <br/>
+
+                    <div class="items">
+                        {% for p in s.programs %}
+                        {{ p.item }} <br/>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
     </section>
 </div>

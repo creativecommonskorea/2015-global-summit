@@ -1190,87 +1190,124 @@ a {
   text-align: center;
   background-color: #f7f7f8;
   overflow: auto; }
-  .speaker_wrap .speaker_box, .sponsor_whole_wrap .speaker_box {
+  .speaker_wrap:first-child, .sponsor_whole_wrap:first-child {
+    padding-bottom: 0; }
+  .speaker_wrap .special_speaker_box, .sponsor_whole_wrap .special_speaker_box, .speaker_wrap .speaker_box, .sponsor_whole_wrap .speaker_box {
     background-color: #fff;
     border: 1px solid #e8e8e8;
     border-bottom: 3px solid #e8e8e8;
     margin-bottom: 20px;
     overflow: auto; }
     @media screen and (max-width: 1000px) {
-      .speaker_wrap .speaker_box, .sponsor_whole_wrap .speaker_box {
+      .speaker_wrap .special_speaker_box, .sponsor_whole_wrap .special_speaker_box, .speaker_wrap .speaker_box, .sponsor_whole_wrap .speaker_box {
         padding: 20px;
         width: calc(100% - 40px); } }
-    .speaker_wrap .speaker_box .person_image, .sponsor_whole_wrap .speaker_box .person_image {
+    .speaker_wrap .special_speaker_box .person_image, .sponsor_whole_wrap .special_speaker_box .person_image, .speaker_wrap .speaker_box .person_image, .sponsor_whole_wrap .speaker_box .person_image {
       float: left;
       padding: 25px; }
       @media screen and (max-width: 1000px) {
-        .speaker_wrap .speaker_box .person_image, .sponsor_whole_wrap .speaker_box .person_image {
+        .speaker_wrap .special_speaker_box .person_image, .sponsor_whole_wrap .special_speaker_box .person_image, .speaker_wrap .speaker_box .person_image, .sponsor_whole_wrap .speaker_box .person_image {
           padding: 0;
           width: 100%;
           text-align: center; }
-          .speaker_wrap .speaker_box .person_image .image, .sponsor_whole_wrap .speaker_box .person_image .image {
+          .speaker_wrap .special_speaker_box .person_image .image, .sponsor_whole_wrap .special_speaker_box .person_image .image, .speaker_wrap .speaker_box .person_image .image, .sponsor_whole_wrap .speaker_box .person_image .image {
             height: auto; } }
-      .speaker_wrap .speaker_box .person_image .image, .sponsor_whole_wrap .speaker_box .person_image .image {
+      .speaker_wrap .special_speaker_box .person_image .image, .sponsor_whole_wrap .special_speaker_box .person_image .image, .speaker_wrap .speaker_box .person_image .image, .sponsor_whole_wrap .speaker_box .person_image .image {
         width: 160px;
         height: 160px; }
-    .speaker_wrap .speaker_box .person_profile, .sponsor_whole_wrap .speaker_box .person_profile {
+    .speaker_wrap .special_speaker_box .person_profile, .sponsor_whole_wrap .special_speaker_box .person_profile, .speaker_wrap .speaker_box .person_profile, .sponsor_whole_wrap .speaker_box .person_profile {
       float: right;
       text-align: left;
       padding: 25px 0;
       width: calc(100% - 220px); }
       @media screen and (max-width: 1000px) {
-        .speaker_wrap .speaker_box .person_profile, .sponsor_whole_wrap .speaker_box .person_profile {
+        .speaker_wrap .special_speaker_box .person_profile, .sponsor_whole_wrap .special_speaker_box .person_profile, .speaker_wrap .speaker_box .person_profile, .sponsor_whole_wrap .speaker_box .person_profile {
           float: none;
           width: 100%; } }
-      .speaker_wrap .speaker_box .person_profile .name_social .kor_name, .sponsor_whole_wrap .speaker_box .person_profile .name_social .kor_name {
+      .speaker_wrap .special_speaker_box .person_profile .name_social .kor_name, .sponsor_whole_wrap .special_speaker_box .person_profile .name_social .kor_name, .speaker_wrap .speaker_box .person_profile .name_social .kor_name, .sponsor_whole_wrap .speaker_box .person_profile .name_social .kor_name {
         font-size: 24px;
         float: left;
         vertical-align: middle;
         line-height: 24px;
         margin-right: 7px; }
         @media screen and (max-width: 1000px) {
-          .speaker_wrap .speaker_box .person_profile .name_social .kor_name, .sponsor_whole_wrap .speaker_box .person_profile .name_social .kor_name {
+          .speaker_wrap .special_speaker_box .person_profile .name_social .kor_name, .sponsor_whole_wrap .special_speaker_box .person_profile .name_social .kor_name, .speaker_wrap .speaker_box .person_profile .name_social .kor_name, .sponsor_whole_wrap .speaker_box .person_profile .name_social .kor_name {
             font-size: 18px;
             width: 100%;
             text-align: center;
             margin-top: 10px; } }
-      .speaker_wrap .speaker_box .person_profile .name_social .eng_name, .sponsor_whole_wrap .speaker_box .person_profile .name_social .eng_name {
+      .speaker_wrap .special_speaker_box .person_profile .name_social .eng_name, .sponsor_whole_wrap .special_speaker_box .person_profile .name_social .eng_name, .speaker_wrap .speaker_box .person_profile .name_social .eng_name, .sponsor_whole_wrap .speaker_box .person_profile .name_social .eng_name {
         font-size: 18px;
         line-height: 24px; }
         @media screen and (max-width: 1000px) {
-          .speaker_wrap .speaker_box .person_profile .name_social .eng_name, .sponsor_whole_wrap .speaker_box .person_profile .name_social .eng_name {
+          .speaker_wrap .special_speaker_box .person_profile .name_social .eng_name, .sponsor_whole_wrap .special_speaker_box .person_profile .name_social .eng_name, .speaker_wrap .speaker_box .person_profile .name_social .eng_name, .sponsor_whole_wrap .speaker_box .person_profile .name_social .eng_name {
             font-size: 12px;
             width: 100%;
             text-align: center; } }
-      .speaker_wrap .speaker_box .person_profile .name_social .social_wrap, .sponsor_whole_wrap .speaker_box .person_profile .name_social .social_wrap {
+      .speaker_wrap .special_speaker_box .person_profile .name_social .social_wrap, .sponsor_whole_wrap .special_speaker_box .person_profile .name_social .social_wrap, .speaker_wrap .speaker_box .person_profile .name_social .social_wrap, .sponsor_whole_wrap .speaker_box .person_profile .name_social .social_wrap {
         float: right;
         margin-right: 25px; }
         @media screen and (max-width: 1000px) {
-          .speaker_wrap .speaker_box .person_profile .name_social .social_wrap, .sponsor_whole_wrap .speaker_box .person_profile .name_social .social_wrap {
+          .speaker_wrap .special_speaker_box .person_profile .name_social .social_wrap, .sponsor_whole_wrap .special_speaker_box .person_profile .name_social .social_wrap, .speaker_wrap .speaker_box .person_profile .name_social .social_wrap, .sponsor_whole_wrap .speaker_box .person_profile .name_social .social_wrap {
             margin-right: 8px;
             margin-top: -220px;
             width: 26px; } }
-      .speaker_wrap .speaker_box .person_profile .organize, .sponsor_whole_wrap .speaker_box .person_profile .organize {
+      .speaker_wrap .special_speaker_box .person_profile .organize, .sponsor_whole_wrap .special_speaker_box .person_profile .organize, .speaker_wrap .speaker_box .person_profile .organize, .sponsor_whole_wrap .speaker_box .person_profile .organize {
         font-size: 12px;
         color: #ff4f38;
         margin-top: 20px; }
-      .speaker_wrap .speaker_box .person_profile .describe, .sponsor_whole_wrap .speaker_box .person_profile .describe {
+      .speaker_wrap .special_speaker_box .person_profile .describe, .sponsor_whole_wrap .special_speaker_box .person_profile .describe, .speaker_wrap .speaker_box .person_profile .describe, .sponsor_whole_wrap .speaker_box .person_profile .describe {
         width: 97%;
         text-align: justify;
         word-break: break-all;
         font-size: 14px;
         line-height: 24px; }
-      .speaker_wrap .speaker_box .person_profile .programs, .sponsor_whole_wrap .speaker_box .person_profile .programs {
+      .speaker_wrap .special_speaker_box .person_profile .programs, .sponsor_whole_wrap .special_speaker_box .person_profile .programs, .speaker_wrap .speaker_box .person_profile .programs, .sponsor_whole_wrap .speaker_box .person_profile .programs {
         display: inline-block;
         text-align: left;
         font-size: 14px;
         line-height: 30px;
         margin-top: 20px;
         color: #f0513d; }
-        .speaker_wrap .speaker_box .person_profile .programs .items, .sponsor_whole_wrap .speaker_box .person_profile .programs .items {
+        .speaker_wrap .special_speaker_box .person_profile .programs .items, .sponsor_whole_wrap .special_speaker_box .person_profile .programs .items, .speaker_wrap .speaker_box .person_profile .programs .items, .sponsor_whole_wrap .speaker_box .person_profile .programs .items {
           line-height: 20px;
           color: #333;
           font-size: 12px; }
+  .speaker_wrap .speaker_box, .sponsor_whole_wrap .speaker_box {
+    width: calc(50% - 24px);
+    margin: 10px;
+    float: left; }
+    @media screen and (max-width: 1000px) {
+      .speaker_wrap .speaker_box, .sponsor_whole_wrap .speaker_box {
+        padding: 20px;
+        width: calc(100% - 40px);
+        margin: 0 0 20px 0; }
+        .speaker_wrap .speaker_box:last-child, .sponsor_whole_wrap .speaker_box:last-child {
+          margin-bottom: 0; } }
+    .speaker_wrap .speaker_box .person_profile, .sponsor_whole_wrap .speaker_box .person_profile {
+      padding: 25px 25px 25px 0;
+      width: calc(100% - 235px); }
+      @media screen and (max-width: 1000px) {
+        .speaker_wrap .speaker_box .person_profile, .sponsor_whole_wrap .speaker_box .person_profile {
+          width: 100%;
+          padding: 0; } }
+      .speaker_wrap .speaker_box .person_profile .name_social, .sponsor_whole_wrap .speaker_box .person_profile .name_social {
+        overflow: auto;
+        height: au; }
+      .speaker_wrap .speaker_box .person_profile .kor_name, .sponsor_whole_wrap .speaker_box .person_profile .kor_name {
+        margin-bottom: 20px; }
+        @media screen and (min-width: 1000px) {
+          .speaker_wrap .speaker_box .person_profile .kor_name, .sponsor_whole_wrap .speaker_box .person_profile .kor_name {
+            margin-bottom: 0; } }
+      @media screen and (min-width: 1000px) {
+        .speaker_wrap .speaker_box .person_profile .organize, .sponsor_whole_wrap .speaker_box .person_profile .organize {
+          height: 28px; } }
+      .speaker_wrap .speaker_box .person_profile .describe, .sponsor_whole_wrap .speaker_box .person_profile .describe {
+        min-height: 120px; }
+        @media screen and (max-width: 1000px) {
+          .speaker_wrap .speaker_box .person_profile .describe, .sponsor_whole_wrap .speaker_box .person_profile .describe {
+            min-height: inherit;
+            height: auto; } }
 
 .guide_bar_90p {
   height: 10px;

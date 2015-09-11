@@ -3,7 +3,10 @@
   text-align: center;
   background-color: #f7f7f8;
   overflow:auto;
-  .speaker_box {
+  &:first-child {
+    padding-bottom: 0;
+  }
+  .special_speaker_box {
     @media screen and (max-width: 1000px) {
       padding: 20px;
       width: calc(100% - 40px);
@@ -95,6 +98,52 @@
           color: #333;
           font-size: 12px;
         }
+      }
+    }
+  }
+  .speaker_box {
+    @extend .special_speaker_box;
+
+    @media screen and (max-width: 1000px) {
+      padding: 20px;
+      width: calc(100% - 40px);
+      margin: 0 0 20px 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    width: calc(50% - 24px);
+    margin: 10px;
+    float: left;
+    .person_profile {
+      @media screen and (max-width: 1000px) {
+        width: 100%;
+        padding: 0;
+      }
+      padding: 25px 25px 25px 0;
+      width: calc(100% - 235px);
+      .name_social {
+        overflow: auto;
+        height: auto;
+      }
+      .kor_name {
+        @media screen and (min-width: 1000px) {
+          margin-bottom: 0;
+        }
+        margin-bottom: 20px;
+      }
+      .organize {
+        @media screen and (min-width: 1000px) {
+          height: 28px;
+        }
+      }
+      .describe {
+        @media screen and (max-width: 1000px) {
+          min-height: inherit;
+          height: auto;
+        }
+        min-height: 120px;
       }
     }
   }
