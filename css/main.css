@@ -1674,8 +1674,6 @@ a {
             height: 100%;
             width: calc(100% - 30px);
             vertical-align: middle;
-            border: 1px solid #dedede;
-            border-bottom: 3px solid #dedede;
             padding: 43px 15px 0 15px;
             position: relative; }
             .schedule .timetable table tr td .light_bg img, .schedule .timetable table tr td div.gray_light img, .schedule .timetable table tr td div.whiteblue_light img, .schedule .timetable table tr td div.whiteorange_light img, .schedule .timetable table tr td div.whitepurple_light img, .schedule .timetable table tr td div.whitegreen_light img {
