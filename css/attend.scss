@@ -78,6 +78,9 @@
 .application {
   background-color: #fff;
   section {
+    @media screen and (max-width: 1000px) {
+      width: 90%;
+    }
     width: 60%;
     .application_box {
       width: 100%;
@@ -93,10 +96,17 @@
             line-height: 180%;
           }
           th {
+            @media screen and (max-width: 1000px) {
+              font-size: 14px;
+              line-height: 120%;
+            }
             font-size: 16px;
             vertical-align: top;
           }
           td {
+            @media screen and (max-width: 1000px) {
+              font-size: 12px;
+            }
             font-size: 14px;
             text-align: left;
           }
@@ -114,6 +124,10 @@
         font-size: 16px;
         border: 0;
         &:first-child {
+          @media screen and (max-width: 1000px) {
+            margin-right: 0;
+            margin-bottom: 20px;
+          }
           margin-right: 30px;
         }
         &#doPay {
@@ -128,6 +142,9 @@
 }
 
 .move_step_icon {
+  @media screen and (max-width: 1000px) {
+    top: 561px;
+  }
   position: absolute;
   margin: 0 auto;
   padding: 0;

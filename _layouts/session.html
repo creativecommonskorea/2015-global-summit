@@ -8,19 +8,19 @@ layout: base
 
         <div class="guide_bar_33"></div>
         <div class="session_detail_box">
-            <div class="badge"><img src="{{ site_url }}/images/other/keyword_badge.png" alt=">"/></div>
-            <div class="title_wrap">
+            <!--<div class="badge"><img src="{{ site_url }}/images/other/keyword_badge.png" alt=">"/></div>-->
+            <div class="title_wrap {{ page.box }}">
                 <div class="title">
                     {{ page.title }}
                     <br/>
                     <span class="type">
                         ({{ page.type }})
                     </span><br/>
-                    <span class="datetime">
-                        {{ page.schedule }}, {{ page.location }}
-                    </span>
                 </div>
-
+                <div class="datetime">
+                    {{ page.schedule }} <br>
+                    {{ page.location }}
+                </div>
             </div>
             <div class="session_description">
                 {{ content }}

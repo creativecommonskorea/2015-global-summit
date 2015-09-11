@@ -1486,6 +1486,9 @@ a {
   background-color: #fff; }
   .application section {
     width: 60%; }
+    @media screen and (max-width: 1000px) {
+      .application section {
+        width: 90%; } }
     .application section .application_box {
       width: 100%; }
       .application section .application_box table {
@@ -1500,9 +1503,16 @@ a {
         .application section .application_box table tr th {
           font-size: 16px;
           vertical-align: top; }
+          @media screen and (max-width: 1000px) {
+            .application section .application_box table tr th {
+              font-size: 14px;
+              line-height: 120%; } }
         .application section .application_box table tr td {
           font-size: 14px;
           text-align: left; }
+          @media screen and (max-width: 1000px) {
+            .application section .application_box table tr td {
+              font-size: 12px; } }
     .application section .pay_or_not {
       margin-top: 60px; }
       .application section .pay_or_not button {
@@ -1515,6 +1525,10 @@ a {
         border: 0; }
         .application section .pay_or_not button:first-child {
           margin-right: 30px; }
+          @media screen and (max-width: 1000px) {
+            .application section .pay_or_not button:first-child {
+              margin-right: 0;
+              margin-bottom: 20px; } }
         .application section .pay_or_not button#doPay {
           background-color: #f35b42; }
         .application section .pay_or_not button#cancel {
@@ -1527,6 +1541,9 @@ a {
   z-index: 100;
   top: 598px;
   text-align: center; }
+  @media screen and (max-width: 1000px) {
+    .move_step_icon {
+      top: 561px; } }
 
 #buyer_name,
 #buyer_email,
@@ -1997,53 +2014,55 @@ for IE 11
       position: relative; }
       .session_detail_wrap section .session_detail_box:last-child {
         margin-bottom: 0; }
-      .session_detail_wrap section .session_detail_box .badge {
-        position: absolute;
-        top: 0;
-        left: 96%;
-        margin: 0;
-        padding: 0;
-        width: 23px;
-        height: 27px;
-        z-index: 10; }
-        @media screen and (max-width: 1000px) {
-          .session_detail_wrap section .session_detail_box .badge {
-            left: 90%; } }
       .session_detail_wrap section .session_detail_box .title_wrap {
-        display: table;
-        height: 5.000em;
-        width: 100%;
+        padding-left: 100px;
+        height: 95px;
         font-size: 1.375em;
         font-weight: bold;
-        border-bottom: 1px solid #e8e8e8; }
+        border-bottom: 1px solid #e8e8e8;
+        vertical-align: middle;
+        display: table; }
         @media screen and (max-width: 1000px) {
           .session_detail_wrap section .session_detail_box .title_wrap {
             font-size: 1.000em;
             vertical-align: middle;
-            height: 5.000em; } }
+            height: 5.000em;
+            padding-left: 0; } }
         .session_detail_wrap section .session_detail_box .title_wrap .title {
           display: table-cell;
-          vertical-align: middle;
-          text-align: center; }
+          text-align: left;
+          width: 498px;
+          height: 95px;
+          float: left;
+          vertical-align: middle; }
           @media screen and (max-width: 1000px) {
             .session_detail_wrap section .session_detail_box .title_wrap .title {
               padding-left: 20px; } }
-          .session_detail_wrap section .session_detail_box .title_wrap .title a {
-            text-decoration: none;
-            color: #333; }
-            .session_detail_wrap section .session_detail_box .title_wrap .title a:hover {
-              text-decoration: underline; }
           .session_detail_wrap section .session_detail_box .title_wrap .title .type {
             margin-top: 15px;
             font-size: 0.850em;
             font-weight: normal; }
-          .session_detail_wrap section .session_detail_box .title_wrap .title .datetime {
-            font-size: 0.7em;
-            font-weight: normal; }
+        .session_detail_wrap section .session_detail_box .title_wrap .datetime {
+          display: table-cell;
+          vertical-align: middle;
+          float: left;
+          font-size: 13px;
+          font-weight: normal;
+          padding-right: 30px;
+          width: 170px;
+          height: 95px; }
+        .session_detail_wrap section .session_detail_box .title_wrap.whiteblue_light {
+          background: #ecf0f5 url(/images/other/program_icon_01.png) no-repeat 300px 10px; }
+        .session_detail_wrap section .session_detail_box .title_wrap.whiteorange_light {
+          background: #ffdbd0 url(/images/other/program_icon_02.png) no-repeat 10px 10px; }
+        .session_detail_wrap section .session_detail_box .title_wrap.whitepurple_light {
+          background: #dbd9ed url(/images/other/program_icon_03.png) no-repeat 10px 10px; }
+        .session_detail_wrap section .session_detail_box .title_wrap.whitegreen_light {
+          background: #cef2ec url(/images/other/program_icon_04.png) no-repeat 10px 10px; }
       .session_detail_wrap section .session_detail_box .session_description {
         text-align: left;
         line-height: 160%;
-        padding: 50px; }
+        padding: 50px 100px; }
         @media screen and (max-width: 1000px) {
           .session_detail_wrap section .session_detail_box .session_description {
             padding: 10px; } }
