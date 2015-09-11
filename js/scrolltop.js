@@ -14,7 +14,7 @@ $(document).ready(function($) {
             width: 768,
             distance: 100,
             speed: 1000,
-            easing: 'easeInOutElastic',
+            easing: 'linear',
             animation: 'slide',
             animationSpeed: 200
         },

@@ -73,6 +73,10 @@ html {
 .scrollToTop_square {
 	background-image: url("/images/base/totopbtn.png");
 	background-size: 50px 50px;
+
+	@media screen and (max-width: 768px) {
+		background-size: 40px 40px;
+	}
 }
 .scrollToTop_square:hover {
 	zoom: 1;
