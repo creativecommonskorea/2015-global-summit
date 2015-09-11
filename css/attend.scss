@@ -76,24 +76,23 @@
   }
 }
 .application {
-  background-color: #fff;
+  background-color: #f7f7f8;
   section {
     @media screen and (max-width: 1000px) {
       width: 90%;
     }
     width: 60%;
+
     .application_box {
       width: 100%;
       table {
         width: 100%;
-        border-right: 1px solid #d7d7d7;
-        border-bottom: 1px solid #d7d7d7;
+        background-color: #fff;
         tr {
           th, td{
-            border-top: 1px solid #d7d7d7;
-            border-left: 1px solid #d7d7d7;
             padding: 10px;
             line-height: 180%;
+            border-bottom: 1px solid #dedede;
           }
           th {
             @media screen and (max-width: 1000px) {
@@ -109,6 +108,10 @@
             }
             font-size: 14px;
             text-align: left;
+          }
+          &:last-child th,
+          &:last-child td {
+            border-bottom: 0;
           }
         }
       }
