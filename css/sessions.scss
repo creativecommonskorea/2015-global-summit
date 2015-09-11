@@ -40,36 +40,34 @@
           display: table-cell;
           text-align: left;
           width: 498px;
-          height: 95px;
-          float: left;
           vertical-align: middle;
           .type {
             margin-top: 15px;
-            font-size: 0.850em;
+            font-size: 14px;
             font-weight: normal;
           }
         }
         .datetime {
           display: table-cell;
+          text-align: left;
           vertical-align: middle;
-          float: left;
           font-size: 13px;
+          line-height: 140%;
           font-weight: normal;
           padding-right: 30px;
           width: 170px;
-          height: 95px;
         }
         &.whiteblue_light {
-          background: #ecf0f5 url(/images/other/program_icon_01.png) no-repeat 300px 10px;
+          background: #ecf0f5 url(/images/other/program_icon_01.png) no-repeat 60px 22px;
         }
         &.whiteorange_light {
-          background: #ffdbd0 url(/images/other/program_icon_02.png) no-repeat 10px 10px;
+          background: #ffdbd0 url(/images/other/program_icon_02.png) no-repeat 60px 22px;
         }
         &.whitepurple_light {
-          background: #dbd9ed url(/images/other/program_icon_03.png) no-repeat 10px 10px;
+          background: #dbd9ed url(/images/other/program_icon_03.png) no-repeat 60px 22px;
         }
         &.whitegreen_light {
-          background: #cef2ec url(/images/other/program_icon_04.png) no-repeat 10px 10px;
+          background: #cef2ec url(/images/other/program_icon_04.png) no-repeat 60px 22px;
         }
       }
       .session_description {
