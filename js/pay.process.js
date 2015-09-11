@@ -111,9 +111,8 @@ function validation() {
 }
 
 function paymentProcess(frm) {
-    var user_code = 'imp11702026'; //아임포트 가맹점 식별코드(관리자 페이지에서 확인)
     var params = {
-        merchant_uid: 'ccsummit_1',
+        merchant_uid: performance.now(),
     };
 
     // validated values
@@ -122,32 +121,13 @@ function paymentProcess(frm) {
             params[$(this).attr('id')] = parseInt($(this).val().replace(',','').replace(' 원',''));
         else
             params[$(this).attr('id')] = $(this).val();
-        });
-
-        params['name'] = $("input[name='joinType']:checked").val() + "_" + $("input[name='joinDate']:checked").val();
-        params['buyer_postcode'] = $("input[name='day15_launch']:checked").val()? $("input[name='day15_launch']:checked").val():'150' +
-                $("input[name='day16_launch']:checked").val()? $("input[name='day16_launch']:checked").val():'160';
-
-        // console.log(params);
-
-        Parse.initialize("o3zQftNAhRpAPBw8LD49oWfouLVh2fyjBHAXy86k", "WIZfNdTfsI271SP7qgUHICpUQwyixCwzPVZeBP21");
-        var PaidInfo = Parse.Object.extend("PaidInfo");
-        var paidInfo = new PaidInfo();
-        paidInfo.save({
-            amount: 30000,
-            name: params['name'],
-            buyer_name: params['buyer_name']
-        }, {
-        success: function(){
-            console.log(arguments);
-        },
-        error: function() {
-            console.log(arguments);
-        }
     });
 
-    console.log( params );
-    IMP.SBCR.init( user_code );
+    params['name'] = $("input[name='joinType']:checked").val() + "_" + $("input[name='joinDate']:checked").val();
+    params['buyer_postcode'] = $("input[name='day15_launch']:checked").val()? $("input[name='day15_launch']:checked").val():'150' +
+            $("input[name='day16_launch']:checked").val()? $("input[name='day16_launch']:checked").val():'160';
+
+    IMP.SBCR.init( 'imp11702026' );
     IMP.SBCR.onetime( params, function (rsp) {
         var that = this; //팝업창을 핸들링할 수 있습니다.
         console.log( rsp.token );
@@ -160,7 +140,23 @@ function paymentProcess(frm) {
             }).done(function (result) {
                 that.close(); //팝업창 닫기
                 if (result.success) { //xhr success(payment.php참조)
-                    alert('결제가 완료되었습니다.');
+                    // 결제 정보 저장
+                    Parse.initialize("o3zQftNAhRpAPBw8LD49oWfouLVh2fyjBHAXy86k", "WIZfNdTfsI271SP7qgUHICpUQwyixCwzPVZeBP21");
+                    var PaidInfo = Parse.Object.extend("PaidInfo");
+                    var paidInfo = new PaidInfo();
+                    paidInfo.save({
+                        amount: params['amount'],
+                        name: params['name'],
+                        buyer_name: params['buyer_name']
+                    }, {
+                    success: function(){
+                        alert('결제가 완료되었습니다.');
+                        console.log(arguments);
+                    },
+                    error: function() {
+                        console.log(arguments);
+                    }
+                  });
 
                 } else {
                     alert(result.message);
