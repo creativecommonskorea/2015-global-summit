@@ -881,7 +881,7 @@ img {
       height: 14.375em;
       float: left;
       text-align: center;
-      margin: 0 20px 20px; }
+      margin: 0 47px 20px; }
       @media screen and (max-width: 600px) {
         .preparing_people .people_list .person {
           margin: 0 0.4em 0 0.4em;
@@ -890,6 +890,8 @@ img {
         .preparing_people .people_list .person {
           margin: 0 0.8em 0 0;
           width: 160px; } }
+      .preparing_people .people_list .person.five_in_one_line {
+        margin: 0 20px 20px; }
       .preparing_people .people_list .person:last-child {
         margin-right: 0; }
       .preparing_people .people_list .person .photo {

@@ -59,14 +59,21 @@ layout: base
                 </div>
                 <div class="programs">
                     <img src="images/other/bullet.png" alt="*"/> 관련세션 <br/>
+
                     <div class="items">
-                    {% for p in s.programs %}
+                        {% for p in s.programs %}
                         {{ p.item }} <br/>
-                    {% endfor %}
+                        {% endfor %}
                     </div>
                 </div>
             </div>
         </div>
         {% endfor %}
+    </section>
+</div>
+<div class="wrap speaker_wrap">
+    <section>
+        <h1 class="title">주요연사</h1>
+        <div class="guide_bar_33"></div>
     </section>
 </div>

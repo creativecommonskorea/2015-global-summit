@@ -1106,7 +1106,10 @@ img {
       height: 14.375em;
       float: left;
       text-align: center;
-      margin: 0 20px 20px;
+      &.five_in_one_line {
+        margin: 0 20px 20px;
+      }
+      margin: 0 47px 20px;
       &:last-child {
         margin-right: 0;
       }
