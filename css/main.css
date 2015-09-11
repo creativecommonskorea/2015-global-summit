@@ -1284,6 +1284,11 @@ a {
         margin: 0 0 20px 0; }
         .speaker_wrap .speaker_box:last-child, .sponsor_whole_wrap .speaker_box:last-child {
           margin-bottom: 0; } }
+    .speaker_wrap .speaker_box .person_image .texted, .sponsor_whole_wrap .speaker_box .person_image .texted {
+      line-height: 160px;
+      font-size: 80px;
+      font-weight: bold;
+      color: #b1b1b1; }
     .speaker_wrap .speaker_box .person_profile, .sponsor_whole_wrap .speaker_box .person_profile {
       padding: 25px 25px 25px 0;
       width: calc(100% - 235px); }
@@ -1293,7 +1298,7 @@ a {
           padding: 0; } }
       .speaker_wrap .speaker_box .person_profile .name_social, .sponsor_whole_wrap .speaker_box .person_profile .name_social {
         overflow: auto;
-        height: au; }
+        height: auto; }
       .speaker_wrap .speaker_box .person_profile .kor_name, .sponsor_whole_wrap .speaker_box .person_profile .kor_name {
         margin-bottom: 20px; }
         @media screen and (min-width: 1000px) {

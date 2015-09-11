@@ -71,7 +71,7 @@ layout: base
         {% endfor %}
     </section>
 </div>
-<div class="wrap speaker_wrap">
+<div class="wrap speaker_wrap" style="display: none;">
     <section>
         <h1 class="title">연사</h1>
 
@@ -80,7 +80,16 @@ layout: base
         {% for s in site.data.speakers %}
         <div class="speaker_box">
             <div class="person_image">
+                {% if s.image %}
                 <img src="{{ s.image }}" alt="{{ s.name }}, {{ s.eng_name }}" class="image"/>
+                {% else %}
+                <div class="image texted">
+                    {% assign namesplit = s.name | split: " "  %}
+                    {% assign namefirst = namesplit | first %}
+                    {% assign namelast = namesplit | last %}
+                    {{ namefirst | truncate: 1,'' }}{{ namelast | truncate: 1,'' }}
+                </div>
+                {% endif %}
             </div>
             <div class="person_profile">
                 <div class="name_social">
