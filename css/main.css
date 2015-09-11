@@ -1299,8 +1299,15 @@ a {
       .speaker_wrap .speaker_box .person_profile .name_social, .sponsor_whole_wrap .speaker_box .person_profile .name_social {
         overflow: auto;
         height: auto; }
+        @media screen and (max-width: 1000px) {
+          .speaker_wrap .speaker_box .person_profile .name_social, .sponsor_whole_wrap .speaker_box .person_profile .name_social {
+            width: 100%;
+            margin: 0; } }
       .speaker_wrap .speaker_box .person_profile .kor_name, .sponsor_whole_wrap .speaker_box .person_profile .kor_name {
         margin-bottom: 20px; }
+        @media screen and (max-width: 1000px) {
+          .speaker_wrap .speaker_box .person_profile .kor_name, .sponsor_whole_wrap .speaker_box .person_profile .kor_name {
+            margin: 0; } }
         @media screen and (min-width: 1000px) {
           .speaker_wrap .speaker_box .person_profile .kor_name, .sponsor_whole_wrap .speaker_box .person_profile .kor_name {
             margin-bottom: 0; } }
