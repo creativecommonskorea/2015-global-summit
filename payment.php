@@ -7,9 +7,9 @@
 require_once('iamport.php');
 
 // API 크레덴셜 정리
-define('IMP_STORE_ID', $_ENV['IMP_STORE_ID']);
-define('IMP_API_KEY', $_ENV['IMP_API_KEY']);
-define('IMP_API_SECRET', $_ENV['IMP_API_SECRET']);
+define('IMP_STORE_ID', $_SERVER['IMP_STORE_ID']?: '');
+define('IMP_API_KEY', $_SERVER['IMP_API_KEY']?: '');
+define('IMP_API_SECRET', $_SERVER['IMP_API_SECRET']?: '');
 
 $api_payload = array(
     'token' => '',        // onetime()에서 생성된 token
