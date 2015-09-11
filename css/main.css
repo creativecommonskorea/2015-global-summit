@@ -1533,7 +1533,7 @@ a {
         display: none; } }
     @media screen and (min-width: 1000px) {
       .attend_wrap .ticket_info {
-        display: inline-blockblock; } }
+        display: inline-block; } }
     .attend_wrap .ticket_info table {
       width: 958px;
       height: 265px;
