@@ -9,13 +9,13 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://summit.cckorea.org" # the base hostname & protocol for your site
 locale: ko_KR
 default_banner: '/images/base/title.png'
-# twitter_username: jekyllrb
-# github_username:  jekyll
 
 # Build settings
 markdown: kramdown
 encoding: UTF-8
-exclude: ['*.bak', '*.scss']
+exclude: ['*.bak']
+sass:
+  style: compressed
 
 # collections
 collections:
