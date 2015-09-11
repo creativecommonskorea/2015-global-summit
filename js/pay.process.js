@@ -127,6 +127,9 @@ function paymentProcess(frm) {
     params['buyer_postcode'] = $("input[name='day15_launch']:checked").val()? $("input[name='day15_launch']:checked").val():'150' +
             $("input[name='day16_launch']:checked").val()? $("input[name='day16_launch']:checked").val():'160';
 
+
+    console.log(params);
+
     IMP.SBCR.init( 'imp11702026' );
     IMP.SBCR.onetime( params, function (rsp) {
         var that = this; //팝업창을 핸들링할 수 있습니다.
