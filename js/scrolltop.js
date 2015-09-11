@@ -13,7 +13,7 @@ $(document).ready(function($) {
         mobile: {
             width: 768,
             distance: 100,
-            speed: 1000,
+            speed: 300,
             easing: 'linear',
             animation: 'slide',
             animationSpeed: 200

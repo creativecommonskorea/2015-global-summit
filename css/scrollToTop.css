@@ -73,14 +73,16 @@ html {
 .scrollToTop_square {
 	background-image: url("/images/base/totopbtn.png");
 	background-size: 50px 50px;
+}
 
-	@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+	.scrollToTop_square {
 		background-size: 40px 40px;
 	}
 }
-.scrollToTop_square:hover {
-	zoom: 1;
-	filter: alpha(opacity=50);
-	opacity: 0.5;
-	/*background-image: url("/images/base/totopbtn.png");*/
-}
+/*.scrollToTop_square:hover {*/
+	/*/!*zoom: 1;*!/*/
+	/*/!*filter: alpha(opacity=50);*!/*/
+	/*/!*opacity: 0.5;*!/*/
+	/*/!*background-image: url("/images/base/totopbtn.png");*!/*/
+/*}*/
