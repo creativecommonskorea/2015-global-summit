@@ -2,6 +2,11 @@
   padding: 60px 0;
   text-align: center;
   background-color: #f7f7f8;
+  br.nobr {
+    @media screen and (max-width: 1000px){
+      display: none;
+    }
+  }
   p {
     line-height: 1.6;
   }
@@ -17,7 +22,7 @@
       margin-right: 15px;
     }
     .crm-submit-buttons {
-      margin: 3em 0;
+      margin: 5em 0;
       .form-submit {
         cursor: pointer;
         width: 225px;
@@ -37,5 +42,16 @@
     }
 
   }
+}
 
+.crm-marker {
+  font-size: 11px;
+  color: #f35b42;
+}
+
+#nick_name,
+#email-Primary,
+#note
+{
+  margin-bottom: 20px;
 }

@@ -6,14 +6,21 @@ layout: base
 <script src="/js/additional-methods.min.js"></script>
 <script src="/js/pay.process.js"></script>
 <script src="//www.parsecdn.com/js/parse-1.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#show_agreement').click(function(){
+            if ( $('#agreement_content').css('display') == 'block' )
+                $('#agreement_content').hide();
+            else
+                $('#agreement_content').show();
+        });
+    });
+</script>
 <div class="wrap attend_wrap">
     <section>
-        <h1 class="title">참가신청</h1>
+        <h1 class="title">티켓정보</h1>
         <div class="guide_bar_33"></div>
-        <!--<div class="attend_guide">-->
-            <!--<span class="step"><img src="/images/other/bullet.png" alt="-"/> STEP 1</span>-->
-            <!--CC Global Summit에 참가하고자 하는 날을 선택해 주세요.-->
-        <!--</div>-->
+        <!-- web -->
         <div class="ticket_info">
             <table border="0">
                 <thead>
@@ -49,6 +56,44 @@ layout: base
                 </tbody>
             </table>
         </div>
+        <!-- web -->
+        <!-- mobile web -->
+        <div class="mobile_ticket_info">
+            <table cellpadding="0" cellspacing="0">
+                <thead>
+                <tr>
+                    <th>티켓<br/>종류</th>
+                    <th>날짜</th>
+                    <th>일반</th>
+                    <th>학생</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th rowspan="2">1 Day<br>Ticket</th>
+                    <td class="date">10.15</td>
+                    <td class="price">&#8361; 70,000</td>
+                    <td class="price">&#8361; 30,000</td>
+                </tr>
+                <tr>
+                    <td class="date">10.16</td>
+                    <td class="price">&#8361; 70,000</td>
+                    <td class="price">&#8361; 30,000</td>
+                </tr>
+                <tr>
+                    <th>2 Days<br>Ticket</th>
+                    <td class="date">10.15<br>&nbsp;&nbsp;&nbsp;~16</td>
+                    <td class="price">&#8361; 100.000</td>
+                    <td class="price">&#8361; 50,000</td>
+                </tr>
+                <tr>
+                    <th>후원<br/>회원</th>
+                    <td colspan="3" class="price">&#8361; 0</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- mobile web -->
     </section>
 </div>
 <div class="wrap attend_wrap application">
@@ -59,36 +104,10 @@ layout: base
             <form id="joinform">
                 <table cellpadding="0" cellspacing="0">
                     <tr>
-                        <th width="25%">참가 희망 날짜</th>
-                        <td>
-                            <input type="radio" name="joinDate" value="15" id="joinDate15"/> <label for="joinDate15">1일권 (10/15, 목)</label><br/>
-                            <input type="radio" name="joinDate" value="16" id="joinDate16"/> <label for="joinDate16">1일권 (10/16, 금)</label><br/>
-                            <input type="radio" name="joinDate" value="1516" id="joinDate1516"/> <label for="joinDate1516">2일권
-                            (10/15-16, 목-금)</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>참가 유형</th>
-                        <td>
-                            <input type="radio" name="joinType" value="ordinary" id="joinTypeOrdinary"/>
-                            <label for="joinTypeOrdinary">일반 참가자</label><br/>
-                            <input type="radio" name="joinType" value="student" id="joinTypeStudent"/>
-                            <label for="joinTypeStudent">학생 참가자</label><br/>
-                            <input type="radio" name="joinType" value="sponsor" id="joinTypeSponsor"/>
-                            <label for="joinTypeSponsor">CC 후원 회원</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>총 티켓 금액</th>
-                        <td>
-                            <input type="text" name="amount" id="amount" align="right" readonly/>
-                        </td>
-                    </tr>
-                    <tr>
                         <th>이름</th>
-                        <td>
+                        <td class="two_lines">
                             한글 <input type="text" name="buyer_name" id="buyer_name"/> <br/>
-                            영문 <input type="text" name="buyer_name" id="buyer_eng_name"/>
+                            영문 <input type="text" name="buyer_eng_name" id="buyer_eng_name"/>
                         </td>
                     </tr>
                     <tr>
@@ -113,10 +132,30 @@ layout: base
                         </td>
                     </tr>
                     <tr>
+                        <th width="25%">참가희망 날짜</th>
+                        <td>
+                            <input type="radio" name="joinDate" value="15" id="joinDate15"/> <label for="joinDate15">1일권 (10/15, 목)</label><br/>
+                            <input type="radio" name="joinDate" value="16" id="joinDate16"/> <label for="joinDate16">1일권 (10/16, 금)</label><br/>
+                            <input type="radio" name="joinDate" value="1516" id="joinDate1516"/> <label for="joinDate1516">2일권
+                            (10/15-16, 목-금)</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>참가 유형</th>
+                        <td>
+                            <input type="radio" name="joinType" value="ordinary" id="joinTypeOrdinary"/>
+                            <label for="joinTypeOrdinary">일반 참가자</label><br/>
+                            <input type="radio" name="joinType" value="student" id="joinTypeStudent"/>
+                            <label for="joinTypeStudent">학생 참가자</label><br/>
+                            <input type="radio" name="joinType" value="sponsor" id="joinTypeSponsor"/>
+                            <label for="joinTypeSponsor">CC 후원 회원</label>
+                        </td>
+                    </tr>
+                    <tr>
                         <th>점심식사 선택</th>
                         <td>
                             <div class="launch_box_info">
-                                먼저 참가 희망 날짜를 선택해주세요.
+                                * 먼저 참가 희망 날짜를 선택해주세요.
                             </div>
                             <div class="launch_box" id="launch_box_15">
                                 <b>15일 점심을 선택해주세요.</b> <br/>
@@ -157,12 +196,52 @@ layout: base
                         </td>
                     </tr>
                 </table>
-                <input type="hidden" name="buyer_postcode" id="buyer_postcode"/>
+                <div class="total_price_wrap">
+                    <div class="empty_space"></div>
+                    <div class="total_price">
+                        총 티켓 금액:
+                        <input type="text" name="amount" id="amount" align="right" readonly class="price_value" placeholder="0"/> 원
+                    </div>
+                    <input type="hidden" name="buyer_postcode" id="buyer_postcode"/>
+                </div>
             </form>
         </div>
-        <div class="pay_or_not">
+        <div class="agreement">
+            <h4><img src="images/other/bullet.png" alt="*"/> 개인정보의 수집/이용에 관한 동의서</h4>
+            <div class="show_agreement" id="show_agreement">내용보기</div>
+            <div id="agreement_content">
+                CC Korea는 참가자 개인정보를 중요시하며,
+                &lt;정보통신망 이용촉진 및 정보보호 등에 관한 법률&gt; 및 &lt;개인정보보호법&gt;에 관한 법률을 준수하고 있습니다.
+                CC Korea는 법률에서 정하는 경우를 제외하고는 귀하의 동의 없이 개인정보를 제3자에게 제공하지 않으며 수집된 개인정보를 다음의 목적으로 보유하고 활용합니다
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th>수집하는 개인정보의 항목</th>
+                        <th>개인정보의 수집/이용목적</th>
+                        <th>개인정보의 보유 및 이용기간</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>이름 이메일 개인휴대폰번호 소속</td>
+                        <td>CC Global Summit 2015 행사 진행</td>
+                        <td>1년(관계법령에서 정한 일정한 기간)</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="agreed_check_wrap">
+                <input type="checkbox" name="personal_info_agree_checkbox" id="personal_info_agree_checkbox"/>
+                <label for="personal_info_agree_checkbox">개인정보 수집 및 이용에 동의합니다.</label>
+            </div>
+        </div>
+        <div class="dopay_wrap">
             <button type="button" id="doPay" onclick="validation();">결제하기</button>
-            <button type="button" id="cancel">취소</button>
+        </div>
+        <div class="cancel_wrap">
+            <div class="cancel_info">* 참가 신청 / 취소 / 변경은 10월 9일 금요일까지 받습니다. 이 점 유의해주세요!</div> <br/><br/>
+            <button type="button" id="cancel" onclick="location.href='http://goo.gl/forms/Lh3XK7e8bx'">취소/변경 신청</button>
         </div>
     </section>
 </div>

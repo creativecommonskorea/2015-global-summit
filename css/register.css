@@ -2,6 +2,9 @@
   padding: 60px 0;
   text-align: center;
   background-color: #f7f7f8; }
+  @media screen and (max-width: 1000px) {
+    .register_wrap br.nobr {
+      display: none; } }
   .register_wrap p {
     line-height: 1.6; }
   .register_wrap form {
@@ -14,7 +17,7 @@
       font-weight: normal;
       margin-right: 15px; }
     .register_wrap form .crm-submit-buttons {
-      margin: 3em 0; }
+      margin: 5em 0; }
       .register_wrap form .crm-submit-buttons .form-submit {
         cursor: pointer;
         width: 225px;
@@ -28,5 +31,14 @@
         background-color: #f35b42; }
       .register_wrap form .crm-submit-buttons .reset {
         background-color: #666; }
+
+.crm-marker {
+  font-size: 11px;
+  color: #f35b42; }
+
+#nick_name,
+#email-Primary,
+#note {
+  margin-bottom: 20px; }
 
 /*# sourceMappingURL=register.css.map */

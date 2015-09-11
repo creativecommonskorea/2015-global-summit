@@ -1497,6 +1497,28 @@ a {
         line-height: 150%;
         padding: 1em;
         word-break: keep-all; } }
+  .attend_wrap .mobile_ticket_info {
+    font-size: 13px; }
+    @media screen and (max-width: 1000px) {
+      .attend_wrap .mobile_ticket_info {
+        display: block; } }
+    @media screen and (min-width: 1000px) {
+      .attend_wrap .mobile_ticket_info {
+        display: none; } }
+    .attend_wrap .mobile_ticket_info table {
+      width: 100%;
+      background-color: #fff;
+      border-top: 1px solid #dedede;
+      border-left: 1px solid #dedede; }
+      .attend_wrap .mobile_ticket_info table th, .attend_wrap .mobile_ticket_info table td {
+        border-bottom: 1px solid #dedede;
+        border-right: 1px solid #dedede;
+        padding: 20px 0; }
+      .attend_wrap .mobile_ticket_info table th {
+        background-color: #f5f5f5; }
+      .attend_wrap .mobile_ticket_info table td.price {
+        color: #ee4023;
+        font-weight: bold; }
   .attend_wrap .ticket_info {
     position: relative;
     z-index: 10;
@@ -1508,7 +1530,10 @@ a {
     padding: 0; }
     @media screen and (max-width: 1000px) {
       .attend_wrap .ticket_info {
-        background: #FFFFFF; } }
+        display: none; } }
+    @media screen and (min-width: 1000px) {
+      .attend_wrap .ticket_info {
+        display: block; } }
     .attend_wrap .ticket_info table {
       width: 958px;
       height: 265px;
@@ -1551,22 +1576,30 @@ a {
           border-bottom: 1px solid #dedede; }
         .application section .application_box table tr th {
           font-size: 16px;
-          vertical-align: top; }
+          vertical-align: middle;
+          border-right: 1px solid #dedede;
+          word-break: keep-all; }
           @media screen and (max-width: 1000px) {
             .application section .application_box table tr th {
               font-size: 14px;
               line-height: 120%; } }
         .application section .application_box table tr td {
           font-size: 14px;
-          text-align: left; }
+          text-align: left;
+          padding-left: 20px; }
+          @media screen and (max-width: 400px) {
+            .application section .application_box table tr td {
+              padding-left: 5px; } }
           @media screen and (max-width: 1000px) {
             .application section .application_box table tr td {
               font-size: 12px; } }
+          .application section .application_box table tr td.two_lines {
+            line-height: 250%; }
         .application section .application_box table tr:last-child th, .application section .application_box table tr:last-child td {
           border-bottom: 0; }
-    .application section .pay_or_not {
-      margin-top: 60px; }
-      .application section .pay_or_not button {
+    .application section .dopay_wrap, .application section .cancel_wrap {
+      margin-top: 25px; }
+      .application section .dopay_wrap button, .application section .cancel_wrap button {
         cursor: pointer;
         width: 225px;
         height: 67px;
@@ -1574,16 +1607,21 @@ a {
         color: #fff;
         font-size: 16px;
         border: 0; }
-        .application section .pay_or_not button:first-child {
-          margin-right: 30px; }
-          @media screen and (max-width: 1000px) {
-            .application section .pay_or_not button:first-child {
-              margin-right: 0;
-              margin-bottom: 20px; } }
-        .application section .pay_or_not button#doPay {
+        @media screen and (max-width: 1000px) {
+          .application section .dopay_wrap button:first-child, .application section .cancel_wrap button:first-child {
+            margin-right: 0;
+            margin-bottom: 20px; } }
+        .application section .dopay_wrap button#doPay, .application section .cancel_wrap button#doPay {
           background-color: #f35b42; }
-        .application section .pay_or_not button#cancel {
-          background-color: #666; }
+    .application section .cancel_wrap {
+      margin-top: 70px;
+      padding-top: 70px;
+      border-top: 4px double #929292; }
+      .application section .cancel_wrap .cancel_info {
+        color: #ee4023;
+        font-size: 12px; }
+      .application section .cancel_wrap button {
+        padding: 0; }
 
 .move_step_icon {
   position: absolute;
@@ -1597,6 +1635,7 @@ a {
       top: 561px; } }
 
 #buyer_name,
+#buyer_eng_name,
 #buyer_email,
 #buyer_tel,
 #buyer_addr,
@@ -1606,18 +1645,111 @@ a {
   height: 20px;
   font-size: 16px;
   font-weight: normal;
-  margin-right: 15px; }
+  margin-right: 15px;
+  border: 1px solid #D3D3D3; }
+  @media screen and (max-width: 400px) {
+    #buyer_name,
+    #buyer_eng_name,
+    #buyer_email,
+    #buyer_tel,
+    #buyer_addr,
+    #amount,
+    #buyer_email {
+      width: 150px;
+      margin-right: 0; } }
 
-#amount {
-  width: 185px;
-  text-align: right;
-  padding-right: 15px; }
+#buyer_name,
+#buyer_eng_name {
+  margin-left: 15px; }
 
 #joinform label.error {
-  color: #ee4023; }
+  color: #ee4023;
+  font-size: 12px; }
+
+.launch_box_info {
+  color: #ee4023;
+  font-size: 12px; }
 
 .launch_box {
   display: none; }
+
+.total_price_wrap {
+  width: 100%;
+  text-align: right;
+  display: table; }
+  .total_price_wrap .empty_space {
+    display: table-cell;
+    width: calc(100% - 320px); }
+  .total_price_wrap .total_price {
+    display: table-cell;
+    width: 320px;
+    text-align: right;
+    margin-top: 30px;
+    padding: 20px 0;
+    border-bottom: 1px solid #dedede; }
+    .total_price_wrap .total_price #amount {
+      text-align: right;
+      width: 185px;
+      border: 0;
+      font-size: 28px;
+      height: 32px;
+      background-color: #f7f7f8; }
+      @media screen and (max-width: 400px) {
+        .total_price_wrap .total_price #amount {
+          width: 150px; } }
+
+.agreement {
+  text-align: left;
+  width: 100%;
+  font-size: 12px; }
+  @media screen and (max-width: 1000px) {
+    .agreement {
+      margin-top: 50px; } }
+  @media screen and (max-width: 1000px) {
+    .agreement h4 {
+      width: 200px;
+      float: left;
+      margin: 0; } }
+  .agreement .show_agreement {
+    text-align: right;
+    width: calc(100% - 200px);
+    float: left;
+    font-weight: bold;
+    text-decoration: underline; }
+    @media screen and (max-width: 1000px) {
+      .agreement .show_agreement {
+        display: block; } }
+    @media screen and (min-width: 1000px) {
+      .agreement .show_agreement {
+        display: none; } }
+  .agreement #agreement_content {
+    width: 100%;
+    line-height: 160%;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    padding: 20px 0; }
+    @media screen and (max-width: 1000px) {
+      .agreement #agreement_content {
+        display: none;
+        padding-bottom: 0; } }
+    .agreement #agreement_content table {
+      margin-top: 15px;
+      width: 100%; }
+      .agreement #agreement_content table th {
+        background-color: #dedede;
+        text-align: center;
+        font-weight: normal; }
+      .agreement #agreement_content table td {
+        text-align: center; }
+  .agreement .agreed_check_wrap {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px; }
+    @media screen and (max-width: 1000px) {
+      .agreement .agreed_check_wrap {
+        text-align: left;
+        padding-top: 25px;
+        margin-top: 0; } }
 
 .schedule {
   text-align: center;

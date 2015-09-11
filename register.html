@@ -3,60 +3,75 @@ layout: base
 ---
 
 <div class="wrap register_wrap">
-  <section>
-    <h1 class="title">참가 신청 #1</h1>
-    <div class="guide_bar_33"></div>
-    <p>본 행사는 Creative Commons와 씨씨코리아가 공동 주최합니다.</p>
-    <p>우선 Creative Commons 웹사이트에 등록한 후 다시 이 웹사이트로 돌아와서 결제 및 세부 사항을 입력하게 됩니다.</p>
-  </section>
+    <section>
+        <h1 class="title">참가신청</h1>
 
-  <form action="https://donate.creativecommons.org/civicrm/profile/create?gid=44&amp;reset=1" method="post" name="Edit" id="Edit" >
-    <div>
-      <input name="gid" type="hidden" value="44" />
-      <input name="_qf_default" type="hidden" value="Edit:cancel" />
-    </div>
-    <script type="text/javascript" src="https://donate.creativecommons.org/sites/all/modules/civicrm/js/Common.js"></script>
-    <div id="crm-container" lang="en" xml:lang="en">
-      <div class="form-layout-compressed">
-        <div id="editrow-nick_name" class="crm-section editrow_nick_name-section form-item clearifx">
-          <div class="label">
-            <label for="nick_name"> 성명
-              <span class="crm-marker" title="This field is required.">*</span>
-            </label>
-          </div>
-          <div class="edit-value content">
-            <input maxlength="128" size="45" name="nick_name" type="text" id="nick_name" class="form-text huge required" required />
-          </div>
+        <div class="guide_bar_33"></div>
+        <div class="head_description">
+            본 행사는 Creative Commons와 씨씨코리아가 공동 주최합니다. <br class="nobr"/>
+            우선 Creative Commons 웹사이트에 등록한 후 다시 이 웹사이트로 돌아와서 결제 및 세부 사항을 입력하게 됩니다.
         </div>
-        <div id="editrow-email-Primary" class="crm-section editrow_email-Primary-section form-item clearfix">
-          <div class="label">
-            <label for="email-Primary"> 이메일
-              <span class="crm-marker" title="This field is required.">*</span>
-            </label>
-          </div>
-          <div class="edit-value content">
-            <input maxlength="64" size="45" name="email-Primary" type="text" id="email-Primary" class="form-text big required" required />
-          </div>
+        <div>
+            <form action="https://donate.creativecommons.org/civicrm/profile/create?gid=44&amp;reset=1" method="post"
+                  name="Edit" id="Edit">
+                <div>
+                    <input name="gid" type="hidden" value="44"/>
+                    <input name="_qf_default" type="hidden" value="Edit:cancel"/>
+                </div>
+                <script type="text/javascript"
+                        src="https://donate.creativecommons.org/sites/all/modules/civicrm/js/Common.js"></script>
+                <div id="crm-container" lang="en" xml:lang="en">
+                    <div class="form-layout-compressed">
+                        <div id="editrow-nick_name" class="crm-section editrow_nick_name-section form-item clearifx">
+                            <div class="label">
+                                <label for="nick_name"> 성명
+                                    <span class="crm-marker" title="This field is required.">*</span>
+                                </label>
+                            </div>
+                            <div class="edit-value content">
+                                <input maxlength="128" size="30" name="nick_name" type="text" id="nick_name"
+                                       class="form-text huge required" required/>
+                            </div>
+                        </div>
+                        <div id="editrow-email-Primary"
+                             class="crm-section editrow_email-Primary-section form-item clearfix">
+                            <div class="label">
+                                <label for="email-Primary"> 이메일
+                                    <span class="crm-marker" title="This field is required.">*</span>
+                                </label>
+                            </div>
+                            <div class="edit-value content">
+                                <input maxlength="64" size="30" name="email-Primary" type="text" id="email-Primary"
+                                       class="form-text big required" required/>
+                            </div>
+                        </div>
+                        <div id="editrow-note" class="crm-section editrow_note-section form-item">
+                            <div class="label">
+                                <label for="note">소속</label>
+                            </div>
+                            <div class="edit-value content">
+                                <input maxlength="64" size="30" name="note" id="note" class="form-text" type="text">
+                            </div>
+                            <div class="clear">
+                            </div>
+                        </div>
+                        <!-- end form-layout-compressed for last profile -->
+                        <div class="crm-submit-buttons">
+                            <span class="crm-button crm-button-type-next crm-button_qf_Edit_next">
+                                <input class="form-submit default" accesskey="S" name="_qf_Edit_next" value="등록하기"
+                                       type="submit"
+                                       id="_qf_Edit_next"/>
+                            </span>
+                            <span class="crm-button crm-button-type-cancel crm-button_qf_Edit_cancel">
+                              <input class="form-submit reset" name="_qf_Edit_cancel" value="취소하기" type="reset"
+                                     id="_qf_Edit_cancel"/>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
-        <div id="editrow-note" class="crm-section editrow_note-section form-item">
-          <div class="label">
-            <label for="note">소속</label>
-          </div>
-          <div class="edit-value content">
-            <input maxlength="64" size="45" name="note" id="note" class="form-text" type="text"></div><div class="clear">
-          </div>
-        </div>
-      </div><!-- end form-layout-compressed for last profile -->
-      <div class="crm-submit-buttons">
-        <span class="crm-button crm-button-type-next crm-button_qf_Edit_next">
-          <input class="form-submit default" accesskey="S" name="_qf_Edit_next" value="등록하기" type="submit" id="_qf_Edit_next" />
-        </span>
-        <span class="crm-button crm-button-type-cancel crm-button_qf_Edit_cancel">
-          <input class="form-submit reset" name="_qf_Edit_cancel" value="취소하기" type="reset" id="_qf_Edit_cancel" />
-        </span>
-      </div>
-    </div>
-  </form>
 
+    </section>
 </div>
 <style> @import '/css/register.css?v=2'; </style>

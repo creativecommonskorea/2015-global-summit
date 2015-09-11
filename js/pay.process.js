@@ -48,9 +48,6 @@ $(document).ready(function () {
             paymentProcess(form);
         },
         rules: {
-            amount: {
-                required: true
-            },
             buyer_name: {
                 required: true,
             },
@@ -63,24 +60,27 @@ $(document).ready(function () {
             },
             buyer_addr: {
                 required: true
+            },
+            buyer_eng_name: {
+                required: true
             }
         },
         messages: {
-            amount: {
-                required: '참석일과 유형을 선택해주세요.'
-            },
             buyer_name: {
-                required: '참가자 이름을 입력해주세요.',
+                required: '* 이름을 입력해주세요.'
             },
             buyer_email: {
-                required: '참가자 이메일 주소를 입력해주세요.',
-                email: '이메일 주소가 형식에 맞지 않습니다.'
+                required: '* 이메일 주소를 입력해주세요.',
+                email: '* 이메일 주소가 형식에 맞지 않습니다.'
             },
             buyer_tel: {
-                required: '참가자 전화번호를 입력해주세요.'
+                required: '* 전화번호를 입력해주세요.'
             },
             buyer_addr: {
-                required: '소속을 입력해주세요.'
+                required: '* 소속을 입력해주세요.'
+            },
+            buyer_eng_name: {
+                required: '* 영문이름을 입력해주세요.'
             }
         }
     });
@@ -90,14 +90,14 @@ $(document).ready(function () {
 function calculateAmount(joinDate, joinType) {
     if (joinType == 'ordinary') {
         if (joinDate == '15' || joinDate == '16')
-            return '70,000 원';
+            return '70,000';
         else
-            return '100,000 원';
+            return '100,000';
     } else if (joinType == 'student') {
         if (joinDate == '15' || joinDate == '16')
-            return '30,000 원';
+            return '30,000';
         else
-            return '50,000 원';
+            return '50,000';
     } else if (joinType == 'sponsor') {
         return 0;
     } else {
