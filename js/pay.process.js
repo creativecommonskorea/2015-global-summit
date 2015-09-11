@@ -120,7 +120,7 @@ function paymentProcess(frm) {
         params[$(this).attr('id')] = $(this).val();
     });
 
-    params['amount'] = $('#amount').val();
+    params['amount'] = parseInt($('#amount').val().replace(',', ''));
     params['name'] = $("input[name='joinType']:checked").val() + "_" + $("input[name='joinDate']:checked").val();
     params['buyer_postcode'] = $("input[name='day15_launch']:checked").val()? $("input[name='day15_launch']:checked").val():'150' +
             $("input[name='day16_launch']:checked").val()? $("input[name='day16_launch']:checked").val():'160';
