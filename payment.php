@@ -34,7 +34,7 @@ if (!empty( IMP_STORE_ID ) && !empty( IMP_API_KEY ) && !empty( IMP_API_SECRET ))
 
   header('Content-Type: application/json');
   if ( $result->success ) {
-      exit( json_encode( array( 'success' => true, 'payment' => $payment ) ) );
+      exit( json_encode( array( 'success' => true, 'payment' => $result ) ) );
   } else {
       exit( json_encode( array( 'success' => false, 'message' => sprintf("카드결제실패 : [%s]%s", $result->error['code'], $result->error['message'] ) ) ) );
   }
