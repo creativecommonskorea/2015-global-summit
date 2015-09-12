@@ -9,13 +9,15 @@ require_once('iamport.php');
 // Parse SDK 로드
 require 'autoload.php';
 
+use Parse\ParseClient;
+use Parse\ParseObject;
+
 // API 크레덴셜 정리
 define('IMP_STORE_ID', $_SERVER['IMP_STORE_ID']?: '');
 define('IMP_API_KEY', $_SERVER['IMP_API_KEY']?: '');
 define('IMP_API_SECRET', $_SERVER['IMP_API_SECRET']?: '');
 
 ParseClient::initialize( $_SERVER['P_APP_ID']?: '', $_SERVER['P_REST_KEY']?: '', $_SERVER['P_MASTER_KEY']?: '' );
-use Parse\ParseObject;
 
 $api_payload = array(
     'token' => '',        // onetime()에서 생성된 token
@@ -45,7 +47,10 @@ if (!empty( IMP_STORE_ID ) && !empty( IMP_API_KEY ) && !empty( IMP_API_SECRET ))
   header('Content-Type: application/json');
   if ( $result->success ) {
         // 파스에 결제 정보를 저장합니다.
-        $paidInfo = new ParseObject("PaidInfo")
+        $paidInfo = ParseObject::create("PaidInfo");
+        $objectId = $paidInfo->getObjectId();
+        $php = $paidInfo->get("elephant");
+
         $paidInfo->set('amount', $api_payload->amount);
         $paidInfo->set('merchant_uid', $api_payload->merchant_uid);
         $paidInfo->set('buyer_name', $api_payload->buyer_name);
