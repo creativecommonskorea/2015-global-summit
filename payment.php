@@ -20,6 +20,9 @@ $api_payload = array(
     'expiry' => '',       // 유효기간(YYYY-MM)
     'birth' => '',        // 생년월일 6자리
     'pwd_2digit' => '',   // 카드 비밀번호 앞2자리
+    'buyer_name' => '',     // 구매자 성함
+    'buyer_email' => '',    // 구매자 이메일
+    'buyer_tel' => '',      // 구매자 연락처
 );
 
 foreach ($api_payload as $key => $value) {
@@ -34,7 +37,7 @@ if (!empty( IMP_STORE_ID ) && !empty( IMP_API_KEY ) && !empty( IMP_API_SECRET ))
 
   header('Content-Type: application/json');
   if ( $result->success ) {
-      exit( json_encode( array( 'success' => true, 'payment' => $result ) ) );
+      exit( json_encode( array( 'success' => true, 'payment' => $api_payload->merchant_uid ) ) );
   } else {
       exit( json_encode( array( 'success' => false, 'message' => sprintf("카드결제실패 : [%s]%s", $result->error['code'], $result->error['message'] ) ) ) );
   }
