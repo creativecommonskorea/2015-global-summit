@@ -35,6 +35,13 @@ $(document).ready(function () {
 
     $('#joinform').validate({
         submitHandler: function (form) {
+            if ( !$("input[name='joinDate']:checked").length ) {
+                alert('참가희망 날짜를 선택해주세요.');
+                return false;            }
+            if ( !$("input[name='joinType']:checked").length ) {
+                alert('참가자의 참가 유형을 선택해주세요.');
+                return false;
+            }
             if ( $('#launch_box_15').css('display') == 'block'
                 && !$("input[name='day15_launch']:checked").val() ){
                 alert('15일 점심 식사 메뉴를 선택해주세요.');
@@ -45,6 +52,12 @@ $(document).ready(function () {
                 alert('16일 점심 식사 메뉴를 선택해주세요.');
                 return false;
             }
+
+            if ( !$('#personal_info_agree_checkbox').prop('checked') ) {
+              alert('개인정보의 수집/이용에 관한 동의서에 동의해주세요.');
+              return false;
+            }
+
             paymentProcess(form);
         },
         rules: {
