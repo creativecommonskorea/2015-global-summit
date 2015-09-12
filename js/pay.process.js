@@ -138,12 +138,9 @@ function paymentProcess(frm) {
     params['buyer_postcode'] = $("input[name='day15_launch']:checked").val()? $("input[name='day15_launch']:checked").val():'150' +
             $("input[name='day16_launch']:checked").val()? $("input[name='day16_launch']:checked").val():'160';
 
-    console.log(params);
-
     IMP.SBCR.init( 'imp11702026' );
     IMP.SBCR.onetime( params, function (rsp) {
         var that = this; //팝업창을 핸들링할 수 있습니다.
-        console.log( 'rsp.token: ',rsp.token );
         if (rsp.token) { //token이 생성되어야 하며, 서버에서 아임포트 REST API로 결제요청할 때 반드시 필요합니다.
             $.ajax({
                 method: 'POST',
@@ -164,7 +161,6 @@ function paymentProcess(frm) {
                     }, {
                     success: function(){
                         alert('결제가 완료되었습니다.');
-                        console.log(arguments);
                     },
                     error: function() {
                         console.log(arguments);
@@ -174,6 +170,8 @@ function paymentProcess(frm) {
                 } else {
                     alert(result.message);
                 }
+            }).fail(function(){
+                console.log(arguments);
             });
         } else {
             alert(rsp.message);
