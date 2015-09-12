@@ -17,8 +17,6 @@ define('IMP_STORE_ID', $_SERVER['IMP_STORE_ID']?: '');
 define('IMP_API_KEY', $_SERVER['IMP_API_KEY']?: '');
 define('IMP_API_SECRET', $_SERVER['IMP_API_SECRET']?: '');
 
-ParseClient::initialize( $_SERVER['P_APP_ID']?: '', $_SERVER['P_REST_KEY']?: '', $_SERVER['P_MASTER_KEY']?: '' );
-
 $api_payload = array(
     'token' => '',        // onetime()에서 생성된 token
     'merchant_uid' => '', // 주문번호
@@ -46,6 +44,9 @@ if (!empty( IMP_STORE_ID ) && !empty( IMP_API_KEY ) && !empty( IMP_API_SECRET ))
 
   header('Content-Type: application/json');
   if ( $result->success ) {
+
+        ParseClient::initialize( $_SERVER['P_APP_ID']?: '', $_SERVER['P_REST_KEY']?: '', $_SERVER['P_MASTER_KEY']?: '' );
+  
         // 파스에 결제 정보를 저장합니다.
         $paidInfo = ParseObject::create("PaidInfo");
         $objectId = $paidInfo->getObjectId();
