@@ -6,10 +6,16 @@
 // 아임포트 SDK 로드
 require_once('iamport.php');
 
+// Parse SDK 로드
+require 'autoload.php';
+
 // API 크레덴셜 정리
 define('IMP_STORE_ID', $_SERVER['IMP_STORE_ID']?: '');
 define('IMP_API_KEY', $_SERVER['IMP_API_KEY']?: '');
 define('IMP_API_SECRET', $_SERVER['IMP_API_SECRET']?: '');
+
+ParseClient::initialize( $_SERVER['P_APP_ID']?: '', $_SERVER['P_REST_KEY']?: '', $_SERVER['P_MASTER_KEY']?: '' );
+use Parse\ParseObject;
 
 $api_payload = array(
     'token' => '',        // onetime()에서 생성된 token
@@ -23,6 +29,7 @@ $api_payload = array(
     'buyer_name' => '',     // 구매자 성함
     'buyer_email' => '',    // 구매자 이메일
     'buyer_tel' => '',      // 구매자 연락처
+    'name' => '',           // 상품명
 );
 
 foreach ($api_payload as $key => $value) {
@@ -37,7 +44,22 @@ if (!empty( IMP_STORE_ID ) && !empty( IMP_API_KEY ) && !empty( IMP_API_SECRET ))
 
   header('Content-Type: application/json');
   if ( $result->success ) {
-      exit( json_encode( array( 'success' => true, 'payment' => $api_payload->merchant_uid ) ) );
+        // 파스에 결제 정보를 저장합니다.
+        $paidInfo = new ParseObject("PaidInfo")
+        $paidInfo->set('amount', $api_payload->amount);
+        $paidInfo->set('merchant_uid', $api_payload->merchant_uid);
+        $paidInfo->set('buyer_name', $api_payload->buyer_name);
+        $paidInfo->set('buyer_email', $api_payload->buyer_email);
+        $paidInfo->set('buyer_tel', $api_payload->buyer_tel);
+        $paidInfo->set('name', $api_payload->name);
+
+        $paidInfo->set('buyer_eng_name', $_POST['buyer_eng_name']);
+        $paidInfo->set('buyer_addr', $_POST['buyer_addr']);
+        $paidInfo->set('buyer_launch', $_POST['buyer_postcode']);
+
+        $paidInfo->save();
+
+      exit( json_encode( array( 'success' => true,  ) ) );
   } else {
       exit( json_encode( array( 'success' => false, 'message' => sprintf("카드결제실패 : [%s]%s", $result->error['code'], $result->error['message'] ) ) ) );
   }
