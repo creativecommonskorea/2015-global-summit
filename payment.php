@@ -55,7 +55,11 @@ if (!empty( IMP_STORE_ID ) && !empty( IMP_API_KEY ) && !empty( IMP_API_SECRET ))
 
         foreach($api_payload as $key => $value) {
             if ( !in_array($value, ['token', 'vat', 'card_number', 'expiry', 'birth', 'pwd_2digit']) ) {
-                $paidInfo->set($key, $value);
+                if ( strcmp($value, 'amount') == 0 ) {
+                    $paidInfo->set($key, (int)$value);
+                } else {
+                    $paidInfo->set($key, $value);
+                }
             }
         }
 

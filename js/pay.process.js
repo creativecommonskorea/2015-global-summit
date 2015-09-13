@@ -142,6 +142,9 @@ function paymentProcess(frm) {
     IMP.SBCR.onetime( params, function (rsp) {
         var that = this; //팝업창을 핸들링할 수 있습니다.
         if (rsp.token) { //token이 생성되어야 하며, 서버에서 아임포트 REST API로 결제요청할 때 반드시 필요합니다.
+
+
+
             $.ajax({
                 method: 'POST',
                 url: '/payment.php', //아임포트 REST API를 호출할 나의 서버 주소
