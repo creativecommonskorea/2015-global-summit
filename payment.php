@@ -2,6 +2,7 @@
 /**
  * 결제 처리
  */
+date_default_timezone_set('Asia/Seoul');
 
 // 아임포트 SDK 로드
 require_once('iamport.php');
@@ -46,7 +47,7 @@ if (!empty( IMP_STORE_ID ) && !empty( IMP_API_KEY ) && !empty( IMP_API_SECRET ))
   if ( $result->success ) {
 
         ParseClient::initialize( $_SERVER['P_APP_ID']?: '', $_SERVER['P_REST_KEY']?: '', $_SERVER['P_MASTER_KEY']?: '' );
-  
+
         // 파스에 결제 정보를 저장합니다.
         $paidInfo = ParseObject::create("PaidInfo");
         $objectId = $paidInfo->getObjectId();
