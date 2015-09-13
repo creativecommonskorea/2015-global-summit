@@ -54,8 +54,8 @@ if (!empty( IMP_STORE_ID ) && !empty( IMP_API_KEY ) && !empty( IMP_API_SECRET ))
         $php = $paidInfo->get("elephant");
 
         foreach($api_payload as $key => $value) {
-            if ( !in_array($value, ['token', 'vat', 'card_number', 'expiry', 'birth', 'pwd_2digit']) ) {
-                if ( strcmp($value, 'amount') == 0 ) {
+            if ( !in_array($key, ['token', 'vat', 'card_number', 'expiry', 'birth', 'pwd_2digit']) ) {
+                if ( strcmp($key, 'amount') == 0 ) {
                     $paidInfo->set($key, (int)$value);
                 } else {
                     $paidInfo->set($key, $value);
