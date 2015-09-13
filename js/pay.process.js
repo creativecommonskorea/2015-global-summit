@@ -151,23 +151,6 @@ function paymentProcess(frm) {
                 that.close(); //팝업창 닫기
                 if (result.success) { //xhr success(payment.php참조)
                     alert('결제가 완료되었습니다.');
-                    // 결제 정보 저장
-                    //Parse.initialize("o3zQftNAhRpAPBw8LD49oWfouLVh2fyjBHAXy86k", "WIZfNdTfsI271SP7qgUHICpUQwyixCwzPVZeBP21");
-                    //var PaidInfo = Parse.Object.extend("PaidInfo");
-                    //var paidInfo = new PaidInfo();
-                    //paidInfo.save({
-                    //    amount: params['amount'],
-                    //    name: params['name'],
-                    //    buyer_name: params['buyer_name'],
-                    //}, {
-                    //success: function(){
-                    //    alert('결제가 완료되었습니다.');
-                    //},
-                    //error: function() {
-                    //    console.log(arguments);
-                    //}
-                  //});
-
                 } else {
                     alert(result.message);
                 }
