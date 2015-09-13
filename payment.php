@@ -59,16 +59,9 @@ if (!empty( IMP_STORE_ID ) && !empty( IMP_API_KEY ) && !empty( IMP_API_SECRET ))
             }
         }
 
-        $paidInfo->set('amount', $api_payload->amount);
-        $paidInfo->set('merchant_uid', $api_payload->merchant_uid);
-        $paidInfo->set('buyer_name', $api_payload->buyer_name);
-        $paidInfo->set('buyer_email', $api_payload->buyer_email);
-        $paidInfo->set('buyer_tel', $api_payload->buyer_tel);
-        $paidInfo->set('name', $api_payload->name);
-
-        $paidInfo->set('buyer_eng_name', $_POST['buyer_eng_name']);
-        $paidInfo->set('buyer_addr', $_POST['buyer_addr']);
-        $paidInfo->set('buyer_launch', $_POST['buyer_postcode']);
+        $paidInfo->set('buyer_eng_name', $_POST["buyer_eng_name"]);
+        $paidInfo->set('buyer_addr', $_POST["buyer_addr"]);
+        $paidInfo->set('buyer_launch', $_POST["buyer_postcode"]);
 
         $paidInfo->save();
 
