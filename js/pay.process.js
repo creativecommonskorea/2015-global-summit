@@ -144,7 +144,7 @@ function paymentProcess(frm) {
         if (rsp.token) { //token이 생성되어야 하며, 서버에서 아임포트 REST API로 결제요청할 때 반드시 필요합니다.
 
             _keys = Object.keys(params);
-            for(var i=0; i<keys.length; i++){
+            for(var i=0; i< _keys.length; i++){
                 if ( !rsp[keys[i]] )
                     rsp[keys[i]] = params[keys[i]];
             }
