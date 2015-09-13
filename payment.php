@@ -53,6 +53,12 @@ if (!empty( IMP_STORE_ID ) && !empty( IMP_API_KEY ) && !empty( IMP_API_SECRET ))
         $objectId = $paidInfo->getObjectId();
         $php = $paidInfo->get("elephant");
 
+        foreach($api_payload as $key => $value) {
+            if ( !in_array($value, ['token', 'vat', 'card_number', 'expiry', 'birth', 'pwd_2digit']) ) {
+                $paidInfo->set($key, $value);
+            }
+        }
+
         $paidInfo->set('amount', $api_payload->amount);
         $paidInfo->set('merchant_uid', $api_payload->merchant_uid);
         $paidInfo->set('buyer_name', $api_payload->buyer_name);
