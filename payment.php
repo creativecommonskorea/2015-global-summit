@@ -69,7 +69,7 @@ if (!empty( IMP_STORE_ID ) && !empty( IMP_API_KEY ) && !empty( IMP_API_SECRET ))
 
         $paidInfo->save();
 
-      exit( json_encode( array( 'success' => true,  ) ) );
+      exit( json_encode( array( 'success' => true ) ) );
   } else {
       exit( json_encode( array( 'success' => false, 'message' => sprintf("카드결제실패 : [%s]%s", $result->error['code'], $result->error['message'] ) ) ) );
   }
