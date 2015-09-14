@@ -1750,6 +1750,8 @@ a {
         text-align: left;
         padding-top: 25px;
         margin-top: 0; } }
+    .agreement .agreed_check_wrap .payment_notice {
+      color: #ee4023; }
 
 .schedule {
   text-align: center;
