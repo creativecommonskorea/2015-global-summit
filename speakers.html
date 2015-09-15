@@ -71,7 +71,7 @@ layout: base
         {% endfor %}
     </section>
 </div>
-<div class="wrap speaker_wrap" style="display: none;">
+<div class="wrap speaker_wrap">
     <section>
         <h1 class="title">연사</h1>
 
@@ -87,7 +87,8 @@ layout: base
                     {% assign namesplit = s.name | split: " "  %}
                     {% assign namefirst = namesplit | first %}
                     {% assign namelast = namesplit | last %}
-                    {{ namefirst | truncate: 1,'' }}{{ namelast | truncate: 1,'' }}
+                    {% assign namesize = namesplit | size %}
+                    {{ namefirst | truncate: 1,'' }}{% if namesize == 2 %}{{ namelast | truncate: 1,'' }}{% endif %}
                 </div>
                 {% endif %}
             </div>

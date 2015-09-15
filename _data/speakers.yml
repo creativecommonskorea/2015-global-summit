@@ -23,3 +23,34 @@
   organize: 500px CEO
   describe: >
     초기 단계의 스타트업, 비즈니스 모델, 기업가 정신이 주 관심사인 프리미엄 사진 커뮤니티 500px의 CEO이다.
+
+- name: "Paul Stacey"
+  image: "/images/people/1_07_paul-stacey.png"
+  organize: "CC 글로벌 러닝(learning) 대표"
+  describe: >
+    캐나다 브리티시컬럼럼비아주를 중심으로 OER 활동을 하며 정부 및 연구기관들에게 CCL을 전파하는 데 큰 역할을 하고 있다.
+
+- name: "도희성"
+  organize: "원트리뮤직 대표"
+  describe: >
+    원트리뮤직은 '라임덕비즈'라는 시스템을 통해 저작권료를 낮추도록 하여 저렴한 가격으로 매장에 음원을 제공하고 있다.
+
+- name: "박은정"
+  organize: "팀포퐁"
+
+- name: "Naeema Zarif"
+  image: "images/speaker/sp_s_08_Naeema_Zarif.png"
+  organize: "CC 아랍 지역 코디네이터"
+  describe: >
+    다양한 정부를 위한 영상 및 디지털털 전략 컨설팅, 강연 등을 통해 오픈문화와 크리에티브 커먼즈 확산에 힘쓰고 있다.(사진: CC-BY @Naeema Zarif)
+
+- name: "Michael Weinberg"
+  organize: "Shapeways 법률고문"
+  describe: >
+    공공기술과 공공지식에 관해 법률고문을 해왔으며, 3D 프린팅 저작권에 대한 제안적 보고서를 쓴 바 있다.
+
+- name: "김지현"
+  image: "images/speaker/sp_s_10_Jihyeon_Kim.png"
+  organize: 엔트릭교육연구소 대표
+  describe: >
+    스마트 교육과 ICT 교육이 주 관심사이며 온라인 소프트웨어 교육 플랫폼 ‘엔트리(ENTRY)’를 개발하고 있다. (사진: 본인출처)
