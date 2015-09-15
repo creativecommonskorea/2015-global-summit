@@ -21,6 +21,12 @@ $(document).ready(function () {
                 $('#launch_box_16').show();
                 break;
         }
+        $("input[name='day15_launch']").each(function(){
+            $(this).prop('checked', false);
+        });
+        $("input[name='day16_launch']").each(function(){
+            $(this).prop('checked', false);
+        });
     });
 
     $("input[name='joinType']").click(function () {
