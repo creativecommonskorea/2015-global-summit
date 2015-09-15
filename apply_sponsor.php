@@ -14,6 +14,7 @@ use Parse\ParseClient;
 use Parse\ParseObject;
 
 $save_data = array(
+    'amount' => '0',
     'merchant_uid' => '',
     'buyer_name' => '',     // 구매자 성함
     'buyer_email' => '',    // 구매자 이메일
