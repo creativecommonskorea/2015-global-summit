@@ -170,7 +170,7 @@ if (!empty( IMP_STORE_ID ) && !empty( IMP_API_KEY ) && !empty( IMP_API_SECRET ))
       $mail_content .= '전길남 박사님의 키노트 강연 후<br/>';
       $mail_content .= '40분간 진행될 전길남 박사님, Yochai Benkler(요하이 벤클러)의 대담에<br/>';
       $mail_content .= '여러분께서 두분께 하고 싶은 질문을 미리 등록할 수 있습니다.<br/><br/>';
-      $mail_content .= '<a href="#" style="color:#ef513c;">질문 등록하러 가기</a><br/><br/>';
+      $mail_content .= '<a href="https://www.facebook.com/events/1455321544773645/" style="color:#ef513c;">질문 등록하러 가기</a><br/><br/>';
       $mail_content .= '참여하는 써밋, 지금부터 시작합니다~!<br/>';
       $mail_content .= '</div>';
       $mail_content .= '</div>';
