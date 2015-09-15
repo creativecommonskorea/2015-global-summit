@@ -27,7 +27,11 @@ $save_data = array(
 
 foreach ($save_data as $key => $value) {
     if (!empty($_POST[$key])) {
-        $save_data[ $key ] = $_POST[ $key];
+        if ( strcmp($key, 'buyer_launch') ) {
+            $save_data[$key] = $_POST['buyer_postcode'];
+        } else {
+            $save_data[$key] = $_POST[$key];
+        }
     }
 }
 
