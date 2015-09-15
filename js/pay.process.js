@@ -135,8 +135,12 @@ function paymentProcess(frm) {
 
     params['amount'] = parseInt($('#amount').val().replace(',', ''));
     params['name'] = $("input[name='joinType']:checked").val() + "_" + $("input[name='joinDate']:checked").val();
-    params['buyer_postcode'] = $("input[name='day15_launch']:checked").val()? $("input[name='day15_launch']:checked").val():'150' +
-            $("input[name='day16_launch']:checked").val()? $("input[name='day16_launch']:checked").val():'160';
+
+    var _day15_launch = $("input[name='day15_launch']:checked").val()? $("input[name='day15_launch']:checked").val():'150';
+    var _day16_launch = $("input[name='day16_launch']:checked").val()? $("input[name='day16_launch']:checked").val():'160';
+
+    params['buyer_postcode'] = _day15_launch + '-' + _day16_launch;
+
 
     if ( params['amount'] == 0 ) {
         $.ajax({
@@ -146,7 +150,7 @@ function paymentProcess(frm) {
             dataType: 'json',
             success: function(){
                 alert('등록이 완료되었습니다.');
-                location.href='/index.html';
+                //location.href='/index.html';
             }
         });
     } else {

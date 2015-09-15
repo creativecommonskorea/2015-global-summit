@@ -27,11 +27,9 @@ $save_data = array(
 
 foreach ($save_data as $key => $value) {
     if (!empty($_POST[$key])) {
-        if ( strcmp($key, 'buyer_launch') ) {
-            $save_data[$key] = $_POST['buyer_postcode'];
-        } else {
-            $save_data[$key] = $_POST[$key];
-        }
+        $save_data[$key] = $_POST[$key];
+    } else if ( strcmp($key, 'buyer_launch') == 0 ) {
+        $save_data[$key] = $_POST['buyer_postcode'];
     }
 }
 
@@ -53,7 +51,7 @@ try {
 
     $paidInfo->save();
 
-    exit( json_encode( array( 'success' => true ) ) );
+    exit( json_encode( array( 'success' => true, 'message' => $_POST['buyer_postcode'] ) ) );
 } catch (ParseException $ex) {
     exit( json_encode( array( 'success' => false, 'message' => "등록 정보 저장 시 에러가 발생했습니다.", 'detail' => $ex->getMessage() ) ) );
 } catch (Exception $e) {
