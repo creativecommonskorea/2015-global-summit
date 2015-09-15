@@ -138,34 +138,49 @@ function paymentProcess(frm) {
     params['buyer_postcode'] = $("input[name='day15_launch']:checked").val()? $("input[name='day15_launch']:checked").val():'150' +
             $("input[name='day16_launch']:checked").val()? $("input[name='day16_launch']:checked").val():'160';
 
-    IMP.SBCR.init( 'imp11702026' );
-    IMP.SBCR.onetime( params, function (rsp) {
-        var that = this; //팝업창을 핸들링할 수 있습니다.
-        if (rsp.token) { //token이 생성되어야 하며, 서버에서 아임포트 REST API로 결제요청할 때 반드시 필요합니다.
-
-            var _keys = Object.keys(params);
-            for(var i=0; i< _keys.length; i++){
-                if ( !rsp[_keys[i]] )
-                    rsp[_keys[i]] = params[_keys[i]];
+    if ( params['amount'] == 0 ) {
+        $.ajax({
+            method: 'POST',
+            url: '/apply_sponsor.php',
+            data: params,
+            dataType: 'json',
+            success: function(){
+                alert('등록이 완료되었습니다.');
+                location.href='/index.html';
             }
+        });
+    } else {
+        IMP.SBCR.init( 'imp11702026' );
+        IMP.SBCR.onetime( params, function (rsp) {
+            var that = this; //팝업창을 핸들링할 수 있습니다.
+            if (rsp.token) { //token이 생성되어야 하며, 서버에서 아임포트 REST API로 결제요청할 때 반드시 필요합니다.
 
-            $.ajax({
-                method: 'POST',
-                url: '/payment.php', //아임포트 REST API를 호출할 나의 서버 주소
-                data: rsp, //rsp를 그대로 post합니다.
-                dataType: 'json'
-            }).done(function (result) {
-                that.close(); //팝업창 닫기
-                if (result.success) { //xhr success(payment.php참조)
-                    alert('결제가 완료되었습니다.');
-                } else {
-                    alert(result.message);
+                var _keys = Object.keys(params);
+                for(var i=0; i< _keys.length; i++){
+                    if ( !rsp[_keys[i]] )
+                        rsp[_keys[i]] = params[_keys[i]];
                 }
-            }).fail(function(){
-                console.log(arguments);
-            });
-        } else {
-            alert(rsp.message);
-        }
-    });
+
+                $.ajax({
+                    method: 'POST',
+                    url: '/payment.php', //아임포트 REST API를 호출할 나의 서버 주소
+                    data: rsp, //rsp를 그대로 post합니다.
+                    dataType: 'json'
+                }).done(function (result) {
+                    that.close(); //팝업창 닫기
+                    if (result.success) { //xhr success(payment.php참조)
+                        alert('결제가 완료되었습니다.');
+                        location.href='/index.html';
+                    } else {
+                        alert(result.message);
+                    }
+                }).fail(function(){
+                    console.log(arguments);
+                });
+            } else {
+                alert(rsp.message);
+            }
+        });
+    }
+
 }
