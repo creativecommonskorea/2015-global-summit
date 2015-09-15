@@ -169,8 +169,8 @@ try {
             'from_name' => 'CC Global Summit',
             'to' => array(
                 array(
-                    'email' => 'kim.beomjune@gmail.com',
-                    'name' => 'Beomjune Kim',
+                    'email' => $save_data['buyer_email'],
+                    'name' => $save_data['buyer_name'],
                     'type' => 'to'
                 )
             ),

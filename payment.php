@@ -187,8 +187,8 @@ if (!empty( IMP_STORE_ID ) && !empty( IMP_API_KEY ) && !empty( IMP_API_SECRET ))
               'from_name' => 'CC Global Summit',
               'to' => array(
                   array(
-                      'email' => 'kim.beomjune@gmail.com',
-                      'name' => 'Beomjune Kim',
+                      'email' => $api_payload['buyer_email'],
+                      'name' => $api_payload['buyer_name'],
                       'type' => 'to'
                   )
               ),
