@@ -124,7 +124,7 @@ try {
     $mail_content .= '<td>' . $save_data['buyer_addr'] . '</td>';
     $mail_content .= '</tr>';
     $mail_content .= '<tr>';
-    $mail_content .= '<td>참가날짜/td>';
+    $mail_content .= '<td>참가날짜</td>';
     $mail_content .= '<td>' . $joinDate .' </td>';
     $mail_content .= '</tr>';
     $mail_content .= '<tr>';

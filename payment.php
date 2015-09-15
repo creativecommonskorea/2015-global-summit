@@ -142,7 +142,7 @@ if (!empty( IMP_STORE_ID ) && !empty( IMP_API_KEY ) && !empty( IMP_API_SECRET ))
       $mail_content .= '<td>' . $_POST['buyer_addr'] . '</td>';
       $mail_content .= '</tr>';
       $mail_content .= '<tr>';
-      $mail_content .= '<td>참가날짜/td>';
+      $mail_content .= '<td>참가날짜</td>';
       $mail_content .= '<td>' . $joinDate .' </td>';
       $mail_content .= '</tr>';
       $mail_content .= '<tr>';
