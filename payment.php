@@ -139,7 +139,7 @@ if (!empty( IMP_STORE_ID ) && !empty( IMP_API_KEY ) && !empty( IMP_API_SECRET ))
       $mail_content .= '</tr>';
       $mail_content .= '<tr>';
       $mail_content .= '<td>소속</td>';
-      $mail_content .= '<td>' . $api_payload['buyer_addr'] . '</td>';
+      $mail_content .= '<td>' . $_POST['buyer_addr'] . '</td>';
       $mail_content .= '</tr>';
       $mail_content .= '<tr>';
       $mail_content .= '<td>참가날짜/td>';
@@ -155,7 +155,7 @@ if (!empty( IMP_STORE_ID ) && !empty( IMP_API_KEY ) && !empty( IMP_API_SECRET ))
       $mail_content .= '</tr>';
       $mail_content .= '</table>';
       $mail_content .= '<br>';
-      $mail_content .= '<span style="font-size:16px;font-weight: bold;">총 티켓 금액    '. $save_data['amount'] .'원</span><br/><br/>';
+      $mail_content .= '<span style="font-size:16px;font-weight: bold;">총 티켓 금액    '. $api_payload['amount'] .'원</span><br/><br/>';
       $mail_content .= '<span style="font-size:12px;color:#a0a0a0"> *참가 신청 내용 변경 및 취소는 10월 9일 금요일까지인 점 유의해주세요!</span><br/>';
       $mail_content .= '</div>';
       $mail_content .= '<a href="https://summit.cckorea.org" target="_blank" style="color:#ef513c;">CC Global Summit 2015</a>는<br/>';
