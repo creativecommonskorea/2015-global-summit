@@ -156,7 +156,7 @@ function paymentProcess(frm) {
             dataType: 'json',
             success: function(){
                 alert('등록이 완료되었습니다.');
-                //location.href='/index.html';
+                location.href='/index.html';
             }
         });
     } else {
