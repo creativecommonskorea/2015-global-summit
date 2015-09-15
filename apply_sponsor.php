@@ -6,6 +6,13 @@
  * Time: 15:04
  */
 
+date_default_timezone_set('Asia/Seoul');
+// Parse SDK 로드
+require 'autoload.php';
+
+use Parse\ParseClient;
+use Parse\ParseObject;
+
 $save_data = array(
     'merchant_uid' => '',
     'buyer_name' => '',     // 구매자 성함
