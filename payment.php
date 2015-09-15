@@ -120,7 +120,7 @@ if (!empty( IMP_STORE_ID ) && !empty( IMP_API_KEY ) && !empty( IMP_API_SECRET ))
       $mail_content .= '<div style="width:100%;text-align:center;">';
       $mail_content .= '<div style="width: 500px;margin: 0 auto;text-align: left; font-size:14px; padding: 40px 0;">';
       $mail_content .= '환영합니다! <br/><br/>';
-      $mail_content .= $save_data['buyer_name'] . '님의 CC Global Summit 2015 참가신청이 성공적으로 완료되었습니다. <br/>';
+      $mail_content .= $api_payload['buyer_name'] . '님의 CC Global Summit 2015 참가신청이 성공적으로 완료되었습니다. <br/>';
       $mail_content .= '다음의 참가 신청 내용을 확인해주시고, <br/>';
       $mail_content .= '참가 당일 <span style="color:#ef513c;">국립중앙박물관 대강당 앞 로비</span>에서 이름표를 받아가세요! <br/>';
       $mail_content .= '<div style="border-bottom:1px solid #a0a0a0; border-top:1px solid #a0a0a0; margin: 20px 0; padding: 30px;">';
