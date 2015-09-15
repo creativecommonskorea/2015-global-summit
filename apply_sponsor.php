@@ -38,19 +38,15 @@ try {
     $objectId = $paidInfo->getObjectId();
     $php = $paidInfo->get("elephant");
 
-    foreach ($api_payload as $key => $value) {
-        if (!in_array($key, ['token', 'vat', 'card_number', 'expiry', 'birth', 'pwd_2digit'])) {
-            if (strcmp($key, 'amount') == 0) {
-                $paidInfo->set($key, (int)$value);
-            } else {
-                $paidInfo->set($key, $value);
-            }
+    foreach ($save_data as $key => $value) {
+        if (strcmp($key, 'amount') == 0) {
+            $paidInfo->set($key, (int)$value);
+        } else {
+            $paidInfo->set($key, $value);
         }
     }
 
     $paidInfo->save();
-
-
 
     exit( json_encode( array( 'success' => true ) ) );
 } catch (ParseException $ex) {
