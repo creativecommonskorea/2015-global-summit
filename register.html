@@ -169,4 +169,30 @@ layout: base
 
     </section>
 </div>
-<style> @import '/css/register.css?v=2'; </style>
+<style>
+  @import '/css/register.css?v=2';
+  #nick_name-error, #email-Primary-error {
+    display: block;
+    color: #ee4023;
+    font-size: 12px;
+    margin-bottom: 40px;
+  }
+</style>
+<script src="/js/jquery.validate.min.js"></script>
+<script>
+  (function($){
+    $('#Edit').validate({
+      submitHandler: function(form) {
+        form.submit();
+      },
+      rules: {
+        nick_name: { required: true },
+        'email-Primary': { required: true, email: true }
+      },
+      messages: {
+        nick_name: { required: '성명을 입력해주세요.' },
+        'email-Primary': { required: '이메일 주소를 입력해주세요', email: '올바른 형식이 아닙니다.' },
+      }
+    });
+  })(jQuery);
+</script>
