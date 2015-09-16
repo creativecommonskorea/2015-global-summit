@@ -1274,8 +1274,8 @@ a {
           color: #333;
           font-size: 12px; }
   .speaker_wrap .speaker_box, .sponsor_whole_wrap .speaker_box {
-    width: calc(50% - 24px);
-    margin: 10px;
+    width: 538px;
+    margin: 0px;
     float: left; }
     @media screen and (max-width: 1000px) {
       .speaker_wrap .speaker_box, .sponsor_whole_wrap .speaker_box {
@@ -1284,6 +1284,10 @@ a {
         margin: 0 0 20px 0; }
         .speaker_wrap .speaker_box:last-child, .sponsor_whole_wrap .speaker_box:last-child {
           margin-bottom: 0; } }
+    .speaker_wrap .speaker_box.left, .sponsor_whole_wrap .speaker_box.left {
+      margin: 10px 10px 10px 0; }
+    .speaker_wrap .speaker_box.right, .sponsor_whole_wrap .speaker_box.right {
+      margin: 10px 0 10px 10px; }
     .speaker_wrap .speaker_box .person_image .texted, .sponsor_whole_wrap .speaker_box .person_image .texted {
       line-height: 160px;
       font-size: 80px;
@@ -1291,14 +1295,13 @@ a {
       color: #b1b1b1; }
     .speaker_wrap .speaker_box .person_profile, .sponsor_whole_wrap .speaker_box .person_profile {
       padding: 25px 25px 25px 0;
-      width: calc(100% - 235px); }
+      width: 303px; }
       @media screen and (max-width: 1000px) {
         .speaker_wrap .speaker_box .person_profile, .sponsor_whole_wrap .speaker_box .person_profile {
           width: 100%;
           padding: 0; } }
       .speaker_wrap .speaker_box .person_profile .name_social, .sponsor_whole_wrap .speaker_box .person_profile .name_social {
-        overflow: auto;
-        height: auto; }
+        height: 23px; }
         @media screen and (max-width: 1000px) {
           .speaker_wrap .speaker_box .person_profile .name_social, .sponsor_whole_wrap .speaker_box .person_profile .name_social {
             width: 100%;

@@ -65,7 +65,8 @@ layout: base
         </div>
 
         {% for s in site.data.speakers %}
-        <div class="speaker_box">
+        {% assign indexModulo = forloop.index | modulo:2 %}
+        <div class="speaker_box {% if indexModulo == 1 %}left{% else %}right{%endif%}">
             <div class="person_image">
                 {% if s.image %}
                 <img src="{{ s.image }}" alt="{{ s.name }}, {{ s.eng_name }}" class="image"/>

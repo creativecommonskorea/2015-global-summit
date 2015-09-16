@@ -113,9 +113,17 @@
         margin-bottom: 0;
       }
     }
-    width: calc(50% - 24px);
-    margin: 10px;
+    width: 538px;
+    margin: 0px;
     float: left;
+
+    &.left {
+      margin: 10px 10px 10px 0;
+    }
+    &.right {
+      margin: 10px 0 10px 10px;
+    }
+
     .person_image {
       .texted {
         line-height: 160px;
@@ -130,14 +138,13 @@
         padding: 0;
       }
       padding: 25px 25px 25px 0;
-      width: calc(100% - 235px);
+      width: 303px;
       .name_social {
         @media screen and (max-width: 1000px) {
           width: 100%;
           margin: 0;
         }
-        overflow: auto;
-        height: auto;
+        height: 23px;
       }
       .kor_name {
         @media screen and (max-width: 1000px) {

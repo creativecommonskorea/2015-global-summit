@@ -13,7 +13,6 @@
   height: 395px;
 }
 
-.speaker_wrap .speaker_box .person_profile,
 .sponsor_whole_wrap .speaker_box .person_profile {
   width: 878px;
 }
@@ -70,6 +69,14 @@
   width: 692px;
 }
 
-.speaker_wrap .speaker_box .person_profile {
+.speaker_wrap .special_speaker_box .person_profile{
   width: 865px;
+}
+
+.newsboard_wrap section .article_list .article_box .abstract_contents {
+  width: 860px;
+}
+
+.newsboard_wrap article .latest_article_contents .content_text .person .person_info {
+  width: 370px;
 }
