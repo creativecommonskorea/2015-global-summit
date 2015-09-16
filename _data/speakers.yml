@@ -37,13 +37,14 @@
 
 - name: "박은정"
   organize: "팀포퐁"
+  describe: >
     서울대학교에서 데이터마이닝을 전공하고 있으며, 마케팅, 반도체, 영화, 정치 등의 영역에서 데이터 분석 프로젝트를 진행했다. 
 
 - name: "Naeema Zarif"
   image: "images/speaker/sp_s_08_Naeema_Zarif.png"
   organize: "CC 아랍 지역 코디네이터"
   describe: >
-    다양한 정부를 위한 영상 및 디지털털 전략 컨설팅, 강연 등을 통해 오픈문화와 크리에티브 커먼즈 확산에 힘쓰고 있다.(사진: CC-BY @Naeema Zarif)
+    다양한 정부를 위한 영상 및 디지털 전략 컨설팅, 강연 등을 통해 오픈문화와 크리에티브 커먼즈 확산에 힘쓰고 있다.(사진: CC-BY @Naeema Zarif)
 
 - name: "Michael Weinberg"
   organize: "Shapeways 법률고문"
