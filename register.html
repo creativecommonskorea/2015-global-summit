@@ -167,7 +167,7 @@ layout: base
   (function($){
     $('#Edit').validate({
       submitHandler: function(form) {
-        paymentProcess(form);
+        form.submit();
       },
       rules: {
         nick_name: { required: true },
