@@ -36,8 +36,8 @@
         .title {
           @media screen and (max-width: 1000px) {
             display: block;
-            padding-left: 40px;
-            padding-top: 5px;
+            padding-left: 43px;
+            padding-top: 13px;
           }
           display: table-cell;
           text-align: left;
@@ -45,7 +45,7 @@
           vertical-align: middle;
           .type {
             margin-top: 15px;
-            font-size: 14px;
+            font-size: 12px;
             font-weight: normal;
           }
         }
@@ -53,6 +53,8 @@
           @media screen and (max-width: 1000px) {
             display: block;
             padding-left: 40px;
+            margin: 10px 0;
+            font-size: 12px;
           }
           display: table-cell;
           text-align: left;
@@ -65,32 +67,33 @@
         }
         &.whiteblue_light {
           @media screen and (max-width: 1000px) {
-            background: #ecf0f5 url(/images/other/program_icon_01.png) no-repeat 5px 5px;
+            background: #ecf0f5 url(/images/other/program_icon_01.png) no-repeat 8px 7px;
           }
           background: #ecf0f5 url(/images/other/program_icon_01.png) no-repeat 60px 22px;
         }
         &.whiteorange_light {
           @media screen and (max-width: 1000px) {
-            background: #ffdbd0 url(/images/other/program_icon_02.png) no-repeat 5px 5px;
+            background: #ffdbd0 url(/images/other/program_icon_02.png) no-repeat 8px 7px;
           }
           background: #ffdbd0 url(/images/other/program_icon_02.png) no-repeat 60px 22px;
         }
         &.whitepurple_light {
           @media screen and (max-width: 1000px) {
-            background: #dbd9ed url(/images/other/program_icon_03.png) no-repeat 5px 5px;
+            background: #dbd9ed url(/images/other/program_icon_03.png) no-repeat 8px 7px;
           }
           background: #dbd9ed url(/images/other/program_icon_03.png) no-repeat 60px 22px;
         }
         &.whitegreen_light {
           @media screen and (max-width: 1000px) {
-            background: #cef2ec url(/images/other/program_icon_04.png) no-repeat 5px 5px;
+            background: #cef2ec url(/images/other/program_icon_04.png) no-repeat 8px 7px;
           }
           background: #cef2ec url(/images/other/program_icon_04.png) no-repeat 60px 22px;
         }
       }
       .session_description {
         @media screen and (max-width: 1000px){
-          padding: 10px;
+          padding: 20px;
+          font-size: 13px;
         }
         text-align: left;
         line-height: 160%;

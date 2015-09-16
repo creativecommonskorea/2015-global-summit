@@ -2223,11 +2223,11 @@ for IE 11
           @media screen and (max-width: 1000px) {
             .session_detail_wrap section .session_detail_box .title_wrap .title {
               display: block;
-              padding-left: 40px;
-              padding-top: 5px; } }
+              padding-left: 43px;
+              padding-top: 13px; } }
           .session_detail_wrap section .session_detail_box .title_wrap .title .type {
             margin-top: 15px;
-            font-size: 14px;
+            font-size: 12px;
             font-weight: normal; }
         .session_detail_wrap section .session_detail_box .title_wrap .datetime {
           display: table-cell;
@@ -2241,33 +2241,36 @@ for IE 11
           @media screen and (max-width: 1000px) {
             .session_detail_wrap section .session_detail_box .title_wrap .datetime {
               display: block;
-              padding-left: 40px; } }
+              padding-left: 40px;
+              margin: 10px 0;
+              font-size: 12px; } }
         .session_detail_wrap section .session_detail_box .title_wrap.whiteblue_light {
           background: #ecf0f5 url(/images/other/program_icon_01.png) no-repeat 60px 22px; }
           @media screen and (max-width: 1000px) {
             .session_detail_wrap section .session_detail_box .title_wrap.whiteblue_light {
-              background: #ecf0f5 url(/images/other/program_icon_01.png) no-repeat 5px 5px; } }
+              background: #ecf0f5 url(/images/other/program_icon_01.png) no-repeat 8px 7px; } }
         .session_detail_wrap section .session_detail_box .title_wrap.whiteorange_light {
           background: #ffdbd0 url(/images/other/program_icon_02.png) no-repeat 60px 22px; }
           @media screen and (max-width: 1000px) {
             .session_detail_wrap section .session_detail_box .title_wrap.whiteorange_light {
-              background: #ffdbd0 url(/images/other/program_icon_02.png) no-repeat 5px 5px; } }
+              background: #ffdbd0 url(/images/other/program_icon_02.png) no-repeat 8px 7px; } }
         .session_detail_wrap section .session_detail_box .title_wrap.whitepurple_light {
           background: #dbd9ed url(/images/other/program_icon_03.png) no-repeat 60px 22px; }
           @media screen and (max-width: 1000px) {
             .session_detail_wrap section .session_detail_box .title_wrap.whitepurple_light {
-              background: #dbd9ed url(/images/other/program_icon_03.png) no-repeat 5px 5px; } }
+              background: #dbd9ed url(/images/other/program_icon_03.png) no-repeat 8px 7px; } }
         .session_detail_wrap section .session_detail_box .title_wrap.whitegreen_light {
           background: #cef2ec url(/images/other/program_icon_04.png) no-repeat 60px 22px; }
           @media screen and (max-width: 1000px) {
             .session_detail_wrap section .session_detail_box .title_wrap.whitegreen_light {
-              background: #cef2ec url(/images/other/program_icon_04.png) no-repeat 5px 5px; } }
+              background: #cef2ec url(/images/other/program_icon_04.png) no-repeat 8px 7px; } }
       .session_detail_wrap section .session_detail_box .session_description {
         text-align: left;
         line-height: 160%;
         padding: 50px 100px; }
         @media screen and (max-width: 1000px) {
           .session_detail_wrap section .session_detail_box .session_description {
-            padding: 10px; } }
+            padding: 20px;
+            font-size: 13px; } }
 
 /*# sourceMappingURL=main.css.map */
