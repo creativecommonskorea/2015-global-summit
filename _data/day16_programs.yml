@@ -145,5 +145,5 @@
   sessions:
     - title: "CC 파티"
       detail: >
-        (신청자에 한함)
+        (<a href="https://docs.google.com/forms/d/1dztoUzY0vG8rTMXpGLOzCEa0OQlepEUtU1e6XtYLHkg/viewform?usp=send_form" target="_blank">파티참가 신청하기</a>)
       box: lightgreen

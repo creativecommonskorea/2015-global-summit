@@ -137,7 +137,7 @@ function validation() {
 
 function paymentProcess(frm) {
     var params = {
-        merchant_uid: performance.now().toString(),
+        merchant_uid: new Date().getTime().toString(),
     };
 
     // validated values
@@ -162,7 +162,7 @@ function paymentProcess(frm) {
             dataType: 'json',
             success: function(){
                 alert('등록이 완료되었습니다.');
-                location.href='/index.html';
+                move_apply_complete(params);
             }
         });
     } else {
@@ -186,7 +186,7 @@ function paymentProcess(frm) {
                     that.close(); //팝업창 닫기
                     if (result.success) { //xhr success(payment.php참조)
                         alert('결제가 완료되었습니다.');
-                        location.href='/index.html';
+                        move_apply_complete(params);
                     } else {
                         alert(result.message);
                     }
@@ -198,5 +198,9 @@ function paymentProcess(frm) {
             }
         });
     }
+}
 
+function move_apply_complete(param) {
+    setCookie('user_info', JSON.stringify(param), 1);
+    location.href='/apply_complete.html';
 }

@@ -97,9 +97,11 @@ if (!empty( IMP_STORE_ID ) && !empty( IMP_API_KEY ) && !empty( IMP_API_SECRET ))
       } elseif ( (int)$launch_arr[0]%150 == 2 ) {
           $launch_15 = '15일 점심 우거지탕';
       } elseif ( (int)$launch_arr[0]%150 == 3 ) {
-          $launch_15 = '15일 점심 채식';
+          $launch_15 = '15일 점심 두부 탕수육 도시락 (채식 도시락)';
       } elseif ( (int)$launch_arr[0]%150 == 4 ) {
-          $launch_15 = '15일 점심 선택안함';
+          $launch_15 = '15일 점심 허브 닭구이 도시락';
+      } elseif ( (int)$launch_arr[0]%150 == 9 ) {
+          $launch_15 = '15일 점심 식사 안함';
       }
 
       if ( (int)$launch_arr[1]%160 == 1 ) {
@@ -107,9 +109,11 @@ if (!empty( IMP_STORE_ID ) && !empty( IMP_API_KEY ) && !empty( IMP_API_SECRET ))
       } elseif ( (int)$launch_arr[1]%160 == 2 ) {
           $launch_16 = '16일 점심 우거지탕';
       } elseif ( (int)$launch_arr[1]%160 == 3 ) {
-          $launch_16 = '16일 점심 채식';
+          $launch_16 = '16일 점심 두부 탕수육 도시락 (채식 도시락)';
       } elseif ( (int)$launch_arr[1]%160 == 4 ) {
-          $launch_16 = '16일 점심 선택안함';
+          $launch_16 = '16일 점심 허브 닭구이 도시락';
+      } elseif ( (int)$launch_arr[1]%160 == 9 ) {
+          $launch_15 = '16일 점심 식사 안함';
       }
 
       $mandrill = new Mandrill($_SERVER['MAIL_API_KEY']?: '');
@@ -163,15 +167,19 @@ if (!empty( IMP_STORE_ID ) && !empty( IMP_API_KEY ) && !empty( IMP_API_SECRET ))
       $mail_content .= '여러분과 공통의 관심사를 가지고 있는 사람들과 생각을 나눌 수 있는 기회를 만들고자,<br/>';
       $mail_content .= 'Slack에 팀을 만들어 참가자 간의 활발한 교류를 기대하고 있습니다.<br/><br/>';
       $mail_content .= '여러분도 슬랙의 CC Global Summit 2015팀에 가입하여<br/>';
-      $mail_content .= '서밋 행사가 지난 후에도 이어질 수 있는 네트워킹에 참여해 보세요!<br/><br/>';
+      $mail_content .= '써밋 행사가 지난 후에도 이어질 수 있는 네트워킹에 참여해 보세요!<br/><br/>';
       $mail_content .= '<a href="http://blog.hivearena.com/archives/3396" target="_blank" style="color:#ef513c;">Slack을 어떻게 이용할 수 있는지 살펴볼까요?</a><br/>';
-      $mail_content .= '<a href="https://ccglobalsummit2015.herokuapp.com/" target="_blank" style="color:#ef513c;">슬랙 CC Global Summit 2015팀에 가입하러 가기</a><br/><br/>';
-      $mail_content .= '마지막으로 10월 16일 금요일 저녁 5시<br/>';
+      $mail_content .= '<a href="https://ccglobalsummit2015.herokuapp.com/" target="_blank" style="color:#ef513c;">슬랙 CC Global Summit 2015팀에 가입하러 가기</a><br/><br/><br/>';
+      $mail_content .= '10월 16일 금요일 저녁 5시<br/>';
       $mail_content .= '전길남 박사님의 키노트 강연 후<br/>';
       $mail_content .= '40분간 진행될 전길남 박사님, Yochai Benkler(요하이 벤클러)의 대담에<br/>';
       $mail_content .= '여러분께서 두분께 하고 싶은 질문을 미리 등록할 수 있습니다.<br/><br/>';
-      $mail_content .= '<a href="https://www.facebook.com/events/1455321544773645/" style="color:#ef513c;">질문 등록하러 가기</a><br/><br/>';
-      $mail_content .= '참여하는 써밋, 지금부터 시작합니다~!<br/>';
+      $mail_content .= '<a href="https://www.facebook.com/events/1455321544773645/" target="_blank" style="color:#ef513c;">질문 등록하러 가기</a><br/><br/><br/>';
+      $mail_content .= '써밋 기간 중 16일 금요일 저녁엔 성수동 SAI에서 CC파티가 열립니다!<br/>';
+      $mail_content .= '조금 더 캐주얼한 분위기에서 써밋의 열기를 마음껏 발산하며 교류의 시간을 가져요~<br/><br/>';
+      $mail_content .= '<a href="https://docs.google.com/forms/d/1dztoUzY0vG8rTMXpGLOzCEa0OQlepEUtU1e6XtYLHkg/viewform" target="_blank" style="color:#ef513c;">CC파티 신청하러 가기</a><br/><br/><br/>';
+      $mail_content .= '여러분이 참여하는 써밋, 지금부터 시작합니다~!<br/><br/><br/>';
+      $mail_content .= '<a href="https://docs.google.com/forms/d/1TbYcyjGhpwpyDKQQJQIu-bqDQDTW0ACyqR8vUelW1yA/viewform?usp=send_form" target="_blank" style="color:#ef513c;">* 참가 신청 / 취소 / 변경은 10월 9일 금요일까지 받습니다. 이 점 유의해주세요!</a><br/>';
       $mail_content .= '</div>';
       $mail_content .= '</div>';
       $mail_content .= '<img src="https://summit.cckorea.org/images/paidmail_foot.png" alt="" style="width: 800px;"/>';

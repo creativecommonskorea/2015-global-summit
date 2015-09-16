@@ -105,6 +105,10 @@
       position: absolute;
     }
   }
+  .comeon_cc_sponsor {
+    margin-top: 20px;
+    color: #f35b42;
+  }
 }
 .application {
   background-color: #f7f7f8;
@@ -177,19 +181,27 @@
         }
       }
     }
-    .cancel_wrap {
-      @extend .dopay_wrap;
-      .cancel_info {
-        color: #ee4023;
-        font-size: 12px;
-      }
-      margin-top: 70px;
-      padding-top: 70px;
-      border-top: 4px double #929292 ;
-      button {
-        padding: 0;
-      }
-    }
+  }
+}
+
+.cancel_wrap {
+  button {
+    cursor: pointer;
+    width: 225px;
+    height: 67px;
+    line-height: 67px;
+    color: #fff;
+    font-size: 16px;
+    border: 0;
+  }
+  .cancel_info {
+    color: #ee4023;
+    font-size: 12px;
+  }
+  padding-top: 70px;
+  border-top: 4px double #929292 ;
+  button {
+    padding: 0;
   }
 }
 
@@ -336,5 +348,42 @@
     .payment_notice {
       color: #ee4023;
     }
+  }
+}
+
+.apply_complete {
+  padding: 60px 0;
+  section {
+    .complete_image_text {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      .message {
+        margin-top: 15px;
+      }
+    }
+    .buttons {
+      text-align: center;
+      button {
+        cursor: pointer;
+        width: 225px;
+        height: 67px;
+        line-height: 67px;
+        color: #fff;
+        font-size: 16px;
+        border: 0;
+        &:first-child {
+          @media screen and (max-width: 1000px) {
+            margin-right: 0;
+            margin-bottom: 20px;
+          }
+          background-color: #f35b42;
+        }
+      }
+    }
+    border-top: 1px solid #d0d0d0;
+    border-bottom: 1px solid #d0d0d0;
+    padding: 50px 0;
+    line-height: 130%;
   }
 }

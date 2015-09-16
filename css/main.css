@@ -1190,8 +1190,8 @@ a {
   text-align: center;
   background-color: #f7f7f8;
   overflow: auto; }
-  .speaker_wrap:first-child, .sponsor_whole_wrap:first-child {
-    padding-bottom: 0; }
+  .speaker_wrap.second, .second.sponsor_whole_wrap {
+    padding-top: 0; }
   .speaker_wrap .special_speaker_box, .sponsor_whole_wrap .special_speaker_box, .speaker_wrap .speaker_box, .sponsor_whole_wrap .speaker_box {
     background-color: #fff;
     border: 1px solid #e8e8e8;
@@ -1557,6 +1557,9 @@ a {
         font-weight: bold; }
     .attend_wrap .ticket_info .shadow {
       position: absolute; }
+  .attend_wrap .comeon_cc_sponsor {
+    margin-top: 20px;
+    color: #f35b42; }
 
 .application {
   background-color: #f7f7f8; }
@@ -1597,9 +1600,9 @@ a {
             line-height: 250%; }
         .application section .application_box table tr:last-child th, .application section .application_box table tr:last-child td {
           border-bottom: 0; }
-    .application section .dopay_wrap, .application section .cancel_wrap {
+    .application section .dopay_wrap {
       margin-top: 25px; }
-      .application section .dopay_wrap button, .application section .cancel_wrap button {
+      .application section .dopay_wrap button {
         cursor: pointer;
         width: 225px;
         height: 67px;
@@ -1608,20 +1611,28 @@ a {
         font-size: 16px;
         border: 0; }
         @media screen and (max-width: 1000px) {
-          .application section .dopay_wrap button:first-child, .application section .cancel_wrap button:first-child {
+          .application section .dopay_wrap button:first-child {
             margin-right: 0;
             margin-bottom: 20px; } }
-        .application section .dopay_wrap button#doPay, .application section .cancel_wrap button#doPay {
+        .application section .dopay_wrap button#doPay {
           background-color: #f35b42; }
-    .application section .cancel_wrap {
-      margin-top: 70px;
-      padding-top: 70px;
-      border-top: 4px double #929292; }
-      .application section .cancel_wrap .cancel_info {
-        color: #ee4023;
-        font-size: 12px; }
-      .application section .cancel_wrap button {
-        padding: 0; }
+
+.cancel_wrap {
+  padding-top: 70px;
+  border-top: 4px double #929292; }
+  .cancel_wrap button {
+    cursor: pointer;
+    width: 225px;
+    height: 67px;
+    line-height: 67px;
+    color: #fff;
+    font-size: 16px;
+    border: 0; }
+  .cancel_wrap .cancel_info {
+    color: #ee4023;
+    font-size: 12px; }
+  .cancel_wrap button {
+    padding: 0; }
 
 .move_step_icon {
   position: absolute;
@@ -1756,6 +1767,36 @@ a {
         margin-top: 0; } }
     .agreement .agreed_check_wrap .payment_notice {
       color: #ee4023; }
+
+.apply_complete {
+  padding: 60px 0; }
+  .apply_complete section {
+    border-top: 1px solid #d0d0d0;
+    border-bottom: 1px solid #d0d0d0;
+    padding: 50px 0;
+    line-height: 130%; }
+    .apply_complete section .complete_image_text {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold; }
+      .apply_complete section .complete_image_text .message {
+        margin-top: 15px; }
+    .apply_complete section .buttons {
+      text-align: center; }
+      .apply_complete section .buttons button {
+        cursor: pointer;
+        width: 225px;
+        height: 67px;
+        line-height: 67px;
+        color: #fff;
+        font-size: 16px;
+        border: 0; }
+        .apply_complete section .buttons button:first-child {
+          background-color: #f35b42; }
+          @media screen and (max-width: 1000px) {
+            .apply_complete section .buttons button:first-child {
+              margin-right: 0;
+              margin-bottom: 20px; } }
 
 .schedule {
   text-align: center;

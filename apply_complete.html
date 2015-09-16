@@ -1,0 +1,147 @@
+---
+layout: base
+---
+
+<script>
+    $(document).ready(function(){
+        var userInfo = JSON.parse(getCookie('user_info'));
+        setCookie('user_info', '', -1);
+        $('#user_name').text(userInfo.buyer_name);
+        $('#name').text(userInfo.buyer_name);
+        $('#email').text(userInfo.buyer_email);
+        $('#tel').text(userInfo.buyer_tel);
+        $('#organize').text(userInfo.buyer_addr);
+
+        var nameSplit = userInfo.name.split('_');
+        var joinType = nameSplit[0] == 'student'? '학생':nameSplit[0] == 'ordinary'? '일반':'CC 후원회원';
+        var joinDate = nameSplit[1] == '15'? '2015년 10월 15일(목)': nameSplit[1] == '16'? '2015년 10월 16일(금)' : '2015년 10월 15,16일 (목,금)';
+
+        $('#joinDate').text(joinDate);
+        $('#joinType').text(joinType);
+
+        var launchSplit = userInfo.buyer_postcode.split('-');
+        var _day15_launch = '';
+        var _day16_launch = '';
+        switch( parseInt(launchSplit[0]) % 150 ) {
+            case 0:default :
+                break;
+            case 1:
+                _day15_launch = '15일 비빔밥';
+                break;
+            case 2:
+                _day15_launch = '15일 우거지탕';
+                break;
+            case 3:
+                _day15_launch = '15일 두부 탕수육 도시락';
+                break;
+            case 4:
+                _day15_launch = '15일 허브 닭구이 도시락';
+                break;
+            case 9:
+                _day15_launch = '15일 식사 안함';
+                break;
+        }
+        switch( parseInt(launchSplit[1]) % 160 ) {
+            case 0:default :
+            break;
+            case 1:
+                _day16_launch = '16일 비빔밥';
+                break;
+            case 2:
+                _day16_launch = '16일 우거지탕';
+                break;
+            case 3:
+                _day16_launch = '16일 두부 탕수육 도시락';
+                break;
+            case 4:
+                _day16_launch = '16일 허브 닭구이 도시락';
+                break;
+            case 9:
+                _day16_launch = '16일 식사 안함';
+                break;
+        }
+
+        $('#launch').text(_day15_launch + ' ' + _day16_launch);
+        $('#price').text(userInfo.amount);
+
+    });
+</script>
+
+<div class="wrap apply_complete">
+    <section>
+        <div class="complete_image_text">
+            <img src="/images/other/pay_checked.png" alt=""/>
+            <div class="message">결제가 완료되었습니다.</div>
+        </div>
+        <div style="width: 500px;margin: 0 auto;text-align: left; font-size:14px; padding: 40px 0;">
+            환영합니다! <br/><br/>
+            <span id="user_name"></span>님의 CC Global Summit 2015 참가신청이 성공적으로 완료되었습니다. <br/>
+            다음의 참가 신청 내용을 확인해주시고, <br/>
+            참가 당일 <span style="color:#ef513c;">국립중앙박물관 대강당 앞 로비</span>에서 이름표를 받아가세요! <br/>
+
+            <div style="border-bottom:1px solid #a0a0a0; border-top:1px solid #a0a0a0; margin: 20px 0; padding: 30px;">
+                <table style="font-size: 13px;">
+                    <tr>
+                        <td>참가자명</td>
+                        <td id="name"></td>
+                    </tr>
+                    <tr>
+                        <td>이메일</td>
+                        <td id="email"></td>
+                    </tr>
+                    <tr>
+                        <td>연락처</td>
+                        <td id="tel"></td>
+                    </tr>
+                    <tr>
+                        <td>소속</td>
+                        <td id="organize"></td>
+                    </tr>
+                    <tr>
+                        <td>참가날짜</td>
+                        <td id="joinDate"></td>
+                    </tr>
+                    <tr>
+                        <td>참가유형</td>
+                        <td id="joinType"></td>
+                    </tr>
+                    <tr>
+                        <td>점심식사</td>
+                        <td id="launch"></td>
+                    </tr>
+                </table>
+                <br>
+                <span style="font-size:16px;font-weight: bold;">총 티켓 금액    <span id="price"></span>원</span><br/><br/>
+                <span style="font-size:12px;color:#a0a0a0"> *참가 신청 내용 변경 및 취소는 10월 9일 금요일까지인 점 유의해주세요!</span><br/>
+            </div>
+            <a href="https://summit.cckorea.org" target="_blank" style="color:#ef513c;">CC Global Summit 2015</a>는<br/>
+            80여 개국의 다양한 참가자들이<br/>
+            여러분과 공통의 관심사를 가지고 있는 사람들과 생각을 나눌 수 있는 기회를 만들고자,<br/>
+            Slack에 팀을 만들어 참가자 간의 활발한 교류를 기대하고 있습니다.<br/><br/>
+            여러분도 슬랙의 CC Global Summit 2015팀에 가입하여<br/>
+            써밋 행사가 지난 후에도 이어질 수 있는 네트워킹에 참여해 보세요!<br/><br/>
+            <a href="http://blog.hivearena.com/archives/3396" target="_blank" style="color:#ef513c;">Slack을 어떻게 이용할 수
+                있는지 살펴볼까요?</a><br/>
+            <a href="https://ccglobalsummit2015.herokuapp.com/" target="_blank" style="color:#ef513c;">슬랙 CC Global
+                Summit 2015팀에 가입하러 가기</a><br/><br/><br/>
+            10월 16일 금요일 저녁 5시<br/>
+            전길남 박사님의 키노트 강연 후<br/>
+            40분간 진행될 전길남 박사님, Yochai Benkler(요하이 벤클러)의 대담에<br/>
+            여러분께서 두분께 하고 싶은 질문을 미리 등록할 수 있습니다.<br/><br/>
+            <a href="https://www.facebook.com/events/1455321544773645/" target="_blank" style="color:#ef513c;">질문 등록하러
+                가기</a><br/><br/><br/>
+            써밋 기간 중 16일 금요일 저녁엔 성수동 SAI에서 CC파티가 열립니다!<br/>
+            조금 더 캐주얼한 분위기에서 써밋의 열기를 마음껏 발산하며 교류의 시간을 가져요~<br/><br/>
+            <a href="https://docs.google.com/forms/d/1dztoUzY0vG8rTMXpGLOzCEa0OQlepEUtU1e6XtYLHkg/viewform"
+               target="_blank" style="color:#ef513c;">CC파티 신청하러 가기</a><br/><br/><br/>
+            여러분이 참여하는 써밋, 지금부터 시작합니다~!<br/><br/><br/>
+            <a href="https://docs.google.com/forms/d/1TbYcyjGhpwpyDKQQJQIu-bqDQDTW0ACyqR8vUelW1yA/viewform?usp=send_form"
+               target="_blank" style="color:#ef513c;">* 참가 신청 / 취소 / 변경은 10월 9일 금요일까지 받습니다. 이 점 유의해주세요!</a><br/>
+        </div>
+        <div class="buttons">
+            <button type="button" onclick="location.href='https://docs.google.com/forms/d/1TbYcyjGhpwpyDKQQJQIu-bqDQDTW0ACyqR8vUelW1yA/viewform?usp=send_form'">신청내용 변경하기</button>
+            &nbsp;&nbsp;
+            <button type="button" onclick="location.href='/index.html'">메인 페이지로 이동</button>
+        </div>
+    </section>
+</div>

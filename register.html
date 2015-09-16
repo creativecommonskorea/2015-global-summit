@@ -2,13 +2,6 @@
 layout: base
 ---
 <script>
-    function setCookie(cname, cvalue, exdays) {
-        var d = new Date();
-        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-        var expires = "expires=" + d.toUTCString();
-        document.cookie = cname + "=" + cvalue + "; " + expires;
-    }
-
     function store_info() {
         setCookie('email', $('#email-Primary').val(), 1);
         setCookie('eng_name', $('#nick_name').val(), 1);
@@ -157,18 +150,22 @@ layout: base
                                        type="submit"
                                        id="_qf_Edit_next"/>
                             </span>
-                            <span class="crm-button crm-button-type-cancel crm-button_qf_Edit_cancel">
-                              <input class="form-submit reset" name="_qf_Edit_cancel" value="취소하기" type="reset"
-                                     id="_qf_Edit_cancel"/>
-                            </span>
+                            <!--<span class="crm-button crm-button-type-cancel crm-button_qf_Edit_cancel">-->
+                              <!--<input class="form-submit reset" name="_qf_Edit_cancel" value="취소하기" type="reset"-->
+                                     <!--id="_qf_Edit_cancel"/>-->
+                            <!--</span>-->
                         </div>
                     </div>
                 </div>
             </form>
         </div>
-
+        <div class="cancel_wrap">
+            <div class="cancel_info">* 참가 신청 / 취소 / 변경은 10월 9일 금요일까지 받습니다. 이 점 유의해주세요!</div> <br/><br/>
+            <button type="button" id="cancel" onclick="location.href='http://goo.gl/forms/Lh3XK7e8bx'">취소/변경 신청</button>
+        </div>
     </section>
 </div>
+
 <style>
   @import '/css/register.css?v=2';
   #nick_name-error, #email-Primary-error {
@@ -177,6 +174,9 @@ layout: base
     font-size: 12px;
     margin-bottom: 40px;
   }
+    h1.title {
+
+    }
 </style>
 <script src="/js/jquery.validate.min.js"></script>
 <script>

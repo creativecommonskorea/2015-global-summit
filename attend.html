@@ -7,17 +7,6 @@ layout: base
 <script src="/js/pay.process.js?v=1509151651"></script>
 <script src="//www.parsecdn.com/js/parse-1.6.0.min.js"></script>
 <script>
-    function getCookie(cname) {
-        var name = cname + "=";
-        var ca = document.cookie.split(';');
-        for (var i = 0; i < ca.length; i++) {
-            var c = ca[i];
-            while (c.charAt(0) == ' ') c = c.substring(1);
-            if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
-        }
-        return "";
-    }
-
     $(document).ready(function(){
         // initialize value
         $('#buyer_eng_name').val(getCookie('eng_name'));
@@ -111,6 +100,9 @@ layout: base
             </table>
         </div>
         <!-- mobile web -->
+        <div class="comeon_cc_sponsor">
+            <a href="http://www.cckorea.org/xe/?mid=join_members" target="_blank">* 여러분도 CC 후원회원이 될 수 있습니다! *</a>
+        </div>
     </section>
 </div>
 <div class="wrap attend_wrap application">
@@ -175,38 +167,44 @@ layout: base
                             <div class="launch_box" id="launch_box_15">
                                 <b>15일 점심을 선택해주세요.</b> <br/>
                                 <input type="radio" name="day15_launch" value="151" id="launch_151"/>
-                                <label for="launch_151">비빔밥 / Bibimbap (with beef)</label>
-                                [<a href="https://en.wikipedia.org/wiki/Bibimbap">?</a>]
+                                <label for="launch_151">비빔밥</label>
                                 <br/>
 
                                 <input type="radio" name="day15_launch" value="152" id="launch_152"/>
-                                <label for="launch_152">우거지탕 / Ugeoji-tang (with beef)</label>
-                                [<a href="https://www.facebook.com/thetasteofkorea/posts/796348037071192">?</a>]
+                                <label for="launch_152">우거지탕</label>
                                 <br/>
 
                                 <input type="radio" name="day15_launch" value="153" id="launch_153"/>
-                                <label for="launch_153">채식 / Vegetarian (served as lunchbox)</label>
+                                <label for="launch_153">두부 탕수육 도시락 (채식 도시락)</label>
                                 <br/>
-                                <input type="radio" name="day15_launch" value="154" id="launch_154"/>
-                                <label for="launch_154">식사 안함 / None</label>
+
+                                <input type="radio" name="day15_launch" id="launch_154" value="154"/>
+                                <label for="launch_154">허브 닭구이 도시락</label>
+                                <br/>
+
+                                <input type="radio" name="day15_launch" value="159" id="launch_159"/>
+                                <label for="launch_159">식사 안함</label>
                             </div>
                             <div class="launch_box" id="launch_box_16">
                                 <b>16일 점심을 선택해주세요.</b> <br/>
                                 <input type="radio" name="day16_launch" value="161" id="launch_161"/>
-                                <label for="launch_161">비빔밥 / Bibimbap (with beef)</label>
-                                [<a href="https://en.wikipedia.org/wiki/Bibimbap">?</a>]
+                                <label for="launch_161">비빔밥</label>
                                 <br/>
 
                                 <input type="radio" name="day16_launch" value="162" id="launch_162"/>
-                                <label for="launch_162">우거지탕 / Ugeoji-tang (with beef)</label>
-                                [<a href="https://www.facebook.com/thetasteofkorea/posts/796348037071192">?</a>]
+                                <label for="launch_162">우거지탕</label>
                                 <br/>
 
                                 <input type="radio" name="day16_launch" value="163" id="launch_163"/>
-                                <label for="launch_163">채식 / Vegetarian (served as lunchbox)</label>
+                                <label for="launch_163">두부 탕수육 도시락 (채식 도시락)</label>
                                 <br/>
-                                <input type="radio" name="day16_launch" value="164" id="launch_164"/>
-                                <label for="launch_164">식사 안함 / None</label>
+
+                                <input type="radio" name="day16_launch" id="launch_164" value="164"/>
+                                <label for="launch_164">허브 닭구이 도시락</label>
+                                <br/>
+
+                                <input type="radio" name="day16_launch" value="169" id="launch_169"/>
+                                <label for="launch_169">식사 안함</label>
                             </div>
                         </td>
                     </tr>
@@ -250,15 +248,11 @@ layout: base
                 <input type="checkbox" name="personal_info_agree_checkbox" id="personal_info_agree_checkbox"/>
                 <label for="personal_info_agree_checkbox">개인정보 수집 및 이용에 동의합니다.</label>
                 <br/>
-                <span class="payment_notice">* 결제 문자 메시지에는 상호명 '주식회사 시옷'으로 표시됩니다</span>
+                <span class="payment_notice">* 결제 문자 메시지에는 결제대행사인 '주식회사 시옷 / 나이스정보통신' 으로 표시됩니다</span>
             </div>
         </div>
         <div class="dopay_wrap">
             <button type="button" id="doPay" onclick="validation();">결제하기</button>
-        </div>
-        <div class="cancel_wrap">
-            <div class="cancel_info">* 참가 신청 / 취소 / 변경은 10월 9일 금요일까지 받습니다. 이 점 유의해주세요!</div> <br/><br/>
-            <button type="button" id="cancel" onclick="location.href='http://goo.gl/forms/Lh3XK7e8bx'">취소/변경 신청</button>
         </div>
     </section>
 </div>
