@@ -1609,7 +1609,8 @@ a {
         line-height: 67px;
         color: #fff;
         font-size: 16px;
-        border: 0; }
+        border: 0;
+        background-color: #c0c0c0; }
         @media screen and (max-width: 1000px) {
           .application section .dopay_wrap button:first-child {
             margin-right: 0;
@@ -1627,7 +1628,8 @@ a {
     line-height: 67px;
     color: #fff;
     font-size: 16px;
-    border: 0; }
+    border: 0;
+    background-color: #c0c0c0; }
   .cancel_wrap .cancel_info {
     color: #ee4023;
     font-size: 12px; }

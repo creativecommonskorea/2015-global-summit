@@ -14,8 +14,10 @@
     .register_wrap form input {
       padding: 0.5em;
       font-size: 16px;
-      font-weight: normal;
-      margin-right: 15px; }
+      font-weight: normal; }
+    @media screen and (min-width: 1000px) {
+      .register_wrap form input[type='text'] {
+        width: 300px; } }
     .register_wrap form .crm-submit-buttons {
       margin: 5em 0; }
       .register_wrap form .crm-submit-buttons .form-submit {
