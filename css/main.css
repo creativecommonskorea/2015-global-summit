@@ -1639,6 +1639,7 @@ a {
 #buyer_email,
 #buyer_tel,
 #buyer_addr,
+#buyer_eng_addr,
 #amount,
 #buyer_email {
   width: 200px;
@@ -1653,11 +1654,14 @@ a {
     #buyer_email,
     #buyer_tel,
     #buyer_addr,
+    #buyer_eng_addr,
     #amount,
     #buyer_email {
       width: 150px;
       margin-right: 0; } }
 
+#buyer_addr,
+#buyer_eng_addr,
 #buyer_name,
 #buyer_eng_name {
   margin-left: 15px; }

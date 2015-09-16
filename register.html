@@ -1,6 +1,22 @@
 ---
 layout: base
 ---
+<script>
+    function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        var expires = "expires=" + d.toUTCString();
+        document.cookie = cname + "=" + cvalue + "; " + expires;
+    }
+
+    function store_info() {
+        setCookie('email', $('#email-Primary').val(), 1);
+        setCookie('eng_name', $('#nick_name').val(), 1);
+        setCookie('organize', $('#note').val(), 1);
+        return true;
+    }
+</script>
+
 <div class="wrap attend_wrap">
     <section>
         <h1 class="title">티켓정보</h1>
@@ -92,7 +108,7 @@ layout: base
         </div>
         <div>
             <form action="https://donate.creativecommons.org/civicrm/profile/create?gid=44&amp;reset=1" method="post"
-                  name="Edit" id="Edit">
+                  name="Edit" id="Edit" onsubmit="return store_info();">
                 <div>
                     <input name="gid" type="hidden" value="44"/>
                     <input name="_qf_default" type="hidden" value="Edit:cancel"/>

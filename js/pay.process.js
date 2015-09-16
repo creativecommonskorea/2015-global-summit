@@ -80,6 +80,9 @@ $(document).ready(function () {
             buyer_addr: {
                 required: true
             },
+            buyer_eng_addr :{
+                required: true
+            },
             buyer_eng_name: {
                 required: true
             }
@@ -100,6 +103,9 @@ $(document).ready(function () {
             },
             buyer_eng_name: {
                 required: '* 영문이름을 입력해주세요.'
+            },
+            buyer_eng_addr: {
+                required: '* 영문소속을 입력해주세요.'
             }
         }
     });

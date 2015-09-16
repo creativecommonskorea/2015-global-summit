@@ -7,13 +7,30 @@ layout: base
 <script src="/js/pay.process.js?v=1509151651"></script>
 <script src="//www.parsecdn.com/js/parse-1.6.0.min.js"></script>
 <script>
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1);
+            if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+        }
+        return "";
+    }
+
     $(document).ready(function(){
+        // initialize value
+        $('#buyer_eng_name').val(getCookie('eng_name'));
+        $('#buyer_eng_addr').val(getCookie('organize'));
+        $('#buyer_email').val(getCookie('email'));
+
         $('#show_agreement').click(function(){
             if ( $('#agreement_content').css('display') == 'block' )
                 $('#agreement_content').hide();
             else
                 $('#agreement_content').show();
         });
+
     });
 </script>
 <div class="wrap attend_wrap">
@@ -127,8 +144,9 @@ layout: base
                     </tr>
                     <tr>
                         <th>소속</th>
-                        <td>
-                            <input type="text" name="buyer_addr" id="buyer_addr"/>
+                        <td class="two_lines">
+                            한글 <input type="text" name="buyer_addr" id="buyer_addr"/> <br/>
+                            영문 <input type="text" name="buyer_eng_addr" id="buyer_eng_addr"/>
                         </td>
                     </tr>
                     <tr>

@@ -210,6 +210,7 @@
 #buyer_email,
 #buyer_tel,
 #buyer_addr,
+#buyer_eng_addr,
 #amount,
 #buyer_email {
   @media screen and (max-width: 400px) {
@@ -224,6 +225,8 @@
   border: 1px solid #D3D3D3;
 }
 
+#buyer_addr,
+#buyer_eng_addr,
 #buyer_name,
 #buyer_eng_name {
   margin-left: 15px;
