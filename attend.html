@@ -22,6 +22,7 @@ layout: base
         // initialize value
         $('#buyer_eng_name').val(getCookie('eng_name'));
         $('#buyer_email').val(getCookie('email'));
+        $('#buyer_eng_addr').val(getCookie('organize'));
 
         $('#show_agreement').click(function(){
             if ( $('#agreement_content').css('display') == 'block' )
@@ -127,7 +128,11 @@ layout: base
                         </td>
                     </tr>
                     <tr>
-
+                        <th>소속</th>
+                        <td class="two_lines">
+                            한글 <input type="text" name="buyer_addr" id="buyer_addr"/> <br/>
+                            영문 <input type="text" name="buyer_eng_addr" id="buyer_eng_addr"/> <br/>
+                        </td>
                     </tr>
                     <tr>
                         <th>이메일</th>
@@ -139,12 +144,6 @@ layout: base
                         <th>휴대폰</th>
                         <td>
                             <input type="text" name="buyer_tel" id="buyer_tel"/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>소속</th>
-                        <td>
-                            <input type="text" name="buyer_addr" id="buyer_addr"/> <br/>
                         </td>
                     </tr>
                     <tr>
