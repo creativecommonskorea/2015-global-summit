@@ -36,7 +36,7 @@
                 {% if s.location %}
                 <div class="location">{{ s.location }}</div>
                 {% endif %}
-                <div class="title">{{ s.title }}</div>
+                <div class="title" {% if s.data-rel %}data-rel="{{ s.data-rel }}"{% endif %}>{{ s.title }}</div>
                 {% if s.detail %}
                 <div class="detail">{{ s.detail }}</div>
                 {% endif %}

@@ -6,18 +6,40 @@ layout: base
     $(document).ready(function () {
         // schedule click event define
         $('.day').click(function () {
-            console.log('.day clicked');
-            $('.day').each(function () {
-                $(this).removeClass('on');
-            });
-            $('.day_detail').hide();
-            $(this).addClass('on');
-
-            var thisId = $(this).attr('id');
-            $('#' + thisId + '_detail').show();
+            location.href='/programs.html?day=' + $(this).attr('data-rel');
         });
 
-        $('#day15').click();
+        $('.day').removeClass('on');
+        $('.day_detail').hide();
+        switch (getUrlParameter('day')){
+            case '1014':
+                $('#day14').addClass('on');
+                $('#day14_detail').show();
+                break;
+            case '1016':
+                $('#day16').addClass('on');
+                $('#day16_detail').show();
+                break;
+            case '1017':
+                $('#day17').addClass('on');
+                $('#day17_detail').show();
+                break;
+            case '1015':default :
+                $('#day15').addClass('on');
+                $('#day15_detail').show();
+                break;
+        }
+
+        $('span.h2')
+                .each(function() {
+                    if ( $(this).attr('data-rel') )
+                        $(this).css('cursor', 'pointer');
+                })
+                .click(function(){
+                    if ( $(this).attr('data-rel') )
+                        location.href='/session/' + $(this).attr('data-rel') + '.html';
+                });
+
     });
 
 </script>
@@ -27,10 +49,10 @@ layout: base
 
         <div class="guide_bar_33"></div>
         <div class="days">
-            <div class="day" id="day14">수요일 (10/14)</div>
-            <div class="day" id="day15">목요일 (10/15)</div>
-            <div class="day" id="day16">금요일 (10/16)</div>
-            <div class="day" id="day17">토요일 (10/17)</div>
+            <div class="day" id="day14" data-rel="1014">수요일 (10/14)</div>
+            <div class="day" id="day15" data-rel="1015">목요일 (10/15)</div>
+            <div class="day" id="day16" data-rel="1016">금요일 (10/16)</div>
+            <div class="day" id="day17" data-rel="1017">토요일 (10/17)</div>
         </div>
         {% include day14_detail.html %}
         {% include day15_detail.html %}

@@ -2222,7 +2222,9 @@ for IE 11
           vertical-align: middle; }
           @media screen and (max-width: 1000px) {
             .session_detail_wrap section .session_detail_box .title_wrap .title {
-              padding-left: 20px; } }
+              display: block;
+              padding-left: 40px;
+              padding-top: 5px; } }
           .session_detail_wrap section .session_detail_box .title_wrap .title .type {
             margin-top: 15px;
             font-size: 14px;
@@ -2236,14 +2238,30 @@ for IE 11
           font-weight: normal;
           padding-right: 30px;
           width: 170px; }
+          @media screen and (max-width: 1000px) {
+            .session_detail_wrap section .session_detail_box .title_wrap .datetime {
+              display: block;
+              padding-left: 40px; } }
         .session_detail_wrap section .session_detail_box .title_wrap.whiteblue_light {
           background: #ecf0f5 url(/images/other/program_icon_01.png) no-repeat 60px 22px; }
+          @media screen and (max-width: 1000px) {
+            .session_detail_wrap section .session_detail_box .title_wrap.whiteblue_light {
+              background: #ecf0f5 url(/images/other/program_icon_01.png) no-repeat 5px 5px; } }
         .session_detail_wrap section .session_detail_box .title_wrap.whiteorange_light {
           background: #ffdbd0 url(/images/other/program_icon_02.png) no-repeat 60px 22px; }
+          @media screen and (max-width: 1000px) {
+            .session_detail_wrap section .session_detail_box .title_wrap.whiteorange_light {
+              background: #ffdbd0 url(/images/other/program_icon_02.png) no-repeat 5px 5px; } }
         .session_detail_wrap section .session_detail_box .title_wrap.whitepurple_light {
           background: #dbd9ed url(/images/other/program_icon_03.png) no-repeat 60px 22px; }
+          @media screen and (max-width: 1000px) {
+            .session_detail_wrap section .session_detail_box .title_wrap.whitepurple_light {
+              background: #dbd9ed url(/images/other/program_icon_03.png) no-repeat 5px 5px; } }
         .session_detail_wrap section .session_detail_box .title_wrap.whitegreen_light {
           background: #cef2ec url(/images/other/program_icon_04.png) no-repeat 60px 22px; }
+          @media screen and (max-width: 1000px) {
+            .session_detail_wrap section .session_detail_box .title_wrap.whitegreen_light {
+              background: #cef2ec url(/images/other/program_icon_04.png) no-repeat 5px 5px; } }
       .session_detail_wrap section .session_detail_box .session_description {
         text-align: left;
         line-height: 160%;
