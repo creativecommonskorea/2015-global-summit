@@ -617,7 +617,7 @@ img {
   .footer .ccl_info {
     padding-top: 56px;
     display: inline;
-    width: 800px;
+    width: calc(100% - 300px);
     height: 135px;
     vertical-align: middle;
     float: left; }
@@ -634,7 +634,7 @@ img {
       overflow: auto;
       padding: 24px 0; } }
   .footer_black .ccl {
-    padding-top: 100px;
+    padding-top: 75px;
     display: inline-block;
     float: left;
     height: 120px;
@@ -658,7 +658,7 @@ img {
           height: 25px; } }
   .footer_black .ccl_info {
     display: inline-block;
-    width: 800px;
+    width: calc(100% - 300px);
     height: 135px;
     vertical-align: middle;
     float: left; }
@@ -2318,5 +2318,26 @@ for IE 11
           .session_detail_wrap section .session_detail_box .session_description {
             padding: 20px;
             font-size: 13px; } }
+
+.anti_harassment_policy_wrap {
+  text-align: center;
+  background-color: #f7f7f8; }
+  .anti_harassment_policy_wrap section {
+    padding: 60px 0;
+    line-height: 160%; }
+    .anti_harassment_policy_wrap section a {
+      color: #ef513c; }
+      @media screen and (max-width: 1000px) {
+        .anti_harassment_policy_wrap section a {
+          font-size: 13px; } }
+    .anti_harassment_policy_wrap section h1, .anti_harassment_policy_wrap section h2, .anti_harassment_policy_wrap section h3, .anti_harassment_policy_wrap section h4, .anti_harassment_policy_wrap section h5 {
+      margin: 0; }
+    .anti_harassment_policy_wrap section p {
+      margin: 15px 0; }
+    .anti_harassment_policy_wrap section .contents {
+      text-align: left; }
+      .anti_harassment_policy_wrap section .contents .inline-center {
+        margin: 0;
+        text-align: center; }
 
 /*# sourceMappingURL=main.css.map */

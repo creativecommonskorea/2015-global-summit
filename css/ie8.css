@@ -80,3 +80,7 @@
 .newsboard_wrap article .latest_article_contents .content_text .person .person_info {
   width: 370px;
 }
+
+.footer_black .ccl_info {
+  width: 800px;
+}

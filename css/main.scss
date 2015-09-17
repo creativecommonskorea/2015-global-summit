@@ -770,7 +770,7 @@ img {
   .ccl_info {
     padding-top: 56px;
     display: inline;
-    width: 800px;
+    width: calc(100% - 300px);
     height: 135px;
     vertical-align: middle;
     float: left;
@@ -796,7 +796,7 @@ img {
       height: auto;
       padding: 0;
     }
-    padding-top: 100px;
+    padding-top: 75px;
     display: inline-block;
     float: left;
     height: 120px;
@@ -825,7 +825,7 @@ img {
     }
 
     display: inline-block;
-    width: 800px;
+    width: calc(100% - 300px);
     height: 135px;
     vertical-align: middle;
     float: left;
@@ -1384,4 +1384,4 @@ a {
   color: inherit;
 }
 
-@import "keywords", "speakers", "newsboard", "attend", "programs", "sessions";
+@import "keywords", "speakers", "newsboard", "attend", "programs", "sessions", "anti-harassment-policy";
