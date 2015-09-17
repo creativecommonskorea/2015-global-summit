@@ -1807,7 +1807,8 @@ a {
         line-height: 67px;
         color: #fff;
         font-size: 16px;
-        border: 0; }
+        border: 0;
+        background-color: #c0c0c0; }
         .apply_complete section .buttons button:first-child {
           background-color: #f35b42;
           margin-right: 25px; }
