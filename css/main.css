@@ -1786,6 +1786,18 @@ a {
       font-weight: bold; }
       .apply_complete section .complete_image_text .message {
         margin-top: 15px; }
+    .apply_complete section .complete_contents {
+      width: 500px;
+      margin: 0 auto;
+      text-align: left;
+      font-size: 14px;
+      padding: 40px 0; }
+      @media screen and (max-width: 500px) {
+        .apply_complete section .complete_contents {
+          width: 100%; } }
+      @media screen and (max-width: 500px) {
+        .apply_complete section .complete_contents .nobr {
+          display: none; } }
     .apply_complete section .buttons {
       text-align: center; }
       .apply_complete section .buttons button {
@@ -1797,7 +1809,8 @@ a {
         font-size: 16px;
         border: 0; }
         .apply_complete section .buttons button:first-child {
-          background-color: #f35b42; }
+          background-color: #f35b42;
+          margin-right: 25px; }
           @media screen and (max-width: 1000px) {
             .apply_complete section .buttons button:first-child {
               margin-right: 0;

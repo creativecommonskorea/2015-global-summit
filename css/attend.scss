@@ -364,6 +364,21 @@
         margin-top: 15px;
       }
     }
+    .complete_contents {
+      @media screen and (max-width: 500px){
+        width: 100%;
+      }
+      width: 500px;
+      margin: 0 auto;
+      text-align: left;
+      font-size:14px;
+      padding: 40px 0;
+      .nobr {
+        @media screen and (max-width: 500px){
+          display: none;
+        }
+      }
+    }
     .buttons {
       text-align: center;
       button {
@@ -380,6 +395,7 @@
             margin-bottom: 20px;
           }
           background-color: #f35b42;
+          margin-right: 25px;
         }
       }
     }
