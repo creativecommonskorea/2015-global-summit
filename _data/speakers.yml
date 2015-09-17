@@ -38,9 +38,9 @@
 
 - name: "박은정"
   image: "/images/speaker/sp_s_05_eunjeong_park.png"
-  organize: "팀포퐁"
+  organize: <a href="http://popong.com/">"팀포퐁"</a>
   describe: >
-    서울대학교에서 데이터마이닝을 전공하고 있으며, 마케팅, 반도체, 영화, 정치 등의 영역에서 데이터 분석 프로젝트를 진행했다.
+    기술을 이용해 지식의 장벽을 낮추는 것에 관심이 있으며, 팀포퐁에서 "<a href="http://pokr.kr">대한민국 정치의 모든 것</a>"을 만들어 입법 정보의 확산에 노력을 기울이고 있다. 
 
 - name: "Naeema Zarif"
   image: "images/speaker/sp_s_08_Naeema_Zarif.png"
