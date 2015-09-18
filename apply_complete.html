@@ -5,7 +5,6 @@ layout: base
 <script>
     $(document).ready(function(){
         var userInfo = JSON.parse(getCookie('user_info'));
-        setCookie('user_info', '', -1);
         $('#user_name').text(userInfo.buyer_name);
         $('#name').text(userInfo.buyer_name);
         $('#email').text(userInfo.buyer_email);
