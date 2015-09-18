@@ -68,6 +68,11 @@ if (!empty( IMP_STORE_ID ) && !empty( IMP_API_KEY ) && !empty( IMP_API_SECRET ))
         $paidInfo->set('buyer_addr', $_POST["buyer_addr"]);
         $paidInfo->set('buyer_launch', $_POST["buyer_postcode"]);
 
+        // 3일차 참가 여부 추가
+        if (! empty( $_POST["joinThird"] ) ) {
+          $paidInfo->set('join_third', $_POST["joinThird"]);
+        }
+
         $paidInfo->save();
 
       $split_name = explode('_', $api_payload['name']);

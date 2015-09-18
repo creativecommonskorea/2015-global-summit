@@ -37,7 +37,7 @@ foreach ($save_data as $key => $value) {
 try {
     ParseClient::initialize($_SERVER['P_APP_ID'] ?: '', $_SERVER['P_REST_KEY'] ?: '', $_SERVER['P_MASTER_KEY'] ?: '');
 
-// 파스에 결제 정보를 저장합니다.
+    // 파스에 결제 정보를 저장합니다.
     $paidInfo = ParseObject::create("PaidInfo");
     $objectId = $paidInfo->getObjectId();
     $php = $paidInfo->get("elephant");
@@ -48,6 +48,11 @@ try {
         } else {
             $paidInfo->set($key, $value);
         }
+    }
+
+    // 3일차 참가 여부 추가
+    if (! empty( $_POST["joinThird"] ) ) {
+      $paidInfo->set('join_third', $_POST["joinThird"]);
     }
 
     $paidInfo->save();
