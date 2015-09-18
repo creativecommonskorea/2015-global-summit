@@ -57,7 +57,7 @@
         공유저작물 창조자원화 전략 / 문화체육관광부
       location: "중앙박물관 대강당"
       box: lightblue
-      data-rel: 15_1330-track1
+      data-rel: 15-track1
     - title: "트랙2. 오픈비즈니스"
       detail: >
         Photo Commons / Andy Yang_500px CEO <br>
@@ -65,6 +65,7 @@
         공개된 CCL 음원의 비즈니스 모델 / 도희성_원트리뮤직 대표
       location: "중앙.세미나실"
       box: lightblue
+      data-rel: 15-track2
 
 - time: "14:10 ~14:50"
   sessions:
@@ -86,14 +87,16 @@
         IoT와 오픈데이터 / Naeema Zarif_CC 아랍 지역 코디네이터
       location: "중앙박물관 대강당"
       box: lightblue
+      data-rel: 15-track3
     - title: "트랙4. DIY"
       detail: >
         3D 프린터 기술의 진화 / Michael Weinberg_Shapeways 법률고문 <br>
-        프로그래밍의 첫걸음 엔트리 / 김지현_엔트릭교육연구소 대표 
+        프로그래밍의 첫걸음 엔트리 / 김지현_엔트릭교육연구소 대표
       location: "중앙박물관 세미나실"
       box: lightblue
+      data-rel: 15-track4
 
-    - title: "크리에이티브 워크샵"
+    - title: "크리에이티브 워크숍"
       detail: >
         Dance with ZeMarmot: Aryeom Han & Jehan Pages
       location: "한글박물관 강당"
