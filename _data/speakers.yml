@@ -1,60 +1,61 @@
 ---
-- name: "윤종수"
-  image: "/images/speaker/sp_s_01_jsyoon.png"
-  organize: "CCKorea 프로젝트 리드, 글로벌 CC 이사, 법무법인 세종 변호사"
-  describe: "10년 전 CCL 한국버전을 런칭하고, 지적재산권, 인터넷거버넌스 등 정보문화운동을 오랫동안 펼쳐왔다."
+- name: 윤종수
+  image: /images/speaker/sp_s_01_jsyoon.png
+  organize: CCKorea 프로젝트 리드, 글로벌 CC 이사, 법무법인 세종 변호사
+  describe: 10년 전 CCL 한국버전을 런칭하고, 지적재산권, 인터넷거버넌스 등 정보문화운동을 오랫동안 펼쳐왔다.
 
-- name: "Cable Green"
-  image: "/images/speaker/sp_s_02_Cable_green.png"
-  organize: "CC 글로벌 OER 디렉터"
+- name: Cable Green
+  image: /images/speaker/sp_s_02_Cable_green.png
+  organize: CC 글로벌 OER 디렉터
   describe: >
     OER관련 오랜 경험을 쌓아오고 있으며, 최근 CC라이선스를 적용한 일반교육과정 구축 및 공유에 관한 프로젝트를 진행중이다.
     (사진: CC-BY @<a href='https://commons.wikimedia.org/wiki/User:Peteforsyth' target='_blank'>Peteforsyth</a>)
 
-- name: "Paul Keller"
-  image: "/images/speaker/sp_s_03_paul_keller.png"
-  organize: "Europeana 재단 이사, 저작권 정책 고문"
+- name: Paul Keller
+  image: /images/speaker/sp_s_03_paul_keller.png
+  organize: Europeana 재단 이사, 저작권 정책 고문
   describe: >
     유럽의 문화 유산 관련 기관들이 유럽의 저작권 법률의 현대화에 대한 논의에 기여하도록 힘쓰고 있다.
     (사진: CC-BY @<a href='https://www.flickr.com/photos/joi/' target='_blank'>Joi Ito</a>)
 
-- name: "Andy Yang"
-  image: "/images/speaker/sp_s_04_andy_yang.png"
+- name: Andy Yang
+  image: /images/speaker/sp_s_04_andy_yang.png
   organize: 500px CEO
   describe: >
     초기 단계의 스타트업, 비즈니스 모델, 기업가 정신이 주 관심사인 프리미엄 사진 커뮤니티 500px의 CEO이다.
 
-- name: "Paul Stacey"
-  image: "/images/people/1_07_paul-stacey.png"
-  organize: "CC 글로벌 러닝(learning) 대표"
+- name: Paul Stacey
+  image: /images/people/1_07_paul-stacey.png
+  organize: CC 글로벌 오픈 비즈니스 이니셔티브 담당
   describe: >
-    캐나다 브리티시컬럼럼비아주를 중심으로 OER 활동을 하며 정부 및 연구기관들에게 CCL을 전파하는 데 큰 역할을 하고 있다.
+    CC 글로벌의 오픈 비즈니스 이니셔티브를 이끌며 CCL 콘텐츠 등 공유저작물을 이용한 오픈 비즈니스 모델을 발굴하고 그 잠재력을 알리는 일에 집중하고 있다.
 
-- name: "도희성"
-  organize: "원트리뮤직 대표"
-  image: "/images/speaker/sp_s_06_heesung_Doh.png"
+- name: 도희성
+  organize: 원트리뮤직 대표
+  image: /images/speaker/sp_s_06_heesung_Doh.png
   describe: >
-    원트리뮤직은 '라임덕비즈'라는 시스템을 통해 저작권료를 낮추도록 하여 저렴한 가격으로 매장에 음원을 제공하고 있다.
+    CCL음원을 활용한 매장음악서비스를 하는 원트리뮤직의 대표이다.
+    커피빈, 테크노마트 등이 주요 고객사이며 뿐만 아니라 조PD의 새음반의 음원을 매장음악 서비스를 통해서 홍보하는 등 다양한 시도들을 하고 있다.
 
-- name: "박은정"
-  image: "/images/speaker/sp_s_05_eunjeong_park.png"
-  organize: <a href="http://popong.com/">"팀포퐁"</a>
+- name: 박은정
+  image: /images/speaker/sp_s_05_eunjeong_park.png
+  organize: <a href=http://popong.com/>팀포퐁</a>
   describe: >
-    기술을 이용해 지식의 장벽을 낮추는 것에 관심이 있으며, 팀포퐁에서 "<a href="http://pokr.kr">대한민국 정치의 모든 것</a>"을 만들어 입법 정보의 확산에 노력을 기울이고 있다. 
+    기술을 이용해 지식의 장벽을 낮추는 것에 관심이 있으며, 팀포퐁에서 <a href=http://pokr.kr>대한민국 정치의 모든 것</a>을 만들어 입법 정보의 확산에 노력을 기울이고 있다.
 
-- name: "Naeema Zarif"
-  image: "images/speaker/sp_s_08_Naeema_Zarif.png"
-  organize: "CC 아랍 지역 코디네이터"
+- name: Naeema Zarif
+  image: images/speaker/sp_s_08_Naeema_Zarif.png
+  organize: CC 아랍 지역 코디네이터
   describe: >
     다양한 정부를 위한 영상 및 디지털 전략 컨설팅, 강연 등을 통해 오픈문화와 크리에티브 커먼즈 확산에 힘쓰고 있다.(사진: CC-BY @Naeema Zarif)
 
-- name: "Michael Weinberg"
-  organize: "Shapeways 법률고문"
+- name: Michael Weinberg
+  organize: Shapeways 법률고문
   describe: >
     공공기술과 공공지식에 관해 법률고문을 해왔으며, 3D 프린팅 저작권에 대한 제안적 보고서를 쓴 바 있다.
 
-- name: "김지현"
-  image: "images/speaker/sp_s_10_Jihyeon_Kim.png"
+- name: 김지현
+  image: images/speaker/sp_s_10_Jihyeon_Kim.png
   organize: 엔트릭교육연구소 대표
   describe: >
     스마트 교육과 ICT 교육이 주 관심사이며 온라인 소프트웨어 교육 플랫폼 ‘엔트리(ENTRY)’를 개발하고 있다. (사진: 본인출처)
