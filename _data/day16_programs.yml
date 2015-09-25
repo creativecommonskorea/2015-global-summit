@@ -28,6 +28,7 @@
         오픈글램과 CC / Kat Braybrooke
       location: "중앙박물관 대강당"
       box: lightorange
+      data-rel: 16-01
     - title: "공유도시"
       detail: >
         도시, 공유의 가치를 재발견하다
@@ -39,13 +40,14 @@
         </ul>
       location: "중앙박물관 소강당"
       box: lightorange
-      data-rel: 16-1100-Joongang-Sogangdang
+      data-rel: 16-02
     - title: "OER"
       detail: >
         OER - 대안에서 주류로! / Cable Green_CC 글로벌 OER 디렉터 <br>
         획기적인 변화를 위한 OER 모델의 재정립 / TJ Bliss_휴렛 재단
       location: "중앙박물관 세미나룸"
       box: lightpurple
+      data-rel: 16-03
 
 - time: "12:30 ~14:00"
   sessions:
@@ -58,6 +60,7 @@
         전세계의 공유 운동 사례
       location: "중앙박물관 대강당"
       box: lightpurple
+      data-rel: 16-04
 
     - title: "저작위원회 창조자원화 포럼"
       location: "중앙박물관 소강당"
@@ -68,24 +71,28 @@
       detail: >
         저작권 개혁을 위한 효과적 방안의 모색 / Parker Higgins
       box: lightpurple
+      data-rel: 16-0706
 
     - title: "CCL 번역"
       location: "한글박물관 강당"
       detail: >
         CCL 번역, 지난 1년의 성과와 교훈 / Diane Peters_CC 법률 고문
       box: lightpurple
+      data-rel: 16-07
 
     - title: "오픈글램"
       location: "한글박물관 강의실1"
       detail: >
         기관의 효과적인 오픈라이선스 정책 도입 / Klaudia Grabowska
       box: lightpurple
+      data-rel: 16-08
 
     - title: "디지털 기술과 공유"
       location: "한글박물관 강의실2"
       detail: >
         동영상 공유저작물의 활성화 방안 / Ben Moskowitz
       box: lightpurple
+      data-rel: 16-09
 
 - time: "15:00 ~15:30"
   sessions:
@@ -101,6 +108,7 @@
         오픈 거버먼트: 아프리카와 인도네시아를 중심으로 / Yuandra, Brian Ssennoga <br>
         데이터 공유가 가져온 기적 - 네팔 지진의 사례 / Heather Leson
       box: lightblue
+      data-rel: 16-10
 
     - title: "저작위원회 창조자원화 포럼"
       location: "중앙박물관 소강당"
@@ -112,6 +120,7 @@
         학술논문 저작자와 출판권 / Diane Peters, Thomas Margoni, Michael Wolfe, Ignasi Labastida <br>
         오픈액세스 버튼 프로젝트 / Maarten Zeinstra, Paul Keller, Primavera De Filippi
       box: lightpurple
+      data-rel: 16-11
 
     - title: "CCL과 오픈라이선스"
       location: "한글박물관 강당"
@@ -119,18 +128,21 @@
         집단지성을 통한 지식의 공유와 CCL의 역할 / Stephen LaPorte_위키미디어 <br>
         온라인 플랫폼을 위한 CCL 가이드라인 / Sarah Pearson
       box: lightblue
+      data-rel: 16-12
 
     - title: "저작권 개선"
       location: "한글박물관 강의실1"
       detail: >
         EFF와 CC가 함께 고민하는 저작권 개혁 운동 / Maira Sutton_전자프론티어재단(EFF)
       box: lightpurple
+      data-rel: 16-13
 
     - title: "오픈커뮤니티"
       location: "한글박물관 강의실2"
       detail: >
         조직 내 열린 협업 방식의 도입, 어떻게 가능할까?  / Bekka Khan_Open Coalition, Ahmed Mansour
       box: lightpurple
+      data-rel: 16-14
 
 - time: "17:00 ~17:20"
   sessions:
