@@ -153,6 +153,10 @@ function paymentProcess(frm) {
 
     params['buyer_postcode'] = _day15_launch + '-' + _day16_launch;
 
+    join_third = $('#join_third').val();
+    if ( join_third == 'true' ) {
+        params['join_third'] = join_third;
+    };
 
     if ( params['amount'] == 0 ) {
         $.ajax({
@@ -160,9 +164,14 @@ function paymentProcess(frm) {
             url: '/apply_sponsor.php',
             data: params,
             dataType: 'json',
-            success: function(){
-                alert('등록이 완료되었습니다.');
-                move_apply_complete(params);
+            success: function(data){
+                console.log(data);return false;
+                if ( data.success ) {
+                    alert('등록이 완료되었습니다.');
+                    move_apply_complete(params);
+                } else {
+                    alert(data.message);
+                }
             }
         });
     } else {

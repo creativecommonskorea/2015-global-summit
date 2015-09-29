@@ -24,6 +24,7 @@ $save_data = array(
     'buyer_eng_name' => '',
     'buyer_addr' => '',
     'buyer_launch' => '',
+    'join_third' => '',     // 3일차 참가 여부 추가
 );
 
 foreach ($save_data as $key => $value) {
@@ -33,6 +34,11 @@ foreach ($save_data as $key => $value) {
         $save_data[$key] = $_POST['buyer_postcode'];
     }
 }
+
+if ( ! filter_var( $save_data['buyer_email'] , FILTER_VALIDATE_EMAIL ) ) {
+    exit( json_encode( array( 'success' => false, 'message' => "이메일 주소가 올바르지 않습니다." ) ) );
+}
+exit('halt!');
 
 try {
     ParseClient::initialize($_SERVER['P_APP_ID'] ?: '', $_SERVER['P_REST_KEY'] ?: '', $_SERVER['P_MASTER_KEY'] ?: '');
@@ -49,12 +55,6 @@ try {
             $paidInfo->set($key, $value);
         }
     }
-
-    // 3일차 참가 여부 추가
-    if (! empty( $_POST["joinThird"] ) ) {
-      $paidInfo->set('join_third', $_POST["joinThird"]);
-    }
-
     $paidInfo->save();
 
     $split_name = explode('_', $save_data['name']);
@@ -101,6 +101,10 @@ try {
         $launch_16 = '16일 점심 허브 닭구이 도시락';
     } elseif ( (int)$launch_arr[1]%160 == 9 ) {
         $launch_15 = '16일 점심 식사 안함';
+    }
+
+    if ( ! filter_var( $save_data['buyer_email'] , FILTER_VALIDATE_EMAIL ) ) {
+        exit( json_encode( array( 'success' => false, 'message' => "이메일 주소가 올바르지 않습니다." ) ) );
     }
 
     $mandrill = new Mandrill($_SERVER['MAIL_API_KEY']?: '');
