@@ -33,12 +33,14 @@ foreach ($save_data as $key => $value) {
     } else if ( strcmp($key, 'buyer_launch') == 0 ) {
         $save_data[$key] = $_POST['buyer_postcode'];
     }
+    if ( strcmp($key, 'join_third') == 0 ) {
+        $save_data[$key] = (boolean) $_POST['buyer_postcode'];
+    }
+    // 이메일 형식 검사 추가
+    if ( ! filter_var( $save_data['buyer_email'] , FILTER_VALIDATE_EMAIL ) ) {
+        exit( json_encode( array( 'success' => false, 'message' => "이메일 주소가 올바르지 않습니다." ) ) );
+    }
 }
-
-if ( ! filter_var( $save_data['buyer_email'] , FILTER_VALIDATE_EMAIL ) ) {
-    exit( json_encode( array( 'success' => false, 'message' => "이메일 주소가 올바르지 않습니다." ) ) );
-}
-exit('halt!');
 
 try {
     ParseClient::initialize($_SERVER['P_APP_ID'] ?: '', $_SERVER['P_REST_KEY'] ?: '', $_SERVER['P_MASTER_KEY'] ?: '');
@@ -223,5 +225,5 @@ try {
 } catch (ParseException $ex) {
     exit( json_encode( array( 'success' => false, 'message' => "등록 정보 저장 시 에러가 발생했습니다.", 'detail' => $ex->getMessage() ) ) );
 } catch (Exception $e) {
-    exit( json_encode( array( 'success' => false, 'message' => "등록 정보 저장 시 에러가 발생했습니다." ) ) );
+    exit( json_encode( array( 'success' => false, 'message' => "등록 정보 저장 시 에러가 발생했습니다.", 'deatil' => $e->getMessage() ) ) );
 }

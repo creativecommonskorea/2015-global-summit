@@ -165,7 +165,6 @@ function paymentProcess(frm) {
             data: params,
             dataType: 'json',
             success: function(data){
-                console.log(data);return false;
                 if ( data.success ) {
                     alert('등록이 완료되었습니다.');
                     move_apply_complete(params);
