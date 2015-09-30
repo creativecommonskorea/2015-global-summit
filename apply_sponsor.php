@@ -36,10 +36,12 @@ foreach ($save_data as $key => $value) {
     if ( strcmp($key, 'join_third') == 0 ) {
         $save_data[$key] = (boolean) $_POST['buyer_postcode'];
     }
-    // 이메일 형식 검사 추가
-    if ( ! filter_var( $save_data['buyer_email'] , FILTER_VALIDATE_EMAIL ) ) {
-        exit( json_encode( array( 'success' => false, 'message' => "이메일 주소가 올바르지 않습니다." ) ) );
-    }
+}
+
+// 이메일 형식 검사 추가
+if ( ! filter_var( $save_data['buyer_email'] , FILTER_VALIDATE_EMAIL ) ) {
+    exit( $save_data['buyer_email'] );
+    exit( json_encode( array( 'success' => false, 'message' => "이메일 주소가 올바르지 않습니다." ) ) );
 }
 
 try {

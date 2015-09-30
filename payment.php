@@ -38,10 +38,11 @@ foreach ($api_payload as $key => $value) {
   if (!empty($_POST[$key])) {
     $api_payload[ $key ] = $_POST[ $key];
   }
-  // 이메일 형식 검사 추가
-  if ( ! filter_var( $save_data['buyer_email'] , FILTER_VALIDATE_EMAIL ) ) {
-      exit( json_encode( array( 'success' => false, 'message' => "이메일 주소가 올바르지 않습니다." ) ) );
-  }
+}
+
+// 이메일 형식 검사 추가
+if ( ! filter_var( $save_data['buyer_email'] , FILTER_VALIDATE_EMAIL ) ) {
+    exit( json_encode( array( 'success' => false, 'message' => "이메일 주소가 올바르지 않습니다." ) ) );
 }
 
 if (!empty( IMP_STORE_ID ) && !empty( IMP_API_KEY ) && !empty( IMP_API_SECRET )) {
