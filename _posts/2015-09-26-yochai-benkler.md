@@ -16,11 +16,15 @@ thumbnail: /images/news/news4.png
 
 '네트워크의 부' , '펭귄과 리바이어던' 저자로 유명한 요하이 벤클러 교수는 TEDGlobal 2005에서 "The new open-source economics(오픈소스 경제학)"에 관해 이야기하고 있습니다. 정보사회에서 수동적인 소비자들이었던 우리가 어떻게 능동적인 정보 제공자가 되었는지, 그리고 이러한 변화가 정보 사회, 정보의 경제학에 어떤 영향을 미치고 있는지에 대해 이야기 합니다. 그 한 예로 야후의 Open Directory에 대한 이야기가 잠깐 나오는데, 궁금하시다면 링크를 클릭해주세요!
 
-<a target="_blank" href="https://www.ted.com/talks/yochai_benkler_on_the_new_open_source_economics"><img src="/images/news/yochai-benkler-preview.png" alt="The new open-source economics on TED"></a>
+<p style="text-align: center;">
+  <a target="_blank" href="https://www.ted.com/talks/yochai_benkler_on_the_new_open_source_economics"><img src="/images/news/yochai-benkler-preview.png" alt="The new open-source economics on TED"></a>
+</p>
 
 또한 최근 저서인 "네트워크의 부-사회적 생산은 시장과 자유를 어떻게 바꾸는가"(2015 국문 / 2006영문)에서 벤클러 교수는 자발적인 참여와 협력을 바탕으로 이루어지는 '동료 생산(peer production)'의 방식이 가져오는 네트워크 경제체제의 변화를 살펴보고, 그 미래의 전망에 대해 고찰합니다.
 
-<a target="_blank" href="http://book.naver.com/bookdb/book_detail.nhn?bid=8922944"><img src="/images/news/wealth-of-networks.jpg" alt="네트워크의 부"></a>
+<p style="text-align: center;">
+  <a target="_blank" href="http://book.naver.com/bookdb/book_detail.nhn?bid=8922944"><img src="/images/news/wealth-of-networks.jpg" alt="네트워크의 부"></a>
+</p>
 
 <style>
 	p img {
