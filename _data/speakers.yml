@@ -66,3 +66,8 @@
   describe: >
     정부3.0에 대한 설명을 통해 국내의 개방, 공유 등의 정책방향에 대해 설명하고 국내의 공공데이터 개방 현황과 주요 활용사례를 나눈다.
 
+- name: Pieter van de Glind
+  image: images/speaker/sp_Pieter-van-de-Glind.png
+  organize: Amsterdam Sharing City
+  describe: >
+    네델란드 공유/협력경제의 네트워킹 플랫폼인 shareNL의 공동설립자로, 국내외 스타트업, 관련단체, 시정부 등과 협력하고 있다.
