@@ -33,14 +33,10 @@ foreach ($save_data as $key => $value) {
     } else if ( strcmp($key, 'buyer_launch') == 0 ) {
         $save_data[$key] = $_POST['buyer_postcode'];
     }
-    if ( strcmp($key, 'join_third') == 0 ) {
-        $save_data[$key] = (boolean) $_POST['buyer_postcode'];
-    }
 }
 
 // 이메일 형식 검사 추가
-if ( ! filter_var( $save_data['buyer_email'] , FILTER_VALIDATE_EMAIL ) ) {
-    exit( $save_data['buyer_email'] );
+if ( !empty($save_data['buyer_email']) && !filter_var($save_data['buyer_email'], FILTER_VALIDATE_EMAIL) ) {
     exit( json_encode( array( 'success' => false, 'message' => "이메일 주소가 올바르지 않습니다." ) ) );
 }
 
@@ -59,6 +55,12 @@ try {
             $paidInfo->set($key, $value);
         }
     }
+
+    // 3일차 참가 여부 추가
+    if (!empty( $_POST["join_third"] ) && 'true' === $_POST["join_third"] ) {
+      $paidInfo->set('join_third', (boolean) $_POST["join_third"]);
+    }
+
     $paidInfo->save();
 
     $split_name = explode('_', $save_data['name']);
@@ -105,10 +107,6 @@ try {
         $launch_16 = '16일 점심 허브 닭구이 도시락';
     } elseif ( (int)$launch_arr[1]%160 == 9 ) {
         $launch_15 = '16일 점심 식사 안함';
-    }
-
-    if ( ! filter_var( $save_data['buyer_email'] , FILTER_VALIDATE_EMAIL ) ) {
-        exit( json_encode( array( 'success' => false, 'message' => "이메일 주소가 올바르지 않습니다." ) ) );
     }
 
     $mandrill = new Mandrill($_SERVER['MAIL_API_KEY']?: '');

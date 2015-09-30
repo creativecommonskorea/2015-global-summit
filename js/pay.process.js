@@ -153,9 +153,9 @@ function paymentProcess(frm) {
 
     params['buyer_postcode'] = _day15_launch + '-' + _day16_launch;
 
-    join_third = $('#join_third').val();
-    if ( join_third == 'true' ) {
-        params['join_third'] = join_third;
+    IsChecked = $('#join_third').is(":checked");
+    if ( IsChecked ) {
+        params['join_third'] = 'true';
     };
 
     if ( params['amount'] == 0 ) {
