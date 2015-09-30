@@ -57,8 +57,10 @@ try {
     }
 
     // 3일차 참가 여부 추가
-    if (!empty( $_POST["join_third"] ) && 'true' === $_POST["join_third"] ) {
-      $paidInfo->set('join_third', (boolean) $_POST["join_third"]);
+    if (!empty( $_POST['join_third'] ) && 'true' === $_POST['join_third'] ) {
+      $paidInfo->set('join_third', true);
+    } else {
+      $paidInfo->set('join_third', false);
     }
 
     $paidInfo->save();

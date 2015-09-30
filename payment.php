@@ -74,8 +74,10 @@ if (!empty( IMP_STORE_ID ) && !empty( IMP_API_KEY ) && !empty( IMP_API_SECRET ))
         $paidInfo->set('buyer_launch', $_POST["buyer_postcode"]);
 
         // 3일차 참가 여부 추가
-        if (!empty( $_POST["join_third"] ) && 'true' === $_POST["join_third"] ) {
-          $paidInfo->set('join_third', (boolean) $_POST["join_third"]);
+        if (!empty( $_POST['join_third'] ) && 'true' === $_POST['join_third'] ) {
+          $paidInfo->set('join_third', true);
+        } else {
+          $paidInfo->set('join_third', false);
         }
 
         $paidInfo->save();
