@@ -23,11 +23,11 @@ thumbnail: /images/news/news4.png
 또한 최근 저서인 "네트워크의 부-사회적 생산은 시장과 자유를 어떻게 바꾸는가"(2015 국문 / 2006영문)에서 벤클러 교수는 자발적인 참여와 협력을 바탕으로 이루어지는 '동료 생산(peer production)'의 방식이 가져오는 네트워크 경제체제의 변화를 살펴보고, 그 미래의 전망에 대해 고찰합니다.
 
 <p style="text-align: center;">
-  <a target="_blank" href="http://book.naver.com/bookdb/book_detail.nhn?bid=8922944"><img src="/images/news/wealth-of-networks.jpg" alt="네트워크의 부"></a>
+  <a target="_blank" href="http://book.naver.com/bookdb/book_detail.nhn?bid=8922944"><img src="/images/news/wealth-of-networks.jpg" alt="네트워크의 부" style="width: 200px;"></a>
 </p>
 
 <style>
 	p img {
-		width: auto !important;
+		max-width: 100%;
 	}
 </style>
