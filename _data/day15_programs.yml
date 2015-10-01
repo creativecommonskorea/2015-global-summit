@@ -60,8 +60,8 @@
       data-rel: 15-track1
     - title: "트랙2. 오픈비즈니스"
       detail: >
-        Photo Commons / Andy Yang_500px CEO <br>
         오픈 비즈니스의 성공 전략 / Paul Stacey_CC 글로벌 러닝 대표 <br>
+        Photo Commons / Andy Yang_500px CEO <br>
         공개된 CCL 음원의 비즈니스 모델 / 도희성_원트리즈뮤직 대표
       location: "중앙.세미나실"
       box: lightblue
@@ -89,9 +89,9 @@
       data-rel: 15-track3
     - title: "트랙4. DIY"
       detail: >
-        3D 프린터 기술의 진화 / Michael Weinberg_Shapeways 법률고문 <br>
+        오픈소스 인공위성 프로젝트 / 송호준_미디어 아티스트 <br>
         프로그래밍의 첫걸음 엔트리 / 김지현_엔트릭교육연구소 대표 <br>
-        오픈소스 인공위성 프로젝트 / 송호준_미디어 아티스트
+        3D 프린터 기술의 진화 / Michael Weinberg_Shapeways 법률고문
       location: "중앙박물관 세미나실"
       box: lightblue
       data-rel: 15-track4
