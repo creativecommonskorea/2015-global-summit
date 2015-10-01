@@ -32,11 +32,11 @@
         <div class="time">{{ box.time }}</div>
         <div class="time_detail">
             {% for s in box.sessions %}
-            <div class="sessions {{s.box}}">
+            <div class="sessions {{s.box}}"{% if s.data-rel %} data-rel="{{ s.data-rel }}"{% endif %}>
                 {% if s.location %}
                 <div class="location">{{ s.location }}</div>
                 {% endif %}
-                <div class="title"{% if s.data-rel %} data-rel="{{ s.data-rel }}"{% endif %}>{{ s.title }}</div>
+                <div class="title">{{ s.title }}</div>
                 {% if s.detail %}
                 <div class="detail">{{ s.detail }}</div>
                 {% endif %}

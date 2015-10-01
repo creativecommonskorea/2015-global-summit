@@ -30,15 +30,15 @@ layout: base
                 break;
         }
 
-        $('span.h2')
-                .each(function() {
-                    if ( $(this).attr('data-rel') )
-                        $(this).css('cursor', 'pointer');
-                })
-                .click(function(){
-                    if ( $(this).attr('data-rel') )
-                        location.href='/session/' + $(this).attr('data-rel') + '.html';
-                });
+        $('.timetable .corner_all')
+            .each(function() {
+                if ( $(this).attr('data-rel') )
+                    $(this).css('cursor', 'pointer');
+            })
+            .click(function(){
+                if ( $(this).attr('data-rel') )
+                    location.href='/session/' + $(this).attr('data-rel') + '.html';
+            });
 
     });
 
