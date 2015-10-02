@@ -77,7 +77,7 @@ try {
     }
 
     if ( strcmp($split_name[0], 'student') == 0 ) {
-        $joinType = '학생';
+        $joinType = '학생, 비영리단체';
     } elseif ( strcmp($split_name[0], 'ordinary') == 0 ) {
         $joinType = '일반';
     } else {
