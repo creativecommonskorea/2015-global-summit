@@ -109,7 +109,7 @@ if (!empty( IMP_STORE_ID ) && !empty( IMP_API_KEY ) && !empty( IMP_API_SECRET ))
       } elseif ( (int)$launch_arr[0]%150 == 2 ) {
           $launch_15 = '15일 점심 우거지탕';
       } elseif ( (int)$launch_arr[0]%150 == 3 ) {
-          $launch_15 = '15일 점심 두부 탕수육 도시락 (채식 도시락)';
+          $launch_15 = '15일 점심 유기농두부구이 (도시락)';
       } elseif ( (int)$launch_arr[0]%150 == 4 ) {
           $launch_15 = '15일 점심 허브 닭구이 도시락';
       } elseif ( (int)$launch_arr[0]%150 == 9 ) {
@@ -121,7 +121,7 @@ if (!empty( IMP_STORE_ID ) && !empty( IMP_API_KEY ) && !empty( IMP_API_SECRET ))
       } elseif ( (int)$launch_arr[1]%160 == 2 ) {
           $launch_16 = '16일 점심 우거지탕';
       } elseif ( (int)$launch_arr[1]%160 == 3 ) {
-          $launch_16 = '16일 점심 두부 탕수육 도시락 (채식 도시락)';
+          $launch_16 = '16일 점심 유기농두부구이 (도시락)';
       } elseif ( (int)$launch_arr[1]%160 == 4 ) {
           $launch_16 = '16일 점심 허브 닭구이 도시락';
       } elseif ( (int)$launch_arr[1]%160 == 9 ) {
