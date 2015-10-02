@@ -70,7 +70,17 @@
 - time: "14:10 ~14:50"
   sessions:
     - title: "CC 아트 쇼케이스"
+      detail: >
+        카툰(Khartoon)! / Khalid Albaih <br>
+        3D와 CC / Mahmoud Abu-Wardeh <br>
+        롱 로드 프로젝트 / Reda Zine
       location: "한글박물관 강당"
+      box: lightblue
+      data-rel: 15-art-showcase
+    - title: "CC 기술팀 - 로드맵과 더 리스트"
+      detail: >
+        CC 기술팀 로드맵과 더 리스트 / Matt Lee, Rob Myers
+      location: "한글박물관 강의실1"
       box: lightpurple
 
 - time: "15:00 ~15:30"
@@ -96,10 +106,17 @@
       box: lightblue
       data-rel: 15-track4
 
-    - title: "크리에이티브 워크숍"
+    - title: "트랙 5. 오픈글램"
       detail: >
-        Dance with ZeMarmot: Aryeom Han & Jehan Pages
+        박물관과 도서관을 리믹스하다 - 기관을 위한 개방과 협업 / Andres Guadamuz <br>
+        오픈글램과 CC / Kat Braybrooke
       location: "한글박물관 강당"
+      box: lightblue
+      data-rel: 15-track5
+    - title: "CC 기술팀 - 검색과 라이선스 선택기"
+      detail: >
+        CC 기술팀 - 검색과 라이선스 선택기 / Matt Lee, Rob Myers
+      location: "한글박물관 강의실1"
       box: lightpurple
 
 - time: "17:00 ~17:30"
