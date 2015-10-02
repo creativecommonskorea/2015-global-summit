@@ -61,7 +61,13 @@
   sessions:
     - title: "쇼케이스"
       detail: >
-        전세계의 공유 운동 사례
+        <b>전세계의 공유 운동 사례</b><br>
+        공유하고 또 공유하라 / 정진호_J비주얼스쿨 대표<br>
+        음악 정보가 필요하세요? 400만곡 정보를 공유합니다. / 류형규_매니아 DB<br>
+        오픈 거버먼트: 서울시의 사례를 중심으로 / 김기병_서울시 통계데이터담당관<br>
+        Open Access Korea / 국립중앙도서관<br>
+        Free Music Week / Jorge Gabriel Jimenez_CC Guatemala<br>
+        Luxi Island OER Summer Camp / Liu Ping_CC China Mainland
       location: "중앙박물관 대강당"
       box: lightpurple
       data-rel: 16-04
