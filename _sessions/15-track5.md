@@ -1,10 +1,10 @@
 ---
 layout: session
-title: 트랙 5. 오픈글램
+title: 오픈글램
 schedule: 10.15(목) 15:30~16:50
 location: 한글박물관 강당
-type: 강연
-box: whiteblue_light
+type: 워크숍
+box: whitepurple_light
 ---
 
 ### 박물관과 도서관을 리믹스하다 - 기관을 위한 개방과 협업

@@ -60,7 +60,7 @@
       data-rel: 15-track1
     - title: "트랙2. 오픈비즈니스"
       detail: >
-        오픈 비즈니스의 성공 전략 / Paul Stacey_CC 글로벌 러닝 대표 <br>
+        오픈 비즈니스의 성공 전략 / Paul Stacey_CC 글로벌 오픈 비즈니스 대표 <br>
         Photo Commons / Andy Yang_500px CEO <br>
         공개된 CCL 음원의 비즈니스 모델 / 도희성_원트리즈뮤직 대표
       location: "중앙.세미나실"
@@ -106,12 +106,12 @@
       box: lightblue
       data-rel: 15-track4
 
-    - title: "트랙 5. 오픈글램"
+    - title: "오픈글램"
       detail: >
         박물관과 도서관을 리믹스하다 - 기관을 위한 개방과 협업 / Andres Guadamuz <br>
         오픈글램과 CC / Kat Braybrooke
       location: "한글박물관 강당"
-      box: lightblue
+      box: lightpurple
       data-rel: 15-track5
     - title: "CC 기술팀 - 검색과 라이선스 선택기"
       detail: >
