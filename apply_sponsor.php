@@ -151,7 +151,7 @@ try {
     $mail_content .= '</table>';
     $mail_content .= '<br>';
     $mail_content .= '<span style="font-size:16px;font-weight: bold;">총 티켓 금액    '. $save_data['amount'] .'원</span><br/><br/>';
-    $mail_content .= '<span style="font-size:12px;color:#a0a0a0"> *참가 신청 내용 변경 및 취소는 10월 9일 금요일까지인 점 유의해주세요!</span><br/>';
+    $mail_content .= '<span style="font-size:12px;color:#a0a0a0"> *참가 신청 내용 변경 및 취소는 10월 12일 금요일까지인 점 유의해주세요!</span><br/>';
     $mail_content .= '</div>';
     $mail_content .= '<a href="https://summit.cckorea.org" target="_blank" style="color:#ef513c;">CC Global Summit 2015</a>는<br/>';
     $mail_content .= '80여 개국의 다양한 참가자들이<br/>';
@@ -170,7 +170,7 @@ try {
     $mail_content .= '조금 더 캐주얼한 분위기에서 써밋의 열기를 마음껏 발산하며 교류의 시간을 가져요~<br/><br/>';
     $mail_content .= '<a href="https://docs.google.com/forms/d/1dztoUzY0vG8rTMXpGLOzCEa0OQlepEUtU1e6XtYLHkg/viewform" target="_blank" style="color:#ef513c;">CC파티 신청하러 가기</a><br/><br/><br/>';
     $mail_content .= '여러분이 참여하는 써밋, 지금부터 시작합니다~!<br/><br/><br/>';
-    $mail_content .= '<a href="https://docs.google.com/forms/d/1TbYcyjGhpwpyDKQQJQIu-bqDQDTW0ACyqR8vUelW1yA/viewform?usp=send_form" target="_blank" style="color:#ef513c;">* 참가 신청 / 취소 / 변경은 10월 9일 금요일까지 받습니다. 이 점 유의해주세요!</a><br/>';
+    $mail_content .= '<a href="https://docs.google.com/forms/d/1TbYcyjGhpwpyDKQQJQIu-bqDQDTW0ACyqR8vUelW1yA/viewform?usp=send_form" target="_blank" style="color:#ef513c;">* 참가 신청 / 취소 / 변경은 10월 12일 금요일까지 받습니다. 이 점 유의해주세요!</a><br/>';
     $mail_content .= '</div>';
     $mail_content .= '</div>';
     $mail_content .= '<img src="https://summit.cckorea.org/images/paidmail_foot.png" alt="" style="width: 800px;"/>';
