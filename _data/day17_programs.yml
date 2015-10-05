@@ -22,14 +22,14 @@
       box: lightpurple
 
     - title: "오픈디자인"
-      location: "카카오존"
+      location: "603호"
       detail: >
         디자인의 미래와 CC / Jane Park
         3D 프린팅과 저작권 / Mahmoud Abu-Wardeh, Michael Weinberg
       box: lightorange
 
     - title: "커뮤니티"
-      location: "아이디어빌리지"
+      location: "604호"
       detail: >
         Affiliates 정책을 재정비하다 / John Weitzmann
       box: lightorange
@@ -47,13 +47,13 @@
       box: lightorange
 
     - title: "커뮤니티"
-      location: "카카오존"
+      location: "603호"
       detail: >
         교육기관의 OER 정책 도입 촉진을 위한 전략 / Meredith Jacobs <br/>
       box: lightpurple
 
     - title: "CCL"
-      location: "아이디어빌리지"
+      location: "604호"
       detail: >
         블록체인 기술을 활용한 공유저작물의 활성화 / Primavera De Filippi <br/>
         Rightsstatements.org: 유로피아나와 CC의 호환가능한 저작권 라이선스 표준 정립 / Diane Peters, Paul Keller, Maarten Zeinstra
@@ -70,15 +70,9 @@
       detail: >
         Affiliates 2.0: CC Affiliate 네트워크의 미래 / Alek Tarkowski, Paul Keller
       box: lightorange
-    - title: "OER"
-      location: "카카오존"
-      detail: >
-        교사를 위한 OER 툴킷 개발 / Anna Stokowska, Kamil Åšliwowski, Alek Tarkowski <br>
-        OER 사례발표 / Mostafa Azad Kamal, Bekka Kahn, George Abdelnour <br>
-        스쿨오브오픈 프로젝트, 제1막을 마무리하며 / Simeon Oriko
-      box: lightblue
+
     - title: "디자인과 CCL"
-      location: "아이디어빌리지"
+      location: "604호"
       detail: >
         디자인의 미래와 오픈 하드웨어 라이선스 / Thomas Margoni, McCoy Smith,  Diane Peters
       box: lightorange
