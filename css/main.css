@@ -569,7 +569,7 @@ img {
       margin-right: 50px; }
       @media screen and (max-width: 1000px) {
         .partner_wrap .sponsor_logos .logos {
-          width: 40%;
+          width: 100%;
           margin: 0 0 32px 0; }
           .partner_wrap .sponsor_logos .logos.othersize {
             width: 70%; }
