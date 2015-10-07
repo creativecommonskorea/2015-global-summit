@@ -1,6 +1,6 @@
 ---
 layout: session
-title: 트랙 1. 오픈 지식
+title: 트랙 1. 오픈 콘텐츠
 schedule: "10.15(목) 13:30~14:50"
 location: "국립중앙박물관 대강당"
 type: "강연"
