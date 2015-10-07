@@ -38,7 +38,7 @@
                 {% endif %}
                 <div class="title">{{ s.title }}</div>
                 {% if s.detail %}
-                <div class="detail">{{ s.detail }}</div>
+                <div class="detail">{{ s.detail | markdownify }}</div>
                 {% endif %}
             </div>
             {% endfor %}
