@@ -12,7 +12,7 @@
       location: "중앙박물관 대강당"
       box: lightblue
 
-- time: "10:10 ~10:30"
+- time: "10:10 ~10:15"
   sessions:
     - title: "축사"
       detail: >
@@ -20,7 +20,7 @@
       location: "중앙박물관 대강당"
       box: lightblue
 
-- time: "10:30 ~11:00"
+- time: "10:15 ~10:45"
   sessions:
     - title: "크리에이티브 커먼즈를 재정의하다"
       detail: >
@@ -28,7 +28,7 @@
       location: "중앙박물관 대강당"
       box: lightblue
 
-- time: "11:00 ~11:30"
+- time: "10:45 ~11:30"
   sessions:
     - title: "공유와 자본주의의 미래"
       detail: >
