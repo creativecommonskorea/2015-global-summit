@@ -92,7 +92,7 @@ try {
     } elseif ( (int)$launch_arr[0]%150 == 2 ) {
         $launch_15 = '15일 점심 우거지탕';
     } elseif ( (int)$launch_arr[0]%150 == 3 ) {
-        $launch_15 = '15일 점심 유기농두부구이 (도시락)';
+        $launch_15 = '15일 점심 유기농 두부구이 (도시락)';
     } elseif ( (int)$launch_arr[0]%150 == 9 ) {
         $launch_15 = '15일 점심 식사 안함';
     }
@@ -102,10 +102,21 @@ try {
     } elseif ( (int)$launch_arr[1]%160 == 2 ) {
         $launch_16 = '16일 점심 우거지탕';
     } elseif ( (int)$launch_arr[1]%160 == 3 ) {
-        $launch_16 = '16일 점심 유기농두부구이 (도시락)';
+        $launch_16 = '16일 점심 유기농 두부구이 (도시락)';
     } elseif ( (int)$launch_arr[1]%160 == 9 ) {
         $launch_15 = '16일 점심 식사 안함';
     }
+
+    $results = array(
+      'name' => $save_data['buyer_name'],
+      'email' => $save_data['buyer_email'],
+      'tel' => $save_data['buyer_tel'],
+      'organize' => $save_data['buyer_addr'],
+      'joinDate' => $joinDate,
+      'joinType' => $joinType,
+      'launch' => $launch_15 . ' ' . $launch_16,
+      'price' => $save_data['amount'],
+    );
 
     $mandrill = new Mandrill($_SERVER['MAIL_API_KEY']?: '');
 
@@ -219,7 +230,7 @@ try {
         throw $e;
     }
 
-    exit( json_encode( array( 'success' => true ) ) );
+    exit( json_encode( array( 'success' => true, 'results' => $results ) ) );
 } catch (ParseException $ex) {
     exit( json_encode( array( 'success' => false, 'message' => "등록 정보 저장 시 에러가 발생했습니다.", 'detail' => $ex->getMessage() ) ) );
 } catch (Exception $e) {

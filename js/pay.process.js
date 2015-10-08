@@ -164,10 +164,13 @@ function paymentProcess(frm) {
             url: '/apply_sponsor.php',
             data: params,
             dataType: 'json',
-            success: function(data){
+            success: function(data) {
                 if ( data.success ) {
                     alert('등록이 완료되었습니다.');
-                    move_apply_complete(params);
+                    var template = $('#template').html();
+                    Mustache.parse(template);   // optional, speeds up future uses
+                    var rendered = Mustache.render(template, data.results);
+                    $('#container').html(rendered);
                 } else {
                     alert(data.message);
                 }
@@ -194,7 +197,10 @@ function paymentProcess(frm) {
                     that.close(); //팝업창 닫기
                     if (result.success) { //xhr success(payment.php참조)
                         alert('결제가 완료되었습니다.');
-                        move_apply_complete(params);
+                        var template = $('#template').html();
+                        Mustache.parse(template);   // optional, speeds up future uses
+                        var rendered = Mustache.render(template, result.results);
+                        $('#container').html(rendered);
                     } else {
                         alert(result.message);
                     }

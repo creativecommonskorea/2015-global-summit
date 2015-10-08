@@ -6,6 +6,7 @@ layout: base
 <script src="/js/additional-methods.min.js"></script>
 <script src="/js/pay.process.js?v=1509151651"></script>
 <script src="//www.parsecdn.com/js/parse-1.6.0.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.3/mustache.min.js"></script>
 <script>
     $(document).ready(function(){
         // initialize value
@@ -19,9 +20,9 @@ layout: base
             else
                 $('#agreement_content').show();
         });
-
     });
 </script>
+<div id="container">
 <div class="wrap attend_wrap">
     <section>
         <h1 class="title">티켓정보</h1>
@@ -258,3 +259,87 @@ layout: base
         </div>
     </section>
 </div>
+</div>
+
+{% raw %}
+<script id="template" type="x-tmpl-mustache">
+    <div class="wrap apply_complete">
+        <section>
+            <div class="complete_image_text">
+                <img src="/images/other/pay_checked.png" alt=""/>
+                <div class="message">결제가 완료되었습니다.</div>
+            </div>
+            <div class="complete_contents">
+                환영합니다! <br/><br/>
+                <span id="user_name">{{name}}</span>님의 CC Global Summit 2015 참가신청이 성공적으로 완료되었습니다. <br/>
+                다음의 참가 신청 내용을 확인해주시고, <br/>
+                참가 당일 <span style="color:#ef513c;">국립중앙박물관 대강당 앞 로비</span>에서 이름표를 받아가세요! <br/>
+
+                <div style="border-bottom:1px solid #a0a0a0; border-top:1px solid #a0a0a0; margin: 20px 0; padding: 30px;">
+                    <table style="font-size: 13px;">
+                        <tr>
+                            <td>참가자명</td>
+                            <td id="name">{{name}}</td>
+                        </tr>
+                        <tr>
+                            <td>이메일</td>
+                            <td id="email">{{email}}</td>
+                        </tr>
+                        <tr>
+                            <td>연락처</td>
+                            <td id="tel">{{tel}}</td>
+                        </tr>
+                        <tr>
+                            <td>소속</td>
+                            <td id="organize">{{organize}}</td>
+                        </tr>
+                        <tr>
+                            <td>참가날짜</td>
+                            <td id="joinDate">{{joinDate}}</td>
+                        </tr>
+                        <tr>
+                            <td>참가유형</td>
+                            <td id="joinType">{{joinType}}</td>
+                        </tr>
+                        <tr>
+                            <td>점심식사</td>
+                            <td id="launch">{{launch}}</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <span style="font-size:16px;font-weight: bold;">총 티켓 금액    <span id="price">{{price}}</span>원</span><br/><br/>
+                    <span style="font-size:12px;color:#a0a0a0"> *온라인 참가 신청, 내용 변경 및 취소는 10월 12일 금요일까지이며,<br/>10월 12일 금요일 이후의 참가신청은 10월 15, 16일 국립중앙박물관 현장에서 가능합니다.<br/>이점 유의해주세요!</span><br/>
+                </div>
+                <a href="https://summit.cckorea.org" target="_blank" style="color:#ef513c;">CC Global Summit 2015</a>는<br class="nobr"/>
+                80여 개국의 다양한 참가자들이<br class="nobr"/>
+                여러분과 공통의 관심사를 가지고 있는 사람들과 생각을 나눌 수 있는 기회를 만들고자,
+                Slack에 팀을 만들어 참가자 간의 활발한 교류를 기대하고 있습니다.<br/><br/>
+                여러분도 슬랙의 CC Global Summit 2015팀에 가입하여<br class="nobr"/>
+                써밋 행사가 지난 후에도 이어질 수 있는 네트워킹에 참여해 보세요!<br/><br/>
+                <a href="http://blog.hivearena.com/archives/3396" target="_blank" style="color:#ef513c;">Slack을 어떻게 이용할 수
+                    있는지 살펴볼까요?</a><br/>
+                <a href="https://ccglobalsummit2015.herokuapp.com/" target="_blank" style="color:#ef513c;">슬랙 CC Global
+                    Summit 2015팀에 가입하러 가기</a><br/><br/><br/>
+                10월 16일 금요일 저녁 5시<br/>
+                전길남 박사님의 키노트 강연 후<br class="nobr"/>
+                40분간 진행될 전길남 박사님, Yochai Benkler(요하이 벤클러)의 대담에<br class="nobr"/>
+                여러분께서 두분께 하고 싶은 질문을 미리 등록할 수 있습니다.<br/><br/>
+                <a href="https://www.facebook.com/events/1455321544773645/" target="_blank" style="color:#ef513c;">질문 등록하러
+                    가기</a><br/><br/><br/>
+                써밋 기간 중 16일 금요일 저녁엔 성수동 SAI에서 CC파티가 열립니다!<br class="nobr"/>
+                조금 더 캐주얼한 분위기에서 써밋의 열기를 마음껏 발산하며 교류의 시간을 가져요~<br/><br/>
+                <a href="https://docs.google.com/forms/d/1dztoUzY0vG8rTMXpGLOzCEa0OQlepEUtU1e6XtYLHkg/viewform"
+                   target="_blank" style="color:#ef513c;">CC파티 신청하러 가기</a><br/><br/><br/>
+                여러분이 참여하는 써밋, 지금부터 시작합니다~!<br/><br/><br/>
+                <a href="https://docs.google.com/forms/d/1TbYcyjGhpwpyDKQQJQIu-bqDQDTW0ACyqR8vUelW1yA/viewform?usp=send_form"
+                   target="_blank" style="color:#ef513c;">* 온라인 참가 신청 / 취소 / 변경은 10월 12일 금요일까지이며,<br/>10월 12일 금요일 이후의 참가신청은 10월 15, 16일 국립중앙박물관 현장에서 가능합니다.<br/>이 점 유의해주세요!</a><br/>
+            </div>
+            <div class="buttons">
+                <button type="button" onclick="location.href='https://docs.google.com/forms/d/1TbYcyjGhpwpyDKQQJQIu-bqDQDTW0ACyqR8vUelW1yA/viewform?usp=send_form'">신청내용 변경하기</button>
+                <button type="button" onclick="location.href='/index.html'">메인 페이지로 이동</button>
+            </div>
+        </section>
+    </div>
+</script>
+{% endraw %}
+

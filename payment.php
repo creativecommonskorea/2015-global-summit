@@ -52,35 +52,35 @@ if (!empty( IMP_STORE_ID ) && !empty( IMP_API_KEY ) && !empty( IMP_API_SECRET ))
   header('Content-Type: application/json');
   if ( $result->success ) {
 
-        ParseClient::initialize( $_SERVER['P_APP_ID']?: '', $_SERVER['P_REST_KEY']?: '', $_SERVER['P_MASTER_KEY']?: '' );
+      ParseClient::initialize( $_SERVER['P_APP_ID']?: '', $_SERVER['P_REST_KEY']?: '', $_SERVER['P_MASTER_KEY']?: '' );
 
-        // 파스에 결제 정보를 저장합니다.
-        $paidInfo = ParseObject::create("PaidInfo");
-        $objectId = $paidInfo->getObjectId();
-        $php = $paidInfo->get("elephant");
+      // 파스에 결제 정보를 저장합니다.
+      $paidInfo = ParseObject::create("PaidInfo");
+      $objectId = $paidInfo->getObjectId();
+      $php = $paidInfo->get("elephant");
 
-        foreach($api_payload as $key => $value) {
-            if ( !in_array($key, ['token', 'vat', 'card_number', 'expiry', 'birth', 'pwd_2digit']) ) {
-                if ( strcmp($key, 'amount') == 0 ) {
-                    $paidInfo->set($key, (int)$value);
-                } else {
-                    $paidInfo->set($key, $value);
-                }
-            }
-        }
+      foreach($api_payload as $key => $value) {
+          if ( !in_array($key, ['token', 'vat', 'card_number', 'expiry', 'birth', 'pwd_2digit']) ) {
+              if ( strcmp($key, 'amount') == 0 ) {
+                  $paidInfo->set($key, (int)$value);
+              } else {
+                  $paidInfo->set($key, $value);
+              }
+          }
+      }
 
-        $paidInfo->set('buyer_eng_name', $_POST["buyer_eng_name"]);
-        $paidInfo->set('buyer_addr', $_POST["buyer_addr"]);
-        $paidInfo->set('buyer_launch', $_POST["buyer_postcode"]);
+      $paidInfo->set('buyer_eng_name', $_POST["buyer_eng_name"]);
+      $paidInfo->set('buyer_addr', $_POST["buyer_addr"]);
+      $paidInfo->set('buyer_launch', $_POST["buyer_postcode"]);
 
-        // 3일차 참가 여부 추가
-        if (!empty( $_POST['join_third'] ) && 'true' === $_POST['join_third'] ) {
-          $paidInfo->set('join_third', true);
-        } else {
-          $paidInfo->set('join_third', false);
-        }
+      // 3일차 참가 여부 추가
+      if (!empty( $_POST['join_third'] ) && 'true' === $_POST['join_third'] ) {
+        $paidInfo->set('join_third', true);
+      } else {
+        $paidInfo->set('join_third', false);
+      }
 
-        $paidInfo->save();
+      $paidInfo->save();
 
       $split_name = explode('_', $api_payload['name']);
       $joinType = '';
@@ -123,6 +123,17 @@ if (!empty( IMP_STORE_ID ) && !empty( IMP_API_KEY ) && !empty( IMP_API_SECRET ))
       } elseif ( (int)$launch_arr[1]%160 == 9 ) {
           $launch_15 = '16일 점심 식사 안함';
       }
+
+      $results = array(
+        'name' => $api_payload['buyer_name'],
+        'email' => $api_payload['buyer_email'],
+        'tel' => $api_payload['buyer_tel'],
+        'organize' => $_POST['buyer_addr'],
+        'joinDate' => $joinDate,
+        'joinType' => $joinType,
+        'launch' => $launch_15 . ' ' . $launch_16,
+        'price' => $api_payload['amount'],
+      );
 
       $mandrill = new Mandrill($_SERVER['MAIL_API_KEY']?: '');
 
@@ -237,7 +248,7 @@ if (!empty( IMP_STORE_ID ) && !empty( IMP_API_KEY ) && !empty( IMP_API_SECRET ))
       }
 
 
-      exit( json_encode( array( 'success' => true ) ) );
+      exit( json_encode( array( 'success' => true, 'results' => $results ) ) );
   } else {
       exit( json_encode( array( 'success' => false, 'message' => sprintf("카드결제실패 : [%s]%s", $result->error['code'], $result->error['message'] ) ) ) );
   }
