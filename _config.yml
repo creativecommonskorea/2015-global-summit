@@ -16,6 +16,8 @@ encoding: UTF-8
 exclude: ['*.bak']
 sass:
   style: compressed
+gems:
+  - jekyll-redirect-from
 
 # collections
 collections:
