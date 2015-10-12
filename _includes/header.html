@@ -138,9 +138,6 @@
             <a href="/exhibition.html">전시</a><br/>
             <a href="/keywords.html">키워드</a>
         </div>
-        <div class="mobile_b_menu clickable" id="attend">
-            <a href="/register.html">참가신청</a>
-        </div>
         <div class="mobile_b_menu"><a href="/sponsors.html">후원사</a></div>
         {% for post in site.posts limit:1 %}
         <div class="mobile_b_menu"><a href="{{ post.url | prepend: site.baseurl }}">소식</a></div>
@@ -160,7 +157,6 @@
                 <li data-target="submenu_2" id="menu_2">
                     <a href="/programs.html">프로그램</a>
                 </li>
-                <li><a href="/register.html">참가신청</a></li>
                 <li><a href="/sponsors.html">후원사</a></li>
                 {% for post in site.posts limit:1 %}
                 <li><a href="{{ post.url | prepend: site.baseurl }}">소식</a></li>
