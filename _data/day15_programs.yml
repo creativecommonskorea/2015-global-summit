@@ -77,11 +77,13 @@
       location: "한글박물관 강당"
       box: lightblue
       data-rel: 15-art-showcase
+      lang: eng
     - title: "CC 기술팀 - 로드맵과 더 리스트"
       detail: >
-        CC 기술팀 로드맵과 더 리스트 / Matt Lee, Rob Myers
+        CC 기술팀 로드맵과 더 리스트 / Ryan Merkley, Rob Myers
       location: "한글박물관 강의실1"
       box: lightpurple
+      lang: eng
 
 - time: "15:00 ~15:30"
   sessions:
@@ -105,7 +107,6 @@
       location: "중앙박물관 강의실1"
       box: lightblue
       data-rel: 15-track4
-
     - title: "오픈글램"
       detail: >
         박물관과 도서관을 리믹스하다 - 기관을 위한 개방과 협업 / Andres Guadamuz <br>
@@ -113,11 +114,13 @@
       location: "한글박물관 강당"
       box: lightpurple
       data-rel: 15-track5
+      lang: eng
     - title: "CC 기술팀 - 검색과 라이선스 선택기"
       detail: >
-        CC 기술팀 - 검색과 라이선스 선택기 / Matt Lee, Rob Myers
+        CC 기술팀 - 검색과 라이선스 선택기 / Ryan Merkley, Rob Myers
       location: "한글박물관 강의실1"
       box: lightpurple
+      lang: eng
 
 - time: "17:00 ~17:30"
   sessions:
