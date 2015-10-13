@@ -132,6 +132,9 @@
             프로그램
             <div class="arrow"><img src="/images/base/arrow_down.png" alt=""/></div>
         </div>
+        <div class="mobile_b_menu clickable" id="attend">
+            <a href="/register.html">참가신청</a>
+        </div>
         <div class="mobile_s_menu programs_sub">
             <a href="/programs_mobile.html">전체 프로그램</a><br/>
             <a href="/speakers.html">연사소개</a><br/>
@@ -157,10 +160,12 @@
                 <li data-target="submenu_2" id="menu_2">
                     <a href="/programs.html">프로그램</a>
                 </li>
+                <li><a href="/register.html">참가신청</a></li>
                 <li><a href="/sponsors.html">후원사</a></li>
                 {% for post in site.posts limit:1 %}
                 <li><a href="{{ post.url | prepend: site.baseurl }}">소식</a></li>
                 {% endfor %}
+
                 <!--
                 <li><a href="http://campaign.cckorea.org/" target="_blank">CC 캠페인</a></li>
                 -->
