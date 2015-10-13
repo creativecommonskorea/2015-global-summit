@@ -145,6 +145,7 @@
         {% for post in site.posts limit:1 %}
         <div class="mobile_b_menu"><a href="{{ post.url | prepend: site.baseurl }}">소식</a></div>
         {% endfor %}
+        <div class="mobile_b_menu live"><a href="/live.html">LIVE!</a></div>
     </div>
 </div>
 <div class="wrap header_wrap">
@@ -165,6 +166,7 @@
                 {% for post in site.posts limit:1 %}
                 <li><a href="{{ post.url | prepend: site.baseurl }}">소식</a></li>
                 {% endfor %}
+                <li class="live"><a href="/live.html">LIVE!</a></li>
 
                 <!--
                 <li><a href="http://campaign.cckorea.org/" target="_blank">CC 캠페인</a></li>
@@ -193,3 +195,17 @@
         </div>
     </div>
 </div>
+<style>
+.main_menu .menus ul li.live a,
+.mobile_menu_wrap .mobile_menu_back .mobile_b_menu.live a {
+    font-size: 1.125em;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #ef513c;
+    padding: 0 15px;
+    color: #fff;
+    border: 0;
+    display: inline-block;
+}
+</style>
