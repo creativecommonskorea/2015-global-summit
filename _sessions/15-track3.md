@@ -7,7 +7,7 @@ type: "강연"
 box: whiteblue_light
 ---
 
-### 정부3.0과 공공데이터 개방 및 활용
+### Open Data Strategy & Portal of Korea Govt.
 
 최문실_한국정보화진흥원 수석연구원
 
