@@ -11,6 +11,7 @@
         서정욱_CC Korea 이사장
       location: "중앙박물관 대강당"
       box: lightblue
+      lang: ke
 
 - time: "10:10 ~10:15"
   sessions:
@@ -19,6 +20,7 @@
         Private Internet Access
       location: "중앙박물관 대강당"
       box: lightblue
+      lang: ke
 
 - time: "10:15 ~10:50"
   sessions:
@@ -27,6 +29,7 @@
         윤종수_CC Korea 프로젝트 리드
       location: "중앙박물관 대강당"
       box: lightblue
+      lang: ke
 
 - time: "10:50 ~11:30"
   sessions:
@@ -35,6 +38,7 @@
         Yochai Benkler_하버드 로스쿨 교수
       location: "중앙박물관 대강당"
       box: lightblue
+      lang: ke
 
 - time: "11:30 ~12:00"
   sessions:
@@ -43,6 +47,7 @@
         윤종수, Yochai Benkler, Ryan Merkley
       location: "중앙박물관 대강당"
       box: lightorange
+      lang: ke
 
 - time: "12:00 ~13:30"
   sessions:
@@ -58,6 +63,7 @@
       location: "중앙박물관 대강당"
       box: lightblue
       data-rel: 15-track1
+      lang: ke
     - title: "트랙2. 오픈비즈니스"
       detail: >
         오픈 비즈니스의 성공 전략 - 비즈니스를 위한 CCL 가이드 / Fátima São Simão, Teresa Nobre_CC 포르투갈 <br>
@@ -67,6 +73,7 @@
       location: "중앙박물관 강의실1"
       box: lightblue
       data-rel: 15-track2
+      lang: ke
 
 - time: "14:10 ~14:50"
   sessions:
@@ -76,13 +83,13 @@
       location: "한글박물관 강당"
       box: lightblue
       data-rel: 15-art-showcase
-      lang: eng
+      lang: e
     - title: "CC 기술팀 - 로드맵과 더 리스트"
       detail: >
         CC 기술팀 로드맵과 더 리스트 / Ryan Merkley, Rob Myers
       location: "한글박물관 강의실1"
       box: lightpurple
-      lang: eng
+      lang: e
 
 - time: "15:00 ~15:30"
   sessions:
@@ -92,12 +99,13 @@
   sessions:
     - title: "트랙3. 오픈데이터"
       detail: >
-        정부3.0과 공공데이터 개방 및 활용 / 강동석_한국정보화진흥원<br>
+        정부3.0과 공공데이터 개방 및 활용 / 최문실_한국정보화진흥원 수석연구원<br>
         학술 데이터의 공유 플랫폼: Datanest / 김선태_한국과학기술정보연구원<br>
         IoT와 오픈데이터 / Naeema Zarif_CC 아랍 지역 코디네이터
       location: "중앙박물관 대강당"
       box: lightblue
       data-rel: 15-track3
+      lang: ke
     - title: "트랙4. DIY"
       detail: >
         오픈소스 인공위성 프로젝트 / 송호준_미디어 아티스트 <br>
@@ -106,19 +114,20 @@
       location: "중앙박물관 강의실1"
       box: lightblue
       data-rel: 15-track4
+      lang: ke
     - title: "오픈글램"
       detail: >
         박물관과 도서관을 리믹스하다 - 기관을 위한 개방과 협업 / Andres Guadamuz <br>
       location: "한글박물관 강당"
       box: lightpurple
       data-rel: 15-track5
-      lang: eng
+      lang: e
     - title: "CC 기술팀 - 검색과 라이선스 선택기"
       detail: >
         CC 기술팀 - 검색과 라이선스 선택기 / Ryan Merkley, Rob Myers
       location: "한글박물관 강의실1"
       box: lightpurple
-      lang: eng
+      lang: e
 
 - time: "17:00 ~17:30"
   sessions:
@@ -127,6 +136,7 @@
         노소영_아트센터나비 관장
       location: "중앙박물관 대강당"
       box: lightblue
+      lang: ke
 
 - time: "17:30 ~18:00"
   sessions:
@@ -135,3 +145,4 @@
         Lila Tretikov_위키미디아 재단 사무국장
       location: "중앙박물관 대강당"
       box: lightblue
+      lang: ke
