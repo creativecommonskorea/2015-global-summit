@@ -2,7 +2,7 @@
 layout: session
 title: 트랙 2. 오픈 비즈니스
 schedule: "10.15(목) 13:30~14:50"
-location: "국립중앙박물관 대강당"
+location: "국립중앙박물관 강의실1"
 type: "강연"
 box: whiteblue_light
 ---
@@ -14,7 +14,7 @@ Fátima São Simão, Teresa Nobre_CC 포르투갈
 CCL 콘텐츠 등 공유저작물을 활용한 비즈니스 가능성에 대한 관심이 높아지고 있다. 최근 시작한 CC의 오픈 비즈니스 모델 프로젝트를 소개하고, 공유가 어떤 경제적 이익을 주는지, 저작물의 공유가 기업과 사회 모두에 어떤 혜택을 가져올 수 있는지 실질적 사례들을 통해 보여준다.
 
 
-### 비즈니스를 위한 효과적인 콘텐츠 공유 전략 
+### 비즈니스를 위한 효과적인 콘텐츠 공유 전략
 
 Sebastiaan ter Burg_Circular Content 창업자
 
