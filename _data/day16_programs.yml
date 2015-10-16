@@ -11,6 +11,7 @@
         Wikihow
       location: "중앙박물관 대강당"
       box: lightblue
+      lang: ke
 
 - time: "10:20 ~11:00"
   sessions:
@@ -19,6 +20,7 @@
         Ryan Merkley_CC CEO
       location: "중앙박물관 대강당"
       box: lightblue
+      lang: ke
 
 - time: "11:00 ~12:30"
   sessions:
@@ -32,19 +34,21 @@
     - title: "공유도시"
       detail: >
         도시, 공유의 가치를 재발견하다 <br>
-        공유 서울의 3년간의 시도, 그리고 미래 / 전효관_서울시 사회혁신 기획관 <br>
+        공유 서울의 3년간의 시도, 그리고 미래 / 전효관_서울시 서울혁신기획관 <br>
         암스테르담의 공유도시 움직임 / Pieter Bas van de Glind_Share NL <br>
         공유도시 파트너쉽 사례 / 이상현_에어비앤비 코리아 정책 담당 <br>
-        도시의 주차 문제 해결을 위한 협력 / 김동현_모두의 주차장
+        민관협력을 통한 주차공유, 그 성과와 과제 / 김동현_모두의주차장 대표
       location: "중앙박물관 대강당"
       box: lightorange
       data-rel: 16-02
+      lang: ke
     - title: "공정이용"
       detail: >
         공정이용 / 윤종수
       location: "중앙박물관 소강당"
       box: lightblue
       data-rel: 16-01
+      lang: ke
     - title: "OER"
       detail: >
         OER - 대안에서 주류로! / Cable Green_CC 글로벌 OER 디렉터 <br>
@@ -52,14 +56,21 @@
       location: "중앙박물관 강의실 1"
       box: lightpurple
       data-rel: 16-03
+      lang: e
 
 - time: "12:30 ~14:00"
   sessions:
+    - title: "전세계의 공유 운동 사례 1"
+      location: "중앙박물관 강의실 1"
+      detail: >
+        12:30 ~13:00
+      box: lightpurple
+      lang: e
     - title: "점심 + 포스터 세션 + 라이트닝토크"
 
 - time: "14:00 ~15:00"
   sessions:
-    - title: "쇼케이스"
+    - title: "전세계의 공유 운동 사례 2"
       detail: >
         <b>전세계의 공유 운동 사례</b><br>
         공유하고 또 공유하라 / 정진호_J비주얼스쿨 대표<br>
@@ -71,6 +82,7 @@
       location: "중앙박물관 대강당"
       box: lightpurple
       data-rel: 16-04
+      lang: ke
 
     - title: "한국저작권위원회 창조자원화 포럼"
       location: "중앙박물관 소강당"
@@ -81,6 +93,7 @@
         (14:55 ~ 15:15 휴식)
       box: lightorange
       data-rel: 16-05
+      lang: ke
 
     - title: "저작권개선"
       location: "중앙박물관 강의실 1"
@@ -88,6 +101,7 @@
         저작권 개혁을 위한 효과적 방안의 모색 / Parker Higgins
       box: lightpurple
       data-rel: 16-06
+      lang: e
 
     - title: "CCL 번역"
       location: "한글박물관 강당"
@@ -95,6 +109,7 @@
         CCL 번역, 지난 1년의 성과와 교훈 / Diane Peters_CC 법률 고문
       box: lightpurple
       data-rel: 16-07
+      lang: e
 
     - title: "오픈글램"
       location: "한글박물관 강의실1"
@@ -102,6 +117,14 @@
         기관의 효과적인 오픈라이선스 정책 도입 / Klaudia Grabowska
       box: lightpurple
       data-rel: 16-08
+      lang: e
+
+    - title: "전세계의 공유 운동 사례 3"
+      location: "한글박물관 강의실2"
+      detail: >
+
+      box: lightpurple
+      lang: e
 
 - time: "15:00 ~15:30"
   sessions:
@@ -117,18 +140,20 @@
         스쿨 오브 오픈 프로젝트, 제1막을 마무리하며 / Simeon Oriko
       box: lightpurple
       data-rel: 16-09
+      lang: ke
 
     - title: "한국저작권위원회 창조자원화 포럼"
       location: "중앙박물관 소강당"
       detail: >
         o 2015년 공유저작물 창조자원화 사업 소개 / 정재곤 저작권정보센터장 <br>
         o 국내 공유저작물 활용사례 / 김용호 차장(NAVER) <br>
-        o 해외 공유저작물 관리기관과의 저작물 공유방안 / 김규환 교수 <br>
-        o 공유저작물 이용활성화를 위한 기술적 개선방안 / 이철남 교수 <br>
+        o 해외 공유저작물 관리기관과의 저작물 공유방안 / 이철남 교수 <br>
+        o 공유저작물 이용활성화를 위한 기술적 개선방안 / 김종원 교수 <br>
         o 민간 자율등록 저작물의 권리 처리 방안 / 정진근 교수 <br>
         o 공공저작물 이용활성화 정책 개선방향 / 이해완 교수
       box: lightorange
       data-rel: 16-05
+      lang: ke
 
     - title: "오픈액세스"
       location: "중앙박물관 강의실 1"
@@ -137,6 +162,7 @@
         오픈액세스 버튼 프로젝트 / Maarten Zeinstra, Paul Keller, Primavera De Filippi
       box: lightpurple
       data-rel: 16-11
+      lang: e
 
     - title: "CCL과 오픈라이선스"
       location: "한글박물관 강당"
@@ -145,6 +171,7 @@
         온라인 플랫폼을 위한 CCL 가이드라인 / Sarah Pearson
       box: lightblue
       data-rel: 16-12
+      lang: e
 
     - title: "저작권 개혁"
       location: "한글박물관 강의실1"
@@ -152,13 +179,15 @@
         EFF와 CC가 함께 고민하는 저작권 개혁 운동 / Maira Sutton_전자프론티어재단(EFF)
       box: lightpurple
       data-rel: 16-13
+      lang: e
 
-    - title: "오픈데이터"
-      location: "한글박물관 강의실2"
-      detail: >
-        데이터 공유가 가져온 기적 - 네팔 지진의 사례 / Heather Leson
-      box: lightblue
-      data-rel: 16-10
+    # - title: "오픈데이터"
+    #   location: "한글박물관 강의실2"
+    #   detail: >
+    #     데이터 공유가 가져온 기적 - 네팔 지진의 사례 / Heather Leson
+    #   box: lightblue
+    #   data-rel: 16-10
+    #   lang: e
 
     # - title: "오픈커뮤니티"
     #   location: "한글박물관 강의실2"
@@ -173,6 +202,7 @@
       location: "중앙박물관 대강당"
       detail: 전길남
       box: lightblue
+      lang: ke
 
 - time: "17:20 ~18:00"
   sessions:
@@ -181,6 +211,7 @@
       detail: >
         전길남, Yochai Benkler
       box: lightorange
+      lang: ke
 
 - time: "20:00 ~22:00"
   sessions:

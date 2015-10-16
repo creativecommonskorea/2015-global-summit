@@ -44,6 +44,7 @@
     다양한 정부를 위한 영상 및 디지털 전략 컨설팅, 강연 등을 통해 오픈문화와 크리에티브 커먼즈 확산에 힘쓰고 있다.(사진: CC-BY @Naeema Zarif)
 
 - name: Michael Weinberg
+  image: images/speaker/sp_michael_weinberg.png
   organize: Shapeways 법률고문
   describe: >
     공공기술과 공공지식에 관해 법률고문을 해왔으며, 3D 프린팅 저작권에 대한 제안적 보고서를 쓴 바 있다.
@@ -89,3 +90,10 @@
   organize: CC KOREA 이사장, 서울대학교 의과대학 교수
   describe: >
     연구자와 편집인의 입장에서 학술정보의 오픈액세스 활동을 하고 있다. 2005년부터 WHO 서태평양지역 의학 인덱스를 통하여 지역 특성에 맞는 의학술정보를 모으고 색인하여 보급하는 활동을 하고 있다.
+
+- name: 김동현
+  image: images/speaker/sp_donghyun_kim.png
+  organize: 모두의주차장 대표
+  describe: >
+    공유가 도시의 주차문제를 완화할 수 있는 가장 효율적인 방안이라는 확신하에 '모두의주차장'을 개발, 운영 중이며 현재 20여개 공공기관과 민관협력을 통해 주차공유사업을 진행중이다.
+

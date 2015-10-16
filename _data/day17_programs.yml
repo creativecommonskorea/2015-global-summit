@@ -4,6 +4,7 @@
     - title: "개회사"
       location: "컨퍼런스룸"
       box: lightblue
+      lang: e
 
 - time: "10:20 ~11:00"
   sessions:
@@ -12,6 +13,7 @@
       detail: >
         Julia Reda
       box: lightblue
+      lang: e
 
 - time: "11:00 ~12:30"
   sessions:
@@ -20,6 +22,7 @@
       detail: >
         저작권 개혁을 위한 실천적 전략 / Timothy Volmer, Paul Keller
       box: lightpurple
+      lang: e
 
     - title: "오픈디자인"
       location: "603호"
@@ -27,12 +30,14 @@
         디자인의 미래와 CC / Jane Park
         3D 프린팅과 저작권 / Mahmoud Abu-Wardeh, Michael Weinberg
       box: lightorange
+      lang: e
 
     - title: "커뮤니티"
       location: "604호"
       detail: >
         Affiliates 정책을 재정비하다 / John Weitzmann
       box: lightorange
+      lang: e
 
 - time: "12:30 ~13:30"
   sessions:
@@ -45,19 +50,21 @@
       detail: >
         콘텐츠 공유와 공동체 문화의 지속가능한 발전 / Jane Park, Ryan Merkley, Eric Steur
       box: lightorange
+      lang: e
 
     - title: "커뮤니티"
       location: "603호"
       detail: >
         교육기관의 OER 정책 도입 촉진을 위한 전략 / Meredith Jacobs <br/>
       box: lightpurple
+      lang: e
 
     - title: "CCL"
       location: "604호"
       detail: >
-        블록체인 기술을 활용한 공유저작물의 활성화 / Primavera De Filippi <br/>
         Rightsstatements.org: 유로피아나와 CC의 호환가능한 저작권 라이선스 표준 정립 / Diane Peters, Paul Keller, Maarten Zeinstra
       box: lightpurple
+      lang: e
 
 - time: "15:00 ~15:30"
   sessions:
@@ -70,12 +77,14 @@
       detail: >
         Affiliates 2.0: CC Affiliate 네트워크의 미래 / Alek Tarkowski, Paul Keller
       box: lightorange
+      lang: e
 
     - title: "디자인과 오픈하드웨어"
       location: "604호"
       detail: >
         디자인의 미래와 오픈 하드웨어 라이선스 / Thomas Margoni, McCoy Smith,  Diane Peters
       box: lightorange
+      lang: e
 
 - time: "17:00 ~17:40"
   sessions:
@@ -84,3 +93,4 @@
       detail: >
         Carolina Botero, Jessica Coates
       box: lightblue
+      lang: e
