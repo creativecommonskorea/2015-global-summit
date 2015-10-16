@@ -181,13 +181,13 @@
       data-rel: 16-13
       lang: e
 
-    - title: "오픈데이터"
-      location: "한글박물관 강의실2"
-      detail: >
-        데이터 공유가 가져온 기적 - 네팔 지진의 사례 / Heather Leson
-      box: lightblue
-      data-rel: 16-10
-      lang: e
+    # - title: "오픈데이터"
+    #   location: "한글박물관 강의실2"
+    #   detail: >
+    #     데이터 공유가 가져온 기적 - 네팔 지진의 사례 / Heather Leson
+    #   box: lightblue
+    #   data-rel: 16-10
+    #   lang: e
 
     # - title: "오픈커뮤니티"
     #   location: "한글박물관 강의실2"
