@@ -11,9 +11,13 @@
   image: "/images/people/vo_jihong_park.png"
   organize: "Amherst College"
 
-- name: "Youjin Hong"
+- name: "Yujin Hong"
   image: "/images/people/vo_Yujin-Hong.png"
   organize: "경희대학교 도서관"
+
+- name: "Beomsoo Kim"
+  image: "/images/people/0_00_portrait-blank.png"
+  organize: ""
 
 - name: "Gyoungman Go"
   image: "/images/people/0_00_portrait-blank.png"
@@ -40,8 +44,8 @@
   organize: "Open Education Consortium"
 
 - name: "Naeun Jeon"
-  image: "/images/people/0_00_portrait-blank.png"
-  organize: "WCO 월드컬처오픈 코리아"
+  image: "/images/people/naeun-jeon.jpeg"
+  organize: ""
 
 - name: "Seunghan Jang"
   image: "/images/people/vo_seunghun_jang.jpg"
