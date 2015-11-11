@@ -1,0 +1,104 @@
+.session_detail_wrap {
+  text-align: center;
+  background-color: #f7f7f8;
+  section {
+    text-align: center;
+    padding: 3.750em 0 3.750em 0;
+    min-height: 500px;
+    @media screen and (min-width: 1000px) {
+      width: 800px;
+    }
+    .session_detail_box {
+      background-color: #fff;
+      border: 1px solid #e8e8e8;
+      border-bottom: 3px solid #e8e8e8;
+      font-size: 0.875em;
+      overflow: auto;
+      margin-bottom: 1.250em;
+      position: relative;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .title_wrap {
+        @media screen and (max-width: 1000px){
+          font-size: 1.000em;
+          vertical-align: middle;
+          height: 5.000em;
+          padding-left: 0;
+        }
+        padding-left: 100px;
+        height: 95px;
+        font-size: 1.375em;
+        font-weight: bold;
+        border-bottom: 1px solid #e8e8e8;
+        vertical-align: middle;
+        display: table;
+        .title {
+          @media screen and (max-width: 1000px) {
+            display: block;
+            padding-left: 43px;
+            padding-top: 13px;
+          }
+          display: table-cell;
+          text-align: left;
+          width: 498px;
+          vertical-align: middle;
+          .type {
+            margin-top: 15px;
+            font-size: 12px;
+            font-weight: normal;
+          }
+        }
+        .datetime {
+          @media screen and (max-width: 1000px) {
+            display: block;
+            padding-left: 40px;
+            margin: 10px 0;
+            font-size: 12px;
+          }
+          display: table-cell;
+          text-align: left;
+          vertical-align: middle;
+          font-size: 13px;
+          line-height: 140%;
+          font-weight: normal;
+          padding-right: 30px;
+          width: 170px;
+        }
+        &.whiteblue_light {
+          @media screen and (max-width: 1000px) {
+            background: #ecf0f5 url(/images/other/program_icon_01.png) no-repeat 8px 7px;
+          }
+          background: #ecf0f5 url(/images/other/program_icon_01.png) no-repeat 60px 22px;
+        }
+        &.whiteorange_light {
+          @media screen and (max-width: 1000px) {
+            background: #ffdbd0 url(/images/other/program_icon_02.png) no-repeat 8px 7px;
+          }
+          background: #ffdbd0 url(/images/other/program_icon_02.png) no-repeat 60px 22px;
+        }
+        &.whitepurple_light {
+          @media screen and (max-width: 1000px) {
+            background: #dbd9ed url(/images/other/program_icon_03.png) no-repeat 8px 7px;
+          }
+          background: #dbd9ed url(/images/other/program_icon_03.png) no-repeat 60px 22px;
+        }
+        &.whitegreen_light {
+          @media screen and (max-width: 1000px) {
+            background: #cef2ec url(/images/other/program_icon_04.png) no-repeat 8px 7px;
+          }
+          background: #cef2ec url(/images/other/program_icon_04.png) no-repeat 60px 22px;
+        }
+      }
+      .session_description {
+        @media screen and (max-width: 1000px){
+          padding: 20px;
+          font-size: 13px;
+        }
+        text-align: left;
+        line-height: 160%;
+        padding: 50px 100px;
+      }
+    }
+  }
+}

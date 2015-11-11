@@ -1,0 +1,197 @@
+---
+layout: base
+---
+<script>
+    function store_info() {
+        setCookie('email', $('#email-Primary').val(), 1);
+        setCookie('eng_name', $('#nick_name').val(), 1);
+        setCookie('organize', $('#note').val(), 1);
+        return true;
+    }
+</script>
+<style>
+    @import '/css/register.css?v=2';
+    #nick_name-error, #email-Primary-error {
+        display: block;
+        color: #ee4023;
+        font-size: 12px;
+        margin-bottom: 40px;
+    }
+</style>
+<div class="wrap attend_wrap">
+    <section>
+        <h1 class="title">티켓정보</h1>
+        <div class="guide_bar_33"></div>
+        <!-- web -->
+        <div class="ticket_info">
+            <table border="0">
+                <thead>
+                <tr class="h40">
+                    <th>티켓종류</th>
+                    <th colspan="2">1-Day-Ticket</th>
+                    <th>2-Day-Ticket</th>
+                    <th>CC KOREA 후원회원/후원사 초대</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="h40">
+                    <th>날짜</th>
+                    <td>10월 15일</td>
+                    <td>10월 16일</td>
+                    <td>10월 15-16일</td>
+                    <td>10월 15-16일</td>
+                </tr>
+                <tr>
+                    <th>일반</th>
+                    <td class="price_show">&#8361; 70,000</td>
+                    <td class="price_show">&#8361; 70,000</td>
+                    <td class="price_show">&#8361; 100,000</td>
+                    <td class="price_show">&#8361; 0</td>
+                </tr>
+                <tr>
+                    <th style="line-height: 1.5;">학생,<br>비영리단체</th>
+                    <td class="price_show">&#8361; 30,000</td>
+                    <td class="price_show">&#8361; 30,000</td>
+                    <td class="price_show">&#8361; 50,000</td>
+                    <td class="price_show">&#8361; 0</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- web -->
+        <!-- mobile web -->
+        <div class="mobile_ticket_info">
+            <table cellpadding="0" cellspacing="0">
+                <thead>
+                <tr>
+                    <th>티켓<br/>종류</th>
+                    <th>날짜</th>
+                    <th>일반</th>
+                    <th style="line-height: 1.5;">학생,<br>비영리단체</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th rowspan="2">1 Day<br>Ticket</th>
+                    <td class="date">10.15</td>
+                    <td class="price">&#8361; 70,000</td>
+                    <td class="price">&#8361; 30,000</td>
+                </tr>
+                <tr>
+                    <td class="date">10.16</td>
+                    <td class="price">&#8361; 70,000</td>
+                    <td class="price">&#8361; 30,000</td>
+                </tr>
+                <tr>
+                    <th>2 Days<br>Ticket</th>
+                    <td class="date">10.15<br>&nbsp;&nbsp;&nbsp;~16</td>
+                    <td class="price">&#8361; 100.000</td>
+                    <td class="price">&#8361; 50,000</td>
+                </tr>
+                <tr>
+                    <th>후원<br/>회원</th>
+                    <td colspan="3" class="price">&#8361; 0</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- mobile web -->
+        <div class="comeon_cc_sponsor">
+            <a href="http://www.cckorea.org/xe/?mid=join_members" target="_blank">* 여러분도 CC 후원회원이 될 수 있습니다! *</a>
+        </div>
+    </section>
+</div>
+<div class="wrap register_wrap">
+    <section>
+        <h1 class="title">참가신청</h1>
+
+        <div class="guide_bar_33"></div>
+        <div class="head_description">
+            본 행사는 Creative Commons가 주최하고 CC Korea가 주관합니다. <br class="nobr"/>
+            우선 Creative Commons 웹사이트에 등록한 후 다시 이 웹사이트로 돌아와서 결제 및 세부 사항을 입력하게 됩니다.
+        </div>
+        <div>
+            <form action="https://donate.creativecommons.org/civicrm/profile/create?gid=44&amp;reset=1" method="post"
+                  name="Edit" id="Edit" onsubmit="return store_info();">
+                <div>
+                    <input name="gid" type="hidden" value="44"/>
+                    <input name="_qf_default" type="hidden" value="Edit:cancel"/>
+                </div>
+                <script type="text/javascript"
+                        src="https://donate.creativecommons.org/sites/all/modules/civicrm/js/Common.js"></script>
+                <div id="crm-container" lang="en" xml:lang="en">
+                    <div class="form-layout-compressed">
+                        <div id="editrow-nick_name" class="crm-section editrow_nick_name-section form-item clearifx">
+                            <div class="label">
+                                <label for="nick_name"> 영문 이름
+                                    <span class="crm-marker" title="This field is required.">*</span>
+                                </label>
+                            </div>
+                            <div class="edit-value content">
+                                <input maxlength="128" name="nick_name" type="text" id="nick_name"
+                                       class="form-text huge required" required/>
+                            </div>
+                        </div>
+                        <div id="editrow-email-Primary"
+                             class="crm-section editrow_email-Primary-section form-item clearfix">
+                            <div class="label">
+                                <label for="email-Primary"> 이메일
+                                    <span class="crm-marker" title="This field is required.">*</span>
+                                </label>
+                            </div>
+                            <div class="edit-value content">
+                                <input maxlength="64" name="email-Primary" type="text" id="email-Primary"
+                                       class="form-text big required" required/>
+                            </div>
+                        </div>
+                        <div id="editrow-note" class="crm-section editrow_note-section form-item">
+                            <div class="label">
+                                <label for="note">영문 소속</label>
+                            </div>
+                            <div class="edit-value content">
+                                <input maxlength="64" name="note" id="note" class="form-text" type="text">
+                            </div>
+                            <div class="clear">
+                            </div>
+                        </div>
+                        <!-- end form-layout-compressed for last profile -->
+                        <div class="crm-submit-buttons">
+                            <span class="crm-button crm-button-type-next crm-button_qf_Edit_next">
+                                <input class="form-submit default" accesskey="S" name="_qf_Edit_next" value="등록하기"
+                                       type="submit"
+                                       id="_qf_Edit_next"/>
+                            </span>
+                            <!--<span class="crm-button crm-button-type-cancel crm-button_qf_Edit_cancel">-->
+                              <!--<input class="form-submit reset" name="_qf_Edit_cancel" value="취소하기" type="reset"-->
+                                     <!--id="_qf_Edit_cancel"/>-->
+                            <!--</span>-->
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="cancel_wrap">
+            <div class="cancel_info">* 온라인 참가 신청 / 취소 / 변경은 10월 12일 월요일까지이며,<br/>10월 12일 월요일 이후의 참가신청은 10월 15, 16일 국립중앙박물관 현장에서 가능합니다.<br/>이 점 유의해주세요!</div> <br/><br/>
+            <button type="button" id="cancel" onclick="location.href='http://goo.gl/forms/Lh3XK7e8bx'">취소/변경 신청</button>
+        </div>
+    </section>
+</div>
+
+<script src="/js/jquery.validate.min.js"></script>
+<script>
+  (function($){
+    $('#Edit').validate({
+      submitHandler: function(form) {
+        form.submit();
+      },
+      rules: {
+        nick_name: { required: true },
+        'email-Primary': { required: true, email: true }
+      },
+      messages: {
+        nick_name: { required: '성명을 입력해주세요.' },
+        'email-Primary': { required: '이메일 주소를 입력해주세요', email: '올바른 형식이 아닙니다.' },
+      }
+    });
+  })(jQuery);
+</script>

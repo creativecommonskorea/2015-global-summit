@@ -17,13 +17,13 @@
         <img src="/images/other/bullet.png" alt="-" />
         <span class="font-bold">장소</span>
         <br/>
-        국립중앙박물관 대강당 / 세미나실 <br/>
+        국립중앙박물관 대강당 / 강의실1 <br/>
         국립한글박물관 강당
     </div>
     <div class="subject_icons">
         <img src="/images/other/program_icon_01.png" alt="강연"/> 강연
         <img src="/images/other/program_icon_02.png" alt="포럼"/> 포럼
-        <img src="/images/other/program_icon_03.png" alt="워크샵"/> 워크샵
+        <img src="/images/other/program_icon_03.png" alt="워크숍"/> 워크숍
         <img src="/images/other/program_icon_04.png" alt="이벤트"/> 이벤트
     </div>
 
@@ -32,13 +32,19 @@
         <div class="time">{{ box.time }}</div>
         <div class="time_detail">
             {% for s in box.sessions %}
-            <div class="sessions {{s.box}}">
+            <div class="sessions {{s.box}}"{% if s.data-rel %} data-rel="{{ s.data-rel }}"{% endif %}>
                 {% if s.location %}
                 <div class="location">{{ s.location }}</div>
                 {% endif %}
                 <div class="title">{{ s.title }}</div>
                 {% if s.detail %}
                 <div class="detail">{{ s.detail }}</div>
+                {% endif %}
+                {% if s.lang contains 'k' %}
+                <img src="/images/other/k.png" alt="korean" style="width: 20px;">
+                {% endif %}
+                {% if s.lang contains 'e' %}
+                <img src="/images/other/e.png" alt="english" style="width: 20px;">
                 {% endif %}
             </div>
             {% endfor %}

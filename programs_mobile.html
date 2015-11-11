@@ -5,17 +5,36 @@ layout: base
 <script>
     $(document).ready(function(){
         $('.mobile_day_button').click(function(){
-            $('.mobile_day_button').each(function(){
-                $(this).removeClass('on');
-            });
-            $(this).addClass('on');
-
-            var targetId = $(this).attr('data-target');
-            $('.mobile_day_detail').hide();
-            $('#'+ targetId).show();
+            location.href='/programs_mobile.html?day=' + $(this).attr('data-rel');
         });
 
-        $('#init_target').trigger('click');
+        $('.mobile_day_button').removeClass('on');
+        $('.mobile_day_detail').hide();
+
+        switch (getUrlParameter('day')){
+            case '1014':
+                $('.mobile_day_button[data-target="day14"]').addClass('on');
+                $('#day14').show();
+                break;
+            case '1016':
+                $('.mobile_day_button[data-target="day16"]').addClass('on');
+                $('#day16').show();
+                break;
+            case '1017':
+                $('.mobile_day_button[data-target="day17"]').addClass('on');
+                $('#day17').show();
+                break;
+            case '1015':default :
+                $('.mobile_day_button[data-target="day15"]').addClass('on');
+                $('#day15').show();
+            break;
+        }
+
+        $('.sessions').click(function(){
+               if ( $(this).attr('data-rel') )
+                   location.href='/session/' + $(this).attr('data-rel') + '.html';
+        });
+
     });
 </script>
 
@@ -24,10 +43,10 @@ layout: base
         <h1 class="title">일정</h1>
         <div class="guide_bar_33"></div>
         <div class="mobile_day_buttons">
-            <div class="mobile_day_button" data-target="day14">수요일<br/>(10/14)</div>
-            <div class="mobile_day_button" data-target="day15" id="init_target">목요일<br/>(10/15)</div>
-            <div class="mobile_day_button" data-target="day16">금요일<br/>(10/16)</div>
-            <div class="mobile_day_button" data-target="day17">토요일<br/>(10/17)</div>
+            <div class="mobile_day_button" data-target="day14" data-rel="1014">수요일<br/>(10/14)</div>
+            <div class="mobile_day_button" data-target="day15" data-rel="1015">목요일<br/>(10/15)</div>
+            <div class="mobile_day_button" data-target="day16" data-rel="1016">금요일<br/>(10/16)</div>
+            <div class="mobile_day_button" data-target="day17" data-rel="1017">토요일<br/>(10/17)</div>
         </div>
 
         {% include day14_detail_mobile.html %}

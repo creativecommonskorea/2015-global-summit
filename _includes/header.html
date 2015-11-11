@@ -1,7 +1,38 @@
 <script>
-    $(document).ready(function () {
-        console.log( $('#submenu_1').position() );
+    var getUrlParameter = function getUrlParameter(sParam) {
+        var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+                sURLVariables = sPageURL.split('&'),
+                sParameterName,
+                i;
 
+        for (i = 0; i < sURLVariables.length; i++) {
+            sParameterName = sURLVariables[i].split('=');
+
+            if (sParameterName[0] === sParam) {
+                return sParameterName[1] === undefined ? true : sParameterName[1];
+            }
+        }
+    };
+
+    function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        var expires = "expires=" + d.toUTCString();
+        document.cookie = cname + "=" + cvalue + "; " + expires;
+    }
+
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1);
+            if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+        }
+        return "";
+    }
+
+    $(document).ready(function () {
         // define menu action
         $('.menus > ul > li').hover(
                 function (e) {
@@ -65,6 +96,7 @@
         });
     });
 </script>
+<a name="0" />
 <div class="wrap topmenu_wrap">
     <nav class="top_menu">
         <ul>
@@ -100,19 +132,20 @@
             프로그램
             <div class="arrow"><img src="/images/base/arrow_down.png" alt=""/></div>
         </div>
+        <div class="mobile_b_menu clickable" id="attend">
+            <a href="/register.html">참가신청</a>
+        </div>
         <div class="mobile_s_menu programs_sub">
             <a href="/programs_mobile.html">전체 프로그램</a><br/>
             <a href="/speakers.html">연사소개</a><br/>
-            <a href="/coming_soon.html">전시</a><br/>
+            <a href="/exhibition.html">전시</a><br/>
             <a href="/keywords.html">키워드</a>
-        </div>
-        <div class="mobile_b_menu clickable" id="attend">
-            <a href="javascript:alert('멋진 글로벌 써밋을 위해 준비중입니다 :)\n조금만 기다려주세요!');">참가신청</a>
         </div>
         <div class="mobile_b_menu"><a href="/sponsors.html">후원사</a></div>
         {% for post in site.posts limit:1 %}
         <div class="mobile_b_menu"><a href="{{ post.url | prepend: site.baseurl }}">소식</a></div>
         {% endfor %}
+        <div class="mobile_b_menu live"><a href="/presentations.html">발표 자료</a></div>
     </div>
 </div>
 <div class="wrap header_wrap">
@@ -128,11 +161,12 @@
                 <li data-target="submenu_2" id="menu_2">
                     <a href="/programs.html">프로그램</a>
                 </li>
-                <li><a href="javascript:alert('멋진 글로벌 써밋을 위해 준비중입니다 :)\n조금만 기다려주세요!');">참가신청</a></li>
+                <li><a href="/register.html">참가신청</a></li>
                 <li><a href="/sponsors.html">후원사</a></li>
                 {% for post in site.posts limit:1 %}
                 <li><a href="{{ post.url | prepend: site.baseurl }}">소식</a></li>
                 {% endfor %}
+                <li class="live"><a href="/presentations.html">발표 자료</a></li>
                 <!--
                 <li><a href="http://campaign.cckorea.org/" target="_blank">CC 캠페인</a></li>
                 -->
@@ -149,7 +183,7 @@
                 <div class="arrow_area"><img src="/images/base/arrow_up.png" alt="^"/></div>
                 <a href="/programs.html">전체 프로그램</a>
                 <a href="/speakers.html">연사소개</a>
-                <a href="/coming_soon.html">전시</a>
+                <a href="/exhibition.html">전시</a>
                 <a href="/keywords.html">키워드</a>
             </div>
             <!--<div class="main_sub_menu" id="submenu_3">-->
@@ -160,3 +194,17 @@
         </div>
     </div>
 </div>
+<style>
+.main_menu .menus ul li.live a,
+.mobile_menu_wrap .mobile_menu_back .mobile_b_menu.live a {
+    font-size: 1.125em;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #ef513c;
+    padding: 0 15px;
+    color: #fff;
+    border: 0;
+    display: inline-block;
+}
+</style>

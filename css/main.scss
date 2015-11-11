@@ -268,7 +268,7 @@ img {
     height: auto;
   }
 
-  main {
+  section {
     padding-top: 140px;
     @media screen and (max-width: 1000px) {
       text-align: center;
@@ -475,7 +475,21 @@ img {
     font-size: 1.125em;
     color: $white;
     a {
+      @media screen and (min-width: 1024px) {
+        &.web {
+          display: block;
+        }
+        &.mobile {
+          display: none;
+        }
+      }
       @media screen and (max-width: 1024px) {
+        &.web {
+          display: none;
+        }
+        &.mobile {
+          display: block;
+        }
         font-size: 16px;
       }
 
@@ -756,7 +770,7 @@ img {
   .ccl_info {
     padding-top: 56px;
     display: inline;
-    width: 800px;
+    width: calc(100% - 300px);
     height: 135px;
     vertical-align: middle;
     float: left;
@@ -782,7 +796,7 @@ img {
       height: auto;
       padding: 0;
     }
-    padding-top: 100px;
+    padding-top: 75px;
     display: inline-block;
     float: left;
     height: 120px;
@@ -811,7 +825,7 @@ img {
     }
 
     display: inline-block;
-    width: 800px;
+    width: calc(100% - 300px);
     height: 135px;
     vertical-align: middle;
     float: left;
@@ -954,7 +968,7 @@ img {
   margin: 70px 0;
   text-align: center;
   .past_title {
-    font-size: 1.875em;
+    font-size: 24px;
   }
   .past_description {
     font-size: 0.875em;
@@ -1092,7 +1106,10 @@ img {
       height: 14.375em;
       float: left;
       text-align: center;
-      margin: 0 20px 20px;
+      &.five_in_one_line {
+        margin: 0 20px 20px;
+      }
+      margin: 0 47px 20px;
       &:last-child {
         margin-right: 0;
       }
@@ -1284,7 +1301,7 @@ h2 {
 }
 
 .font-size-24 {
-  font-size: 1.125em;
+  font-size: 1.2em;
 }
 
 .font-bold {
@@ -1367,4 +1384,4 @@ a {
   color: inherit;
 }
 
-@import "keywords", "speakers", "newsboard", "attend", "programs";
+@import "keywords", "speakers", "newsboard", "attend", "programs", "sessions", "anti-harassment-policy";

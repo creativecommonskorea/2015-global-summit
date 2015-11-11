@@ -2,48 +2,52 @@
 - time: "09:30 ~10:00"
   sessions:
     - title: "등록"
-      detail: "이름표와 슬랙(Slack) 가입 및 등록을 확인하세요."
-      location: "중앙.대강당 앞 로비"
+      location: "중앙박물관 대강당 앞 로비"
 
 - time: "10:00 ~10:10"
   sessions:
     - title: "인사말"
       detail: >
-        서정욱_CCKorea 이사장
-      location: "중앙.대강당"
+        서정욱_CC Korea 이사장
+      location: "중앙박물관 대강당"
       box: lightblue
+      lang: ke
 
-- time: "10:10 ~10:30"
+- time: "10:10 ~10:15"
   sessions:
     - title: "축사"
-      detail: "미정"
-      location: "중앙.대강당"
+      detail: >
+        Private Internet Access
+      location: "중앙박물관 대강당"
       box: lightblue
+      lang: ke
 
-- time: "10:30 ~11:00"
+- time: "10:15 ~10:50"
   sessions:
     - title: "크리에이티브 커먼즈를 재정의하다"
       detail: >
-        윤종수_CCKorea 프로젝트 리드
-        '디지털 시대의 창조적 공유 자원의 중요성', Merkley, Benkler, 윤종수
-      location: "중앙.대강당"
+        윤종수_CC Korea 프로젝트 리드
+      location: "중앙박물관 대강당"
       box: lightblue
+      lang: ke
 
-- time: "11:00 ~11:30"
+- time: "10:50 ~11:30"
   sessions:
-    - title: "커먼즈 개념과 자본주의의 미래"
+    - title: "공유와 자본주의의 미래"
       detail: >
         Yochai Benkler_하버드 로스쿨 교수
-      location: "중앙.대강당"
+      location: "중앙박물관 대강당"
       box: lightblue
+      lang: ke
 
 - time: "11:30 ~12:00"
   sessions:
     - title: "디지털 시대의 창조적 공유 자원의 중요성"
       detail: >
-        윤종수, Yochai Benkler
-      location: "중앙.대강당"
+        윤종수, Yochai Benkler, Ryan Merkley
+      location: "중앙박물관 대강당"
       box: lightorange
+      lang: ke
 
 - time: "12:00 ~13:30"
   sessions:
@@ -51,25 +55,41 @@
 
 - time: "13:30 ~14:50"
   sessions:
-    - title: "트랙1. 오픈지식"
+    - title: "트랙1. 오픈콘텐츠"
       detail: >
-        유럽의 문화 예술을 디지털로 스캔하다 / Paul Keller_유로피아나
-        공유저작물 창조자원화 전략 / 윤태용실장_문화체육관광부 콘텐츠산업실
-      location: "중앙.대강당"
+        전세계 OER 운동의 현황 / Cable Green_CC 글로벌 러닝 디렉터<br>
+        유럽의 문화 예술을 디지털로 스캔하다 / Paul Keller_유로피아나<br>
+        공유저작물 창조자원화 전략 / 문화체육관광부
+      location: "중앙박물관 대강당"
       box: lightblue
+      data-rel: 15-track1
+      lang: ke
     - title: "트랙2. 오픈비즈니스"
       detail: >
-        Photo Commons / Andy Yang_500px CEO <br>
-        오픈 비즈니스의 성공 전략 / Paul Stacey_CC 글로벌 러닝 대표 <br>
-        공개된 CCL 음원의 비즈니스 모델 / 도희성_원트리뮤직 대표
-      location: "중앙.세미나실"
+        오픈 비즈니스의 성공 전략 - 비즈니스를 위한 CCL 가이드 / Fátima São Simão, Teresa Nobre_CC 포르투갈 <br>
+        비즈니스를 위한 효과적인 콘텐츠 공유 전략 / Sebastiaan ter Burg_Circular Content 창업자<br>
+        Photo Commons / Nuno Silva <br>
+        공개된 CCL 음원의 비즈니스 모델 / 도희성_원트리즈뮤직 대표
+      location: "중앙박물관 강의실1"
       box: lightblue
+      data-rel: 15-track2
+      lang: ke
 
 - time: "14:10 ~14:50"
   sessions:
     - title: "CC 아트 쇼케이스"
-      location: "한글.강당"
+      detail: >
+        롱 로드 프로젝트 / Reda Zine
+      location: "한글박물관 강당"
+      box: lightblue
+      data-rel: 15-art-showcase
+      lang: e
+    - title: "CC 기술팀 - 로드맵과 더 리스트"
+      detail: >
+        CC 기술팀 로드맵과 더 리스트 / Ryan Merkley, Rob Myers
+      location: "한글박물관 강의실1"
       box: lightpurple
+      lang: e
 
 - time: "15:00 ~15:30"
   sessions:
@@ -79,37 +99,50 @@
   sessions:
     - title: "트랙3. 오픈데이터"
       detail: >
-        한국 공공데이터 개방 정책과 현황 / 송석현 부장_한국정보화진흥원 <br>
-        과학, 의학 데이터의 공유와 가져온 변화 / 이상호_한국과학기술정보연구원 <br>
-        데이터 긱이 세상을 바꾼다 / 박은정_팀포퐁 <br>
+        Open Data Strategy & Portal of Korea Govt. / 최문실_한국정보화진흥원 수석연구원<br>
+        학술 데이터의 공유 플랫폼: Datanest / 김선태_한국과학기술정보연구원<br>
         IoT와 오픈데이터 / Naeema Zarif_CC 아랍 지역 코디네이터
-      location: "중앙.대강당"
+      location: "중앙박물관 대강당"
       box: lightblue
+      data-rel: 15-track3
+      lang: ke
     - title: "트랙4. DIY"
       detail: >
-        '3D 프린터 기술의 진화' / Michael Weinberg_Shapeways 법률고문 <br>
-        '소프트웨어야 놀자' / 김지현_네이버 이사
-      location: "중앙.세미나실"
+        오픈소스 인공위성 프로젝트 / 송호준_미디어 아티스트 <br>
+        프로그래밍의 첫걸음 엔트리 / 김지현_엔트리교육연구소 대표 <br>
+        3D 프린터 기술의 진화 / Michael Weinberg_Shapeways 법률고문
+      location: "중앙박물관 강의실1"
       box: lightblue
-
-    - title: "크리에이티브 워크샵"
+      data-rel: 15-track4
+      lang: ke
+    - title: "오픈글램"
       detail: >
-        Dance with ZeMarmot: Aryeom Han & Jehan PagÃ¨s
-      location: "한글.강당"
+        박물관과 도서관을 리믹스하다 - 기관을 위한 개방과 협업 / Andres Guadamuz <br>
+      location: "한글박물관 강당"
       box: lightpurple
+      data-rel: 15-track5
+      lang: e
+    - title: "CC 기술팀 - 검색과 라이선스 선택기"
+      detail: >
+        CC 기술팀 - 검색과 라이선스 선택기 / Ryan Merkley, Rob Myers
+      location: "한글박물관 강의실1"
+      box: lightpurple
+      lang: e
 
 - time: "17:00 ~17:30"
   sessions:
     - title: "경계를 허무는 나비의 실험"
       detail: >
-        노소영_나비아트센터 관장
-      location: "중앙.대강당"
+        노소영_아트센터나비 관장
+      location: "중앙박물관 대강당"
       box: lightblue
+      lang: ke
 
 - time: "17:30 ~18:00"
   sessions:
     - title: "위키백과의 ‘리-챌린지(re-challenge)'"
       detail: >
         Lila Tretikov_위키미디아 재단 사무국장
-      location: "중앙.대강당"
+      location: "중앙박물관 대강당"
       box: lightblue
+      lang: ke

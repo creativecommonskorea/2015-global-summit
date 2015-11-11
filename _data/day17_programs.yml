@@ -1,94 +1,96 @@
 ---
-- time: "10:00 ~10:10"
+- time: "10:00 ~10:20"
   sessions:
     - title: "개회사"
       location: "컨퍼런스룸"
+      box: lightblue
+      lang: e
 
-- time: "10:10 ~10:40"
+- time: "10:20 ~11:00"
   sessions:
     - title: "키노트"
       location: "컨퍼런스룸"
       detail: >
         Julia Reda
       box: lightblue
-      
-- time: "10:40 ~10:50"
-  sessions:
-    - title: "휴식"
+      lang: e
 
-- time: "10:50 ~12:20"
+- time: "11:00 ~12:30"
   sessions:
     - title: "저작권 개선"
       location: "컨퍼런스룸"
       detail: >
-        Jump-starting commons advocacy and copyright reform / Tim Volmer and affiliates
-      box: lightorange
+        저작권 개혁을 위한 실천적 전략 / Timothy Volmer, Paul Keller
+      box: lightpurple
+      lang: e
 
-    - title: "오픈액세스(데이터)"
-      location: "카카오룸"
+    - title: "오픈디자인"
+      location: "603호"
       detail: >
-        Retaining and Regaining Author Publication Rights / Diane Peters, Thomas Margoni, Michael Wolfe, Ignasi Labastida<br>
-        Using Open Data for Advocacy Storytelling: A workshop with the Open Access Button / Thomas Margoni, Diane on TDM and OA talk
+        디자인의 미래와 CC / Jane Park
+        3D 프린팅과 저작권 / Mahmoud Abu-Wardeh, Michael Weinberg
       box: lightorange
+      lang: e
 
-    - title: "CCL"
-      location: "아이디어 빌리지"
+    - title: "커뮤니티"
+      location: "604호"
       detail: >
-        Rightsstatements.org: Developing a Standard for Communicating Rights Beyond CC - and the new Public Domain Mark. / Diane Peters, Paul Keller, Maarten Zeinstra <br>
-        Uses of the blockchain for Creative Commons / Primavera De Filippi
+        Affiliates 정책을 재정비하다 / John Weitzmann
       box: lightorange
+      lang: e
 
-    - title: "CCL"
-      location: "오픈 스페이스"
-      detail: >
-        CC 라이선스와 위키미디어/위키피디아 / Stephen LaPorte 위키미디어 법률 고문 <br/>
-        CC licensing and terms of service / Sarah Pearson
-      box: lightorange
-
-- time: "12:20 ~13:20"
+- time: "12:30 ~13:30"
   sessions:
     - title: "점심"
 
-- time: "13:50 ~14:50"
+- time: "13:30 ~15:00"
   sessions:
-    - title: "플랫폼과 CCL"
+    - title: "공유문화"
       location: "컨퍼런스룸"
       detail: >
-        The Vibrant and Social Commons: How Users Engage with the Commons Today / Jane, Ryan, Eric
+        콘텐츠 공유와 공동체 문화의 지속가능한 발전 / Jane Park, Ryan Merkley, Eric Steur
       box: lightorange
-    - title: "커뮤니티"
-      location: "카카오룸"
-      detail: >
-        CC Affiliates Policies Hand-On / John Weitzmann
-      box: lightorange
+      lang: e
 
-- time: "14:50 ~15:20"
+    - title: "커뮤니티"
+      location: "603호"
+      detail: >
+        교육기관의 OER 정책 도입 촉진을 위한 전략 / Meredith Jacobs <br/>
+      box: lightpurple
+      lang: e
+
+    - title: "CCL"
+      location: "604호"
+      detail: >
+        Rightsstatements.org: 유로피아나와 CC의 호환가능한 저작권 라이선스 표준 정립 / Diane Peters, Paul Keller, Maarten Zeinstra
+      box: lightpurple
+      lang: e
+
+- time: "15:00 ~15:30"
   sessions:
     - title: "휴식"
 
-- time: "15:20 ~16:50"
+- time: "15:30 ~17:00"
   sessions:
     - title: "커뮤니티"
       location: "컨퍼런스룸"
       detail: >
-        Affiliates 2.0 - CC as a true network organisation - follow up to the miniconf from Day 0 / Alek Tarkowski, Paul Keller
+        Affiliates 2.0: CC Affiliate 네트워크의 미래 / Alek Tarkowski, Paul Keller
       box: lightorange
-    - title: "OER"
-      location: "카카오룸"
+      lang: e
+
+    - title: "디자인과 오픈하드웨어"
+      location: "604호"
       detail: >
-        Let's do open education! Testing a toolkit for schools and educators / Anna Stokowska, Kamil Åšliwowski, Alek Tarkowski <br>
-        OER Showcase / Mostafa Azad Kamal, Bekka Kahn, George Abdelnour <br>
-        School of Open Showcase and Transition / Simeon Oriko
+        디자인의 미래와 오픈 하드웨어 라이선스 / Thomas Margoni, McCoy Smith,  Diane Peters
       box: lightorange
-    - title: "디자인과 CCL"
-      location: "아이디어빌리지"
-      detail: >
-        How will CC shape future of design / Similar rights and patent rights and CC+ / Thomas Margoni, Jane Park, Diane (?), McCoy Smith (intel)(?), CERN?
-      box: lightorange
+      lang: e
 
 - time: "17:00 ~17:40"
   sessions:
     - title: "키노트"
+      location: "컨퍼런스룸"
       detail: >
-        Carolina, Jessica
+        Carolina Botero, Jessica Coates
       box: lightblue
+      lang: e

@@ -2,15 +2,32 @@
 layout: base
 ---
 <script type="text/javascript" src="https://service.iamport.kr/js/iamport.payment.subscribe.js"></script>
-<script src="/js/pay.process.js"></script>
+<script src="/js/jquery.validate.min.js"></script>
+<script src="/js/additional-methods.min.js"></script>
+<script src="/js/pay.process.js?v=1509151651"></script>
+<script src="//www.parsecdn.com/js/parse-1.6.0.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.3/mustache.min.js"></script>
+<script>
+    $(document).ready(function(){
+        // initialize value
+        $('#buyer_eng_name').val(getCookie('eng_name'));
+        $('#buyer_email').val(getCookie('email'));
+        $('#buyer_eng_addr').val(getCookie('organize'));
+
+        $('#show_agreement').click(function(){
+            if ( $('#agreement_content').css('display') == 'block' )
+                $('#agreement_content').hide();
+            else
+                $('#agreement_content').show();
+        });
+    });
+</script>
+<div id="container">
 <div class="wrap attend_wrap">
     <section>
-        <h1 class="title">티켓선택</h1>
+        <h1 class="title">티켓정보</h1>
         <div class="guide_bar_33"></div>
-        <div class="attend_guide">
-            <span class="step"><img src="/images/other/bullet.png" alt="-"/> STEP 1</span>
-            CC Global Summit에 참가하고자 하는 날을 선택해 주세요.
-        </div>
+        <!-- web -->
         <div class="ticket_info">
             <table border="0">
                 <thead>
@@ -31,62 +48,298 @@ layout: base
                 </tr>
                 <tr>
                     <th>일반</th>
-                    <td class="price_show">&#8361; 70,000<br><input type="radio" name="ticket_type" value="ordinary_15"/></td>
-                    <td class="price_show">&#8361; 70,000<br><input type="radio" name="ticket_type" value="ordinary_16"/></td>
-                    <td class="price_show">&#8361; 100,000<br><input type="radio" name="ticket_type" value="ordinary_1516"/></td>
-                    <td class="price_show">&#8361; 0<br><input type="radio" name="ticket_type" value="iam_sponsor"/></td>
+                    <td class="price_show">&#8361; 70,000</td>
+                    <td class="price_show">&#8361; 70,000</td>
+                    <td class="price_show">&#8361; 100,000</td>
+                    <td class="price_show">&#8361; 0</td>
                 </tr>
                 <tr>
-                    <th>학생</th>
-                    <td class="price_show">&#8361; 30,000<br><input type="radio" name="ticket_type" value="student_15"/></td>
-                    <td class="price_show">&#8361; 30,000<br><input type="radio" name="ticket_type" value="student_16"/></td>
-                    <td class="price_show">&#8361; 50,000<br><input type="radio" name="ticket_type" value="student_1516"/></td>
-                    <td>&nbsp;</td>
+                    <th style="line-height: 1.5;">학생,<br>비영리단체</th>
+                    <td class="price_show">&#8361; 30,000</td>
+                    <td class="price_show">&#8361; 30,000</td>
+                    <td class="price_show">&#8361; 50,000</td>
+                    <td class="price_show">&#8361; 0</td>
                 </tr>
                 </tbody>
             </table>
         </div>
+        <!-- web -->
+        <!-- mobile web -->
+        <div class="mobile_ticket_info">
+            <table cellpadding="0" cellspacing="0">
+                <thead>
+                <tr>
+                    <th>티켓<br/>종류</th>
+                    <th>날짜</th>
+                    <th>일반</th>
+                    <th style="line-height: 1.5;">학생,<br>비영리단체</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th rowspan="2">1 Day<br>Ticket</th>
+                    <td class="date">10.15</td>
+                    <td class="price">&#8361; 70,000</td>
+                    <td class="price">&#8361; 30,000</td>
+                </tr>
+                <tr>
+                    <td class="date">10.16</td>
+                    <td class="price">&#8361; 70,000</td>
+                    <td class="price">&#8361; 30,000</td>
+                </tr>
+                <tr>
+                    <th>2 Days<br>Ticket</th>
+                    <td class="date">10.15<br>&nbsp;&nbsp;&nbsp;~16</td>
+                    <td class="price">&#8361; 100.000</td>
+                    <td class="price">&#8361; 50,000</td>
+                </tr>
+                <tr>
+                    <th>후원<br/>회원</th>
+                    <td colspan="3" class="price">&#8361; 0</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- mobile web -->
+        <div class="comeon_cc_sponsor">
+            <a href="http://www.cckorea.org/xe/?mid=join_members" target="_blank">* 여러분도 CC 후원회원이 될 수 있습니다! *</a>
+        </div>
     </section>
 </div>
-<div class="wrap move_step_icon" style="top: 671px;">
-    <img src="images/other/ticket_step.png" alt=""/>
-</div>
-<div class="wrap attend_wrap launch">
+<div class="wrap attend_wrap application">
     <section>
-        <!--<div style="background-image: url('/images/base/comming_bg.png'); width: 1100px; height: 764px; position: relative;">-->
-            <!--<div style="position: absolute; top: calc(50% - 101px); left: calc(50% - 233px);">-->
-                <!--<img src="/images/base/comming_01.png" alt=""/>-->
-            <!--</div>-->
-        <!--</div>-->
-        <h1 class="title">점심식사 선택</h1>
+        <h1 class="title">신청서 작성</h1>
         <div class="guide_bar_33"></div>
-        <div class="attend_guide">
-            <span class="step"><img src="/images/other/bullet.png" alt="-"/> STEP 2</span>
-            참가 일의 점심식사 메뉴를 선택해 주세요. 별도의 식사 비용은 추가되지 않습니다.
+        <div class="application_box">
+            <form id="joinform">
+                <table cellpadding="0" cellspacing="0">
+                    <tr>
+                        <th>이름</th>
+                        <td class="two_lines">
+                            한글 <input type="text" name="buyer_name" id="buyer_name"/> <br/>
+                            영문 <input type="text" name="buyer_eng_name" id="buyer_eng_name"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>소속</th>
+                        <td class="two_lines">
+                            한글 <input type="text" name="buyer_addr" id="buyer_addr"/> <br/>
+                            영문 <input type="text" name="buyer_eng_addr" id="buyer_eng_addr"/> <br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>이메일</th>
+                        <td>
+                            <input type="email" name="buyer_email" id="buyer_email"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>휴대폰</th>
+                        <td>
+                            <input type="text" name="buyer_tel" id="buyer_tel"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th width="25%">참가희망 날짜</th>
+                        <td>
+                            <input type="radio" name="joinDate" value="15" id="joinDate15"/> <label for="joinDate15">1일권 (10/15, 목)</label><br/>
+                            <input type="radio" name="joinDate" value="16" id="joinDate16"/> <label for="joinDate16">1일권 (10/16, 금)</label><br/>
+                            <input type="radio" name="joinDate" value="1516" id="joinDate1516"/> <label for="joinDate1516">2일권
+                            (10/15-16, 목-금)</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>참가 유형</th>
+                        <td>
+                            <input type="radio" name="joinType" value="ordinary" id="joinTypeOrdinary"/>
+                            <label for="joinTypeOrdinary">일반 참가자</label><br/>
+                            <input type="radio" name="joinType" value="student" id="joinTypeStudent"/>
+                            <label for="joinTypeStudent">학생, 비영리단체 참가자</label><br/>
+                            <input type="radio" name="joinType" value="sponsor" id="joinTypeSponsor"/>
+                            <label for="joinTypeSponsor">CC KOREA 정기후원회원 / 후원사</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>점심식사 선택</th>
+                        <td>
+                            <div class="launch_box_info">
+                                * 먼저 참가 희망 날짜를 선택해주세요.
+                            </div>
+                            <div class="launch_box" id="launch_box_15">
+                                <b>15일 점심을 선택해주세요.</b> <br/>
+                                <input type="radio" name="day15_launch" value="151" id="launch_151"/>
+                                <label for="launch_151">비빔밥</label>
+                                <br/>
+
+                                <input type="radio" name="day15_launch" value="152" id="launch_152"/>
+                                <label for="launch_152">우거지탕</label>
+                                <br/>
+
+                                <input type="radio" name="day15_launch" value="153" id="launch_153"/>
+                                <label for="launch_153">유기농두부구이 (도시락)</label>
+                                <br/>
+
+                                <input type="radio" name="day15_launch" value="159" id="launch_159"/>
+                                <label for="launch_159">식사 안함</label>
+                            </div>
+                            <div class="launch_box" id="launch_box_16">
+                                <b>16일 점심을 선택해주세요.</b> <br/>
+                                <input type="radio" name="day16_launch" value="161" id="launch_161"/>
+                                <label for="launch_161">비빔밥</label>
+                                <br/>
+
+                                <input type="radio" name="day16_launch" value="162" id="launch_162"/>
+                                <label for="launch_162">우거지탕</label>
+                                <br/>
+
+                                <input type="radio" name="day16_launch" value="163" id="launch_163"/>
+                                <label for="launch_163">유기농두부구이 (도시락)</label>
+                                <br/>
+
+                                <input type="radio" name="day16_launch" value="169" id="launch_169"/>
+                                <label for="launch_169">식사 안함</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Day 3 (17일)<br />참가 여부</th>
+                        <td>
+                            <input type="checkbox" name="join_third" id="join_third" value="true" />
+                            <div class="description">
+                                * Day3는 CC 내부 아젠다에 관해 집중적으로 논의하는 날입니다.<br />참가를 희망하시는 분은 체크해주세요.
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div class="total_price_wrap">
+                    <div class="empty_space"></div>
+                    <div class="total_price">
+                        총 티켓 금액:
+                        <input type="text" name="amount" id="amount" align="right" readonly class="price_value" placeholder="0"/> 원
+                    </div>
+                    <input type="hidden" name="buyer_postcode" id="buyer_postcode"/>
+                </div>
+            </form>
         </div>
-        <div class="launch_box">
-            <div class="title">10월 15일(목)</div>
-            <div class="launch_select">
-                <span>메뉴 1 <input type="radio" name="day15_launch" value="menu1"/></span>
-                <span>메뉴 2 <input type="radio" name="day15_launch" value="menu2"/></span>
-                <span>메뉴 3 <input type="radio" name="day15_launch" value="menu3"/></span>
-                <span>메뉴 4 (for vegetarian)<input type="radio" name="day15_launch" value="menu4"/></span>
-                <span>식사안함 <input type="radio" name="day15_launch" value="menu5"/></span>
+        <div class="agreement">
+            <h4><img src="images/other/bullet.png" alt="*"/> 개인정보의 수집/이용에 관한 동의서</h4>
+            <div class="show_agreement" id="show_agreement">내용보기</div>
+            <div id="agreement_content">
+                CC Korea와 Creative Commons는 참가자 개인정보를 중요시하며,
+                &lt;정보통신망 이용촉진 및 정보보호 등에 관한 법률&gt; 및 &lt;개인정보보호법&gt;에 관한 법률을 준수하고 있습니다.
+                CC Korea와 Creative Commons는 법률에서 정하는 경우를 제외하고는 귀하의 동의 없이 개인정보를 제3자에게 제공하지 않으며 수집된 개인정보를 다음의 목적으로 보유하고 활용합니다
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th>수집하는 개인정보의 항목</th>
+                        <th>개인정보의 수집/이용목적</th>
+                        <th>개인정보의 보유 및 이용기간</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>이름 이메일 개인휴대폰번호 소속</td>
+                        <td>CC Global Summit 2015 행사 진행</td>
+                        <td>1년(관계법령에서 정한 일정한 기간)</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="agreed_check_wrap">
+                <input type="checkbox" name="personal_info_agree_checkbox" id="personal_info_agree_checkbox"/>
+                <label for="personal_info_agree_checkbox">개인정보 수집 및 이용에 동의합니다.</label>
+                <br/><br/>
+                <span class="payment_notice">CC 글로벌 써밋 2015의 결제는 (주)시옷의 "<a href="http://www.iamport.kr" target="_blank">아임포트<a>" 솔루션을 통해 이루어지고 있습니다.</span><br/>
+                * 결제 문자 메시지에는 결제대행사인 '주식회사 시옷 / 나이스정보통신' 으로 표시됩니다</span>
             </div>
         </div>
-        <div class="launch_box">
-            <div class="title">10월 16일(금)</div>
-            <div class="launch_select">
-                <span>메뉴 1 <input type="radio" name="day16_launch" value="menu1"/></span>
-                <span>메뉴 2 <input type="radio" name="day16_launch" value="menu2"/></span>
-                <span>메뉴 3 <input type="radio" name="day16_launch" value="menu3"/></span>
-                <span>메뉴 4 (for vegetarian)<input type="radio" name="day16_launch" value="menu4"/></span>
-                <span>식사안함 <input type="radio" name="day16_launch" value="menu5"/></span>
-            </div>
-        </div>
-        <div class="pay_or_not">
-            <button type="button" id="doPay" onclick="paymentProcess();">결제하기</button>
-            <button type="button" id="cancel">취소</button>
+        <div class="dopay_wrap">
+            <button type="button" id="doPay" onclick="validation();">결제하기</button>
         </div>
     </section>
 </div>
+</div>
+
+{% raw %}
+<script id="template" type="x-tmpl-mustache">
+    <div class="wrap apply_complete">
+        <section>
+            <div class="complete_image_text">
+                <img src="/images/other/pay_checked.png" alt=""/>
+                <div class="message">결제가 완료되었습니다.</div>
+            </div>
+            <div class="complete_contents">
+                환영합니다! <br/><br/>
+                <span id="user_name">{{name}}</span>님의 CC Global Summit 2015 참가신청이 성공적으로 완료되었습니다. <br/>
+                다음의 참가 신청 내용을 확인해주시고, <br/>
+                참가 당일 <span style="color:#ef513c;">국립중앙박물관 대강당 앞 로비</span>에서 이름표를 받아가세요! <br/>
+
+                <div style="border-bottom:1px solid #a0a0a0; border-top:1px solid #a0a0a0; margin: 20px 0; padding: 30px;">
+                    <table style="font-size: 13px;">
+                        <tr>
+                            <td>참가자명</td>
+                            <td id="name">{{name}}</td>
+                        </tr>
+                        <tr>
+                            <td>이메일</td>
+                            <td id="email">{{email}}</td>
+                        </tr>
+                        <tr>
+                            <td>연락처</td>
+                            <td id="tel">{{tel}}</td>
+                        </tr>
+                        <tr>
+                            <td>소속</td>
+                            <td id="organize">{{organize}}</td>
+                        </tr>
+                        <tr>
+                            <td>참가날짜</td>
+                            <td id="joinDate">{{joinDate}}</td>
+                        </tr>
+                        <tr>
+                            <td>참가유형</td>
+                            <td id="joinType">{{joinType}}</td>
+                        </tr>
+                        <tr>
+                            <td>점심식사</td>
+                            <td id="launch">{{launch}}</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <span style="font-size:16px;font-weight: bold;">총 티켓 금액    <span id="price">{{price}}</span>원</span><br/><br/>
+                    <span style="font-size:12px;color:#a0a0a0"> *온라인 참가 신청, 내용 변경 및 취소는 10월 12일 월요일까지이며,<br/>10월 12일 월요일 이후의 참가신청은 10월 15, 16일 국립중앙박물관 현장에서 가능합니다.<br/>이점 유의해주세요!</span><br/>
+                </div>
+                <a href="https://summit.cckorea.org" target="_blank" style="color:#ef513c;">CC Global Summit 2015</a>는<br class="nobr"/>
+                80여 개국의 다양한 참가자들이<br class="nobr"/>
+                여러분과 공통의 관심사를 가지고 있는 사람들과 생각을 나눌 수 있는 기회를 만들고자,
+                Slack에 팀을 만들어 참가자 간의 활발한 교류를 기대하고 있습니다.<br/><br/>
+                여러분도 슬랙의 CC Global Summit 2015팀에 가입하여<br class="nobr"/>
+                써밋 행사가 지난 후에도 이어질 수 있는 네트워킹에 참여해 보세요!<br/><br/>
+                <a href="http://blog.hivearena.com/archives/3396" target="_blank" style="color:#ef513c;">Slack을 어떻게 이용할 수
+                    있는지 살펴볼까요?</a><br/>
+                <a href="https://ccglobalsummit2015.herokuapp.com/" target="_blank" style="color:#ef513c;">슬랙 CC Global
+                    Summit 2015팀에 가입하러 가기</a><br/><br/><br/>
+                10월 16일 금요일 저녁 5시<br/>
+                전길남 박사님의 키노트 강연 후<br class="nobr"/>
+                40분간 진행될 전길남 박사님, Yochai Benkler(요하이 벤클러)의 대담에<br class="nobr"/>
+                여러분께서 두분께 하고 싶은 질문을 미리 등록할 수 있습니다.<br/><br/>
+                <a href="https://www.facebook.com/events/1455321544773645/" target="_blank" style="color:#ef513c;">질문 등록하러
+                    가기</a><br/><br/><br/>
+                써밋 기간 중 16일 금요일 저녁엔 성수동 SAI에서 CC파티가 열립니다!<br class="nobr"/>
+                조금 더 캐주얼한 분위기에서 써밋의 열기를 마음껏 발산하며 교류의 시간을 가져요~<br/><br/>
+                <a href="https://docs.google.com/forms/d/1dztoUzY0vG8rTMXpGLOzCEa0OQlepEUtU1e6XtYLHkg/viewform"
+                   target="_blank" style="color:#ef513c;">CC파티 신청하러 가기</a><br/><br/><br/>
+                여러분이 참여하는 써밋, 지금부터 시작합니다~!<br/><br/><br/>
+                <a href="https://docs.google.com/forms/d/1TbYcyjGhpwpyDKQQJQIu-bqDQDTW0ACyqR8vUelW1yA/viewform?usp=send_form"
+                   target="_blank" style="color:#ef513c;">* 온라인 참가 신청 / 취소 / 변경은 10월 12일 월요일까지이며,<br/>10월 12일 월요일 이후의 참가신청은 10월 15, 16일 국립중앙박물관 현장에서 가능합니다.<br/>이 점 유의해주세요!</a><br/>
+            </div>
+            <div class="buttons">
+                <button type="button" onclick="location.href='https://docs.google.com/forms/d/1TbYcyjGhpwpyDKQQJQIu-bqDQDTW0ACyqR8vUelW1yA/viewform?usp=send_form'">신청내용 변경하기</button>
+                <button type="button" onclick="location.href='/index.html'">메인 페이지로 이동</button>
+            </div>
+        </section>
+    </div>
+</script>
+{% endraw %}
+

@@ -192,16 +192,16 @@ img {
       background-position: top center;
       background-size: auto;
       height: auto; } }
-  .main_invite_wrap main {
+  .main_invite_wrap section {
     padding-top: 140px; }
     @media screen and (max-width: 1000px) {
-      .main_invite_wrap main {
+      .main_invite_wrap section {
         text-align: center;
         padding-top: 51px; } }
     @media screen and (max-width: 1000px) {
-      .main_invite_wrap main img {
+      .main_invite_wrap section img {
         width: 90%; } }
-    .main_invite_wrap main div.message {
+    .main_invite_wrap section div.message {
       text-align: justify;
       height: 90px;
       width: 631px;
@@ -212,7 +212,7 @@ img {
       padding: 10px 25px 0;
       font-size: 1.125em; }
       @media screen and (max-width: 1000px) {
-        .main_invite_wrap main div.message {
+        .main_invite_wrap section div.message {
           margin: 17px 0.75em 0 0.75em;
           width: calc(100% - 2.500em);
           padding: 1.0em 0.5em;
@@ -221,25 +221,25 @@ img {
           height: auto;
           text-align: justify;
           word-break: break-all; } }
-    .main_invite_wrap main div.location, .main_invite_wrap main .schedule .timetable table tr td div.oneline_location, .schedule .timetable table tr td .main_invite_wrap main div.oneline_location {
+    .main_invite_wrap section div.location, .main_invite_wrap section .schedule .timetable table tr td div.oneline_location, .schedule .timetable table tr td .main_invite_wrap section div.oneline_location {
       display: inline-block;
       margin-top: 20px;
       font-size: 1.500em; }
       @media screen and (max-width: 1000px) {
-        .main_invite_wrap main div.location, .main_invite_wrap main .schedule .timetable table tr td div.oneline_location, .schedule .timetable table tr td .main_invite_wrap main div.oneline_location {
+        .main_invite_wrap section div.location, .main_invite_wrap section .schedule .timetable table tr td div.oneline_location, .schedule .timetable table tr td .main_invite_wrap section div.oneline_location {
           text-align: center;
           width: 100%;
           font-size: 1.125em;
           margin: 0;
           height: 95px;
           padding-top: 40px; } }
-      .main_invite_wrap main div.location .dateinfo, .main_invite_wrap main .schedule .timetable table tr td div.oneline_location .dateinfo, .schedule .timetable table tr td .main_invite_wrap main div.oneline_location .dateinfo {
+      .main_invite_wrap section div.location .dateinfo, .main_invite_wrap section .schedule .timetable table tr td div.oneline_location .dateinfo, .schedule .timetable table tr td .main_invite_wrap section div.oneline_location .dateinfo {
         font: bold 36px Verdana;
         color: #575757;
         letter-spacing: -2px;
         margin-bottom: 10px; }
         @media screen and (max-width: 1000px) {
-          .main_invite_wrap main div.location .dateinfo, .main_invite_wrap main .schedule .timetable table tr td div.oneline_location .dateinfo, .schedule .timetable table tr td .main_invite_wrap main div.oneline_location .dateinfo {
+          .main_invite_wrap section div.location .dateinfo, .main_invite_wrap section .schedule .timetable table tr td div.oneline_location .dateinfo, .schedule .timetable table tr td .main_invite_wrap section div.oneline_location .dateinfo {
             font-size: 15px;
             font-weight: bold;
             width: 90%;
@@ -247,10 +247,10 @@ img {
             text-align: center;
             margin-bottom: 4px;
             letter-spacing: 0; } }
-      .main_invite_wrap main div.location .locate, .main_invite_wrap main .schedule .timetable table tr td div.oneline_location .locate, .schedule .timetable table tr td .main_invite_wrap main div.oneline_location .locate {
+      .main_invite_wrap section div.location .locate, .main_invite_wrap section .schedule .timetable table tr td div.oneline_location .locate, .schedule .timetable table tr td .main_invite_wrap section div.oneline_location .locate {
         text-align: left; }
         @media screen and (max-width: 1000px) {
-          .main_invite_wrap main div.location .locate, .main_invite_wrap main .schedule .timetable table tr td div.oneline_location .locate, .schedule .timetable table tr td .main_invite_wrap main div.oneline_location .locate {
+          .main_invite_wrap section div.location .locate, .main_invite_wrap section .schedule .timetable table tr td div.oneline_location .locate, .schedule .timetable table tr td .main_invite_wrap section div.oneline_location .locate {
             font-size: 15px;
             width: 90%;
             display: inline-block;
@@ -383,9 +383,18 @@ img {
       font-size: 1.125em;
       text-decoration: none;
       color: #fff; }
+      @media screen and (min-width: 1024px) {
+        .program_info_wrap .show_all_program a.web {
+          display: block; }
+        .program_info_wrap .show_all_program a.mobile {
+          display: none; } }
       @media screen and (max-width: 1024px) {
         .program_info_wrap .show_all_program a {
-          font-size: 16px; } }
+          font-size: 16px; }
+          .program_info_wrap .show_all_program a.web {
+            display: none; }
+          .program_info_wrap .show_all_program a.mobile {
+            display: block; } }
       .program_info_wrap .show_all_program a:hover {
         text-decoration: underline; }
   .program_info_wrap .apply_summit_wrap {
@@ -560,7 +569,7 @@ img {
       margin-right: 50px; }
       @media screen and (max-width: 1000px) {
         .partner_wrap .sponsor_logos .logos {
-          width: 40%;
+          width: 100%;
           margin: 0 0 32px 0; }
           .partner_wrap .sponsor_logos .logos.othersize {
             width: 70%; }
@@ -608,7 +617,7 @@ img {
   .footer .ccl_info {
     padding-top: 56px;
     display: inline;
-    width: 800px;
+    width: calc(100% - 300px);
     height: 135px;
     vertical-align: middle;
     float: left; }
@@ -625,7 +634,7 @@ img {
       overflow: auto;
       padding: 24px 0; } }
   .footer_black .ccl {
-    padding-top: 100px;
+    padding-top: 75px;
     display: inline-block;
     float: left;
     height: 120px;
@@ -649,7 +658,7 @@ img {
           height: 25px; } }
   .footer_black .ccl_info {
     display: inline-block;
-    width: 800px;
+    width: calc(100% - 300px);
     height: 135px;
     vertical-align: middle;
     float: left; }
@@ -767,7 +776,7 @@ img {
   margin: 70px 0;
   text-align: center; }
   .past_global_summit .past_title {
-    font-size: 1.875em; }
+    font-size: 24px; }
   .past_global_summit .past_description {
     font-size: 0.875em;
     line-height: 24px;
@@ -872,7 +881,7 @@ img {
       height: 14.375em;
       float: left;
       text-align: center;
-      margin: 0 20px 20px; }
+      margin: 0 47px 20px; }
       @media screen and (max-width: 600px) {
         .preparing_people .people_list .person {
           margin: 0 0.4em 0 0.4em;
@@ -881,6 +890,8 @@ img {
         .preparing_people .people_list .person {
           margin: 0 0.8em 0 0;
           width: 160px; } }
+      .preparing_people .people_list .person.five_in_one_line {
+        margin: 0 20px 20px; }
       .preparing_people .people_list .person:last-child {
         margin-right: 0; }
       .preparing_people .people_list .person .photo {
@@ -1029,7 +1040,7 @@ h2.normal {
   font-size: 0.875em; }
 
 .font-size-24 {
-  font-size: 1.125em; }
+  font-size: 1.2em; }
 
 .font-bold {
   font-weight: bold; }
@@ -1094,8 +1105,9 @@ a {
   .keywords_wrap section {
     text-align: center;
     padding: 3.750em 0 3.750em 0; }
-    .keywords_wrap section .head_description br.nobr {
-      display: none; }
+    @media screen and (max-width: 1000px) {
+      .keywords_wrap section .head_description br.nobr {
+        display: none; } }
     .keywords_wrap section .keyword_box {
       background-color: #fff;
       border: 1px solid #e8e8e8;
@@ -1178,86 +1190,139 @@ a {
   text-align: center;
   background-color: #f7f7f8;
   overflow: auto; }
-  .speaker_wrap .speaker_box, .sponsor_whole_wrap .speaker_box {
+  .speaker_wrap.second, .second.sponsor_whole_wrap {
+    padding-top: 0; }
+  .speaker_wrap .special_speaker_box, .sponsor_whole_wrap .special_speaker_box, .speaker_wrap .speaker_box, .sponsor_whole_wrap .speaker_box {
     background-color: #fff;
     border: 1px solid #e8e8e8;
     border-bottom: 3px solid #e8e8e8;
     margin-bottom: 20px;
     overflow: auto; }
     @media screen and (max-width: 1000px) {
-      .speaker_wrap .speaker_box, .sponsor_whole_wrap .speaker_box {
+      .speaker_wrap .special_speaker_box, .sponsor_whole_wrap .special_speaker_box, .speaker_wrap .speaker_box, .sponsor_whole_wrap .speaker_box {
         padding: 20px;
         width: calc(100% - 40px); } }
-    .speaker_wrap .speaker_box .person_image, .sponsor_whole_wrap .speaker_box .person_image {
+    .speaker_wrap .special_speaker_box .person_image, .sponsor_whole_wrap .special_speaker_box .person_image, .speaker_wrap .speaker_box .person_image, .sponsor_whole_wrap .speaker_box .person_image {
       float: left;
       padding: 25px; }
       @media screen and (max-width: 1000px) {
-        .speaker_wrap .speaker_box .person_image, .sponsor_whole_wrap .speaker_box .person_image {
+        .speaker_wrap .special_speaker_box .person_image, .sponsor_whole_wrap .special_speaker_box .person_image, .speaker_wrap .speaker_box .person_image, .sponsor_whole_wrap .speaker_box .person_image {
           padding: 0;
           width: 100%;
           text-align: center; }
-          .speaker_wrap .speaker_box .person_image .image, .sponsor_whole_wrap .speaker_box .person_image .image {
+          .speaker_wrap .special_speaker_box .person_image .image, .sponsor_whole_wrap .special_speaker_box .person_image .image, .speaker_wrap .speaker_box .person_image .image, .sponsor_whole_wrap .speaker_box .person_image .image {
             height: auto; } }
-      .speaker_wrap .speaker_box .person_image .image, .sponsor_whole_wrap .speaker_box .person_image .image {
+      .speaker_wrap .special_speaker_box .person_image .image, .sponsor_whole_wrap .special_speaker_box .person_image .image, .speaker_wrap .speaker_box .person_image .image, .sponsor_whole_wrap .speaker_box .person_image .image {
         width: 160px;
         height: 160px; }
-    .speaker_wrap .speaker_box .person_profile, .sponsor_whole_wrap .speaker_box .person_profile {
+    .speaker_wrap .special_speaker_box .person_profile, .sponsor_whole_wrap .special_speaker_box .person_profile, .speaker_wrap .speaker_box .person_profile, .sponsor_whole_wrap .speaker_box .person_profile {
       float: right;
       text-align: left;
       padding: 25px 0;
       width: calc(100% - 220px); }
       @media screen and (max-width: 1000px) {
-        .speaker_wrap .speaker_box .person_profile, .sponsor_whole_wrap .speaker_box .person_profile {
+        .speaker_wrap .special_speaker_box .person_profile, .sponsor_whole_wrap .special_speaker_box .person_profile, .speaker_wrap .speaker_box .person_profile, .sponsor_whole_wrap .speaker_box .person_profile {
           float: none;
           width: 100%; } }
-      .speaker_wrap .speaker_box .person_profile .name_social .kor_name, .sponsor_whole_wrap .speaker_box .person_profile .name_social .kor_name {
+      .speaker_wrap .special_speaker_box .person_profile .name_social .kor_name, .sponsor_whole_wrap .special_speaker_box .person_profile .name_social .kor_name, .speaker_wrap .speaker_box .person_profile .name_social .kor_name, .sponsor_whole_wrap .speaker_box .person_profile .name_social .kor_name {
         font-size: 24px;
         float: left;
         vertical-align: middle;
-        line-height: 24px; }
+        line-height: 24px;
+        margin-right: 7px; }
         @media screen and (max-width: 1000px) {
-          .speaker_wrap .speaker_box .person_profile .name_social .kor_name, .sponsor_whole_wrap .speaker_box .person_profile .name_social .kor_name {
+          .speaker_wrap .special_speaker_box .person_profile .name_social .kor_name, .sponsor_whole_wrap .special_speaker_box .person_profile .name_social .kor_name, .speaker_wrap .speaker_box .person_profile .name_social .kor_name, .sponsor_whole_wrap .speaker_box .person_profile .name_social .kor_name {
             font-size: 18px;
             width: 100%;
             text-align: center;
             margin-top: 10px; } }
-      .speaker_wrap .speaker_box .person_profile .name_social .eng_name, .sponsor_whole_wrap .speaker_box .person_profile .name_social .eng_name {
+      .speaker_wrap .special_speaker_box .person_profile .name_social .eng_name, .sponsor_whole_wrap .special_speaker_box .person_profile .name_social .eng_name, .speaker_wrap .speaker_box .person_profile .name_social .eng_name, .sponsor_whole_wrap .speaker_box .person_profile .name_social .eng_name {
         font-size: 18px;
         line-height: 24px; }
         @media screen and (max-width: 1000px) {
-          .speaker_wrap .speaker_box .person_profile .name_social .eng_name, .sponsor_whole_wrap .speaker_box .person_profile .name_social .eng_name {
+          .speaker_wrap .special_speaker_box .person_profile .name_social .eng_name, .sponsor_whole_wrap .special_speaker_box .person_profile .name_social .eng_name, .speaker_wrap .speaker_box .person_profile .name_social .eng_name, .sponsor_whole_wrap .speaker_box .person_profile .name_social .eng_name {
             font-size: 12px;
             width: 100%;
             text-align: center; } }
-      .speaker_wrap .speaker_box .person_profile .name_social .social_wrap, .sponsor_whole_wrap .speaker_box .person_profile .name_social .social_wrap {
+      .speaker_wrap .special_speaker_box .person_profile .name_social .social_wrap, .sponsor_whole_wrap .special_speaker_box .person_profile .name_social .social_wrap, .speaker_wrap .speaker_box .person_profile .name_social .social_wrap, .sponsor_whole_wrap .speaker_box .person_profile .name_social .social_wrap {
         float: right;
         margin-right: 25px; }
         @media screen and (max-width: 1000px) {
-          .speaker_wrap .speaker_box .person_profile .name_social .social_wrap, .sponsor_whole_wrap .speaker_box .person_profile .name_social .social_wrap {
+          .speaker_wrap .special_speaker_box .person_profile .name_social .social_wrap, .sponsor_whole_wrap .special_speaker_box .person_profile .name_social .social_wrap, .speaker_wrap .speaker_box .person_profile .name_social .social_wrap, .sponsor_whole_wrap .speaker_box .person_profile .name_social .social_wrap {
             margin-right: 8px;
             margin-top: -220px;
             width: 26px; } }
-      .speaker_wrap .speaker_box .person_profile .organize, .sponsor_whole_wrap .speaker_box .person_profile .organize {
+      .speaker_wrap .special_speaker_box .person_profile .organize, .sponsor_whole_wrap .special_speaker_box .person_profile .organize, .speaker_wrap .speaker_box .person_profile .organize, .sponsor_whole_wrap .speaker_box .person_profile .organize {
         font-size: 12px;
         color: #ff4f38;
         margin-top: 20px; }
-      .speaker_wrap .speaker_box .person_profile .describe, .sponsor_whole_wrap .speaker_box .person_profile .describe {
+      .speaker_wrap .special_speaker_box .person_profile .describe, .sponsor_whole_wrap .special_speaker_box .person_profile .describe, .speaker_wrap .speaker_box .person_profile .describe, .sponsor_whole_wrap .speaker_box .person_profile .describe {
         width: 97%;
         text-align: justify;
         word-break: break-all;
         font-size: 14px;
         line-height: 24px; }
-      .speaker_wrap .speaker_box .person_profile .programs, .sponsor_whole_wrap .speaker_box .person_profile .programs {
+      .speaker_wrap .special_speaker_box .person_profile .programs, .sponsor_whole_wrap .special_speaker_box .person_profile .programs, .speaker_wrap .speaker_box .person_profile .programs, .sponsor_whole_wrap .speaker_box .person_profile .programs {
         display: inline-block;
         text-align: left;
         font-size: 14px;
         line-height: 30px;
         margin-top: 20px;
         color: #f0513d; }
-        .speaker_wrap .speaker_box .person_profile .programs .items, .sponsor_whole_wrap .speaker_box .person_profile .programs .items {
+        .speaker_wrap .special_speaker_box .person_profile .programs .items, .sponsor_whole_wrap .special_speaker_box .person_profile .programs .items, .speaker_wrap .speaker_box .person_profile .programs .items, .sponsor_whole_wrap .speaker_box .person_profile .programs .items {
           line-height: 20px;
           color: #333;
           font-size: 12px; }
+  .speaker_wrap .speaker_box, .sponsor_whole_wrap .speaker_box {
+    width: 538px;
+    margin: 0px;
+    float: left; }
+    @media screen and (max-width: 1000px) {
+      .speaker_wrap .speaker_box, .sponsor_whole_wrap .speaker_box {
+        padding: 20px;
+        width: calc(100% - 40px);
+        margin: 0 0 20px 0; }
+        .speaker_wrap .speaker_box:last-child, .sponsor_whole_wrap .speaker_box:last-child {
+          margin-bottom: 0; } }
+    .speaker_wrap .speaker_box.left, .sponsor_whole_wrap .speaker_box.left {
+      margin: 10px 10px 10px 0; }
+    .speaker_wrap .speaker_box.right, .sponsor_whole_wrap .speaker_box.right {
+      margin: 10px 0 10px 10px; }
+    .speaker_wrap .speaker_box .person_image .texted, .sponsor_whole_wrap .speaker_box .person_image .texted {
+      line-height: 160px;
+      font-size: 80px;
+      font-weight: bold;
+      color: #b1b1b1; }
+    .speaker_wrap .speaker_box .person_profile, .sponsor_whole_wrap .speaker_box .person_profile {
+      padding: 25px 25px 25px 0;
+      width: 303px; }
+      @media screen and (max-width: 1000px) {
+        .speaker_wrap .speaker_box .person_profile, .sponsor_whole_wrap .speaker_box .person_profile {
+          width: 100%;
+          padding: 0; } }
+      .speaker_wrap .speaker_box .person_profile .name_social, .sponsor_whole_wrap .speaker_box .person_profile .name_social {
+        height: 23px; }
+        @media screen and (max-width: 1000px) {
+          .speaker_wrap .speaker_box .person_profile .name_social, .sponsor_whole_wrap .speaker_box .person_profile .name_social {
+            width: 100%;
+            margin: 0; } }
+      .speaker_wrap .speaker_box .person_profile .kor_name, .sponsor_whole_wrap .speaker_box .person_profile .kor_name {
+        margin-bottom: 20px; }
+        @media screen and (max-width: 1000px) {
+          .speaker_wrap .speaker_box .person_profile .kor_name, .sponsor_whole_wrap .speaker_box .person_profile .kor_name {
+            margin: 0; } }
+        @media screen and (min-width: 1000px) {
+          .speaker_wrap .speaker_box .person_profile .kor_name, .sponsor_whole_wrap .speaker_box .person_profile .kor_name {
+            margin-bottom: 0; } }
+      @media screen and (min-width: 1000px) {
+        .speaker_wrap .speaker_box .person_profile .organize, .sponsor_whole_wrap .speaker_box .person_profile .organize {
+          height: 28px; } }
+      .speaker_wrap .speaker_box .person_profile .describe, .sponsor_whole_wrap .speaker_box .person_profile .describe {
+        min-height: 120px; }
+        @media screen and (max-width: 1000px) {
+          .speaker_wrap .speaker_box .person_profile .describe, .sponsor_whole_wrap .speaker_box .person_profile .describe {
+            min-height: inherit;
+            height: auto; } }
 
 .guide_bar_90p {
   height: 10px;
@@ -1308,28 +1373,49 @@ a {
           float: none; } }
     .newsboard_wrap article .latest_article_contents .content_text {
       width: 100%;
+      height: auto;
+      overflow: auto;
       font-size: 0.8em;
       line-height: 160%;
       text-align: justify;
       word-break: keep-all; }
+      .newsboard_wrap article .latest_article_contents .content_text .img_center {
+        text-align: center; }
+      .newsboard_wrap article .latest_article_contents .content_text .person {
+        margin-bottom: 30px;
+        width: 50%;
+        float: left; }
+        .newsboard_wrap article .latest_article_contents .content_text .person .person_image {
+          margin: 0 10px 0;
+          float: left;
+          padding: 0; }
+          @media screen and (max-width: 1000px) {
+            .newsboard_wrap article .latest_article_contents .content_text .person .person_image {
+              width: 100%;
+              text-align: center;
+              margin: 0; } }
+          .newsboard_wrap article .latest_article_contents .content_text .person .person_image img {
+            vertical-align: top;
+            width: 160px;
+            height: 160px;
+            border-radius: 80px; }
+        .newsboard_wrap article .latest_article_contents .content_text .person .person_info {
+          width: calc(100% - 180px);
+          word-break: normal;
+          text-align: left;
+          float: right; }
+          @media screen and (max-width: 1000px) {
+            .newsboard_wrap article .latest_article_contents .content_text .person .person_info {
+              text-align: center;
+              width: 100%; } }
+        @media screen and (max-width: 1000px) {
+          .newsboard_wrap article .latest_article_contents .content_text .person {
+            width: 100%;
+            margin-bottom: 0; } }
       .newsboard_wrap article .latest_article_contents .content_text img {
         width: 370px; }
       .newsboard_wrap article .latest_article_contents .content_text a {
         color: #ef513c; }
-      .newsboard_wrap article .latest_article_contents .content_text .img_center {
-        text-align: center; }
-      .newsboard_wrap article .latest_article_contents .content_text .person {
-        text-align: center;
-        width: 100%;
-        margin-right: 30px; }
-        .newsboard_wrap article .latest_article_contents .content_text .person > img {
-          width: 160px;
-          height: 160px;
-          border-radius: 80px;
-          vertical-align: middle;
-          margin-right: calc(50% + 80px);
-          display: inline-block;
-          margin-left: calc(50% - 80px); }
   .newsboard_wrap section {
     width: 70%; }
     @media screen and (max-width: 1000px) {
@@ -1355,7 +1441,6 @@ a {
               display: none; } }
         .newsboard_wrap section .article_list .article_box .timestamp {
           font-size: 14px;
-          font-style: italic;
           color: #ef513c;
           line-height: 25px;
           position: absolute;
@@ -1364,8 +1449,7 @@ a {
           @media screen and (max-width: 1000px) {
             .newsboard_wrap section .article_list .article_box .timestamp {
               position: static;
-              text-align: right;
-              font-style: normal; } }
+              text-align: right; } }
         .newsboard_wrap section .article_list .article_box .abstract_contents {
           position: relative;
           padding-bottom: 25px;
@@ -1379,16 +1463,17 @@ a {
           .newsboard_wrap section .article_list .article_box .abstract_contents .title {
             font-size: 18px;
             font-weight: bold;
-            line-height: 27px; }
+            line-height: 27px;
+            width: 90%; }
           .newsboard_wrap section .article_list .article_box .abstract_contents .abstract_text {
             width: 100%;
             font-size: 14px;
             line-height: 25px;
             text-align: justify;
-            word-break: keep-all; }
+            word-break: keep-all;
+            margin-top: 15px; }
             @media screen and (max-width: 1000px) {
               .newsboard_wrap section .article_list .article_box .abstract_contents .abstract_text {
-                margin-top: 15px;
                 font-size: 12px; } }
 
 .attend_wrap {
@@ -1415,18 +1500,43 @@ a {
         line-height: 150%;
         padding: 1em;
         word-break: keep-all; } }
+  .attend_wrap .mobile_ticket_info {
+    font-size: 13px; }
+    @media screen and (max-width: 1000px) {
+      .attend_wrap .mobile_ticket_info {
+        display: block; } }
+    @media screen and (min-width: 1000px) {
+      .attend_wrap .mobile_ticket_info {
+        display: none; } }
+    .attend_wrap .mobile_ticket_info table {
+      width: 100%;
+      background-color: #fff;
+      border-top: 1px solid #dedede;
+      border-left: 1px solid #dedede; }
+      .attend_wrap .mobile_ticket_info table th, .attend_wrap .mobile_ticket_info table td {
+        border-bottom: 1px solid #dedede;
+        border-right: 1px solid #dedede;
+        padding: 20px 0; }
+      .attend_wrap .mobile_ticket_info table th {
+        background-color: #f5f5f5; }
+      .attend_wrap .mobile_ticket_info table td.price {
+        color: #ee4023;
+        font-weight: bold; }
   .attend_wrap .ticket_info {
     position: relative;
     z-index: 10;
     display: inline-block;
-    margin: 35px 0 0 0;
+    margin: 0;
     width: 978px;
     height: 284px;
     background: #fff url("/images/other/ticket_table_bg.png") no-repeat;
-    padding: 0px; }
+    padding: 0; }
     @media screen and (max-width: 1000px) {
       .attend_wrap .ticket_info {
-        background: #FFFFFF; } }
+        display: none; } }
+    @media screen and (min-width: 1000px) {
+      .attend_wrap .ticket_info {
+        display: inline-block; } }
     .attend_wrap .ticket_info table {
       width: 958px;
       height: 265px;
@@ -1450,53 +1560,262 @@ a {
         font-weight: bold; }
     .attend_wrap .ticket_info .shadow {
       position: absolute; }
+  .attend_wrap .comeon_cc_sponsor {
+    margin-top: 20px;
+    color: #f35b42; }
 
-.launch {
-  background-color: #fff; }
-  .launch .launch_box {
-    display: inline-block;
-    width: 978px;
-    height: 160px;
-    border: 1px solid #d7d7d7;
-    margin-top: 35px; }
-    .launch .launch_box .title {
-      height: 52px;
-      line-height: 52px;
-      font-size: 18px;
-      color: #f0513d;
-      background-color: #f6f6f6;
-      font-weight: bold; }
-    .launch .launch_box .launch_select {
-      height: 108px;
-      line-height: 108px; }
-      .launch .launch_box .launch_select span {
-        margin-right: 50px; }
-        .launch .launch_box .launch_select span:last-child {
-          margin-right: 0; }
-  .launch .pay_or_not {
-    margin-top: 60px; }
-    .launch .pay_or_not button {
-      cursor: pointer;
-      width: 225px;
-      height: 67px;
-      line-height: 67px;
-      color: #fff;
-      font-size: 16px;
-      border: 0; }
-      .launch .pay_or_not button:first-child {
-        margin-right: 30px; }
-      .launch .pay_or_not button#doPay {
-        background-color: #f35b42; }
-      .launch .pay_or_not button#cancel {
-        background-color: #666; }
+.application {
+  background-color: #f7f7f8; }
+  .application section {
+    width: 60%; }
+    @media screen and (max-width: 1000px) {
+      .application section {
+        width: 90%; } }
+    .application section .application_box {
+      width: 100%; }
+      .application section .application_box table {
+        width: 100%;
+        background-color: #fff; }
+        .application section .application_box table tr th, .application section .application_box table tr td {
+          padding: 10px;
+          line-height: 180%;
+          border-bottom: 1px solid #dedede; }
+        .application section .application_box table tr th {
+          font-size: 16px;
+          vertical-align: middle;
+          border-right: 1px solid #dedede;
+          word-break: keep-all; }
+          @media screen and (max-width: 1000px) {
+            .application section .application_box table tr th {
+              font-size: 14px;
+              line-height: 120%; } }
+        .application section .application_box table tr td {
+          font-size: 14px;
+          text-align: left;
+          padding-left: 20px; }
+          @media screen and (max-width: 400px) {
+            .application section .application_box table tr td {
+              padding-left: 5px; } }
+          @media screen and (max-width: 1000px) {
+            .application section .application_box table tr td {
+              font-size: 12px; } }
+          .application section .application_box table tr td.two_lines {
+            line-height: 250%; }
+        .application section .application_box table tr:last-child th, .application section .application_box table tr:last-child td {
+          border-bottom: 0; }
+    .application section .dopay_wrap {
+      margin-top: 25px; }
+      .application section .dopay_wrap button {
+        cursor: pointer;
+        width: 225px;
+        height: 67px;
+        line-height: 67px;
+        color: #fff;
+        font-size: 16px;
+        border: 0;
+        background-color: #c0c0c0; }
+        @media screen and (max-width: 1000px) {
+          .application section .dopay_wrap button:first-child {
+            margin-right: 0;
+            margin-bottom: 20px; } }
+        .application section .dopay_wrap button#doPay {
+          background-color: #f35b42; }
+
+.cancel_wrap {
+  padding-top: 70px;
+  border-top: 4px double #929292; }
+  .cancel_wrap button {
+    cursor: pointer;
+    width: 225px;
+    height: 67px;
+    line-height: 67px;
+    color: #fff;
+    font-size: 16px;
+    border: 0;
+    background-color: #c0c0c0; }
+  .cancel_wrap .cancel_info {
+    color: #ee4023;
+    font-size: 12px; }
+  .cancel_wrap button {
+    padding: 0; }
 
 .move_step_icon {
   position: absolute;
   margin: 0 auto;
   padding: 0;
   z-index: 100;
-  top: 655px;
+  top: 598px;
   text-align: center; }
+  @media screen and (max-width: 1000px) {
+    .move_step_icon {
+      top: 561px; } }
+
+#buyer_name,
+#buyer_eng_name,
+#buyer_email,
+#buyer_tel,
+#buyer_addr,
+#buyer_eng_addr,
+#amount,
+#buyer_email {
+  width: 200px;
+  height: 20px;
+  font-size: 16px;
+  font-weight: normal;
+  margin-right: 15px;
+  border: 1px solid #D3D3D3; }
+  @media screen and (max-width: 400px) {
+    #buyer_name,
+    #buyer_eng_name,
+    #buyer_email,
+    #buyer_tel,
+    #buyer_addr,
+    #buyer_eng_addr,
+    #amount,
+    #buyer_email {
+      width: 150px;
+      margin-right: 0; } }
+
+#buyer_addr,
+#buyer_eng_addr,
+#buyer_name,
+#buyer_eng_name {
+  margin-left: 15px; }
+
+#joinform label.error {
+  color: #ee4023;
+  font-size: 12px; }
+
+.launch_box_info {
+  color: #ee4023;
+  font-size: 12px; }
+
+.launch_box {
+  display: none; }
+
+.total_price_wrap {
+  width: 100%;
+  text-align: right;
+  display: table; }
+  .total_price_wrap .empty_space {
+    display: table-cell;
+    width: calc(100% - 320px); }
+  .total_price_wrap .total_price {
+    display: table-cell;
+    width: 320px;
+    text-align: right;
+    margin-top: 30px;
+    padding: 20px 0;
+    border-bottom: 1px solid #dedede; }
+    .total_price_wrap .total_price #amount {
+      text-align: right;
+      width: 185px;
+      border: 0;
+      font-size: 28px;
+      height: 32px;
+      background-color: #f7f7f8; }
+      @media screen and (max-width: 400px) {
+        .total_price_wrap .total_price #amount {
+          width: 150px; } }
+
+.agreement {
+  text-align: left;
+  width: 100%;
+  font-size: 12px; }
+  @media screen and (max-width: 1000px) {
+    .agreement {
+      margin-top: 50px; } }
+  @media screen and (max-width: 1000px) {
+    .agreement h4 {
+      width: 200px;
+      float: left;
+      margin: 0; } }
+  .agreement .show_agreement {
+    text-align: right;
+    width: calc(100% - 200px);
+    float: left;
+    font-weight: bold;
+    text-decoration: underline; }
+    @media screen and (max-width: 1000px) {
+      .agreement .show_agreement {
+        display: block; } }
+    @media screen and (min-width: 1000px) {
+      .agreement .show_agreement {
+        display: none; } }
+  .agreement #agreement_content {
+    width: 100%;
+    line-height: 160%;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    padding: 20px 0; }
+    @media screen and (max-width: 1000px) {
+      .agreement #agreement_content {
+        display: none;
+        padding-bottom: 0; } }
+    .agreement #agreement_content table {
+      margin-top: 15px;
+      width: 100%; }
+      .agreement #agreement_content table th {
+        background-color: #dedede;
+        text-align: center;
+        font-weight: normal; }
+      .agreement #agreement_content table td {
+        text-align: center; }
+  .agreement .agreed_check_wrap {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px; }
+    @media screen and (max-width: 1000px) {
+      .agreement .agreed_check_wrap {
+        text-align: left;
+        padding-top: 25px;
+        margin-top: 0; } }
+    .agreement .agreed_check_wrap .payment_notice {
+      color: #ee4023; }
+
+.apply_complete {
+  padding: 60px 0; }
+  .apply_complete section {
+    border-top: 1px solid #d0d0d0;
+    border-bottom: 1px solid #d0d0d0;
+    padding: 50px 0;
+    line-height: 130%; }
+    .apply_complete section .complete_image_text {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold; }
+      .apply_complete section .complete_image_text .message {
+        margin-top: 15px; }
+    .apply_complete section .complete_contents {
+      width: 500px;
+      margin: 0 auto;
+      text-align: left;
+      font-size: 14px;
+      padding: 40px 0; }
+      @media screen and (max-width: 500px) {
+        .apply_complete section .complete_contents {
+          width: 100%; } }
+      @media screen and (max-width: 500px) {
+        .apply_complete section .complete_contents .nobr {
+          display: none; } }
+    .apply_complete section .buttons {
+      text-align: center; }
+      .apply_complete section .buttons button {
+        cursor: pointer;
+        width: 225px;
+        height: 67px;
+        line-height: 67px;
+        color: #fff;
+        font-size: 16px;
+        border: 0;
+        background-color: #c0c0c0; }
+        .apply_complete section .buttons button:first-child {
+          background-color: #f35b42;
+          margin-right: 25px; }
+          @media screen and (max-width: 1000px) {
+            .apply_complete section .buttons button:first-child {
+              margin-right: 0;
+              margin-bottom: 20px; } }
 
 .schedule {
   text-align: center;
@@ -1573,15 +1892,23 @@ a {
       background-color: #fff; }
       .schedule .timetable table tr {
         height: 60px; }
+        .schedule .timetable table tr.h60 {
+          height: 60px; }
         .schedule .timetable table tr.h120 {
           height: 120px; }
+        .schedule .timetable table tr.h180 {
+          height: 180px; }
         .schedule .timetable table tr.h240 {
           height: 240px; }
+        .schedule .timetable table tr.h300 {
+          height: 300px; }
+        .schedule .timetable table tr.h350 {
+          height: 350px; }
         .schedule .timetable table tr.border_bottom td {
           border-bottom: 1px solid #dedede; }
         .schedule .timetable table tr td {
           padding: 5px;
-          height: 50px;
+          height: inherit;
           font-size: 11px; }
           .schedule .timetable table tr td.h120 {
             height: 110px; }
@@ -1596,8 +1923,6 @@ a {
             height: 100%;
             width: calc(100% - 30px);
             vertical-align: middle;
-            border: 1px solid #dedede;
-            border-bottom: 3px solid #dedede;
             padding: 43px 15px 0 15px;
             position: relative; }
             .schedule .timetable table tr td .light_bg img, .schedule .timetable table tr td div.gray_light img, .schedule .timetable table tr td div.whiteblue_light img, .schedule .timetable table tr td div.whiteorange_light img, .schedule .timetable table tr td div.whitepurple_light img, .schedule .timetable table tr td div.whitegreen_light img {
@@ -1607,7 +1932,8 @@ a {
               line-height: 130%; }
             .schedule .timetable table tr td .light_bg.oneline, .schedule .timetable table tr td div.oneline.gray_light, .schedule .timetable table tr td div.oneline.whiteblue_light, .schedule .timetable table tr td div.oneline.whiteorange_light, .schedule .timetable table tr td div.oneline.whitepurple_light, .schedule .timetable table tr td div.oneline.whitegreen_light {
               padding: 16px 0 0 46px;
-              width: calc(100% - 46px); }
+              width: calc(100% - 46px);
+              height: 40px; }
           .schedule .timetable table tr td div.gray_light {
             background-color: #ececec; }
           .schedule .timetable table tr td div.whiteblue_light {
@@ -1868,5 +2194,164 @@ ul {
               font-size: 0.725em;
               font-weight: normal;
               line-height: 150%; }
+
+#day15_timetable .track1,
+#day15_timetable .track2,
+#day15_timetable .track3,
+#day15_timetable .track4,
+#day15_timetable .creative-workshop {
+  height: 190px; }
+
+/**
+ for ie 10
+*/
+.ie10 #kcc_session {
+  height: 600px; }
+
+.ie10 #kcc_session .angel {
+  height: 600px; }
+
+/**
+for IE 11
+*/
+*::-ms-backdrop, #day16_timetable .h120 div.box {
+  height: 120px; }
+
+*::-ms-backdrop, #day16_timetable .h180 div.box {
+  height: 180px; }
+
+*::-ms-backdrop, #day16_timetable .h240 div.box {
+  height: 240px; }
+
+*::-ms-backdrop, #day16_timetable .h300 div.box {
+  height: 300px; }
+
+*::-ms-backdrop, #day16_timetable .h350 div.box {
+  height: 350px; }
+
+*::-ms-backdrop, #day16_timetable .h120 div.angel {
+  height: 600px; }
+
+*::-ms-backdrop, #day17_timetable .h120 div.box {
+  height: 120px; }
+
+*::-ms-backdrop, #day17_timetable .h180 div.box {
+  height: 180px; }
+
+*::-ms-backdrop, #day17_timetable .h240 div.box {
+  height: 240px; }
+
+.session_detail_wrap {
+  text-align: center;
+  background-color: #f7f7f8; }
+  .session_detail_wrap section {
+    text-align: center;
+    padding: 3.750em 0 3.750em 0;
+    min-height: 500px; }
+    @media screen and (min-width: 1000px) {
+      .session_detail_wrap section {
+        width: 800px; } }
+    .session_detail_wrap section .session_detail_box {
+      background-color: #fff;
+      border: 1px solid #e8e8e8;
+      border-bottom: 3px solid #e8e8e8;
+      font-size: 0.875em;
+      overflow: auto;
+      margin-bottom: 1.250em;
+      position: relative; }
+      .session_detail_wrap section .session_detail_box:last-child {
+        margin-bottom: 0; }
+      .session_detail_wrap section .session_detail_box .title_wrap {
+        padding-left: 100px;
+        height: 95px;
+        font-size: 1.375em;
+        font-weight: bold;
+        border-bottom: 1px solid #e8e8e8;
+        vertical-align: middle;
+        display: table; }
+        @media screen and (max-width: 1000px) {
+          .session_detail_wrap section .session_detail_box .title_wrap {
+            font-size: 1.000em;
+            vertical-align: middle;
+            height: 5.000em;
+            padding-left: 0; } }
+        .session_detail_wrap section .session_detail_box .title_wrap .title {
+          display: table-cell;
+          text-align: left;
+          width: 498px;
+          vertical-align: middle; }
+          @media screen and (max-width: 1000px) {
+            .session_detail_wrap section .session_detail_box .title_wrap .title {
+              display: block;
+              padding-left: 43px;
+              padding-top: 13px; } }
+          .session_detail_wrap section .session_detail_box .title_wrap .title .type {
+            margin-top: 15px;
+            font-size: 12px;
+            font-weight: normal; }
+        .session_detail_wrap section .session_detail_box .title_wrap .datetime {
+          display: table-cell;
+          text-align: left;
+          vertical-align: middle;
+          font-size: 13px;
+          line-height: 140%;
+          font-weight: normal;
+          padding-right: 30px;
+          width: 170px; }
+          @media screen and (max-width: 1000px) {
+            .session_detail_wrap section .session_detail_box .title_wrap .datetime {
+              display: block;
+              padding-left: 40px;
+              margin: 10px 0;
+              font-size: 12px; } }
+        .session_detail_wrap section .session_detail_box .title_wrap.whiteblue_light {
+          background: #ecf0f5 url(/images/other/program_icon_01.png) no-repeat 60px 22px; }
+          @media screen and (max-width: 1000px) {
+            .session_detail_wrap section .session_detail_box .title_wrap.whiteblue_light {
+              background: #ecf0f5 url(/images/other/program_icon_01.png) no-repeat 8px 7px; } }
+        .session_detail_wrap section .session_detail_box .title_wrap.whiteorange_light {
+          background: #ffdbd0 url(/images/other/program_icon_02.png) no-repeat 60px 22px; }
+          @media screen and (max-width: 1000px) {
+            .session_detail_wrap section .session_detail_box .title_wrap.whiteorange_light {
+              background: #ffdbd0 url(/images/other/program_icon_02.png) no-repeat 8px 7px; } }
+        .session_detail_wrap section .session_detail_box .title_wrap.whitepurple_light {
+          background: #dbd9ed url(/images/other/program_icon_03.png) no-repeat 60px 22px; }
+          @media screen and (max-width: 1000px) {
+            .session_detail_wrap section .session_detail_box .title_wrap.whitepurple_light {
+              background: #dbd9ed url(/images/other/program_icon_03.png) no-repeat 8px 7px; } }
+        .session_detail_wrap section .session_detail_box .title_wrap.whitegreen_light {
+          background: #cef2ec url(/images/other/program_icon_04.png) no-repeat 60px 22px; }
+          @media screen and (max-width: 1000px) {
+            .session_detail_wrap section .session_detail_box .title_wrap.whitegreen_light {
+              background: #cef2ec url(/images/other/program_icon_04.png) no-repeat 8px 7px; } }
+      .session_detail_wrap section .session_detail_box .session_description {
+        text-align: left;
+        line-height: 160%;
+        padding: 50px 100px; }
+        @media screen and (max-width: 1000px) {
+          .session_detail_wrap section .session_detail_box .session_description {
+            padding: 20px;
+            font-size: 13px; } }
+
+.anti_harassment_policy_wrap {
+  text-align: center;
+  background-color: #f7f7f8; }
+  .anti_harassment_policy_wrap section {
+    padding: 60px 0;
+    line-height: 160%; }
+    .anti_harassment_policy_wrap section a {
+      color: #ef513c; }
+      @media screen and (max-width: 1000px) {
+        .anti_harassment_policy_wrap section a {
+          font-size: 13px; } }
+    .anti_harassment_policy_wrap section h1, .anti_harassment_policy_wrap section h2, .anti_harassment_policy_wrap section h3, .anti_harassment_policy_wrap section h4, .anti_harassment_policy_wrap section h5 {
+      margin: 0; }
+    .anti_harassment_policy_wrap section p {
+      margin: 15px 0; }
+    .anti_harassment_policy_wrap section .contents {
+      text-align: left; }
+      .anti_harassment_policy_wrap section .contents .inline-center {
+        margin: 0;
+        text-align: center; }
 
 /*# sourceMappingURL=main.css.map */

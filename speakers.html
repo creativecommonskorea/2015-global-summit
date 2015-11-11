@@ -2,22 +2,8 @@
 layout: base
 ---
 
+<script src="/js/scrolltop.js?v=09111651"></script>
 <script>
-    var getUrlParameter = function getUrlParameter(sParam) {
-        var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-                sURLVariables = sPageURL.split('&'),
-                sParameterName,
-                i;
-
-        for (i = 0; i < sURLVariables.length; i++) {
-            sParameterName = sURLVariables[i].split('=');
-
-            if (sParameterName[0] === sParam) {
-                return sParameterName[1] === undefined ? true : sParameterName[1];
-            }
-        }
-    };
-
     $(document).ready(function () {
         if (getUrlParameter('jumpTo'))
             $("html, body").scrollTop($('#' + getUrlParameter('jumpTo')).offset().top);
@@ -31,9 +17,10 @@ layout: base
         <div class="guide_bar_33"></div>
 
         {% for s in site.data.mainspeakers %}
-        <div class="speaker_box" id="{{ s.id }}">
+        <div class="special_speaker_box" id="{{ s.id }}">
+            <a name="#speaker{{ s.id }}"></a>
             <div class="person_image">
-                <img src="{{ s.image }}" alt="" class="image"/>
+                <img src="{{ s.image }}" alt="{{ s.kor_name }},{{ s.eng_name }}" class="image"/>
             </div>
             <div class="person_profile">
                 <div class="name_social">
@@ -58,12 +45,63 @@ layout: base
                 </div>
                 <div class="programs">
                     <img src="images/other/bullet.png" alt="*"/> 관련세션 <br/>
+
                     <div class="items">
-                    {% for p in s.programs %}
+                        {% for p in s.programs %}
                         {{ p.item }} <br/>
-                    {% endfor %}
+                        {% endfor %}
                     </div>
                 </div>
+            </div>
+        </div>
+        {% endfor %}
+    </section>
+</div>
+<div class="wrap speaker_wrap second">
+    <section>
+        <h1 class="title">연사</h1>
+        <div class="guide_bar_33"></div>
+        <div class="head_description">
+            앞으로 추가될 더 많은 연사들을 기대해주세요.
+        </div>
+
+        {% for s in site.data.speakers %}
+        {% assign indexModulo = forloop.index | modulo:2 %}
+        <div class="speaker_box {% if indexModulo == 1 %}left{% else %}right{%endif%}">
+            <a id="speaker{{ forloop.index }}"></a>
+            <div class="person_image">
+                {% if s.image %}
+                <img src="{{ s.image }}" alt="{{ s.name }}, {{ s.eng_name }}" class="image"/>
+                {% else %}
+                <div class="image texted">
+                    {% assign namesplit = s.name | split: " "  %}
+                    {% assign namefirst = namesplit | first %}
+                    {% assign namelast = namesplit | last %}
+                    {% assign namesize = namesplit | size %}
+                    {{ namefirst | truncate: 1,'' }}{% if namesize == 2 %}{{ namelast | truncate: 1,'' }}{% endif %}
+                </div>
+                {% endif %}
+            </div>
+            <div class="person_profile">
+                <div class="name_social">
+                    <div class="kor_name">{{ s.name }}</div>
+                </div>
+                <div class="organize">{{ s.organize }}</div>
+                <div class="guide_bar_90p"></div>
+                <div class="describe">
+                    {{ s.describe }}
+                </div>
+                {% if s.programs %}
+                <div class="programs">
+                    <img src="images/other/bullet.png" alt="*"/> 관련세션 <br/>
+
+                    <div class="items">
+                        {% for p in s.programs %}
+                        {{ p.item }} <br/>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
             </div>
         </div>
         {% endfor %}

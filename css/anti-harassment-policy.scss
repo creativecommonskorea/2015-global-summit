@@ -1,0 +1,27 @@
+.anti_harassment_policy_wrap {
+  text-align: center;
+  background-color: #f7f7f8;
+  section {
+    padding: 60px 0;
+    line-height: 160%;
+    a {
+      @media screen and (max-width: 1000px) {
+        font-size: 13px;
+      }
+      color: #ef513c;
+    }
+    h1,h2,h3,h4,h5 {
+      margin: 0;
+    }
+    p {
+      margin: 15px 0;
+    }
+    .contents {
+      text-align: left;
+      .inline-center {
+        margin: 0;
+        text-align: center;
+      }
+    }
+  }
+}

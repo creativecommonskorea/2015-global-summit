@@ -1,0 +1,30 @@
+---
+layout: base
+---
+
+<div class="wrap session_detail_wrap">
+    <section>
+        <h1 class="title">프로그램 상세보기</h1>
+
+        <div class="guide_bar_33"></div>
+        <div class="session_detail_box">
+            <!--<div class="badge"><img src="{{ site_url }}/images/other/keyword_badge.png" alt=">"/></div>-->
+            <div class="title_wrap {{ page.box }}">
+                <div class="title">
+                    {{ page.title }}
+                    <br/>
+                    <span class="type">
+                        ({{ page.type }})
+                    </span><br/>
+                </div>
+                <div class="datetime">
+                    {{ page.schedule }} <br>
+                    {{ page.location }}
+                </div>
+            </div>
+            <div class="session_description">
+                {{ content }}
+            </div>
+        </div>
+    </section>
+</div>

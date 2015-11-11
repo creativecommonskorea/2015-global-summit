@@ -1,0 +1,46 @@
+.register_wrap {
+  padding: 60px 0;
+  text-align: center;
+  background-color: #f7f7f8; }
+  @media screen and (max-width: 1000px) {
+    .register_wrap br.nobr {
+      display: none; } }
+  .register_wrap p {
+    line-height: 1.6; }
+  .register_wrap form {
+    padding: 1em; }
+    .register_wrap form .label {
+      margin: .5em; }
+    .register_wrap form input {
+      padding: 0.5em;
+      font-size: 16px;
+      font-weight: normal; }
+    @media screen and (min-width: 1000px) {
+      .register_wrap form input[type='text'] {
+        width: 300px; } }
+    .register_wrap form .crm-submit-buttons {
+      margin: 5em 0; }
+      .register_wrap form .crm-submit-buttons .form-submit {
+        cursor: pointer;
+        width: 225px;
+        height: 67px;
+        line-height: 47px;
+        color: #fff;
+        font-size: 16px;
+        border: 0;
+        margin-bottom: 1em; }
+      .register_wrap form .crm-submit-buttons .default {
+        background-color: #f35b42; }
+      .register_wrap form .crm-submit-buttons .reset {
+        background-color: #666; }
+
+.crm-marker {
+  font-size: 11px;
+  color: #f35b42; }
+
+#nick_name,
+#email-Primary,
+#note {
+  margin-bottom: 20px; }
+
+/*# sourceMappingURL=register.css.map */

@@ -6,3 +6,81 @@
   width: 540px;
 }
 
+#main_location_img,
+#sub_location_img,
+#sub_location_img2 {
+  width: 548px;
+  height: 395px;
+}
+
+.sponsor_whole_wrap .speaker_box .person_profile {
+  width: 878px;
+}
+
+.keywords_wrap section .keyword_box .keyword_description {
+  width: 738px;
+}
+
+#day15_timetable .track1,
+#day15_timetable .track2,
+#day15_timetable .track3,
+#day15_timetable .track4,
+#day15_timetable .creative-workshop {
+  height: 229px;
+}
+
+#day15_timetable .art-showcase {
+  height: 109px;
+}
+
+#day16_timetable .first-sessions .corner_all {
+  height: 181px;
+}
+
+#day16_timetable .second-sessions .corner_all {
+  height: 146px;
+}
+
+#day16_timetable .second-sessions .corner_all.angel {
+  height: 600px;
+}
+
+#day16_timetable .third-sessions .corner_all {
+  height: 327px;
+}
+
+#day17_timetable .first-sessions .corner_all {
+  height: 235px;
+}
+
+#day17_timetable .second-sessions .corner_all {
+  height: 142px;
+}
+
+#day17_timetable .third-sessions .corner_all {
+  height: 246px;
+}
+
+.main_menu .menus {
+  width: 970px;
+}
+
+.promote_main_wrap section .creative_commons .description_wrap {
+  width: 692px;
+}
+
+.speaker_wrap .special_speaker_box .person_profile{
+  width: 865px;
+}
+
+.newsboard_wrap section .article_list .article_box .abstract_contents {
+  width: 860px;
+}
+
+.newsboard_wrap article .latest_article_contents .content_text .person .person_info {
+  width: 370px;
+}
+
+.footer_black .ccl_info {
+  width: 800px;
+}

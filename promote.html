@@ -1,6 +1,7 @@
 ---
 layout: base
 ---
+<script src="/js/scrolltop.js?v=09111651"></script>
 <div class="wrap promote_main_wrap no-padding-bottom">
     <section>
         <h1 class="title">주관</h1>
@@ -90,7 +91,7 @@ layout: base
         <div class="description">CC 글로벌 써밋 2015를 아름답게 개최하기 위해 노력하고 있습니다.</div>
         <div class="people_list">
             {% for p in site.data.preparer %}
-            <div class="person">
+            <div class="person five_in_one_line">
                 <div class="photo">
                     <img src="{{ p.image }}" alt="{{ p.name }}"/>
                 </div>
@@ -108,6 +109,23 @@ layout: base
         <div class="description">CC 글로벌 써밋 2015 프로그램 제안서 심사와 세부 프로그램 구성을 위해 모인 각국의 CC Affliate입니다.</div>
         <div class="people_list">
             {% for p in site.data.inspector %}
+            <div class="person">
+                <div class="photo">
+                    <img src="{{ p.image }}" alt="{{ p.name }}"/>
+                </div>
+                <div class="name">{{ p.name }}</div>
+                <div class="organize">{{ p.organize }}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+</div>
+<div class="wrap end_bar">
+    <section class="preparing_people">
+        <h1 class="title">발룬티어</h1>
+        <div class="guide_bar_33"></div>
+        <div class="people_list">
+            {% for p in site.data.volunteer %}
             <div class="person">
                 <div class="photo">
                     <img src="{{ p.image }}" alt="{{ p.name }}"/>

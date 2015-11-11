@@ -25,19 +25,50 @@
     border-radius: 15px;
     font-size: 14px;
   }
+  .mobile_ticket_info {
+    @media screen and (max-width: 1000px) {
+      display: block;
+    }
+    @media screen and (min-width: 1000px) {
+      display: none;
+    }
+    font-size: 13px;
+    table {
+      width: 100%;
+      background-color: #fff;
+      border-top: 1px solid #dedede;
+      border-left: 1px solid #dedede;
+
+      th,td {
+        border-bottom: 1px solid #dedede;
+        border-right: 1px solid #dedede;
+        padding: 20px 0;
+      }
+      th {
+        background-color: #f5f5f5;
+      }
+      td.price {
+        color: #ee4023;
+        font-weight: bold;
+      }
+
+    }
+  }
   .ticket_info {
     @media screen and (max-width: 1000px) {
-      background: #FFFFFF;
-
+      display: none;
+    }
+    @media screen and (min-width: 1000px) {
+      display: inline-block;
     }
     position: relative;
     z-index: 10;
     display: inline-block;
-    margin: 35px 0 0 0;
+    margin: 0;
     width: 978px;
     height: 284px;
     background: #fff url('/images/other/ticket_table_bg.png') no-repeat;
-    padding: 0px;
+    padding: 0;
     table {
       width: 958px;
       height: 265px;
@@ -74,61 +105,304 @@
       position: absolute;
     }
   }
+  .comeon_cc_sponsor {
+    margin-top: 20px;
+    color: #f35b42;
+  }
 }
-.launch {
-  background-color: #fff;
-  .launch_box {
-    display: inline-block;
-    width: 978px;
-    height: 160px;
-    border: 1px solid #d7d7d7;
-    margin-top: 35px;
-    .title {
-      height: 52px;
-      line-height: 52px;
-      font-size: 18px;
-      color: #f0513d;
-      background-color: #f6f6f6;
-      font-weight: bold;
+.application {
+  background-color: #f7f7f8;
+  section {
+    @media screen and (max-width: 1000px) {
+      width: 90%;
     }
-    .launch_select {
-      height: 108px;
-      line-height: 108px;
-      span {
-        margin-right: 50px;
-        &:last-child {
-          margin-right: 0;
+    width: 60%;
+
+    .application_box {
+      width: 100%;
+      table {
+        width: 100%;
+        background-color: #fff;
+        tr {
+          th, td{
+            padding: 10px;
+            line-height: 180%;
+            border-bottom: 1px solid #dedede;
+          }
+          th {
+            @media screen and (max-width: 1000px) {
+              font-size: 14px;
+              line-height: 120%;
+            }
+            font-size: 16px;
+            vertical-align: middle;
+            border-right: 1px solid #dedede;
+            word-break: keep-all;
+          }
+          td {
+            @media screen and (max-width: 400px) {
+              padding-left: 5px;
+            }
+            @media screen and (max-width: 1000px) {
+              font-size: 12px;
+            }
+            font-size: 14px;
+            text-align: left;
+            padding-left: 20px;
+            &.two_lines {
+              line-height: 250%;
+            }
+          }
+          &:last-child th,
+          &:last-child td {
+            border-bottom: 0;
+          }
+        }
+      }
+    }
+    .dopay_wrap {
+      margin-top: 25px;
+      button {
+        cursor: pointer;
+        width: 225px;
+        height: 67px;
+        line-height: 67px;
+        color: #fff;
+        font-size: 16px;
+        border: 0;
+        background-color: #c0c0c0;
+        &:first-child {
+          @media screen and (max-width: 1000px) {
+            margin-right: 0;
+            margin-bottom: 20px;
+          }
+        }
+        &#doPay {
+          background-color: #f35b42;
         }
       }
     }
   }
-  .pay_or_not {
-    margin-top: 60px;
-    button {
-      cursor: pointer;
-      width: 225px;
-      height: 67px;
-      line-height: 67px;
-      color: #fff;
-      font-size: 16px;
-      border: 0;
-      &:first-child {
-        margin-right: 30px;
-      }
-      &#doPay{
-        background-color: #f35b42;
-      }
-      &#cancel{
-        background-color: #666;
-      }
-    }
+}
+
+.cancel_wrap {
+  button {
+    cursor: pointer;
+    width: 225px;
+    height: 67px;
+    line-height: 67px;
+    color: #fff;
+    font-size: 16px;
+    border: 0;
+    background-color: #c0c0c0;
+  }
+  .cancel_info {
+    color: #ee4023;
+    font-size: 12px;
+  }
+  padding-top: 70px;
+  border-top: 4px double #929292 ;
+  button {
+    padding: 0;
   }
 }
+
 .move_step_icon {
+  @media screen and (max-width: 1000px) {
+    top: 561px;
+  }
   position: absolute;
   margin: 0 auto;
   padding: 0;
   z-index: 100;
-  top: 655px;
+  top: 598px;
   text-align: center;
+}
+
+#buyer_name,
+#buyer_eng_name,
+#buyer_email,
+#buyer_tel,
+#buyer_addr,
+#buyer_eng_addr,
+#amount,
+#buyer_email {
+  @media screen and (max-width: 400px) {
+    width: 150px;
+    margin-right: 0;
+  }
+  width: 200px;
+  height: 20px;
+  font-size: 16px;
+  font-weight: normal;
+  margin-right: 15px;
+  border: 1px solid #D3D3D3;
+}
+
+#buyer_addr,
+#buyer_eng_addr,
+#buyer_name,
+#buyer_eng_name {
+  margin-left: 15px;
+}
+
+#joinform label.error {
+  color: #ee4023;
+  font-size: 12px;
+}
+
+.launch_box_info {
+  color: #ee4023;
+  font-size: 12px;
+}
+
+.launch_box {
+  display: none;
+}
+
+.total_price_wrap {
+  width: 100%;
+  text-align: right ;
+  display: table;
+  .empty_space {
+    display: table-cell;
+    width: calc(100% - 320px);
+  }
+  .total_price {
+    display: table-cell;
+    width: 320px;
+    text-align: right;
+    margin-top: 30px;
+    padding: 20px 0;
+    border-bottom: 1px solid #dedede;
+    #amount {
+      @media screen and (max-width: 400px) {
+        width: 150px;
+      }
+      text-align: right;
+      width: 185px;
+      border: 0;
+      font-size: 28px;
+      height: 32px;
+      background-color: #f7f7f8;
+    }
+  }
+}
+.agreement {
+  text-align: left;
+  width: 100%;
+  font-size: 12px;
+  @media screen and (max-width: 1000px) {
+    margin-top: 50px;
+  }
+  h4 {
+    @media screen and (max-width: 1000px) {
+      width: 200px;
+      float: left;
+      margin: 0;
+    }
+  }
+  .show_agreement {
+    @media screen and (max-width: 1000px) {
+      display: block;
+    }
+    @media screen and (min-width: 1000px) {
+      display: none;
+    }
+    text-align: right;
+    width: calc(100% - 200px);
+    float: left;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  #agreement_content {
+    @media screen and (max-width: 1000px) {
+      display: none;
+      padding-bottom: 0;
+    }
+    width: 100%;
+    line-height: 160%;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    padding: 20px 0;
+    table {
+      margin-top: 15px;
+      width: 100%;
+      th {
+        background-color: #dedede;
+        text-align: center;
+        font-weight: normal;
+      }
+      td {
+        text-align: center;
+      }
+    }
+  }
+  .agreed_check_wrap {
+    @media screen and (max-width: 1000px) {
+      text-align: left;
+      padding-top: 25px;
+      margin-top: 0;
+    }
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    .payment_notice {
+      color: #ee4023;
+    }
+  }
+}
+
+.apply_complete {
+  padding: 60px 0;
+  section {
+    .complete_image_text {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      .message {
+        margin-top: 15px;
+      }
+    }
+    .complete_contents {
+      @media screen and (max-width: 500px){
+        width: 100%;
+      }
+      width: 500px;
+      margin: 0 auto;
+      text-align: left;
+      font-size:14px;
+      padding: 40px 0;
+      .nobr {
+        @media screen and (max-width: 500px){
+          display: none;
+        }
+      }
+    }
+    .buttons {
+      text-align: center;
+      button {
+        cursor: pointer;
+        width: 225px;
+        height: 67px;
+        line-height: 67px;
+        color: #fff;
+        font-size: 16px;
+        border: 0;
+        background-color: #c0c0c0;
+        &:first-child {
+          @media screen and (max-width: 1000px) {
+            margin-right: 0;
+            margin-bottom: 20px;
+          }
+          background-color: #f35b42;
+          margin-right: 25px;
+        }
+      }
+    }
+    border-top: 1px solid #d0d0d0;
+    border-bottom: 1px solid #d0d0d0;
+    padding: 50px 0;
+    line-height: 130%;
+  }
 }

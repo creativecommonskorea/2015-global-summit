@@ -4,20 +4,45 @@ layout: base
 
 <script>
     $(document).ready(function () {
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            location.href='/programs_mobile.html';
+        }
         // schedule click event define
         $('.day').click(function () {
-            console.log('.day clicked');
-            $('.day').each(function () {
-                $(this).removeClass('on');
-            });
-            $('.day_detail').hide();
-            $(this).addClass('on');
-
-            var thisId = $(this).attr('id');
-            $('#' + thisId + '_detail').show();
+            location.href='/programs.html?day=' + $(this).attr('data-rel');
         });
 
-        $('#day15').click();
+        $('.day').removeClass('on');
+        $('.day_detail').hide();
+        switch (getUrlParameter('day')){
+            case '1014':
+                $('#day14').addClass('on');
+                $('#day14_detail').show();
+                break;
+            case '1016':
+                $('#day16').addClass('on');
+                $('#day16_detail').show();
+                break;
+            case '1017':
+                $('#day17').addClass('on');
+                $('#day17_detail').show();
+                break;
+            case '1015':default :
+                $('#day15').addClass('on');
+                $('#day15_detail').show();
+                break;
+        }
+
+        $('.timetable .corner_all')
+            .each(function() {
+                if ( $(this).attr('data-rel') )
+                    $(this).css('cursor', 'pointer');
+            })
+            .click(function(){
+                if ( $(this).attr('data-rel') )
+                    location.href='/session/' + $(this).attr('data-rel') + '.html';
+            });
+
     });
 
 </script>
@@ -27,18 +52,14 @@ layout: base
 
         <div class="guide_bar_33"></div>
         <div class="days">
-            <div class="day" id="day14">수요일 (10/14)</div>
-            <div class="day" id="day15">목요일 (10/15)</div>
-            <div class="day" id="day16">금요일 (10/16)</div>
-            <div class="day" id="day17">토요일 (10/17)</div>
+            <div class="day" id="day14" data-rel="1014">수요일 (10/14)</div>
+            <div class="day" id="day15" data-rel="1015">목요일 (10/15)</div>
+            <div class="day" id="day16" data-rel="1016">금요일 (10/16)</div>
+            <div class="day" id="day17" data-rel="1017">토요일 (10/17)</div>
         </div>
         {% include day14_detail.html %}
         {% include day15_detail.html %}
         {% include day16_detail.html %}
         {% include day17_detail.html %}
-        <div class="apply_summit_wrap">
-            <span style="color:#ef513c; font-size: 12px;">* 써밋 신청은 준비중입니다.</span><br/>
-            <button class="apply_summit" type="button" onclick="alert('멋진 글로벌 써밋을 위해 준비중입니다 :)\n조금만 기다려주세요!');">CC Global Summit 2015 신청하기</button>
-        </div>
     </section>
 </div>

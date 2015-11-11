@@ -3,7 +3,10 @@
   text-align: center;
   background-color: #f7f7f8;
   overflow:auto;
-  .speaker_box {
+  &.second {
+    padding-top: 0;
+  }
+  .special_speaker_box {
     @media screen and (max-width: 1000px) {
       padding: 20px;
       width: calc(100% - 40px);
@@ -50,6 +53,7 @@
           float: left;
           vertical-align: middle;
           line-height: 24px;
+          margin-right: 7px;
         }
         .eng_name {
           @media screen and (max-width: 1000px) {
@@ -94,6 +98,74 @@
           color: #333;
           font-size: 12px;
         }
+      }
+    }
+  }
+  .speaker_box {
+    @extend .special_speaker_box;
+
+    @media screen and (max-width: 1000px) {
+      padding: 20px;
+      width: calc(100% - 40px);
+      margin: 0 0 20px 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    width: 538px;
+    margin: 0px;
+    float: left;
+
+    &.left {
+      margin: 10px 10px 10px 0;
+    }
+    &.right {
+      margin: 10px 0 10px 10px;
+    }
+
+    .person_image {
+      .texted {
+        line-height: 160px;
+        font-size: 80px;
+        font-weight: bold;
+        color: #b1b1b1;
+      }
+    }
+    .person_profile {
+      @media screen and (max-width: 1000px) {
+        width: 100%;
+        padding: 0;
+      }
+      padding: 25px 25px 25px 0;
+      width: 303px;
+      .name_social {
+        @media screen and (max-width: 1000px) {
+          width: 100%;
+          margin: 0;
+        }
+        height: 23px;
+      }
+      .kor_name {
+        @media screen and (max-width: 1000px) {
+          margin: 0;
+        }
+        @media screen and (min-width: 1000px) {
+          margin-bottom: 0;
+        }
+        margin-bottom: 20px;
+      }
+      .organize {
+        @media screen and (min-width: 1000px) {
+          height: 28px;
+        }
+      }
+      .describe {
+        @media screen and (max-width: 1000px) {
+          min-height: inherit;
+          height: auto;
+        }
+        min-height: 120px;
       }
     }
   }
