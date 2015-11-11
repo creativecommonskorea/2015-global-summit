@@ -145,6 +145,7 @@
         {% for post in site.posts limit:1 %}
         <div class="mobile_b_menu"><a href="{{ post.url | prepend: site.baseurl }}">소식</a></div>
         {% endfor %}
+        <div class="mobile_b_menu live"><a href="/presentations.html">발표 자료</a></div>
     </div>
 </div>
 <div class="wrap header_wrap">
@@ -165,6 +166,7 @@
                 {% for post in site.posts limit:1 %}
                 <li><a href="{{ post.url | prepend: site.baseurl }}">소식</a></li>
                 {% endfor %}
+                <li class="live"><a href="/presentations.html">발표 자료</a></li>
                 <!--
                 <li><a href="http://campaign.cckorea.org/" target="_blank">CC 캠페인</a></li>
                 -->

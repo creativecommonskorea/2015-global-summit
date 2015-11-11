@@ -1,0 +1,108 @@
+---
+layout: base
+---
+<!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.6.0/base-min.css&pure/0.6.0/grids-min.css&pure/0.6.0/grids-responsive-old-ie-min.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+<link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.6.0/base-min.css&pure/0.6.0/grids-min.css&pure/0.6.0/grids-responsive-min.css">
+<!--<![endif]-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<style>
+    .l-box {
+        padding: 1em;
+    }
+    .l-box img {
+      max-width: 100%;
+    }
+    .status {
+      border: 1px solid #ccc;
+      font-size: 200%;
+      max-width: 100%;
+      height: 151px;
+      padding-top: 100px;
+    }
+</style>
+
+
+<div class="wrap keywords_wrap">
+    <section>
+        <small style="float: right"><a target="_blank" href="https://wiki.creativecommons.org/wiki/Global_Summit_2015/Presentations_%26_Notes">영문</a></small>
+        <h1 class="title">발표자료</h1>
+        <div class="guide_bar_33"></div>
+    </section>
+
+    <h2>1. Celebration of Sharing: 우공이산(愚公移山), 10월 15일</h2>
+    <div class="pure-g">
+    {% for p in site.data.day15_presentations %}
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+          <div class="l-box">
+            {% if p.youtube %}
+              {% capture thumbnail %}http://img.youtube.com/vi/{{ p.youtube | remove:'https://www.youtube.com/watch?v=' | truncate: 11, '' }}/hqdefault.jpg{% endcapture %}
+              {% if p.thumbnail %}{% assign thumbnail = p.thumbnail %}{% endif %}
+              <a target="blank" href="{{ p.youtube }}"><img src="{{ thumbnail }}" alt="" style="height: 251px;"></a>
+            {% elsif p.thumbnail %}
+              <img src="{{ p.thumbnail }}" alt="" style="height: 251px;">
+            {% elsif p.status %}
+              <div class="status text-center">{{ p.status }}</div>
+            {% endif %}
+            <h3>{{ p.title }}</h3>
+            <p>{{ p.detail }}</p>
+            {% if p.slideshare %}
+            <a class="pure-button" target="_blank" href="{{ p.slideshare }}"><i class="fa fa-slideshare"></i>&nbsp;슬라이드</a>
+            {% endif %}
+            {% if p.graphic %}
+            <a class="pure-button" target="_blank" href="{{ p.graphic }}"><i class="fa fa-hand-peace-o"></i>&nbsp;그래픽 레코딩</a>
+            {% endif %}
+          </div>
+        </div>
+    {% endfor %}
+    </div>
+
+    <p>&nbsp;</p>
+
+    <h2>2. Work of Sharing: 상선 약수(上善若水), 10월 16일</h2>
+    <div class="pure-g">
+    {% for p in site.data.day16_presentations %}
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+          <div class="l-box">
+            {% if p.youtube %}
+              <a target="blank" href="{{ p.youtube }}"><img src="http://img.youtube.com/vi/{{ p.youtube | remove:'https://www.youtube.com/watch?v=' | truncate: 11, '' }}/hqdefault.jpg" alt=""></a>
+            {% endif %}
+            <h3>{{ p.title }}</h3>
+            <p>{{ p.detail }}</p>
+            {% if p.slideshare %}
+            <a class="pure-button" target="_blank" href="{{ p.slideshare }}"><i class="fa fa-slideshare"></i>&nbsp;슬라이드</a>
+            {% endif %}
+            {% if p.graphic %}
+            <a class="pure-button" target="_blank" href="{{ p.graphic }}"><i class="fa fa-hand-peace-o"></i>&nbsp;그래픽 레코딩</a>
+            {% endif %}
+          </div>
+        </div>
+    {% endfor %}
+    </div>
+
+        <p>&nbsp;</p>
+
+    <h2>3. Future of Sharing: 수구초심(首邱初心), 10월 17일</h2>
+    <div class="pure-g">
+    {% for p in site.data.day17_presentations %}
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+          <div class="l-box">
+            {% if p.youtube %}
+              <a target="blank" href="{{ p.youtube }}"><img src="http://img.youtube.com/vi/{{ p.youtube | remove:'https://www.youtube.com/watch?v=' | truncate: 11, '' }}/hqdefault.jpg" alt=""></a>
+            {% endif %}
+            <h3>{{ p.title }}</h3>
+            <p>{{ p.detail }}</p>
+            {% if p.slideshare %}
+            <a class="pure-button" target="_blank" href="{{ p.slideshare }}"><i class="fa fa-slideshare"></i>&nbsp;슬라이드</a>
+            {% endif %}
+            {% if p.graphic %}
+            <a class="pure-button" target="_blank" href="{{ p.graphic }}"><i class="fa fa-hand-peace-o"></i>&nbsp;그래픽 레코딩</a>
+            {% endif %}
+          </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>
