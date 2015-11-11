@@ -1,0 +1,159 @@
+---
+layout: base
+title: Creative Commons Global Summit 2015
+description: 공유와 개방의 가치를 믿고, 긍정적인 변화를 만들어내는 80여개국의 사람들이 모여 생각을 나누는 즐거운 축제가 10월, 한국에서 열립니다.
+
+---
+<script src="/js/scrolltop.js?v=09111651"></script>
+<div class="main_invite_wrap wrap">
+    <section>
+        <img src="/images/base/title.png" alt="welcome sharing world! creative commons global summit 2015"/>
+
+        <div class="message">
+            공유와 개방의 가치를 믿고, 긍정적인 변화를 만들어내는 80여개국의 사람들이 모여 생각을 나누는 즐거운 축제가 10월, 한국에서 열립니다.
+        </div>
+
+        <div class="location">
+            <div class="dateinfo">2015.10.14(수) ~ 17(토)</div>
+            <div class="locate">@국립중앙박물관, 아트센터 나비 외</div>
+        </div>
+    </section>
+</div>
+<div class="wrap program_info_wrap">
+    <section>
+        <h1 class="normal">주요프로그램</h1>
+
+        <div class="guide_bar"></div>
+        <div class="program_list">
+            <div class="program_icon">
+                <img src="/images/base/program_icon_01.png" alt="컨퍼런스"/>
+            </div>
+            <div class="program_sub_title">컨퍼런스</div>
+            <div class="program_sub_description">
+                세계 여러나라에서 온 연사들의 강연를 듣고 최근의 세계 동향을 알아봅니다.
+            </div>
+        </div>
+        <div class="program_list">
+            <div class="program_icon">
+                <img src="/images/base/program_icon_02.png" alt="CC전시"/>
+            </div>
+            <div class="program_sub_title">CC전시</div>
+            <div class="program_sub_description">
+                CC의 열린 정신을 함께하는 다양한 분야의 예술가들의 창작물을 만나봅니다.
+            </div>
+        </div>
+        <div class="program_list">
+            <div class="program_icon">
+                <img src="/images/base/program_icon_03.png" alt="포럼"/>
+            </div>
+            <div class="program_sub_title">포럼</div>
+            <div class="program_sub_description">
+                다루어지는 주제 별로 전문가들과 함께 생각과 의견을 나누는 시간을 가집니다.
+            </div>
+        </div>
+        <div class="program_list">
+            <div class="program_icon">
+                <img src="/images/base/program_icon_04.png" alt="워크숍"/>
+            </div>
+            <div class="program_sub_title">워크숍</div>
+            <div class="program_sub_description">
+                오픈소스를 이용한 창작물을 보기만 하는 것이 아닌 직접 만들어볼 수 있습니다.
+            </div>
+        </div>
+        <div class="program_list">
+            <div class="program_icon">
+                <img src="/images/base/program_icon_05.png" alt="CC이그나잇"/>
+            </div>
+            <div class="program_sub_title">CC파티</div>
+            <div class="program_sub_description">
+                세계 각국의 CC 인사들과 자유롭게 네트워킹 할 수 있는 기회를 만듭니다.
+            </div>
+        </div>
+    </section>
+    <div class="show_all_program">
+        <a href="programs.html" class="web">전체 프로그램 보기&nbsp;&gt;</a>
+        <a href="programs_mobile.html" class="mobile">전체 프로그램 보기&nbsp;&gt;</a>
+    </div>
+</div>
+<div class="wrap main_speakes_wrap end_bar">
+    <section>
+        <h1 class="normal">주요연사</h1>
+
+        <div class="guide_bar"></div>
+        <div class="speaker_list">
+            {% for s in site.data.mainspeakers %}
+            <div class="speaker ">
+                <div class="speaker_image"><img src="{{ s.main_img }}" alt="{{ s.kor_name }},{{ s.eng_name }}"/></div>
+                <div class="kor_name"><a href="speakers.html?jumpTo={{ s.id }}">{{ s.kor_name }}</a></div>
+                <div class="eng_name"><a href="speakers.html?jumpTo={{ s.id }}">{{ s.main_eng }}</a></div>
+                <div class="organize">{{ s.main_org }}</div>
+                <div class="guide_line"></div>
+                <div class="speaker_description">{{ s.main_abs }}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    <div class="see_more_speaker" style="text-align: right;">
+        <div><a href="speakers.html">더 많은 연사 보기</a> ></div>
+    </div>
+</div>
+
+{% include sponsor_contents.html %}
+
+<div class="wrap partner_wrap">
+    <section>
+        <div class="sponsor_wrap">
+            <div class="t_row">
+                <div class="title">주관</div>
+            </div>
+            <div class="guide_bar"></div>
+            <div class="t_row">
+                <div class="sponsor_logos">
+                    <div class="logos othersize">
+                        <a href="http://www.cckorea.org" target="_blank">
+                            <img src="/images/base/cck-logo1.png" alt="" class="othersize" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="wrap partner_wrap">
+    <section>
+        <div class="sponsor_wrap">
+            <div class="t_row">
+                <div class="title">주최</div>
+            </div>
+            <div class="guide_bar"></div>
+            <div class="t_row">
+                <div class="sponsor_logos">
+                    <div class="logos othersize">
+                        <a href="http://www.creativecommons.org" target="_blank">
+                            <img src="/images/base/cc-logo2.png" alt="" class="othersize" />
+                        </a>
+                    </div>
+                    <div class="logos othersize">
+                        <a href="http://www.copyright.or.kr/" target="_blank">
+                            <img src="/images/sponsors/kcc.png" alt="" class="othersize" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<style>
+.btn.live {
+    font-size: 1.125em;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #ef513c;
+    padding: 1em;
+    color: #fff;
+    border: 0;
+    margin: .5em 0;
+    display: inline-block;
+}
+</style>
