@@ -16,16 +16,16 @@
   organize: "경희대학교 도서관"
 
 - name: "Beomsoo Kim"
-  image: "/images/people/0_00_portrait-blank.png"
-  organize: ""
+  image: "/images/people/vo_beomsoo_kim.jpg"
+  organize: "CC Korea 발룬티어"
 
 - name: "Gyoungman Go"
-  image: "/images/people/0_00_portrait-blank.png"
-  organize: ""
+  image: "/images/people/vo_gyungman_go.jpg"
+  organize: "CC Korea 발룬티어"
 
 - name: "Hassan Abid"
-  image: "/images/people/0_00_portrait-blank.png"
-  organize: ""
+  image: "/images/people/vo_hassan_abid.jpg"
+  organize: "Nexstreaming"
 
 - name: "Hyejeong Yoon"
   image: "/images/people/vo_hyejeong_yoon.jpg"
@@ -33,19 +33,19 @@
 
 - name: "Jungpyo Lee"
   image: "/images/people/0_00_portrait-blank.png"
-  organize: ""
+  organize: "CC Korea 발룬티어"
 
 - name: "Kyungbok Kim"
   image: "/images/people/vo_kyungbok_kim.jpg"
   organize: "문화창업플래너"
 
 - name: "Meena Hwang"
-  image: "/images/people/0_00_portrait-blank.png"
+  image: "/images/people/vo_meena_hwang.jpg"
   organize: "Open Education Consortium"
 
 - name: "Naeun Jeon"
   image: "/images/people/naeun-jeon.jpeg"
-  organize: ""
+  organize: "CC Korea 발룬티어"
 
 - name: "Seunghan Jang"
   image: "/images/people/vo_seunghun_jang.jpg"
@@ -62,6 +62,10 @@
 - name: "Youngje Lim"
   image: "/images/people/vo_youngje_lim.jpg"
   organize: "아이디인큐"
+
+- name: "Youngtae Seo"
+  image: "/images/people/vo_youngtae_seo.jpg"
+  organize: "space UU"
 
 - name: "Yonghyun Cho"
   image: "/images/people/vo_yonghyun_cho.jpg"
